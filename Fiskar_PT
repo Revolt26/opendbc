@@ -1,0 +1,2610 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DEVNODE OBCM HCU KARMA_TESTER EBCM CIU BECM APM ECM
+
+
+BO_ 1670 DEBUG_MSG_HCU_6: 8 HCU
+ SG_ PSM_Max_Regen_Pwr_HV_Bus_Orig : 55|4@0+ (5,0) [0|75] "" Vector__XXX
+ SG_ BCM_Max_Inst_Charge_Power : 43|4@0+ (5,0) [0|75] "" Vector__XXX
+ SG_ PSM_Trax_RegenTrq_340V : 47|4@0+ (16,0) [0|240] "" Vector__XXX
+ SG_ FuelLevel_Ctr_Low : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ FuelLevel_Ctr_High : 39|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ FuelLevel_HardReset : 28|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ FuelLevel_State : 31|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DC_Charging_ExitPath : 23|7@0+ (1,0) [0|127] "" Vector__XXX
+ SG_ M_BCM_Current_Buffer_Chrg_Amp_Lm : 15|7@0+ (8,0) [0|800] "" Vector__XXX
+ SG_ BCM_ChargeCurrentInst_Ovr : 7|7@0+ (8,0) [0|800] "" Vector__XXX
+
+BO_ 1669 DEBUG_MSG_HCU_5: 8 HCU
+ SG_ DM_Safety_Zero_Torque_Ovrd_Rsn : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DM_Safety_SFD_DrvExpDriveTorque : 39|8@0- (1,0) [-128|127] "Nm" Vector__XXX
+ SG_ DM_Safety_No_Torque_Split_Reason : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DM_Safety_Extreme_Limp_Md_Rsn : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DM_Safety_Limp_Mode_Reason : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1228 DRIVER_CUSTOMIZATION: 8 CIU
+ SG_ ESM_MUTE_SET : 47|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CIS_REQ_REGEN_MODE_STARTUP : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CIS_REQ_DRIVE_MODE_STARTUP : 39|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CIS_REQ_REGEN_MODE_INSTANT : 36|2@0+ (1,0) [0|0] ""  HCU
+ SG_ CIS_REQ_DRIVE_MODE_INSTANT : 34|3@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_SUSTAIN_Steering : 23|2@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_SUSTAIN_RegenInCustom : 21|4@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_SUSTAIN_PedalMap : 17|2@0+ (1,0) [1|3] ""  HCU
+ SG_ DCM_STEALTH_Steering : 7|2@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_STEALTH_RegenInCustom : 5|4@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_STEALTH_PedalMap : 1|2@0+ (1,0) [1|3] ""  HCU
+ SG_ DCM_SPORT_Steering : 31|2@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_SPORT_RegenInCustom : 29|4@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_SPORT_PedalMap : 25|2@0+ (1,0) [1|3] ""  HCU
+ SG_ DCM_ECO_Steering : 15|2@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_ECO_RegenInCustom : 13|4@0+ (1,0) [0|0] ""  HCU
+ SG_ DCM_ECO_PedalMap : 9|2@0+ (1,0) [1|3] ""  HCU
+
+BO_ 2030 DIAG_RESPONSE_BECM_CPU2: 8 DEVNODE
+ SG_ DIAG_RESP_SIG_BECM_CPU2 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 2022 DIAG_REQUEST_BECM_CPU2: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_BECM_CPU2 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  DEVNODE
+
+BO_ 1791 CCP_RESPONSE_BMS_CPU2: 8 DEVNODE
+ SG_ CCP_RESP_SIG_BMS_CPU1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] "" Vector__XXX
+
+BO_ 1790 CCP_REQUEST_BMS_CPU2: 8 KARMA_TESTER
+ SG_ CCP_REQ_SIG_BMS_CPU1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] "" Vector__XXX
+
+BO_ 1668 DEBUG_MSG_HCU_4: 8 HCU
+ SG_ DMN_Fault_Reason : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ DM_HCU2_Watchdog_Fault : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_HCU2_Reset_Detected : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_HCU1_Memory_Fault : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_HCU2_Internal_Fault : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_HCU2_Comparision_Fault : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Inverter_CAN_Disable_Req : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Inverter_CAN_Disable_Fail : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Chassis_CAN_Disable_Req : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Chassis_CAN_Disable_Fail : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DMB_SM12_Powertrain_Max_Demand : 63|8@0+ (1,0) [0|255] "Nm" Vector__XXX
+ SG_ DMB_SM06_Powertrain_Max_Demand : 55|8@0+ (1,0) [0|255] "Nm" Vector__XXX
+ SG_ DMB_SM04_Expected_Inverter2_Req : 47|8@0+ (1,0) [0|255] "Nm" Vector__XXX
+ SG_ DMB_SM04_Expected_Inverter1_Req : 39|8@0+ (1,0) [0|255] "Nm" Vector__XXX
+ SG_ DM_SM12_Acceleration_Loss_Fault : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM10_Uncommanded_Park_Release : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM09_Park_Apply_Override : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM06_Direction_Fault : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM06_Deceleration_Fault : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM06_Acceleration_Fault : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM04_Differential_Loss_Fault : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM04_Differential_Fault : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM03_Regen_Fault : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM02_Inverter_Dir_Fault : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_SM01_Request_Dir_Fault : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Safety_Zero_Torque_Override : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Safety_No_Torque_Split : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Safety_Limp_Mode : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Safety_Inverter2_Disable : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Safety_Inverter1_Disable : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Safety_Extreme_Limp_Mode : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DM_Arbitrated_Driver_Direction : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1077 MEASMT_EOI_ECHO: 4 HCU
+ SG_ ST_OILV_MEASMT_1 : 0|12@1+ (1,0) [0|4095] ""  CIU
+ SG_ FLLV_EOI_REL : 12|4@1+ (1,0) [0|15] ""  CIU
+ SG_ ST_OILV_MEASMT_2 : 16|12@1+ (1,0) [0|4095] ""  CIU
+ SG_ ST_OILV_MEASMT_POSS : 28|2@1+ (1,0) [0|3] ""  CIU
+
+BO_ 1426 VIN_A: 7 HCU
+ SG_ VIN_A_MUX : 7|2@0+ (1,0) [0|3] ""  CIU
+ SG_ VIN_A_06_12_XX : 55|8@0+ (1,0) [0|255] ""  CIU
+ SG_ VIN_A_05_11_17 : 47|8@0+ (1,0) [0|255] ""  CIU
+ SG_ VIN_A_04_10_16 : 39|8@0+ (1,0) [0|255] ""  CIU
+ SG_ VIN_A_03_09_15 : 31|8@0+ (1,0) [0|255] ""  CIU
+ SG_ VIN_A_02_08_14 : 23|8@0+ (1,0) [0|255] ""  CIU
+ SG_ VIN_A_01_07_13 : 15|8@0+ (1,0) [0|255] ""  CIU
+
+BO_ 1427 VIN_B: 7 CIU
+ SG_ VIN_B_MUX : 7|2@0+ (1,0) [0|3] ""  HCU
+ SG_ VIN_B_06_12_XX : 55|8@0+ (1,0) [0|255] ""  HCU
+ SG_ VIN_B_05_11_17 : 47|8@0+ (1,0) [0|255] ""  HCU
+ SG_ VIN_B_04_10_16 : 39|8@0+ (1,0) [0|255] ""  HCU
+ SG_ VIN_B_03_09_15 : 31|8@0+ (1,0) [0|255] ""  HCU
+ SG_ VIN_B_02_08_14 : 23|8@0+ (1,0) [0|255] ""  HCU
+ SG_ VIN_B_01_07_13 : 15|8@0+ (1,0) [0|255] ""  HCU
+
+BO_ 1667 DEBUG_MSG_HCU_3: 8 HCU
+ SG_ GearboxTmpEst : 55|8@0+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ HCU_SOC_Target : 35|12@0+ (0.025,0) [0|102.375] "%" Vector__XXX
+ SG_ CHMSL_PWM2_PCT : 26|7@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ CHMSL_PWM1_PCT : 17|7@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ FuelLevelSensorReading : 15|14@0+ (0.01,-5) [-5|105] "%" Vector__XXX
+ SG_ HCU_LVBatVol : 7|8@0+ (0.078431,0) [0|19.999905] "V" Vector__XXX
+
+BO_ 2016 OBD_RQ_ECU_1: 8 KARMA_TESTER
+ SG_ OBD_RQ_1_ECU_1_BYTE : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_2_BYTE : 8|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_3_BYTE : 16|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_4_BYTE : 24|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_5_BYTE : 32|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_6_BYTE : 40|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_7_BYTE : 48|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_RQ_1_ECU_8_BYTE : 56|8@1+ (1,0) [0|255] ""  HCU
+
+BO_ 2024 OBD_ANSW_ECU_1: 8 HCU
+ SG_ OBD_ANSW_1_ECU_1_BYTE : 0|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_2_BYTE : 8|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_3_BYTE : 16|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_4_BYTE : 24|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_5_BYTE : 32|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_6_BYTE : 40|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_7_BYTE : 48|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+ SG_ OBD_ANSW_1_ECU_8_BYTE : 56|8@1+ (1,0) [0|255] ""  KARMA_TESTER
+
+BO_ 1279 BMS_SOC_Customer: 7 BECM
+ SG_ SOC_Customer : 35|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ Relative_SOC_Customer : 31|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ Ahr_To_Nominal_BOC_Customer : 11|12@0+ (0.005,-5) [-5|15] "ahr" Vector__XXX
+ SG_ Ahr_Customer : 7|12@0+ (0.05,-10) [-10|90] "ahr" Vector__XXX
+
+BO_ 1265 BMS_BCM_Data2: 8 BECM
+ SG_ bcm_eeprom_wip : 0|1@0+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ bcm_fgd : 15|8@0+ (0.5,0) [0|100] "% Duty Cycle" Vector__XXX
+ SG_ bcm_balancing_cnt : 63|8@0+ (1,0) [0|250] "cells" Vector__XXX
+ SG_ bcm_balancing : 7|1@0+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ bcm_vbus_neg : 43|12@0+ (0.25,-500) [-500|500] "volts" Vector__XXX
+ SG_ bcm_vbus_pos : 39|12@0+ (0.25,0) [0|1000] "volts" Vector__XXX
+ SG_ bcm_mainc_step : 5|4@0+ (1,0) [0|15] "enum" Vector__XXX
+ SG_ bcm_fault_mon : 6|1@0+ (1,0) [0|1] "flag" Vector__XXX
+ SG_ bcm_ibat2 : 23|16@0+ (0.05,-1200) [-1200|2000] "amps" Vector__XXX
+
+BO_ 970 A_TEMP_PT: 2 HCU
+ SG_ TEMP_EX_UNFILT : 8|8@1+ (0.5,-40) [-40|87.5] "°C" Vector__XXX
+ SG_ TEMP_EX : 0|8@1+ (0.5,-40) [-40|87.5] "°C"  BECM
+
+BO_ 919 DIAG_OBD_ENG: 7 HCU
+ SG_ OBD_CALCVL_LD_ENG : 16|8@1+ (0.3937,0) [0|100] "%"  BECM
+ SG_ ST_OBD_CYC : 0|6@1+ (1,0) [0|63] ""  BECM
+
+BO_ 1183 VEH_OFF_TIME_SECONDARY: 8 HCU
+ SG_ HCU_TIME_SINCE_12VRST_V : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HCU_TIME_SINCE_12VRST : 4|29@0+ (1,0) [0|536870911] "s" Vector__XXX
+ SG_ PROPSYS_INACTV_EDGE_SINCE_12VRST : 39|1@0+ (1,0) [0|1] ""  BECM
+ SG_ HCU_TIME_SINCE_PROPSYS_INACTV_V : 37|1@0+ (1,0) [0|1] ""  BECM
+ SG_ HCU_TIME_SINCE_PROPSYS_INACTV : 36|29@0+ (1,0) [0|536870911] "s"  BECM
+ SG_ VEH_OFF_TIME_SECONDARY_ARC : 7|2@0+ (1,0) [0|3] ""  BECM
+
+BO_ 1167 VEH_OFF_TIME_MASTER: 8 BECM
+ SG_ TIME_SINCE_PROPSYS_INACTIVE_V : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TIME_SINCE_RTC_READJUST : 4|29@0+ (1,0) [0|536870911] "s" Vector__XXX
+ SG_ TIME_SINCE_RTC_READJUST_V : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TIME_SINCE_PROPSYS_INACTIVE : 36|29@0+ (1,0) [0|536870911] "s" Vector__XXX
+ SG_ VEH_OFF_TIME_MASTER_ARC : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1666 TEENSYBOX1_STATUS: 8 DEVNODE
+ SG_ TEENSYBOX1_ADC3 : 49|10@0+ (0.005,0) [0|5.115] "V" Vector__XXX
+ SG_ TEENSYBOX1_ADC2 : 47|10@0+ (0.005,0) [0|5.115] "V" Vector__XXX
+ SG_ TEENSYBOX1_ADC1 : 25|10@0+ (0.005,0) [0|5.115] "V" Vector__XXX
+ SG_ TEENSYBOX1_ADC0 : 9|10@0+ (0.005,0) [0|5.115] "V" Vector__XXX
+ SG_ TEENSYBOX1_ARC : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1665 DEBUG_MSG_HCU_2: 8 HCU
+ SG_ HCU_Task_Overruns_2000ms : 59|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_1000ms : 63|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0500ms : 51|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0250ms : 55|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0100ms : 43|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0050ms : 47|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0025ms : 35|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0020ms : 39|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0010ms : 27|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0005ms : 31|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0002ms : 19|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Task_Overruns_0001ms : 23|4@0+ (1,0) [0|16] "Occurances" Vector__XXX
+ SG_ HCU_Stack_Used : 2|11@0+ (4,0) [0|8192] "bytes" Vector__XXX
+ SG_ HCU_Cpu_Loading : 7|5@0+ (4,0) [0|100] "%" Vector__XXX
+
+BO_ 1664 DEBUG_MSG_HCU: 8 HCU
+ SG_ PropPowerState_Internal : 52|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ HCU_Reset_Reason : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ExhValvCont : 39|5@0+ (5,0) [0|100] "%" Vector__XXX
+ SG_ LTC_Pump_B_CMD : 45|5@0+ (5,0) [0|100] "%" Vector__XXX
+ SG_ ChargeFaultCode : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ DC_ChargingState : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ KL30B_RELAY_STATE : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PT_RELAY_4_STATE : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PT_RELAY_3_STATE : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PT_RELAY_2_STATE : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LTC_Pump_A_CMD : 34|5@0+ (5,0) [0|100] "%" Vector__XXX
+ SG_ AC_ChargingState : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ PowerManagerState : 7|8@0+ (0.1,0) [0|25.5] "" Vector__XXX
+
+BO_ 1785 CCP_RESPONSE_BMS_CPU1: 8 DEVNODE
+ SG_ CCP_RESP_SIG_BMS_CPU1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1784 CCP_REQUEST_BMS_CPU1: 8 KARMA_TESTER
+ SG_ CCP_REQ_SIG_BMS_CPU1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] "" Vector__XXX
+
+BO_ 2147485905 CCP_RESPONSE_HCU: 8 HCU
+ SG_ CCP_RESP_SIG_HCU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 2147485904 CCP_REQUEST_HCU: 8 KARMA_TESTER
+ SG_ CCP_REQ_SIG_HCU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  HCU
+
+BO_ 409 ACLNX_MASSCNTR: 6 HCU
+ SG_ CRC_ACLNX_COG : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_ACLNX_COG : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ ACLNX_COG : 16|16@1+ (0.002,-65) [-65|65] "m/s²"  ECM
+ SG_ QU_ACLNX_COG : 44|4@1+ (1,0) [0|15] ""  ECM
+
+BO_ 410 ACLNY_MASSCNTR: 6 HCU
+ SG_ CRC_ACLNY_COG : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_ACLNY_COG : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ ACLNY_COG : 16|16@1+ (0.002,-65) [-65|65] "m/s²"  ECM
+ SG_ QU_ACLNY_COG : 44|4@1+ (1,0) [0|15] ""  ECM
+
+BO_ 952 EVAP_FUTA_CPO_1_BUCU: 8 HCU
+ SG_ DMTL_ERR_FLAG_HT_SC_BT_BUCU : 0|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_HT_SC_BT_BUCU : 2|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_HT_SC_GND_BUCU : 4|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_HT_SC_GND_BUCU : 6|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_HT_CABR_BUCU : 8|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_HT_CABR_BUCU : 10|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_VA_SC_BT_BUCU : 12|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_VA_SC_BT_BUCU : 14|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_VA_SC_GND_BUCU : 16|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_VA_SC_GND_BUCU : 18|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_VA_CABR_BUCU : 20|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_VA_CABR_BUCU : 22|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_PP_SC_BT_BUCU : 24|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_PP_SC_BT_BUCU : 26|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_PP_SC_GND_BUCU : 28|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_PP_SC_GND_BUCU : 30|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_ERR_FLAG_PP_CABR_BUCU : 32|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DMTL_CYC_FLAG_PP_CABR_BUCU : 34|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FTIV_ERR_FLAG_SC_BT_BUCU : 36|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FTIV_CYC_FLAG_SC_BT_BUCU : 38|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FTIV_ERR_FLAG_SC_GND_BUCU : 40|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FTIV_CYC_FLAG_SC_GND_BUCU : 42|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FTIV_ERR_FLAG_SC_CABR_BUCU : 44|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FTIV_CYC_FLAG_SC_CABR_BUCU : 46|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FUFF_UNLSW_RQ_BUCU : 48|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FUFF_SEN_ST_BUCU : 56|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 953 EVAP_FUTA_CPO_2_BUCU: 8 HCU
+ SG_ AVL_COL_TEMP_PTC_BUCU : 56|8@1+ (1,-40) [-40|215] "°C"  ECM
+ SG_ EVAP_U_FUTAP_SEN_1 : 0|16@1+ (0.0048828125,0) [0|319.99] "V"  ECM
+ SG_ EVAP_U_FUTAP_SEN_2 : 16|16@1+ (0.0048828125,0) [0|319.99] "V"  ECM
+ SG_ INHI_DMTL_PP_TRGG_BUCU : 32|2@1+ (1,0) [0|3] ""  ECM
+ SG_ FU_TEMP_BUCU : 40|8@1+ (0.5,-40) [-40|87] "°C"  ECM
+
+BO_ 951 EVAP_LKD_BUCU: 8 HCU
+ SG_ EVAP_PP_MOT_FREQ_FILT_LKD_BUCU : 48|16@1+ (0.00390625,0) [0|255.992] "Hz"  ECM
+ SG_ EVAP_PP_MOT_U_LKD_BUCU : 0|16@1+ (0.0048828125,0) [0|319.99] "V"  ECM
+ SG_ EVAP_PP_MOT_I_LKD_BUCU : 16|16@1+ (0.006103515,0) [0|399.987] "mA"  ECM
+ SG_ EVAP_PP_MOT_FREQ_LKD_BUCU : 32|16@1+ (0.00390625,0) [0|255.992] "Hz"  ECM
+
+BO_ 954 EVAP_TRGG_BUCU: 3 ECM
+ SG_ ST_FULG_BUCU : 12|4@1+ (1,0) [0|15] ""  HCU
+ SG_ EVAP_TRGG_HT_BUCU : 0|2@1+ (1,0) [0|3] ""  HCU
+ SG_ EVAP_TRGG_PP_BUCU : 2|2@1+ (1,0) [0|3] ""  HCU
+ SG_ EVAP_TRGG_VA_BUCU : 4|2@1+ (1,0) [0|3] ""  HCU
+ SG_ ST_FUFC_BUCU : 16|2@1+ (1,0) [0|3] ""  HCU
+ SG_ EVAP_TRGG_FTIV_BUCU : 8|2@1+ (1,0) [0|3] ""  HCU
+ SG_ EVAP_TRGG_FUFF_BUCU : 10|2@1+ (1,0) [0|3] ""  HCU
+
+BO_ 723 CHARGING_SYSTEM_STATUS_4: 6 HCU
+ SG_ DC_EVSE_TIME_TO_FULL_SOC : 24|16@1+ (10,0) [0|655350] "s" Vector__XXX
+ SG_ DC_EVSE_TIME_TO_FAST_SOC : 8|16@1+ (10,0) [0|655350] "s" Vector__XXX
+ SG_ DC_EVSE_FAST_SOC_CHARGING_END : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DC_EVSE_FULL_SOC_CHARGING_END : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DC_EVSE_I_REQUESTED : 0|8@1+ (1,0) [0|255] "A" Vector__XXX
+
+BO_ 721 CHARGING_SYSTEM_STATUS_2: 8 HCU
+ SG_ DC_EVSE_ENERG_TRNSM : 56|8@1+ (0.25,0) [0|63.75] "kWh" Vector__XXX
+ SG_ DC_EVSE_AVAILABLE_I : 24|11@1+ (0.4,0) [0|818.8] "A" Vector__XXX
+ SG_ DC_EVSE_AVAILABLE_U : 0|11@1+ (0.4,0) [0|818.8] "V" Vector__XXX
+ SG_ DC_EVSE_PWR_LIM_REACHED : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DC_EVSE_I_LIM_REACHED : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DC_EVSE_U_LIM_REACHED : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DC_EVSE_I : 35|13@1+ (0.1,0) [0|819.1] "A" Vector__XXX
+ SG_ DC_EVSE_U : 11|13@1+ (0.1,0) [0|819.1] "V" Vector__XXX
+
+BO_ 722 CHARGING_SYSTEM_STATUS_3: 6 HCU
+ SG_ DC_EVSE_MAX_I_RIPPLE : 36|12@1+ (0.01,0) [0|40.95] "A" Vector__XXX
+ SG_ DC_EVSE_I_RGLTN_TOL : 24|12@1+ (0.01,0) [0|40.95] "A" Vector__XXX
+ SG_ DC_EVSE_I_MIN : 12|12@1+ (0.1,0) [0|409.5] "A" Vector__XXX
+ SG_ DC_EVSE_U_MIN : 0|12@1+ (0.2,0) [0|819] "V" Vector__XXX
+
+BO_ 720 CHARGING_SYSTEM_STATUS_1: 5 HCU
+ SG_ HCUWakeState : 34|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ PilotWakeFFClear : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PilotWakeDisable : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DC_EVSE_ISOLATION_STATUS : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DC_EVSE_STATE : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ OBCM_ENABLE_WUP : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CHARGING_TYPE_DETECTED : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ AC_EVSE_I_MAX : 24|8@1+ (1,0) [0|255] "A" Vector__XXX
+ SG_ CHARGING_END_REQUEST : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CHARGING_PORT_LOCKING_STATUS : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PILOT_STATUS : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ PROXIMITY_STATUS : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 570 TRAC_BATT_STATUS_7: 8 BECM
+ SG_ CapacityNomEst : 30|7@0+ (1,0) [0|100] "Ah" Vector__XXX
+ SG_ DCResistanceEst : 39|10@0+ (1,0) [0|1021] "%" Vector__XXX
+ SG_ IsoResist : 43|10@0+ (10,0) [0|10000] "kOhm" Vector__XXX
+ SG_ HVBatSOH : 49|10@0+ (0.1,0) [0|100] "%" Vector__XXX
+ SG_ BusbarTempMin : 22|7@0+ (1,-40) [-40|85] "°C" Vector__XXX
+ SG_ BusbarTempMax : 6|7@0+ (1,-40) [-40|85] "°C" Vector__XXX
+ SG_ BusbarTempAvg : 14|7@0+ (1,-40) [-40|85] "°C" Vector__XXX
+
+BO_ 1425 VIN_DIGITS_2_TO_9: 8 DEVNODE
+ SG_ VehIdNmDig2_9 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  HCU
+
+BO_ 1424 VIN_DIGITS_10_TO_17: 8 DEVNODE
+ SG_ VehIdNmDig10_17 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  HCU
+
+BO_ 1217 QH_ENGINE_STATUS_4: 7 HCU
+ SG_ BatDisDetected : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LegDiagStndCndFltPr : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngCltTmpV : 6|1@0+ (1,0) [0|1] ""  BECM
+ SG_ EngIntAirTmp : 31|8@0+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ LgsDiagCldStrtCondFltPrs : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LegDiagStndCndMet : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OAT_PT_EstV : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BarPrsAbs : 15|8@0+ (0.5,0) [0|127.5] "kPA" Vector__XXX
+ SG_ LgsDiagCldStrtCondMet : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BarPrsAbsV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OAT_PT_Est : 39|8@0+ (0.5,-40) [-40|87.5] "C" Vector__XXX
+ SG_ EngWrmUpAch : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngIntAirTmpV : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngCltTmp : 23|8@0+ (1,-40) [-40|215] "°C"  BECM
+ SG_ PrpWrmUpAch : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ClrLgsDgInfo : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 312 INFO_PT_BUCU: 5 ECM
+ SG_ TAR_RPM_MAX_ENG : 16|8@1+ (50,0) [0|12600] "1/min"  HCU
+
+BO_ 176 RQ_TORQ_CRSH_GRB: 8 HCU
+ SG_ CRC_RQ_TORQ_CRSH_GRB : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_RQ_TORQ_CRSH_GRB : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ TAR_TORQ_CRSH_SLOW : 12|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  ECM
+ SG_ TAR_TORQ_CRSH_FAST : 24|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  ECM
+ SG_ DRAW_TORQ_CRSH_GRB : 36|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  ECM
+ SG_ ST_RQ_TORQ_GRB : 48|4@1+ (1,0) [0|15] ""  ECM
+ SG_ TAR_RPM_ENG_CRSH_GRB : 52|12@1+ (2.5,0) [0|10230] "1/min"  ECM
+
+BO_ 514 UNUSED_ST_BUCU_2: 8 ECM
+
+BO_ 166 TORQ_CRSH_2: 8 ECM
+ SG_ CRC_TORQ_CRSH_2 : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ALIV_TORQ_CRSH_2 : 8|4@1+ (1,0) [0|14] ""  HCU
+ SG_ AVL_TORQ_CRSH_MIN : 12|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+ SG_ AVL_TORQ_CRSH_MAX : 24|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+ SG_ AVL_TORQ_CRSH_SPAR_NEG : 36|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+ SG_ AVL_TORQ_CRSH_SPAR_POS : 48|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+
+BO_ 242 TORQ_CRSH_5_BUCU: 8 ECM
+ SG_ CRC_TORQ_CRSH_5_BUCU : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ALIV_TORQ_CRSH_5_BUCU : 8|4@1+ (1,0) [0|14] ""  HCU
+ SG_ AVL_TORQ_CRSH_MIN_IGN_ANG_EFFS_B : 12|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+ SG_ AVL_TORQ_CRSH_MIN_IGN_ANG_LATE_B : 24|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+
+BO_ 417 V_VEH: 5 HCU
+ SG_ CRC_V_VEH : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_V_VEH : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ V_VEH_COG : 16|16@1+ (0.015625,0) [0|350] "km/h"  BECM,ECM
+ SG_ QU_V_VEH_COG : 32|4@1+ (1,0) [0|15] ""  ECM
+ SG_ DVCO_VEH : 36|3@1+ (1,0) [0|7] ""  ECM
+
+BO_ 1298 NM2_A_CAN_IK_DME: 8 ECM
+ SG_ NM2_AUTOSAR_RES_ACAN_IK_DME : 0|32@1+ (1,0) [0|4294967295] ""  HCU
+ SG_ NM2_USR_DT_ACAN_IK_DME : 32|32@1+ (1,0) [0|4294967295] ""  HCU
+
+BO_ 1281 NM2_A_CAN_HCU: 8 HCU
+ SG_ NM2_AUTOSAR_RES_ACAN_HCU : 0|32@1+ (1,0) [0|4294967295] ""  ECM,HCU
+ SG_ NM2_USR_DT_ACAN_HCU : 32|32@1+ (1,0) [0|4294967295] ""  ECM,HCU
+
+BO_ 573 TRAC_BATT_STATUS_6: 8 BECM
+ SG_ HVOffTime : 63|8@0+ (1,0) [0|255] "h"  HCU
+ SG_ BECM_SW_VER_CHAR_VAL : 47|7@0+ (1,0) [0|126] "" Vector__XXX
+ SG_ BECM_SW_VER_CHAR_IDX : 39|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ DCCnt_VMatch : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCCntInputVoltageAbnormal : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCCntInputVoltage : 40|9@0+ (1,0) [0|510] "V" Vector__XXX
+ SG_ Balancing : 24|1@0+ (1,0) [0|1] ""  HCU
+ SG_ Balanced : 25|1@0+ (1,0) [0|1] ""  HCU
+ SG_ ACWiringLimit_I : 31|6@0+ (1,0) [0|63] "A"  HCU
+ SG_ ChargeLimit_V : 7|8@0+ (1,200) [200|455] "V"  HCU
+ SG_ ChargeLimit_I : 15|16@0+ (0.005,0) [0|327.675] "A"  HCU
+
+BO_ 560 TRAC_BATT_COMMAND: 2 HCU
+ SG_ BECM_NM : 14|2@0+ (1,0) [0|1] ""  BECM
+ SG_ DCContactorCmd : 15|1@0+ (1,0) [0|1] ""  BECM
+ SG_ DCChargingActv : 6|1@0+ (1,0) [0|1] ""  BECM
+ SG_ ACChargingActv : 7|1@0+ (1,0) [0|1] ""  BECM
+ SG_ ACContactorCmd : 5|1@0+ (1,0) [0|1] ""  BECM
+ SG_ CNT_TRAC_BATT_COMMAND : 1|2@0+ (1,0) [0|3] ""  BECM
+ SG_ ContactorCmd : 4|3@0+ (1,0) [0|7] ""  BECM
+
+BO_ 16 CRASH: 8 HCU
+ SG_ CRASH_EVENT_STATUS : 0|64@1+ (1,0) [0|2] ""  BECM
+
+BO_ 1168 TIME_STATUS_GPS: 8 CIU
+ SG_ TIME_UTC_MINUTES_GPS : 15|8@0+ (1,0) [0|59] "min"  BECM
+ SG_ DIRECTION_GPS : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TIME_UTC_DAY_GPS : 31|8@0+ (1,0) [1|31] ""  BECM
+ SG_ TIME_UTC_MONTH_GPS : 39|8@0+ (1,0) [0|11] ""  BECM
+ SG_ TIME_UTC_HOURS_GPS : 7|8@0+ (1,0) [0|23] "h"  BECM
+ SG_ TIME_DST_STATUS_USER_CONFIG : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TIME_UTC_YEAR_GPS : 47|8@0+ (1,2000) [2000|2254] ""  BECM
+ SG_ TIME_ZONE_USER_CONFIG : 54|7@0+ (0.25,-12) [-12|14] "" Vector__XXX
+ SG_ TIME_UTC_SECONDS_GPS : 23|8@0+ (1,0) [0|59] "s"  BECM
+
+BO_ 571 TRAC_BATT_STATUS_5: 8 BECM
+ SG_ HVDischargeableCapacity : 49|10@0+ (0.1,0) [0|102] "Ah" Vector__XXX
+ SG_ HVChargeableCapacity : 15|10@0+ (0.1,0) [0|102] "Ah" Vector__XXX
+ SG_ HVCoolantTemp : 6|7@0+ (1,-40) [-40|85] "°C" Vector__XXX
+ SG_ ChargeBuffer : 17|10@0+ (0.1,0) [0|100] "%"  HCU
+ SG_ DischargeBuffer : 33|10@0+ (0.1,0) [0|100] "%"  HCU
+
+BO_ 574 TRAC_BATT_STATUS_4: 7 BECM
+ SG_ DischargeCurrent10sPeak : 21|14@0+ (0.1,0) [0|1600] "A"  HCU
+ SG_ DischargeCurrentBuffer : 55|8@0+ (1,0) [0|100] "%"  HCU
+ SG_ DischargeCurrentBufferActive : 39|2@0+ (1,0) [0|0] ""  HCU
+ SG_ DischargeCurrentInst : 5|14@0+ (0.1,0) [0|1600] "A"  HCU
+ SG_ DischargeCurrentCont : 37|14@0+ (0.1,0) [0|1600] "A"  HCU
+
+BO_ 572 TRAC_BATT_STATUS_3: 7 BECM
+ SG_ ChargeCurrentCont : 37|14@0+ (0.1,0) [0|1600] "A"  HCU
+ SG_ ChargeCurrentBuffer : 55|8@0+ (1,0) [0|100] "%"  HCU
+ SG_ ChargeCurrentInst : 5|14@0+ (0.1,0) [0|1600] "A"  HCU
+ SG_ ChargeCurrentBufferActive : 39|2@0+ (1,0) [0|0] ""  HCU
+ SG_ ChargeCurrent10sPeak : 21|14@0+ (0.1,0) [0|1600] "A"  HCU
+
+BO_ 567 TRAC_BATT_STATUS_2: 8 BECM
+ SG_ HVMinCellV : 39|9@0+ (10,0) [0|5000] "mV"  HCU
+ SG_ HVAvgCellT : 30|7@0+ (1,-40) [-40|85] "°C"  HCU
+ SG_ HVMaxCellV : 7|9@0+ (10,0) [0|5000] "mV"  HCU
+ SG_ HVMaxCellT : 14|7@0+ (1,-40) [-40|85] "°C"  HCU
+ SG_ HVMinCellT : 46|7@0+ (1,-40) [-40|85] "°C"  HCU
+ SG_ HVAvgCellV : 23|9@0+ (10,0) [0|5000] "mV"  HCU
+ SG_ HVBatSOC : 49|10@0+ (0.1,0) [0|100] "%"  HCU
+
+BO_ 565 TRAC_BATT_STATUS_1: 6 BECM
+ SG_ ChrgHVReadyStat : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVReadyStat : 42|2@0+ (1,0) [0|3] ""  HCU
+ SG_ BECMStat : 45|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DCCntStatus : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACCntStatus : 47|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LVBatVol : 39|8@0+ (100,0) [0|25000] "mV"  HCU
+ SG_ HVHVILSta : 28|2@0+ (1,0) [0|3] ""  HCU
+ SG_ HVCntStatus : 26|2@0+ (1,0) [0|3] ""  HCU
+ SG_ CriticalBatFault : 24|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CordConnected : 8|1@0+ (1,0) [0|1] ""  HCU
+ SG_ HVBatVoltage : 23|9@0+ (1,0) [0|500] "V"  HCU
+ SG_ HVBatCurrent : 7|11@0+ (1,-1200) [-1200|800] "A"  HCU
+ SG_ TB_Status : 12|4@0+ (1,0) [0|15] ""  HCU
+ SG_ HVChrHVILSta : 30|2@0+ (1,0) [0|3] ""  HCU
+
+BO_ 575 TRAC_BATT_ERR_RPT: 5 BECM
+ SG_ DCChrRelayWelded : 25|1@0+ (1,0) [0|1] ""  HCU
+ SG_ DCChrRelayFlt : 26|1@0+ (1,0) [0|1] ""  HCU
+ SG_ BalancingFlt : 33|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostSysVFlt : 16|1@0+ (1,0) [0|1] ""  HCU
+ SG_ FuseFlt : 28|1@0+ (1,0) [0|1] ""  HCU
+ SG_ ChrRelayFlt : 15|1@0+ (1,0) [0|1] ""  HCU
+ SG_ I2T_Dischg_Flt : 7|1@0+ (1,0) [0|1] ""  HCU
+ SG_ PreChrFlt : 23|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostSysCurFlt : 17|1@0+ (1,0) [0|1] ""  HCU
+ SG_ PreChrTempFlt : 22|1@0+ (1,0) [0|1] ""  HCU
+ SG_ PosMCWelded : 8|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostCelTFlt : 5|1@0+ (1,0) [0|1] ""  HCU
+ SG_ I2T_Chg_Flt : 6|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LVLoFlt : 29|1@0+ (1,0) [0|1] ""  HCU
+ SG_ ModHrtbtFlt : 32|1@0+ (1,0) [0|1] ""  HCU
+ SG_ BatCommFlt : 20|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CelTmpHiFlt : 3|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CelOverVFlt : 0|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CrashDetected : 31|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostLVVFlt : 18|1@0+ (1,0) [0|1] ""  HCU
+ SG_ IsolationFlt : 24|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostChrCANFlt : 21|1@0+ (1,0) [0|1] ""  HCU
+ SG_ ChrRelayWelded : 14|1@0+ (1,0) [0|1] ""  HCU
+ SG_ NegMCFlt : 11|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CPUFlt : 27|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CelOverTmpFlt : 2|1@0+ (1,0) [0|1] ""  HCU
+ SG_ NegMCWelded : 10|1@0+ (1,0) [0|1] ""  HCU
+ SG_ HighLiquidLvl : 30|1@0+ (1,0) [0|1] ""  HCU
+ SG_ PreChrRelayFlt : 13|1@0+ (1,0) [0|1] ""  HCU
+ SG_ CelUndVFlt : 1|1@0+ (1,0) [0|1] ""  HCU
+ SG_ PreChrWelded : 12|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostVehCANFlt : 19|1@0+ (1,0) [0|1] ""  HCU
+ SG_ PosMCFlt : 9|1@0+ (1,0) [0|1] ""  HCU
+ SG_ LostCelVFlt : 4|1@0+ (1,0) [0|1] ""  HCU
+
+BO_ 1169 TIME_STATUS_RTC: 8 BECM
+ SG_ RTC_GPS_TIMEDELTA_VALID : 55|1@0+ (1,0) [0|1] ""  CIU
+ SG_ RTC_GPS_TIMEDELTA_SIGN : 54|1@0+ (1,0) [0|1] ""  CIU
+ SG_ RTC_GPS_TIMEDELTA : 53|14@0+ (1,0) [0|16383] "s"  CIU
+ SG_ TIME_UTC_DAY_RTC : 31|8@0+ (1,0) [1|31] ""  HCU,CIU
+ SG_ TIME_UTC_MINUTES_RTC : 15|8@0+ (1,0) [0|59] "min"  CIU,HCU
+ SG_ TIME_UTC_HOURS_RTC : 7|8@0+ (1,0) [0|23] "h"  HCU,CIU
+ SG_ TIME_UTC_YEAR_RTC : 47|8@0+ (1,2000) [2000|2254] ""  CIU,HCU
+ SG_ TIME_UTC_SECONDS_RTC : 23|8@0+ (1,0) [0|59] "s"  CIU,HCU
+ SG_ TIME_UTC_MONTH_RTC : 39|8@0+ (1,0) [0|11] ""  CIU,HCU
+
+BO_ 195 QH_HYBRID_TORQUE_STATUS: 2 HCU
+ SG_ PrplsnSysAtv : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SIRDpl : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AirbgVDA : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESSI_HybEngStrtType : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ESSI_HybEngStartStopMd : 5|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SysPwrMd : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HybCrnkAbrted : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 169 QH_HYBRID_COMMANDED_ENG_TORQ: 6 HCU
+ SG_ HybDFCO_Req : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HybCmndEngTorqProtVal : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ HybCmndEngTorqImmed : 23|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ HybCmndTorqARC : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HybCmndEngTorqRespType : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HybCmndEngTorqPrdtd : 3|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+
+BO_ 464 QH_HCU_STATUS_1: 7 HCU
+ SG_ HybERDTC_CdNum : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ HybERDTC_SysDes : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HybSysEmsMlfAtv : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Cat_Heat_Allow : 6|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1185 QH_HCU_FEEDBACK: 3 HCU
+ SG_ WheelCircumfCompPct : 23|4@0+ (0.2,0) [0|3] "%" Vector__XXX
+ SG_ EngOilLfRstRq : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngReqAcc : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AccPedPos : 7|16@0+ (0.001526,0) [0|100] "" Vector__XXX
+ SG_ BrkAct : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 192 PROPULSION_MODE: 3 HCU
+ SG_ BRAKE_BOOST_ENABLE_FLAG : 23|2@0+ (1,0) [0|3] ""  EBCM
+ SG_ PROP_SYS_ACTIVE_FLAG : 9|2@0+ (1,0) [0|3] ""  EBCM,BECM,ECM
+ SG_ HCU_SOLARBOOST_FLAG : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HCU_LV_MNTNC_FLAG : 13|2@0+ (1,0) [0|3] ""  CIU
+ SG_ HCU_RPC_STATUS : 15|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ CNT_PROP_MODE_STATUS : 3|4@0+ (1,0) [0|15] ""  ECM,EBCM,BECM
+ SG_ PROP_MODE_STAT : 7|4@0+ (1,0) [0|15] ""  EBCM
+
+BO_ 714 OBCM_STATUS: 8 OBCM
+ SG_ OBCM_CALID_CVN_STATUS : 34|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBCM_CALID_CVN_INDEX : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ OBCM_CALID_CVN_CHAR : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ OBCM_ACVoltageFlt : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBCM_DTC_STAT : 58|3@0+ (1,0) [0|7] ""  HCU
+ SG_ OBCM_DTC_INDEX : 63|5@0+ (1,0) [0|31] ""  HCU
+ SG_ ConfHVCurrent : 16|8@1+ (0.125,0) [0|31.875] "A"  HCU
+ SG_ InputACVoltage : 8|8@1+ (1,50) [50|305] "V"  HCU
+ SG_ InputACCurrent : 0|8@1+ (0.125,0) [0|31.875] "A"  HCU
+ SG_ ACFreq : 32|1@1+ (1,0) [0|1] ""  HCU
+ SG_ ChargerTemp : 40|8@1- (0.625,0) [-80|79.375] "°C"  HCU
+ SG_ ChargeStatus : 35|1@1+ (1,0) [0|1] ""  HCU
+ SG_ ChargerFault : 36|1@1+ (1,0) [0|1] ""  HCU
+ SG_ HighestFaultCat : 37|3@1+ (1,0) [0|7] ""  HCU
+
+BO_ 719 OBCM_DEBUG: 8 OBCM
+
+BO_ 718 OBCM_DATA: 8 OBCM
+ SG_ DC_OC_PROT : 55|1@1+ (1,0) [0|1] ""  HCU
+ SG_ BLK_GOOD : 54|1@1+ (1,0) [0|1] ""  HCU
+ SG_ BIAS_PRI_MICRO : 24|16@1+ (0.0007971938,0) [0|52.244095683] ""  HCU
+ SG_ DCDC_MOD2_TEMP_SENS : 8|8@1- (1,0) [-50|127] "°C"  HCU
+ SG_ HV_OUTPUT_VOLTAGE : 56|8@1+ (1.7255,0) [0|440.0025] "V"  HCU
+ SG_ HV_ON : 52|1@1+ (1,0) [0|1] ""  HCU
+ SG_ AC_GOOD : 48|1@1+ (1,0) [0|1] ""  HCU
+ SG_ BULK_VOLTAGE : 40|8@1+ (1.7255,0) [0|440.0025] "V"  HCU
+ SG_ RLY_RDY : 49|1@1+ (1,0) [0|1] ""  HCU
+ SG_ BIAS_GOOD : 50|1@1+ (1,0) [0|1] ""  HCU
+ SG_ TAPb : 51|1@1+ (1,0) [0|1] ""  HCU
+ SG_ DCDC_MOD1_TEMP_SENS : 0|8@1- (1,0) [-50|127] "°C"  HCU
+ SG_ DCDC_VINCOTECH_TEMP_SENS : 16|8@1- (1,0) [-50|127] "°C"  HCU
+ SG_ PFC_ON : 53|1@1+ (1,0) [0|1] ""  HCU
+
+BO_ 716 OBCM_CMD: 5 HCU
+ SG_ OBCM_KeepAlive : 18|1@1+ (1,0) [0|1] ""  OBCM
+ SG_ OBCMAvailableACCurrent : 32|8@1+ (0.125,0) [0|31.875] "A"  OBCM
+ SG_ ChargerEnable : 16|1@1+ (1,0) [0|1] ""  OBCM
+ SG_ ClearFault : 17|1@1+ (1,0) [0|1] ""  OBCM
+ SG_ OBCMVoltageSetting : 24|8@1+ (1,200) [200|455] "V"  OBCM
+ SG_ CurrentSetting : 0|16@1+ (0.000488281,0) [0|31.999495335] "A"  OBCM
+
+BO_ 1408 HCU_DIAG_OBD2: 8 HCU
+ SG_ ICE_RPM : 53|14@0+ (1,0) [0|12000] "1/min"  BECM
+ SG_ FUEL_TYPE_OBD : 47|8@0+ (1,0) [0|255] ""  BECM
+ SG_ HCU_SYS_EMIS_REL_FAULT_ACTV : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HCU_CODE_NUMBER : 3|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ HCU_SYSTEM_DESIGNATOR : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ACCEL_POSITION_E : 39|8@0+ (0.392157,0) [0|100] "%"  BECM
+ SG_ ACCEL_POSITION_D : 31|8@0+ (0.392157,0) [0|100] "%"  BECM
+
+BO_ 2015 FUNC_REQUEST: 8 KARMA_TESTER
+ SG_ FUNC_REQ_SIG : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  BECM,HCU,CIU,OBCM,APM,EBCM
+
+BO_ 901 EBCM_DIAG_OBD2: 7 EBCM
+ SG_ YRSSrNmRq : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBCM_DiagStat1_DiagTrblCdStat : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EBCM_DiagStat3_DiagTrblCdStat : 2|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ WHEEL_SPEED_DiagTrblCdStat : 26|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EBCM_DiagStat4_DiagTrblCdStat : 50|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EBCM_DiagStat3_DiagTrblCdIndx : 7|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ EBCM_DiagStat4_DiagTrblCdIndx : 55|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ YRSStpTxRq : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBCM_DiagStat2_DiagTrblCdIndx : 47|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ LASSlfTstRq : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WHEEL_SPEED_DiagTrblCdIndx : 23|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ EBCM_DiagStat1_DiagTrblCdIndx : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ YRSSlfTstRq : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VDLngAccSnrSlfTstRq : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBCM_DiagStat2_DiagTrblCdStat : 42|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1883 DIAG_RESPONSE_OBCM: 8 OBCM
+ SG_ DIAG_RESP_SIG_OBCM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 2026 DIAG_RESPONSE_HCU: 8 HCU
+ SG_ DIAG_RESP_SIG_HCU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1517 DIAG_RESPONSE_EBCM_UUDT: 8 EBCM
+ SG_ DIAG_RESP_SIG_EBC_UUDT : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 2029 DIAG_RESPONSE_EBCM: 8 EBCM
+ SG_ DIAG_RESP_SIG_EBCM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 2028 DIAG_RESPONSE_BECM: 8 BECM
+ SG_ DIAG_RESP_SIG_BECM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1880 DIAG_RESPONSE_APM: 8 APM
+ SG_ DIAG_RESP_SIG_APM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1875 DIAG_REQUEST_OBCM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_OBCM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  OBCM
+
+BO_ 2018 DIAG_REQUEST_HCU: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_HCU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  HCU
+
+BO_ 2021 DIAG_REQUEST_EBCM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_EBCM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  EBCM
+
+BO_ 2020 DIAG_REQUEST_BECM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_BECM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  BECM
+
+BO_ 1872 DIAG_REQUEST_APM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_APM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  APM
+
+BO_ 1831 DIAG_REQUEST_CIU: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_CIU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  CIU
+
+BO_ 1412 BECM_DIAG_OBD2: 4 BECM
+ SG_ BECM_SYS_EMIS_REL_FAULT_ACTV : 16|1@0+ (1,0) [0|1] ""  HCU
+ SG_ HYB_BATT_STATE_OF_CHARGE : 31|8@0+ (0.392157,0) [0|100] "%"  HCU
+ SG_ BECM_SYSTEM_DESIGNATOR : 7|4@0+ (1,0) [0|15] ""  HCU
+ SG_ BECM_CODE_NUMBER : 3|12@0+ (1,0) [0|4095] ""  HCU
+
+BO_ 1162 APM_STATUS_2: 8 APM
+ SG_ APM_14V_TEMP_SENSE : 39|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ APM_POWER_LOSS : 23|8@0+ (2,0) [0|510] "W"  HCU
+ SG_ APM_HEAT_PLATE_TEMP_SENSE : 47|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ APM_HV_LOW_FAULT : 7|1@0+ (1,0) [0|1] ""  HCU
+
+BO_ 469 APM_STATUS_1: 8 APM
+ SG_ APM_HV_VALIDITY : 4|1@0+ (1,0) [0|1] ""  HCU
+ SG_ APM_DTC_STATUS : 18|3@0+ (1,0) [0|7] ""  HCU
+ SG_ APM_VOLT_CONDITION_MET : 39|1@0+ (1,0) [0|1] ""  HCU
+ SG_ APM_14V_CURRENT_SENSE : 54|7@0+ (2,0) [0|254] "A"  HCU
+ SG_ APM_14V_VOLTAGE_SENS : 31|8@0+ (0.078431,0) [0|19.999905] "V"  HCU
+ SG_ APM_DTC_INDEX : 23|5@0+ (1,0) [0|31] ""  HCU
+ SG_ APM_MASTER_FAULT : 7|1@0+ (1,0) [0|1] ""  HCU
+ SG_ APM_HV_INPUT_CURRENT : 15|8@0+ (0.1,0) [0|25.5] "A"  HCU
+
+BO_ 471 APM_ENABLE_SETPOINT: 8 HCU
+ SG_ APM_14V_ENABLE : 7|1@0+ (1,0) [0|1] ""  APM
+ SG_ APM_VNA : 5|1@0+ (1,0) [0|1] ""  APM
+ SG_ APM_BOOST_ENABLE : 55|3@0+ (1,0) [0|7] ""  APM
+ SG_ APM_SET_POINT : 15|8@0+ (1,0) [0|255] ""  APM
+
+BO_ 257 ALL_NODE_REQUEST: 8 KARMA_TESTER
+ SG_ ALL_NODE_REQ_SIG : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  BECM,APM,CIU,HCU,EBCM
+
+BO_ 1839 DIAG_RESPONSE_CIU: 8 CIU
+ SG_ DIAG_RESP_SIG_CIU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1273 BMS_SOC_Upper: 8 BECM
+ SG_ Ah_Upper_State : 59|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SOC_Upper : 55|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ SOC_Corrected_Max : 35|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ Relative_SOC_Upper : 31|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ Ahr_Upper : 7|12@0+ (0.05,-10) [-10|90] "ahr" Vector__XXX
+ SG_ Ahr_To_Nominal_BOC_Max : 11|12@0+ (0.005,-5) [-5|15] "ahr" Vector__XXX
+
+BO_ 1272 BMS_SOC_Lower: 8 BECM
+ SG_ Ahr_To_Nominal_BOC_Min : 11|12@0+ (0.005,-5) [-5|15] "ahr" Vector__XXX
+ SG_ Ah_Lower_State : 59|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SOC_Lower : 55|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ SOC_Corrected_Min : 35|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ Relative_SOC_Lower : 31|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ Ahr_Lower : 7|12@0+ (0.05,-10) [-10|90] "ahr" Vector__XXX
+
+BO_ 1271 BMS_OCV: 7 BECM
+ SG_ SOC_Estimate_Actual_Min : 35|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ SOC_Estimate_Actual_Max : 31|12@0+ (0.1,-100) [-100|200] "%" Vector__XXX
+ SG_ SOC_Correction_State_Max : 55|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ OCV_Estimate_Actual_Min : 11|12@0+ (0.001,0.5) [0.5|4.5] "V" Vector__XXX
+ SG_ OCV_Estimate_Actual_Max : 7|12@0+ (0.001,0.5) [0.5|4.5] "V" Vector__XXX
+ SG_ SOC_Correction_State_Min : 52|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1270 BMS_Capacity_2: 4 BECM
+ SG_ Capacity_Factor_Temperature_Min : 11|12@0+ (0.00025,0) [0|1.02375] "" Vector__XXX
+ SG_ Capacity_Factor_Temperature_Max : 7|12@0+ (0.00025,0) [0|1.02375] "" Vector__XXX
+
+BO_ 1269 BMS_Capacity_1: 8 BECM
+ SG_ Capacity_Nominal : 55|12@0+ (0.05,0) [0|100] "ahr" Vector__XXX
+ SG_ Capacity_Factor_Life : 35|12@0+ (0.00025,0) [0|1.02375] "" Vector__XXX
+ SG_ Capacity_Corrected_Min : 31|12@0+ (0.05,0) [0|100] "ahr" Vector__XXX
+ SG_ Capacity_Corrected_Max : 11|12@0+ (0.05,0) [0|100] "ahr" Vector__XXX
+ SG_ Capacity_Corrected_Customer : 7|12@0+ (0.05,0) [0|100] "ahr" Vector__XXX
+
+BO_ 1268 BMS_PID: 8 BECM
+ SG_ PID_Active : 58|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ acdc_chrg_lim : 55|12@0+ (0.25,0) [0|0] "" Vector__XXX
+ SG_ acdc_chrg_state : 42|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ pid_v_derivative : 23|16@0+ (0.25,-1000) [0|0] "" Vector__XXX
+ SG_ pid_v_err : 39|13@0+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ pid_v_integral : 7|16@0+ (0.25,-1000) [0|0] "" Vector__XXX
+
+BO_ 1267 BMS_Balancing: 6 BECM
+ SG_ m14p_sw_ver_minor : 47|8@0+ (1,0) [0|255] "SW Version" Vector__XXX
+ SG_ m14p_sw_ver_major : 39|8@0+ (1,0) [0|255] "SW Version" Vector__XXX
+ SG_ m14p_sw_ver_build : 31|8@0+ (1,0) [0|255] "SW Version" Vector__XXX
+ SG_ pack_balance_count : 15|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ balancing_state : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ balance_ibat_monitor_state : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ pack_balanced_state : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1266 BMS_BCM_Faults: 8 BECM
+ SG_ bcm_dtc_type3 m0 : 47|8@0+ (1,0) [0|255] "DTCs" Vector__XXX
+ SG_ bcm_dtc_type2 m0 : 39|8@0+ (1,0) [0|255] "DTCs" Vector__XXX
+ SG_ bcm_dtc_type1 m0 : 31|8@0+ (1,0) [0|255] "DTCs" Vector__XXX
+ SG_ bcm_dtc_testFailedThisOpCycle m0 : 55|8@0+ (1,0) [0|255] "DTCs" Vector__XXX
+ SG_ bcm_dtc_pages m0 : 23|8@0+ (1,0) [0|255] "page count" Vector__XXX
+ SG_ bcm_dtc_fault_detected m0 : 63|8@0+ (1,0) [0|255] "DTCs" Vector__XXX
+ SG_ bcm_dtc_001 m1 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_002 m1 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_003 m2 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_004 m2 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_005 m3 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_006 m3 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_007 m4 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_008 m4 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_009 m5 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_010 m5 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_011 m6 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_012 m6 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_013 m7 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_014 m7 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_015 m8 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_016 m8 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_017 m9 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_018 m9 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_019 m10 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_020 m10 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_021 m11 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_022 m11 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_023 m12 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_024 m12 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_025 m13 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_026 m13 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_027 m14 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_028 m14 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_029 m15 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_030 m15 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_031 m16 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_032 m16 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_033 m17 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_034 m17 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_035 m18 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_036 m18 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_037 m19 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_038 m19 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_039 m20 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_040 m20 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_041 m21 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_042 m21 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_043 m22 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_044 m22 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_045 m23 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_046 m23 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_047 m24 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_048 m24 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_049 m25 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_050 m25 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_051 m26 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_052 m26 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_053 m27 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_054 m27 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_055 m28 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_056 m28 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_057 m29 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_058 m29 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_059 m30 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_060 m30 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_061 m31 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_062 m31 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_063 m32 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_064 m32 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_065 m33 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_066 m33 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_067 m34 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_068 m34 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_069 m35 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_070 m35 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_071 m36 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_072 m36 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_073 m37 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_074 m37 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_075 m38 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_076 m38 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_077 m39 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_078 m39 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_079 m40 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_080 m40 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_081 m41 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_082 m41 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_083 m42 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_084 m42 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_085 m43 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_086 m43 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_087 m44 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_088 m44 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_089 m45 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_090 m45 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_091 m46 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_092 m46 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_093 m47 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_094 m47 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_095 m48 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_096 m48 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_097 m49 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_098 m49 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_099 m50 : 23|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_100 m50 : 47|24@0+ (1,0) [0|16777215] "DTC ID" Vector__XXX
+ SG_ bcm_dtc_statusMask m0 : 15|8@0+ (1,0) [0|255] "ISO14229 statusOfDTC" Vector__XXX
+ SG_ bcm_dtc_page M : 7|8@0+ (1,0) [0|255] "page number" Vector__XXX
+
+BO_ 1639 BMS_POR_IDENTIFY_CSM: 8 BECM
+ SG_ por_csm_soft_build : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ por_csm_soft_minor : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ por_csm_soft_major : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ por_csm_rev : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ por_csm_hardware : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1278 BMS_SOH_Debug_Calendar_accum_fac: 8 BECM
+ SG_ Calendar_Temp_Factor_Accum : 39|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ Calendar_Soc_Factor_Accum : 7|32@0- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1277 BMS_SOH_Debug_Data: 6 BECM
+ SG_ soh_state : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cycle_life_model : 11|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cycle_Sust_Temp_Factor_Accum : 23|32@0- (1,0) [0|0] "" Vector__XXX
+ SG_ SOH : 7|12@0+ (1,0) [0|100] "%" Vector__XXX
+
+BO_ 1276 BMS_SOH_Debug_Energy_Throughput: 8 BECM
+ SG_ Cycle_Life_Energy_Depleting : 39|32@0+ (0.01,0) [0|0] "Whr" Vector__XXX
+ SG_ Cycle_Life_Energy_Sustaining : 7|32@0+ (0.01,0) [0|0] "Whr" Vector__XXX
+
+BO_ 1275 BMS_SOH_Debug_Cycle_Life: 8 BECM
+ SG_ Cycle_Life_Time_Sustaining : 7|32@0+ (1,0) [0|0] "s" Vector__XXX
+ SG_ Cycle_Life_Impedance_Growth : 55|16@0+ (1E-005,0) [0|0] "" Vector__XXX
+ SG_ Cycle_Life_Capacity_Fade : 39|16@0+ (1E-005,0) [0|0] "" Vector__XXX
+
+BO_ 1274 BMS_SOH_Debug_Calendar_Life: 8 BECM
+ SG_ Calendar_Life_Time : 7|32@0+ (1,0) [0|0] "s" Vector__XXX
+ SG_ Calendar_Life_Impedance_Growth : 55|16@0+ (1E-005,0) [0|0] "" Vector__XXX
+ SG_ Calendar_Life_Capacity_Fade : 39|16@0+ (1E-005,0) [0|0] "" Vector__XXX
+
+
+
+CM_ "POWERTRAIN CAN ONLY";
+CM_ BU_ OBCM "OnBoard Charging Module";
+CM_ BU_ HCU "Hybrid Control Unit";
+CM_ BU_ EBCM "Electronic Brake Controller on PowerTrain-CAN";
+CM_ BU_ CIU "Central Infotainment Unit";
+CM_ BU_ BECM "Battery Electronic Control ModuleBattery Control Module";
+CM_ BU_ APM "Accessory Power Module";
+CM_ BU_ ECM "Engine Control Unit";
+CM_ SG_ 1228 ESM_MUTE_SET "Command signal to mute external sound.";
+CM_ SG_ 1228 DCM_SUSTAIN_Steering "Drivemode Customization Matrix setting for Steering in SUSTAIN mode";
+CM_ SG_ 1228 DCM_SUSTAIN_RegenInCustom "Drivemode Customization Matrix setting for RegenInCustom in SUSTAIN mode";
+CM_ SG_ 1228 DCM_SUSTAIN_PedalMap "Drivemode Customization Matrix setting for PedalMap in SUSTAIN mode";
+CM_ SG_ 1228 DCM_STEALTH_Steering "Drivemode Customization Matrix setting for Steering in STEALTH mode";
+CM_ SG_ 1228 DCM_STEALTH_RegenInCustom "Drivemode Customization Matrix setting for RegenInCustom in STEALTH mode";
+CM_ SG_ 1228 DCM_STEALTH_PedalMap "Drivemode Customization Matrix setting for PedalMap in STEALTH mode";
+CM_ SG_ 1228 DCM_SPORT_Steering "Drivemode Customization Matrix setting for Steering in SPORT mode";
+CM_ SG_ 1228 DCM_SPORT_RegenInCustom "Drivemode Customization Matrix setting for RegenInCustom in SPORT mode";
+CM_ SG_ 1228 DCM_SPORT_PedalMap "Drivemode Customization Matrix setting for PedalMap in SPORT mode";
+CM_ SG_ 1228 DCM_ECO_Steering "Drivemode Customization Matrix setting for Steering in ECO mode";
+CM_ SG_ 1228 DCM_ECO_RegenInCustom "Drivemode Customization Matrix setting for RegenInCustom in ECO mode";
+CM_ SG_ 1228 DCM_ECO_PedalMap "Drivemode Customization Matrix setting for PedalMap in ECO mode";
+CM_ BO_ 2030 "Diagnostic response from HV-BMS CPU2.";
+CM_ BO_ 2022 "Diagnostic request to HV-BMS CPU2.";
+CM_ BO_ 1791 "CCP response (DTO) from HV-BMS CPU2.";
+CM_ BO_ 1790 "CCP request (CRO) to HV-BMS CPU2.";
+CM_ SG_ 1668 DMN_Fault_Reason "4-bit nibble to describe what caused the FAULT. It is up to the user to define how to use this nibble.";
+CM_ BO_ 1077 "ECM's event triggered MEASMT_EOI message from INV-CAN, gatewayed Cyclic + OnWrite to PT-CAN by HCU.";
+CM_ SG_ 1077 ST_OILV_MEASMT_1 "More Details in Excelsheet: This signal contains status information concerning the measured engine oil level (electronic engine oil bar generation 2).";
+CM_ SG_ 1077 FLLV_EOI_REL "More Details in Excelsheet: This signal contains the measured oil level above its minimum or a quantitative value of the oil level, respectively.";
+CM_ SG_ 1077 ST_OILV_MEASMT_2 "More Details in Excelsheet: This signal contains status information concerning the measured oil level.";
+CM_ SG_ 1077 ST_OILV_MEASMT_POSS "More Details in Excelsheet: this signal indicates, whether a detailed measurement of the engine oil level at the general inspection is possible or not.";
+CM_ BO_ 1426 "The HCU's stored VIN, multiplexed over 3 messages.";
+CM_ SG_ 1426 VIN_A_MUX "Multiplexor for VIN_A. Index 1 for page #1, index 2 for page #2, index 3 for page #3. Index 0 for invalid or uninitialized content.";
+CM_ SG_ 1426 VIN_A_06_12_XX "VIN characters 6 (VIN_A_MUX==1) or 12 (VIN_A_MUX==2).";
+CM_ SG_ 1426 VIN_A_05_11_17 "VIN characters 5 (VIN_A_MUX==1) or 11 (VIN_A_MUX==2) or 17 (VIN_A_MUX==3).";
+CM_ SG_ 1426 VIN_A_04_10_16 "VIN characters 4 (VIN_A_MUX==1) or 10 (VIN_A_MUX==2) or 16 (VIN_A_MUX==3).";
+CM_ SG_ 1426 VIN_A_03_09_15 "VIN characters 3 (VIN_A_MUX==1) or 8 (VIN_A_MUX==2) or 15 (VIN_A_MUX==3).";
+CM_ SG_ 1426 VIN_A_02_08_14 "VIN characters 2 (VIN_A_MUX==1) or 8 (VIN_A_MUX==2) or 14 (VIN_A_MUX==3).";
+CM_ SG_ 1426 VIN_A_01_07_13 "VIN characters 1 (VIN_A_MUX==1) or 7 (VIN_A_MUX==2) or 13 (VIN_A_MUX==3).";
+CM_ BO_ 1427 "The ECM's VIN, multiplexed over 3 messages.";
+CM_ SG_ 1427 VIN_B_MUX "Multiplexor for VIN_B. Index 1 for page #1, index 2 for page #2, index 3 for page #3. Index 0 for invalid or uninitialized content.";
+CM_ SG_ 1427 VIN_B_06_12_XX "VIN characters 6 (VIN_B_MUX==1) or 12 (VIN_B_MUX==2).";
+CM_ SG_ 1427 VIN_B_05_11_17 "VIN characters 5 (VIN_B_MUX==1) or 11 (VIN_B_MUX==2) or 17 (VIN_B_MUX==3).";
+CM_ SG_ 1427 VIN_B_04_10_16 "VIN characters 4 (VIN_B_MUX==1) or 10 (VIN_B_MUX==2) or 16 (VIN_B_MUX==3).";
+CM_ SG_ 1427 VIN_B_03_09_15 "VIN characters 3 (VIN_B_MUX==1) or 8 (VIN_B_MUX==2) or 15 (VIN_B_MUX==3).";
+CM_ SG_ 1427 VIN_B_02_08_14 "VIN characters 2 (VIN_B_MUX==1) or 8 (VIN_B_MUX==2) or 14 (VIN_B_MUX==3).";
+CM_ SG_ 1427 VIN_B_01_07_13 "VIN characters 1 (VIN_B_MUX==1) or 7 (VIN_B_MUX==2) or 13 (VIN_B_MUX==3).";
+CM_ SG_ 1667 GearboxTmpEst "Estimated RDM Gearbox Temperature";
+CM_ SG_ 1667 CHMSL_PWM2_PCT "Duty cycle of PWM2 low side driver output from HCU to CHMSL. At 0% the output is floating, at 100% the output is continuously shorting to GND.";
+CM_ SG_ 1667 CHMSL_PWM1_PCT "Duty cycle of PWM1 low side driver output from HCU to CHMSL. At 0% the output is floating, at 100% the output is continuously shorting to GND.";
+CM_ SG_ 1667 FuelLevelSensorReading "Fuel Level Sensor Reading";
+CM_ SG_ 2016 OBD_RQ_1_ECU_1_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_2_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_3_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_4_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_5_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_6_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_7_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_8_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_1_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_2_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_3_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_4_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_5_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_6_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_7_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_8_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 1279 SOC_Customer "Range Blended SOC";
+CM_ SG_ 1279 Relative_SOC_Customer "Relative blended SOC";
+CM_ SG_ 1279 Ahr_To_Nominal_BOC_Customer "Blended Amp-Hours offset to Nominal BOC";
+CM_ SG_ 1279 Ahr_Customer "Blended Amp-Hours";
+CM_ SG_ 1265 bcm_eeprom_wip "BCM fault status: EEPROM write in progress.";
+CM_ SG_ 1265 bcm_fgd "Flammable gas detector duty cycle (most severe).";
+CM_ SG_ 1265 bcm_balancing_cnt "Number of cells currently balancing.";
+CM_ SG_ 1265 bcm_balancing "Charge balance circuits are active.";
+CM_ SG_ 1265 bcm_vbus_neg "HV bus negative voltage measurement.";
+CM_ SG_ 1265 bcm_vbus_pos "HV bus positive voltage measurement.";
+CM_ SG_ 1265 bcm_mainc_step "Main contactor control state enumeration.";
+CM_ SG_ 1265 bcm_fault_mon "Module Fault monitor, indicates if of the modules triggered a hardware based fault (0=low, 1=high).";
+CM_ SG_ 1265 bcm_ibat2 "[Development Sensor] HV Battery Current where negative is battery discharge and positive is battery charge.";
+CM_ SG_ 970 TEMP_EX_UNFILT "Ambient temperature - unfiltered/raw. Gatewayed from HVAC on C-CAN.";
+CM_ SG_ 970 TEMP_EX "Ambient temperature - filtered. Gatewayed from HVAC on C-CAN.";
+CM_ SG_ 919 OBD_CALCVL_LD_ENG "More Details in Excelsheet: Calculated engine load";
+CM_ SG_ 919 ST_OBD_CYC "More Details in Excelsheet: OBD signal with information whether the  conditions for the different cycles are met. If this is true the corresponding bit is set to '1', meaning 'cycle is active', else it remains '0'. Signal is set invalid (11 1111b), i ...";
+CM_ SG_ 1183 HCU_TIME_SINCE_12VRST_V "Validity for HCU_TIME_SINCE_12VRST.";
+CM_ SG_ 1183 HCU_TIME_SINCE_12VRST "The number of seconds since the last 12V Reset.";
+CM_ SG_ 1183 PROPSYS_INACTV_EDGE_SINCE_12VRST "Informs whether a falling edge on PROP_SYS_ACTIVE_FLAG (edge from 0x1 to 0x0 only) has occured since the last 12V reset.";
+CM_ SG_ 1183 HCU_TIME_SINCE_PROPSYS_INACTV_V "Validity for HCU_TIME_SINCE_PROPSYS_INACTV.";
+CM_ SG_ 1183 HCU_TIME_SINCE_PROPSYS_INACTV "The number of seconds since the last falling edge on PROP_SYS_ACTIVE_FLAG (edge from 0x1 to 0x0 only).";
+CM_ SG_ 1183 VEH_OFF_TIME_SECONDARY_ARC "Alive Rolling Counter for VEH_OFF_TIME_SECONDARY message.";
+CM_ SG_ 1167 TIME_SINCE_PROPSYS_INACTIVE_V "Validity for TIME_SINCE_PROPSYS_INACTIVE.";
+CM_ SG_ 1167 TIME_SINCE_RTC_READJUST "The number of seconds since the last RTC readjustment. Invalid before the first adjustment at EOL.";
+CM_ SG_ 1167 TIME_SINCE_RTC_READJUST_V "Validity for TIME_SINCE_RTC_READJUST.";
+CM_ SG_ 1167 TIME_SINCE_PROPSYS_INACTIVE "The number of seconds since the last falling edge on PROP_SYS_ACTIVE_FLAG (edge from 0x1 to 0x0 only).";
+CM_ SG_ 1167 VEH_OFF_TIME_MASTER_ARC "Alive Rolling Counter for VEH_OFF_TIME_MASTER message.";
+CM_ BO_ 1666 "Teensy Box #1 Status Message.";
+CM_ SG_ 1666 TEENSYBOX1_ADC3 "Teensy 10-Bit ADC3, normalized for 5mV/cnt, or 5.115V total range.";
+CM_ SG_ 1666 TEENSYBOX1_ADC2 "Teensy 10-Bit ADC2, normalized for 5mV/cnt, or 5.115V total range.";
+CM_ SG_ 1666 TEENSYBOX1_ADC1 "Teensy 10-Bit ADC1, normalized for 5mV/cnt, or 5.115V total range.";
+CM_ SG_ 1666 TEENSYBOX1_ADC0 "Teensy 10-Bit ADC0, normalized for 5mV/cnt, or 5.115V total range.";
+CM_ SG_ 1666 TEENSYBOX1_ARC "Teensy Alive Rolling Counter 0..254.";
+CM_ SG_ 1664 PropPowerState_Internal "The HCU-internal PropPowerState.";
+CM_ SG_ 1664 ExhValvCont "Exhaust Valve commanded PWM duty cycle.";
+CM_ SG_ 1664 LTC_Pump_B_CMD "Low Temp Cooling Pump B commanded PWM duty cycle.";
+CM_ SG_ 1664 ChargeFaultCode "Charge Fault Code HCU debug signal.";
+CM_ SG_ 1664 DC_ChargingState "DC Charging State HCU debug signal.";
+CM_ SG_ 1664 KL30B_RELAY_STATE "The activation state of the KL30B relay.";
+CM_ SG_ 1664 PT_RELAY_4_STATE "The activation state of PT Relay #4 (WUP006 / ECM_WUP / BMW_KL15).";
+CM_ SG_ 1664 PT_RELAY_3_STATE "The activation state of PT Relay #3 (WUP002 / HY_PT_WUP / PT_DRIVE_WUP).";
+CM_ SG_ 1664 PT_RELAY_2_STATE "The activation state of PT Relay #2 (WUP010 / HY_PT_WUP2 / PT_COMMON_WUP).";
+CM_ SG_ 1664 LTC_Pump_A_CMD "Low Temp Cooling Pump A commanded PWM duty cycle.";
+CM_ SG_ 1664 AC_ChargingState "AC Charging State HCU debug signal.";
+CM_ SG_ 1664 PowerManagerState "PowerManagerState HCU debug signal.";
+CM_ BO_ 1785 "CCP response (DTO) from HV-BMS CPU1.";
+CM_ BO_ 1784 "CCP request (CRO) to HV-BMS CPU1.";
+CM_ BO_ 2147485905 "CCP response (DTO) from HCU.";
+CM_ BO_ 2147485904 "CCP request (CRO) to HCU.";
+CM_ SG_ 409 CRC_ACLNX_COG "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 29 (dez) = 1D (hex)";
+CM_ SG_ 409 ALIV_ACLNX_COG "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 409 ACLNX_COG "More Details in Excelsheet: longitudinal acceleration";
+CM_ SG_ 409 QU_ACLNX_COG "More Details in Excelsheet: Qualifier for longitudinal acceleration";
+CM_ SG_ 410 CRC_ACLNY_COG "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 31 (dez) = 1F (hex)";
+CM_ SG_ 410 ALIV_ACLNY_COG "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 410 ACLNY_COG "More Details in Excelsheet: lateral acceleration";
+CM_ SG_ 410 QU_ACLNY_COG "More Details in Excelsheet: Qualifier for signal of lateral acceleration";
+CM_ SG_ 952 DMTL_ERR_FLAG_HT_SC_BT_BUCU "More Details in Excelsheet: DMTL heating: error flag - short circuit to battery";
+CM_ SG_ 952 DMTL_CYC_FLAG_HT_SC_BT_BUCU "More Details in Excelsheet: DMTL heating: cycle flag - short circuit to battery";
+CM_ SG_ 952 DMTL_ERR_FLAG_HT_SC_GND_BUCU "More Details in Excelsheet: DMTL heating: error flag - short circuit to ground";
+CM_ SG_ 952 DMTL_CYC_FLAG_HT_SC_GND_BUCU "More Details in Excelsheet: DMTL heating: cycle flag - short circuit to ground";
+CM_ SG_ 952 DMTL_ERR_FLAG_HT_CABR_BUCU "More Details in Excelsheet: DMTL heating: error flag - wire abort";
+CM_ SG_ 952 DMTL_CYC_FLAG_HT_CABR_BUCU "More Details in Excelsheet: DMTL heating: cycle flag - wire abort";
+CM_ SG_ 952 DMTL_ERR_FLAG_VA_SC_BT_BUCU "More Details in Excelsheet: DMTL valve: error flag - short circuit to battery";
+CM_ SG_ 952 DMTL_CYC_FLAG_VA_SC_BT_BUCU "More Details in Excelsheet: DMTL valve: cycle flag - short circuit to battery";
+CM_ SG_ 952 DMTL_ERR_FLAG_VA_SC_GND_BUCU "More Details in Excelsheet: DMTL valve: error flag - short circuit to ground";
+CM_ SG_ 952 DMTL_CYC_FLAG_VA_SC_GND_BUCU "More Details in Excelsheet: DMTL valve: cycle flag - short circuit to ground";
+CM_ SG_ 952 DMTL_ERR_FLAG_VA_CABR_BUCU "More Details in Excelsheet: DMTL valve: error flag - wire abort";
+CM_ SG_ 952 DMTL_CYC_FLAG_VA_CABR_BUCU "More Details in Excelsheet: DMTL valve: cycle flag - wire abort";
+CM_ SG_ 952 DMTL_ERR_FLAG_PP_SC_BT_BUCU "More Details in Excelsheet: DMTL pump: error flag - short circuit to battery";
+CM_ SG_ 952 DMTL_CYC_FLAG_PP_SC_BT_BUCU "More Details in Excelsheet: DMTL pump: cycle flag - short circuit to battery";
+CM_ SG_ 952 DMTL_ERR_FLAG_PP_SC_GND_BUCU "More Details in Excelsheet: DMTL pump: error flag - short circuit to ground";
+CM_ SG_ 952 DMTL_CYC_FLAG_PP_SC_GND_BUCU "More Details in Excelsheet: DMTL pump: cycle flag - short circuit to ground";
+CM_ SG_ 952 DMTL_ERR_FLAG_PP_CABR_BUCU "More Details in Excelsheet: DMTL pump: error flag - wire abort";
+CM_ SG_ 952 DMTL_CYC_FLAG_PP_CABR_BUCU "More Details in Excelsheet: DMTL pump: cycle flag - wire abort";
+CM_ SG_ 952 FTIV_ERR_FLAG_SC_BT_BUCU "More Details in Excelsheet: FTIV: error flag - short circuit to battery";
+CM_ SG_ 952 FTIV_CYC_FLAG_SC_BT_BUCU "More Details in Excelsheet: FTIV: cycle flag - short circuit to battery";
+CM_ SG_ 952 FTIV_ERR_FLAG_SC_GND_BUCU "More Details in Excelsheet: FTIV: error flag - short circuit to ground";
+CM_ SG_ 952 FTIV_CYC_FLAG_SC_GND_BUCU "More Details in Excelsheet: FTIV: cycle flag - short circuit to ground";
+CM_ SG_ 952 FTIV_ERR_FLAG_SC_CABR_BUCU "More Details in Excelsheet: FTIV: error flag - wire abort";
+CM_ SG_ 952 FTIV_CYC_FLAG_SC_CABR_BUCU "More Details in Excelsheet: FTIV: cycle flag - wire abort";
+CM_ SG_ 952 FUFF_UNLSW_RQ_BUCU "More Details in Excelsheet: Fuel filler flap release button pressed by driver";
+CM_ SG_ 952 FUFF_SEN_ST_BUCU "More Details in Excelsheet: Fuel filler flap sensor status";
+CM_ SG_ 953 AVL_COL_TEMP_PTC_BUCU "PTC coolant temperature reading, gatewayed from C-CAN::HVAC_SYSTEM_STATUS::T_PTC.";
+CM_ SG_ 953 EVAP_U_FUTAP_SEN_1 "More Details in Excelsheet: Voltage of first fuel tank pressure sensor";
+CM_ SG_ 953 EVAP_U_FUTAP_SEN_2 "More Details in Excelsheet: Voltage of second fuel tank pressure sensor";
+CM_ SG_ 953 INHI_DMTL_PP_TRGG_BUCU "More Details in Excelsheet: Exclusively for industrial customers and is not allowed to be included in any BMW Configuration:
+This signal allows an IK-SG to deactivate DMTL pump control by the DME.";
+CM_ SG_ 953 FU_TEMP_BUCU "More Details in Excelsheet: Fuel temperature";
+CM_ SG_ 951 EVAP_PP_MOT_FREQ_FILT_LKD_BUCU "More Details in Excelsheet: filtered pump motor current frequency of tank leak diagnosis";
+CM_ SG_ 951 EVAP_PP_MOT_U_LKD_BUCU "More Details in Excelsheet: voltage of pump motor for leakage detection";
+CM_ SG_ 951 EVAP_PP_MOT_I_LKD_BUCU "More Details in Excelsheet: pump motor current of leakage detection";
+CM_ SG_ 951 EVAP_PP_MOT_FREQ_LKD_BUCU "More Details in Excelsheet: pump motor current frequency of tank leak diagnosis";
+CM_ SG_ 954 ST_FULG_BUCU "More Details in Excelsheet: Current status of refueling";
+CM_ SG_ 954 EVAP_TRGG_HT_BUCU "More Details in Excelsheet: Triggering of the DMTL heating";
+CM_ SG_ 954 EVAP_TRGG_PP_BUCU "More Details in Excelsheet: Triggering of the DMTL pump motor";
+CM_ SG_ 954 EVAP_TRGG_VA_BUCU "More Details in Excelsheet: Triggering of the DMTL solenoid valve";
+CM_ SG_ 954 ST_FUFC_BUCU "More Details in Excelsheet: Status of fuel filler cap check. The fuel-filler-cap is the cap which seals the fuel tank, not the fuel tank lid being part of the chassis.";
+CM_ SG_ 954 EVAP_TRGG_FTIV_BUCU "More Details in Excelsheet: Triggering of opening FTIV";
+CM_ SG_ 954 EVAP_TRGG_FUFF_BUCU "More Details in Excelsheet: Triggering of fuel filler flap control";
+CM_ BO_ 723 "Charging System Status 4 (Former EVCC Rx Signals, typically signals transmitted to EVSE).";
+CM_ SG_ 723 DC_EVSE_TIME_TO_FULL_SOC "DC charging: Remaining charging time to full SOC. Transmitted back to EVSE.";
+CM_ SG_ 723 DC_EVSE_TIME_TO_FAST_SOC "DC charging: Remaining charging time to fast SOC-limit. Transmitted back to EVSE.";
+CM_ SG_ 723 DC_EVSE_FAST_SOC_CHARGING_END "DC charging: Fast charging limit reached. Transmitted back to EVSE.";
+CM_ SG_ 723 DC_EVSE_FULL_SOC_CHARGING_END "DC charging: Full charging limit reached. Charging complete. Transmitted back to EVSE.";
+CM_ SG_ 723 DC_EVSE_I_REQUESTED "DC charging: Requested charging current.  Transmitted to EVSE.";
+CM_ BO_ 721 "Status DC Charging 2.";
+CM_ SG_ 721 DC_EVSE_ENERG_TRNSM "DC charging: Energy transmitted from EVSE.";
+CM_ SG_ 721 DC_EVSE_AVAILABLE_I "DC charging: Max. current available from charging station.";
+CM_ SG_ 721 DC_EVSE_AVAILABLE_U "DC charging: Max. available voltage from the charging station.";
+CM_ SG_ 721 DC_EVSE_PWR_LIM_REACHED "DC charging: Power limit reach statusf or closed-loop control.";
+CM_ SG_ 721 DC_EVSE_I_LIM_REACHED "DC charging: Charging station current limit reach status for closed-loop control.";
+CM_ SG_ 721 DC_EVSE_U_LIM_REACHED "DC charging: Charging station voltage limit reach status for closed-loop control.";
+CM_ SG_ 721 DC_EVSE_I "DC charging: Current measured at the charging station";
+CM_ SG_ 721 DC_EVSE_U "DC charging: Voltage measured at the charging station";
+CM_ BO_ 722 "Status DC Charging 3.";
+CM_ SG_ 722 DC_EVSE_MAX_I_RIPPLE "DC charging: Max. ripple current of the charging station. Characteristic of the charging station.";
+CM_ SG_ 722 DC_EVSE_I_RGLTN_TOL "DC charging: Current regulation tolerance of the charging station. Characteristic of the charging station.";
+CM_ SG_ 722 DC_EVSE_I_MIN "DC charging: Min. supported current of the charging station. Characteristic of the charging station.";
+CM_ SG_ 722 DC_EVSE_U_MIN "DC charging: Min. supported voltage of the charging station. Characteristic of the charging station.";
+CM_ BO_ 720 "Status Charging Interface.";
+CM_ SG_ 720 DC_EVSE_ISOLATION_STATUS "DC charging: Isolation-Test status.";
+CM_ SG_ 720 DC_EVSE_STATE "DC charging: DC-Charger internal state.";
+CM_ SG_ 720 OBCM_ENABLE_WUP "AC charging: Status of OBCM Wake/Enable Line.";
+CM_ SG_ 720 CHARGING_TYPE_DETECTED "AC&DC charging: Detected Charger Type.";
+CM_ SG_ 720 AC_EVSE_I_MAX "AC charging: Max. AC current available from grid.";
+CM_ SG_ 720 CHARGING_END_REQUEST "AC&DC charging: External request to end charging.";
+CM_ SG_ 720 CHARGING_PORT_LOCKING_STATUS "AC&DC charging: Charging port locking status. The status is either read via microswitch or, if no sensor is installed, based on last actuation.";
+CM_ SG_ 720 PILOT_STATUS "AC&DC charging: Pilot Status";
+CM_ SG_ 720 PROXIMITY_STATUS "AC&DC charging: Proximity / S3-Switch Status";
+CM_ BO_ 570 "Traction Battery Status 7.";
+CM_ SG_ 570 CapacityNomEst "Estimated nominal pack capacity at 25°C.";
+CM_ SG_ 570 DCResistanceEst "Estimated pack internal resistance (percent of nominal) at 25°C..";
+CM_ SG_ 570 IsoResist "Pack isolation resistance.";
+CM_ SG_ 570 HVBatSOH "Battery pack state-of-health.";
+CM_ SG_ 570 BusbarTempMin "Current minimum temperature of the HV busbars.";
+CM_ SG_ 570 BusbarTempMax "Current maximum temperature of the HV busbars.";
+CM_ SG_ 570 BusbarTempAvg "Current average temperature of the HV busbars.";
+CM_ SG_ 1217 BatDisDetected "This signal will be set to true for the entire driving cycle after 12V battery disconnect was detected on the ECM. All fault non-permanent DFCs should be cleared when this signal is first detected during a driving cycle.";
+CM_ SG_ 1217 LegDiagStndCndFltPr "Legislated Diagnostics Standard Conditions Fault Present
+Status Disabling of general denominator due to Scan tool visible fault.";
+CM_ SG_ 1217 EngCltTmpV "Engine Coolant Temperature Validity";
+CM_ SG_ 1217 EngIntAirTmp "Engine Intake Air Temperature";
+CM_ SG_ 1217 LgsDiagCldStrtCondFltPrs "Legislated Diagnostics Cold Start Conditions Fault Present
+Ambient air temperature valid";
+CM_ SG_ 1217 LegDiagStndCndMet "Legislated Diagnostics Standard Conditions Met
+General denominator. For diagnosis purpose.";
+CM_ SG_ 1217 OAT_PT_EstV "Outside Air Temperature Powertrain Estimated Validity";
+CM_ SG_ 1217 BarPrsAbs "Barometric Pressure Absolute
+Ambient pressure
+";
+CM_ SG_ 1217 LgsDiagCldStrtCondMet "Legislated Diagnostics Cold Start Conditions Met";
+CM_ SG_ 1217 BarPrsAbsV "Barometric Pressure Absolute Validity
+
+Ambient pressure validity";
+CM_ SG_ 1217 OAT_PT_Est "Outside Air Temperature Powertrain Estimated
+Ambient air temperature, output in Grad C";
+CM_ SG_ 1217 EngWrmUpAch "Engine Warm Up Cycle Achieved
+For diagnosis purposes. A 'warm up cycle' is achieved if the engine coolant temperatures increases by min 22.5 degC after the start and reaches 71 degC before switching of the vehicle.";
+CM_ SG_ 1217 EngIntAirTmpV "Engine Intake Air Temperature Validity";
+CM_ SG_ 1217 EngCltTmp "Engine Coolant Temperature";
+CM_ SG_ 1217 PrpWrmUpAch "Cumulative Time since Propulsion Start >= 600 Sec.
+(Cumulative Vehicle Operation >= 25 MPH) >= 300 Sec.
+
+(Continuous Vehicle Operation with Accelerator Pedal <= 1% and Vehicle Speed <= 1 MPH) >= 30 Sec.
+";
+CM_ SG_ 1217 ClrLgsDgInfo "Clear Legislated Diagnostic Information
+OBD Scan Tool Service 4 Clear Command Pass through";
+CM_ SG_ 312 TAR_RPM_MAX_ENG "More Details in Excelsheet: Maximum possible engine speed";
+CM_ SG_ 176 CRC_RQ_TORQ_CRSH_GRB "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 1 (dez) = 1 (hex)";
+CM_ SG_ 176 ALIV_RQ_TORQ_CRSH_GRB "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 176 TAR_TORQ_CRSH_SLOW "More Details in Excelsheet: Torque reduction during gear shifting via air path.
+
+Torque intervention via slow path, which shall not be indicated by the engine in the returned torque Ist_Drehmoment_Kurbelwelle_DME/EGS (AVL_TORQ_CRSH_DMEE).";
+CM_ SG_ 176 TAR_TORQ_CRSH_FAST "More Details in Excelsheet: This signal contains the torque request to the engine control unit via the fast path:
+Gasoline engine: Ignition angle
+
+If intervention is inactive, error value 0xFFF is transmitted. If intervention is active, the positive  ...";
+CM_ SG_ 176 DRAW_TORQ_CRSH_GRB "More Details in Excelsheet: EGS_EL:
+Contains the torque (loss) that is absorbed by the automatic transmission (e.g. by the converter, transmission oil pump, ...).
+
+DKG:
+If ST_REQ_TORQ_GRB = '0011' (speed control active) then the clutch load torque is ...";
+CM_ SG_ 176 ST_RQ_TORQ_GRB "More Details in Excelsheet: The signal transmits control information for engine requests by the transmission. It is used for enabling and validation of torque interventions and of the internal DME speed regulator and contains requests for injection f ...";
+CM_ SG_ 176 TAR_RPM_ENG_CRSH_GRB "More Details in Excelsheet: The signal indicates the target speed in case of active speed control. In case of hybrid drives the electric machine speed is transmitted; in the case of standard drives the crankshaft speed.";
+CM_ SG_ 166 CRC_TORQ_CRSH_2 "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 10 (dez) = A (hex)";
+CM_ SG_ 166 ALIV_TORQ_CRSH_2 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 166 AVL_TORQ_CRSH_MIN "More Details in Excelsheet: This signal contains the present engine drag torque including all auxiliary units.";
+CM_ SG_ 166 AVL_TORQ_CRSH_MAX "More Details in Excelsheet: This signal contains the maximum possible engine crankshaft torque at full load operation, including temporary torque increase (e.g. overboost).";
+CM_ SG_ 166 AVL_TORQ_CRSH_SPAR_NEG "More Details in Excelsheet: This signal contains the engine crankshaft torque, taking into account:
+- for petrol engines with intake-manifold fuel injection: ignition angle retardation/retraction without electronic cylinder deactivation
+- for petrol  ...";
+CM_ SG_ 166 AVL_TORQ_CRSH_SPAR_POS "More Details in Excelsheet: This signal contains the theoretic engine crankshaft torque based on the measured air flow and the ignition angle. External sources of ignition intervention (ESC, gear change, …) are not taken into account.";
+CM_ SG_ 242 CRC_TORQ_CRSH_5_BUCU "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 139 (dez) = 8B (hex)";
+CM_ SG_ 242 ALIV_TORQ_CRSH_5_BUCU "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 242 AVL_TORQ_CRSH_MIN_IGN_ANG_EFFS_B "More Details in Excelsheet: The minimum possible output torque with the most efficient ignition timing at the current engine speed. To clarify, this torque would be the result of closing the air path to the minimum allowed amount and using the most e ...";
+CM_ SG_ 242 AVL_TORQ_CRSH_MIN_IGN_ANG_LATE_B "More Details in Excelsheet: The minimum possible output torque at the current air path by using the most advanced ignition angle possible. To clarify, this torque would be the result of closing the air path to the minimum allowed amount and using the ...";
+CM_ SG_ 417 CRC_V_VEH "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 12 (dez) = C (hex)";
+CM_ SG_ 417 ALIV_V_VEH "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 417 V_VEH_COG "More Details in Excelsheet: Vehicle speed";
+CM_ SG_ 417 QU_V_VEH_COG "More Details in Excelsheet: Vehicle speed valid";
+CM_ SG_ 417 DVCO_VEH "More Details in Excelsheet: Driving condition";
+CM_ SG_ 1298 NM2_AUTOSAR_RES_ACAN_IK_DME "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 1298 NM2_USR_DT_ACAN_IK_DME "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 1281 NM2_AUTOSAR_RES_ACAN_HCU "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 1281 NM2_USR_DT_ACAN_HCU "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 573 HVOffTime "Time (hours) since HV contactors were last opened.";
+CM_ SG_ 573 BECM_SW_VER_CHAR_VAL "BECM Software Version Character Value (at Index).";
+CM_ SG_ 573 BECM_SW_VER_CHAR_IDX "BECM Software Version Character Index (Multiplexor Index). Starting at index 0 and rolling over to index 0 upon end of string (skipping unused index range).";
+CM_ SG_ 573 DCCnt_VMatch "BECM confirms that closing DC contactors is safe (delta voltage between contactor sides below threshold).";
+CM_ SG_ 573 DCCntInputVoltageAbnormal "Improper or abnormal Input Voltage at DC Inlet (measured at the DC-Charging Contactors).";
+CM_ SG_ 573 DCCntInputVoltage "DC Input Voltage at DC Inlet, measured at the DC-Charging Contactors.";
+CM_ SG_ 573 Balancing "Cell Balancing in progress yes/no status.";
+CM_ SG_ 573 Balanced "Cells balanced within target (or better) yes/no status.";
+CM_ SG_ 573 ACWiringLimit_I "The current rating of the battery-internal wiring/fusing in small (OBCM-side) contactor path.";
+CM_ SG_ 573 ChargeLimit_V "The battery's not to exceed voltage limit for charging.";
+CM_ SG_ 573 ChargeLimit_I "The battery's not to exceed current limit for charging.";
+CM_ BO_ 560 "Commands to the Traction Battery.";
+CM_ SG_ 560 BECM_NM "BECM Network Management command to either stay awake or to stop CAN transmission and then go to sleep, when ready.";
+CM_ SG_ 560 DCContactorCmd "DC-Charging Contactors Open/Close command.";
+CM_ SG_ 560 ACContactorCmd "Small (OBCM-side) Contactor command.";
+CM_ SG_ 560 CNT_TRAC_BATT_COMMAND "Alive Rolling Count";
+CM_ SG_ 560 ContactorCmd "Main Contactor command.";
+CM_ BO_ 16 "This message is being sent upon crash event, 3 frames 10ms apart with content 0x1, and then 3 frames 10ms apart with content 0x0 200ms later.";
+CM_ SG_ 16 CRASH_EVENT_STATUS "The CRASH message is being sent upon crash event, 3 frames 10ms apart with content 0x1, and then 3 frames 10ms apart with content 0x0 200ms later.";
+CM_ BO_ 1168 "Time and Driving-Direction info from GPS.";
+CM_ SG_ 1168 TIME_UTC_MINUTES_GPS "GPS Time - Minutes.";
+CM_ SG_ 1168 DIRECTION_GPS "GPS Driving Direction.";
+CM_ SG_ 1168 TIME_UTC_DAY_GPS "GPS Time - Day.";
+CM_ SG_ 1168 TIME_UTC_MONTH_GPS "GPS Time - Month.";
+CM_ SG_ 1168 TIME_UTC_HOURS_GPS "GPS Time - Hours.";
+CM_ SG_ 1168 TIME_DST_STATUS_USER_CONFIG "DST Status User.";
+CM_ SG_ 1168 TIME_UTC_YEAR_GPS "GPS Time - Year.";
+CM_ SG_ 1168 TIME_ZONE_USER_CONFIG "Timezone User Config.";
+CM_ SG_ 1168 TIME_UTC_SECONDS_GPS "GPS Time - Seconds.";
+CM_ SG_ 571 HVDischargeableCapacity "Battery pack (remaining) Dischargeable Capacity at current condition.";
+CM_ SG_ 571 HVChargeableCapacity "Battery pack (remaining) Chargeable Capacity at current condition.";
+CM_ SG_ 571 HVCoolantTemp "Battery coolant temperature at outlet.";
+CM_ SG_ 571 ChargeBuffer "Charge Buffer.";
+CM_ SG_ 571 DischargeBuffer "Discharge Buffer.";
+CM_ BO_ 574 "Traction Battery Status 4 (4A).";
+CM_ SG_ 574 DischargeCurrent10sPeak "Pulse discharge (10s) current limit.";
+CM_ SG_ 574 DischargeCurrentBuffer "Discharge current buffer.";
+CM_ SG_ 574 DischargeCurrentInst "Instantaneous discharge (2s) current limit.";
+CM_ SG_ 574 DischargeCurrentCont "Continous discharge (60s) current limit.";
+CM_ BO_ 572 "Traction Battery Status 3 (3A).";
+CM_ SG_ 572 ChargeCurrentCont "Continous charge (60s) current limit.";
+CM_ SG_ 572 ChargeCurrentBuffer "Charge Current Buffer.";
+CM_ SG_ 572 ChargeCurrentInst "Instantaneous charge (2s) current limit.";
+CM_ SG_ 572 ChargeCurrent10sPeak "Pulse charge (10s) current limit.";
+CM_ BO_ 567 "Traction Battery Status 2.";
+CM_ SG_ 567 HVMinCellV "Minimum cell voltage.";
+CM_ SG_ 567 HVAvgCellT "Average cell temperature.";
+CM_ SG_ 567 HVMaxCellV "Maximum cell voltage.";
+CM_ SG_ 567 HVMaxCellT "Maximum cell temperature.";
+CM_ SG_ 567 HVMinCellT "Minimum cell temperature.";
+CM_ SG_ 567 HVAvgCellV "Average cell voltage.";
+CM_ SG_ 567 HVBatSOC "Battery pack state-of-charge.";
+CM_ BO_ 565 "Traction Battery Status 1.";
+CM_ SG_ 565 ChrgHVReadyStat "BECM=>HCU handshake flag for HV activation (AC-Charging contactors).";
+CM_ SG_ 565 HVReadyStat "BECM=>HCU handshake flag for HV activation.";
+CM_ SG_ 565 BECMStat "BECM Operating Status.";
+CM_ SG_ 565 DCCntStatus "DC-Charging Contactors Open/Closed Status.";
+CM_ SG_ 565 ACCntStatus "AC-Charging Contactors Open/Closed Status.";
+CM_ SG_ 565 LVBatVol "LV network voltage.";
+CM_ SG_ 565 HVHVILSta "Main HVIL loop status.";
+CM_ SG_ 565 HVCntStatus "Battery Pack contactor status.";
+CM_ SG_ 565 CordConnected "This is an indication of AC cord being connected.";
+CM_ SG_ 565 HVBatVoltage "Battery Pack Voltage.";
+CM_ SG_ 565 HVBatCurrent "Battery Pack current.";
+CM_ SG_ 565 TB_Status "Battery Pack operating Status.";
+CM_ SG_ 565 HVChrHVILSta "Charge HVIL loop status.";
+CM_ BO_ 575 "Traction Battery Error Report.";
+CM_ SG_ 575 DCChrRelayWelded "If DC charger's relay(s) welded or terminal dV > 10V.";
+CM_ SG_ 575 DCChrRelayFlt "If fail to close DC-charging relay(s).";
+CM_ SG_ 575 LostSysVFlt "Any pack voltage reading is unavailable or invalid (out of range/rationality).";
+CM_ SG_ 575 FuseFlt "If battery system's fuse blown.";
+CM_ SG_ 575 ChrRelayFlt "If fail to close charger relay.";
+CM_ SG_ 575 I2T_Dischg_Flt "I2T Discharge Limit Exceeded.";
+CM_ SG_ 575 PreChrFlt "If precharge procedure failed.";
+CM_ SG_ 575 LostSysCurFlt "Any pack current sensor is unavailable or invalid (out of range/rationality).";
+CM_ SG_ 575 PreChrTempFlt "If precharge resistor temperature/energy exceeds thresholds preventing restart.";
+CM_ SG_ 575 PosMCWelded "If positive main contactor is welded or terminal dV > 10V.";
+CM_ SG_ 575 LostCelTFlt "Any one cell temperature is unavailable or invalid (out of range/rationality) for >500ms";
+CM_ SG_ 575 I2T_Chg_Flt "I2T Charge Limit Exceeded.";
+CM_ SG_ 575 LVLoFlt "If low voltage battery voltage lower then 9.5 V for 10s";
+CM_ SG_ 575 ModHrtbtFlt "Module heartbeat fault or not present.";
+CM_ SG_ 575 BatCommFlt "If BCM loses communication with any module or CSM for >500ms.";
+CM_ SG_ 575 CelTmpHiFlt "if any of Cell temperature hotter then 62 degree C for 10s.";
+CM_ SG_ 575 CelOverVFlt "Any of battery cell voltage is higher than 3.8V for 100ms";
+CM_ SG_ 575 CrashDetected "Crash Detected.";
+CM_ SG_ 575 LostLVVFlt "If LV battery voltage is unavailable or invalid (out of range/rationality).";
+CM_ SG_ 575 IsolationFlt "If bettery systems fails isolation test (<500 ohms/V)";
+CM_ SG_ 575 LostChrCANFlt "No message(s) from OBCM for 1000ms when sending ChargerCMD message.";
+CM_ SG_ 575 ChrRelayWelded "If charger's relay welded or terminal dV > 10V.";
+CM_ SG_ 575 NegMCFlt "If fail to close negative main contactor.";
+CM_ SG_ 575 CPUFlt "CPU fault occured (unexpected reset, watchdog timeout, NVM error, I/O fault).";
+CM_ SG_ 575 CelOverTmpFlt "if any of Cell temperature hotter then 70 degree C for 10s.";
+CM_ SG_ 575 NegMCWelded "If negative main contactor is welded or terminal dV > 10V.";
+CM_ SG_ 575 HighLiquidLvl "Liquid level in the pack is high.";
+CM_ SG_ 575 PreChrRelayFlt "If fail to close precharge relay.";
+CM_ SG_ 575 CelUndVFlt "if any of Cell voltage lower then 2.0 V for 100ms.";
+CM_ SG_ 575 PreChrWelded "If precharge relay is welded or terminal dV>10V.";
+CM_ SG_ 575 LostVehCANFlt "No message(s) from HCU for 500ms when HY_PT_WUP2 (BECM wakeup) or HCU_WAKE (HCU wakeup) is high.";
+CM_ SG_ 575 PosMCFlt "If fail to close positive main contactor.";
+CM_ SG_ 575 LostCelVFlt "Any one cell voltage is unavailable or invalid (out of range/rationality) for >500ms.";
+CM_ BO_ 1169 "Contains the UTC time stamp from the BECM's RTC.";
+CM_ SG_ 1169 RTC_GPS_TIMEDELTA_VALID "Validity for BECM RTC vs CIU GPS timestamp delta signal.";
+CM_ SG_ 1169 RTC_GPS_TIMEDELTA_SIGN "Sign for BECM RTC vs CIU GPS timestamp deviation.";
+CM_ SG_ 1169 RTC_GPS_TIMEDELTA "Observed deviation between BECM RTC and CIU GPS time.";
+CM_ SG_ 195 PrplsnSysAtv "Propulsion System Active
+Info from HCU that the propulsion system is active (after PT_CrnkAct (1 ---> 0)  PrplsnSysAtv (0 ---> 1). Vehicle stillstand on its own shouldn't set this signal to FALSE. ";
+CM_ SG_ 195 SIRDpl "Crash Occured";
+CM_ SG_ 195 AirbgVDA "Airbag Virtual Device Availability
+Airbag signal available on CAN.";
+CM_ SG_ 195 ESSI_HybEngStrtType "Hybrid Engine Start Type";
+CM_ SG_ 195 ESSI_HybEngStartStopMd "Hybrid Engine Start Stop Information: Engine Start Stop Mode
+Start Stop commands for engine:
+Stop Command: engine will stopp by cutting fuel.
+Start Pending: prepare for engine start request within the next few seconds
+Enable Fuel: for engine start required= injection requested by HCU)
+Producing Torque: state feedback about engine
+";
+CM_ SG_ 195 SysPwrMd "System Power Mode
+Accessory: hardwired input needs to be switched at the same time
+Run/ ignition: hardwired terminal 15 input needs to be switched at the same time
+Key Crank Request: Request for propulsion system on, engine start is requested by CAN signal 'ESSI_HybEngStartStopMd'
+";
+CM_ SG_ 195 HybCrnkAbrted "Hybrid Crank Aborted
+If  key cranking (with or without engine cranking) active, HCU can interrupt the cranking. If engine would be cranking it would stop running immediately. No propulsion at all.";
+CM_ SG_ 169 HybDFCO_Req "Hybrid (Deceleration) Fuel Cut Off Request
+Engine Fuel cut off request";
+CM_ SG_ 169 HybCmndEngTorqProtVal "Hybrid Commanded Engine Torque Protection Value
+Engine Torque Protection Value.
+Calculation Algorithm: 
+n1 = HybCmndTorqARC + HybCmndEngTorqPrdtd;
+ n2 = -1*n1;
+ HybCmndEngTorqProtVal = n2 & 0xFFF
+";
+CM_ SG_ 169 HybCmndEngTorqImmed "Hybrid Commanded Engine Torque: Immediate Torque
+Immediate Torque (for fast response via 'Spark retarding allowed for fast torque request')";
+CM_ SG_ 169 HybCmndTorqARC "Hybrid Commanded Torque Alive Rolling Count
+Alive Rolling Counter. Each time this message is sent, this signal has to be increased by one. The maximum value is 3. After this the value is set to zero.";
+CM_ SG_ 169 HybCmndEngTorqRespType "Hybrid Commanded Engine Torque Response Type
+4 Modes (depending on this mode either mkhcetic_w or mkhetcpc_w realized)
+
+0 = Torque demand realization via air path only
+
+1 = Spark retarding allowed for fast torque decrease and to reach minimum engine output torque (burning limits)
+
+2 = Spark retarding allowed+  Fuel cut off allowed
+
+3 = Spark retarding allowed+  Fuel cut off allowed+ Automatic Actuator Selection (fast torque response for positive or negative torque response)";
+CM_ SG_ 169 HybCmndEngTorqPrdtd "Hybrid Commanded Engine Torque: Predicted Torque
+Predicted Torque (slow response via air path without spark retarding)";
+CM_ SG_ 464 HybERDTC_CdNum "Hybrid System Emissions Related DTC : Code Number
+Hybrid System Emissions Related DTC : Code Number for OBDII Service $02";
+CM_ SG_ 464 HybERDTC_SysDes "Hybrid System Emissions Related DTC : System Designator
+Defines P- Code category:
+";
+CM_ SG_ 464 HybSysEmsMlfAtv "Hybrid System Emissions Related Malfunction Active
+HCU request for MIL on.";
+CM_ SG_ 1185 WheelCircumfCompPct "Wheel Circumference Compensation (for wear and calibration mismatch) to be applied by ECM.
+Positive value 0% to 3% in 0.2% increments, to effectively reduce precalibrated circumference value from 100% down to 97%.";
+CM_ SG_ 1185 EngOilLfRstRq "Engine Oil Life Reset Request";
+CM_ SG_ 1185 EngReqAcc "Enigne Request accepted";
+CM_ SG_ 1185 BrkAct "Brake Active";
+CM_ BO_ 192 "The propulsion system moding status.";
+CM_ SG_ 192 BRAKE_BOOST_ENABLE_FLAG "Brake Boost (and Comms-Monitoring) RequestFlag.";
+CM_ SG_ 192 PROP_SYS_ACTIVE_FLAG "Handshake Flag for Drive-Cycle Management.";
+CM_ SG_ 192 CNT_PROP_MODE_STATUS "Alive Rolling Counter for PROPULSION_MODE message.";
+CM_ SG_ 192 PROP_MODE_STAT "The propulsion system moding status. ";
+CM_ BO_ 714 "On-Board Charger Module Status";
+CM_ SG_ 714 OBCM_CALID_CVN_STATUS "CAL-ID / CVN status flag.";
+CM_ SG_ 714 OBCM_CALID_CVN_INDEX "Multiplexor-Index for OBCM CAL-ID and CVN.
+CALID: [0..15]
+CVN: [16..19]";
+CM_ SG_ 714 OBCM_CALID_CVN_CHAR "CAL-ID / CVN character at index OBCM_CALID_CVN_INDEX.";
+CM_ BO_ 719 "Temporary Debug Message for Delta";
+CM_ BO_ 718 "On-Board Charger Module Additional Status";
+CM_ BO_ 716 "On-Board Charger Module Command";
+CM_ BO_ 1408 "OBD2 architecture - HCU report to OBD2 master. ";
+CM_ SG_ 1408 ICE_RPM "Internal Combustion Engine speed (revolutions per minute).";
+CM_ SG_ 1408 HCU_SYSTEM_DESIGNATOR "Diagnostic trouble code per SAE J2012.";
+CM_ SG_ 1408 ACCEL_POSITION_E "Accelerator Pedal Position E";
+CM_ SG_ 1408 ACCEL_POSITION_D "Accelerator Pedal Position D";
+CM_ SG_ 901 YRSSrNmRq "Vehicle Dynamics Yaw Rate Sensor Serial Number Request";
+CM_ SG_ 901 EBCM_DiagStat1_DiagTrblCdStat "Electronic Brake Control Module Diagnostic Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 901 EBCM_DiagStat3_DiagTrblCdStat "Electronic Brake Control Module Diagnostic Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 901 WHEEL_SPEED_DiagTrblCdStat "Electronic Brake Control Module Wheel Speed Sensing: Diagnostic Trouble Code Status";
+CM_ SG_ 901 EBCM_DiagStat4_DiagTrblCdStat "Electronic Brake Control Module Diagnostic Status 4: Diagnostic Trouble Code Status";
+CM_ SG_ 901 EBCM_DiagStat3_DiagTrblCdIndx "Electronic Brake Control Module Diagnostic Status 3: Diagnostic Trouble Code Index. Value represents Index 0 thru 31";
+CM_ SG_ 901 EBCM_DiagStat4_DiagTrblCdIndx "Electronic Brake Control Module Diagnostic Status 4: Diagnostic Trouble Code Index. Value represents Index 0 thru 31";
+CM_ SG_ 901 YRSStpTxRq "Yaw Rate Sensor Stop Functional Message Transmission Request";
+CM_ SG_ 901 EBCM_DiagStat2_DiagTrblCdIndx "Electronic Brake Control Module Diagnostic Status 2: Diagnostic Trouble Code Index. Value represents Index 0 thru 31";
+CM_ SG_ 901 LASSlfTstRq "Vehicle Dynamics Lateral Acceleration Sensor Self Test Request";
+CM_ SG_ 901 WHEEL_SPEED_DiagTrblCdIndx "Electronic Brake Control Module Wheel Speed Sensing - Diagnostic Trouble Code Index. Value represents Index 0 thru 31";
+CM_ SG_ 901 EBCM_DiagStat1_DiagTrblCdIndx "Electronic Brake Control Module Diagnostic Status 1: Diagnostic Trouble Code Index. Value represents Index 0 thru 31";
+CM_ SG_ 901 YRSSlfTstRq "Vehicle Dynamics Lateral Acceleration Sensor Self Test Request";
+CM_ SG_ 901 VDLngAccSnrSlfTstRq "Vehicle Dynamics Longitudinal Acceleration Sensor Self Test Request";
+CM_ SG_ 901 EBCM_DiagStat2_DiagTrblCdStat "Electronic Brake Control Module Diagnostic Status 2: Diagnostic Trouble Code Status";
+CM_ BO_ 1883 "Diagnostic response from OBCM.";
+CM_ BO_ 2026 "Diagnostic response from HCU.";
+CM_ BO_ 1517 "Diagnostic response from EBCM (UUDT).";
+CM_ BO_ 2029 "Diagnostic response from EBCM.";
+CM_ BO_ 2028 "Diagnostic response from BECM.";
+CM_ BO_ 1880 "Diagnostic response from APM.";
+CM_ BO_ 1875 "Diagnostic request to OBCM.";
+CM_ BO_ 2018 "Diagnostic request to HCU.";
+CM_ BO_ 2021 "Diagnostic request to EBCM.";
+CM_ BO_ 2020 "Diagnostic request to BECM.";
+CM_ BO_ 1872 "Diagnostic request to APM.";
+CM_ BO_ 1831 "Diagnostic request to CIU.";
+CM_ BO_ 1412 "OBD2 architecture - Battery Electronic Control Module report to OBD2 master.";
+CM_ SG_ 1412 HYB_BATT_STATE_OF_CHARGE "Hybrid Battery Pack State of Charge";
+CM_ SG_ 1412 BECM_SYSTEM_DESIGNATOR "Diagnostic trouble code per SAE J2012.";
+CM_ BO_ 1162 "This message monitors and reports the DC/DC converter performance.";
+CM_ BO_ 469 "This message monitors and reports the DC/DC converter performance.";
+CM_ BO_ 471 "This message is used to enable / command conversion for the DC/DC converter.";
+CM_ SG_ 471 APM_BOOST_ENABLE "0 = Disabled, 3 = Enabled, others ignored";
+CM_ SG_ 471 APM_SET_POINT "If buck: value = (SP * 45.3329) - 473.161
+If boost: value = (SP * 1.0408) - 176.42";
+CM_ BO_ 257 "All-Node Functional Request.";
+CM_ BO_ 1839 "Diagnostic response from CIU.";
+CM_ SG_ 1273 SOC_Upper "Range SOC for cell with highest voltage";
+CM_ SG_ 1273 SOC_Corrected_Max "Corrected SOC for cell with highest voltage";
+CM_ SG_ 1273 Relative_SOC_Upper "Relative SOC for cell with highest voltage";
+CM_ SG_ 1273 Ahr_Upper "Amp-Hours for cell with highest voltage";
+CM_ SG_ 1273 Ahr_To_Nominal_BOC_Max "Amp-Hours offset to Nominal BOC for cell with highest voltage";
+CM_ SG_ 1272 Ahr_To_Nominal_BOC_Min "Amp-Hours offset to Nominal BOC for cell with highest voltage";
+CM_ SG_ 1272 SOC_Lower "Range SOC for cell with lowest voltage";
+CM_ SG_ 1272 SOC_Corrected_Min "Corrected SOC for cell with lowest voltage";
+CM_ SG_ 1272 Relative_SOC_Lower "Relative SOC for cell with lowest voltage";
+CM_ SG_ 1272 Ahr_Lower "Amp-Hours for cell with lowest voltage";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "ON_PT" ENUM  "NO","YES";
+BA_DEF_ BO_  "ON_C" ENUM  "NO","YES";
+BA_DEF_ BO_  "ON_B" ENUM  "NO","YES";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BO_  "ON_INV" ENUM  "NO","YES";
+BA_DEF_  "Status" ENUM  "DRAFT","RELEASE";
+BA_DEF_  "Baseline" STRING ;
+BA_DEF_  "Model" STRING ;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BU_  "BusConnection4" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN";
+BA_DEF_ BU_  "BusConnection3" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN";
+BA_DEF_ BU_  "BusConnection2" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN","SW-CAN";
+BA_DEF_ BU_  "BusConnection1" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN","SW-CAN";
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "ON_PT" "NO";
+BA_DEF_DEF_  "ON_C" "NO";
+BA_DEF_DEF_  "ON_B" "NO";
+BA_DEF_DEF_  "ILUsed" "No";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "ON_INV" "NO";
+BA_DEF_DEF_  "Status" "DRAFT";
+BA_DEF_DEF_  "Baseline" "";
+BA_DEF_DEF_  "Model" "";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "Manufacturer" "KARMA AUTOMOTIVE LLC";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "BusConnection4" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection3" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection2" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection1" "NoBusConnection";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "BusType" "CAN";
+BA_ "Model" "K1 2.0";
+BA_ "Baudrate" 500000;
+BA_ "Manufacturer" "KARMAAUTOMOTIVE";
+BA_ "Baseline" "K1-2.0_MY20_BL901B1PLUS_DRAFT";
+BA_ "ILUsed" BU_ OBCM 1;
+BA_ "BusConnection1" BU_ OBCM 3;
+BA_ "BusConnection3" BU_ HCU 4;
+BA_ "BusConnection2" BU_ HCU 3;
+BA_ "BusConnection1" BU_ HCU 2;
+BA_ "BusConnection4" BU_ KARMA_TESTER 4;
+BA_ "BusConnection3" BU_ KARMA_TESTER 3;
+BA_ "BusConnection2" BU_ KARMA_TESTER 2;
+BA_ "BusConnection1" BU_ KARMA_TESTER 1;
+BA_ "BusConnection2" BU_ EBCM 0;
+BA_ "BusConnection1" BU_ EBCM 3;
+BA_ "BusConnection1" BU_ CIU 1;
+BA_ "BusConnection1" BU_ BECM 3;
+BA_ "BusConnection1" BU_ APM 3;
+BA_ "GenMsgCycleTime" BO_ 1670 100;
+BA_ "ON_PT" BO_ 1670 1;
+BA_ "GenMsgSendType" BO_ 1670 0;
+BA_ "ON_PT" BO_ 1669 1;
+BA_ "GenMsgCycleTime" BO_ 1669 50;
+BA_ "GenMsgSendType" BO_ 1669 0;
+BA_ "GenMsgSendType" BO_ 1228 0;
+BA_ "GenMsgCycleTime" BO_ 1228 2000;
+BA_ "GenMsgDelayTime" BO_ 1228 100;
+BA_ "DiagResponse" BO_ 2030 1;
+BA_ "GenMsgILSupport" BO_ 2030 0;
+BA_ "GenMsgSendType" BO_ 2030 8;
+BA_ "ON_PT" BO_ 2030 1;
+BA_ "DiagRequest" BO_ 2022 1;
+BA_ "GenMsgILSupport" BO_ 2022 0;
+BA_ "GenMsgSendType" BO_ 2022 8;
+BA_ "ON_PT" BO_ 2022 1;
+BA_ "DiagResponse" BO_ 1791 1;
+BA_ "GenMsgILSupport" BO_ 1791 0;
+BA_ "GenMsgSendType" BO_ 1791 8;
+BA_ "ON_C" BO_ 1791 1;
+BA_ "ON_PT" BO_ 1791 1;
+BA_ "DiagRequest" BO_ 1790 1;
+BA_ "GenMsgILSupport" BO_ 1790 0;
+BA_ "GenMsgSendType" BO_ 1790 8;
+BA_ "ON_C" BO_ 1790 1;
+BA_ "ON_PT" BO_ 1790 1;
+BA_ "GenMsgSendType" BO_ 1668 0;
+BA_ "GenMsgCycleTime" BO_ 1668 100;
+BA_ "ON_PT" BO_ 1668 1;
+BA_ "ON_PT" BO_ 1077 1;
+BA_ "GenMsgSendType" BO_ 1077 0;
+BA_ "GenMsgCycleTime" BO_ 1077 500;
+BA_ "GenMsgDelayTime" BO_ 1077 50;
+BA_ "ON_PT" BO_ 1426 1;
+BA_ "GenMsgCycleTime" BO_ 1426 1000;
+BA_ "GenMsgSendType" BO_ 1426 0;
+BA_ "ON_PT" BO_ 1427 1;
+BA_ "GenMsgCycleTime" BO_ 1427 1000;
+BA_ "GenMsgSendType" BO_ 1427 0;
+BA_ "ON_PT" BO_ 1667 1;
+BA_ "GenMsgCycleTime" BO_ 1667 50;
+BA_ "GenMsgSendType" BO_ 1667 0;
+BA_ "ON_INV" BO_ 2016 1;
+BA_ "ON_PT" BO_ 2016 1;
+BA_ "ON_INV" BO_ 2024 1;
+BA_ "ON_PT" BO_ 2024 1;
+BA_ "ON_PT" BO_ 1279 1;
+BA_ "GenMsgCycleTime" BO_ 1279 1000;
+BA_ "GenMsgSendType" BO_ 1279 0;
+BA_ "ON_PT" BO_ 1265 1;
+BA_ "GenMsgSendType" BO_ 1265 0;
+BA_ "GenMsgCycleTime" BO_ 1265 50;
+BA_ "ON_PT" BO_ 970 1;
+BA_ "GenMsgDelayTime" BO_ 970 100;
+BA_ "GenMsgCycleTime" BO_ 970 500;
+BA_ "GenMsgSendType" BO_ 970 0;
+BA_ "GenMsgDelayTime" BO_ 919 50;
+BA_ "GenMsgCycleTime" BO_ 919 1000;
+BA_ "GenMsgSendType" BO_ 919 0;
+BA_ "ON_PT" BO_ 919 1;
+BA_ "ON_INV" BO_ 919 1;
+BA_ "GenMsgCycleTime" BO_ 1183 1000;
+BA_ "GenMsgSendType" BO_ 1183 0;
+BA_ "ON_PT" BO_ 1183 1;
+BA_ "GenMsgCycleTime" BO_ 1167 1000;
+BA_ "GenMsgSendType" BO_ 1167 0;
+BA_ "ON_PT" BO_ 1167 1;
+BA_ "ON_PT" BO_ 1666 1;
+BA_ "GenMsgCycleTime" BO_ 1666 100;
+BA_ "GenMsgSendType" BO_ 1666 0;
+BA_ "GenMsgSendType" BO_ 1665 0;
+BA_ "ON_PT" BO_ 1665 1;
+BA_ "GenMsgCycleTime" BO_ 1665 10;
+BA_ "GenMsgCycleTime" BO_ 1664 50;
+BA_ "ON_PT" BO_ 1664 1;
+BA_ "GenMsgSendType" BO_ 1664 0;
+BA_ "DiagResponse" BO_ 1785 1;
+BA_ "GenMsgILSupport" BO_ 1785 0;
+BA_ "GenMsgSendType" BO_ 1785 8;
+BA_ "ON_C" BO_ 1785 1;
+BA_ "ON_PT" BO_ 1785 1;
+BA_ "DiagRequest" BO_ 1784 1;
+BA_ "GenMsgILSupport" BO_ 1784 0;
+BA_ "GenMsgSendType" BO_ 1784 8;
+BA_ "ON_C" BO_ 1784 1;
+BA_ "ON_PT" BO_ 1784 1;
+BA_ "DiagResponse" BO_ 2147485905 1;
+BA_ "GenMsgILSupport" BO_ 2147485905 0;
+BA_ "GenMsgSendType" BO_ 2147485905 8;
+BA_ "ON_C" BO_ 2147485905 1;
+BA_ "ON_PT" BO_ 2147485905 1;
+BA_ "DiagRequest" BO_ 2147485904 1;
+BA_ "GenMsgILSupport" BO_ 2147485904 0;
+BA_ "GenMsgSendType" BO_ 2147485904 8;
+BA_ "ON_C" BO_ 2147485904 1;
+BA_ "ON_PT" BO_ 2147485904 1;
+BA_ "ON_PT" BO_ 409 1;
+BA_ "GenMsgCycleTime" BO_ 409 20;
+BA_ "GenMsgSendType" BO_ 409 0;
+BA_ "ON_PT" BO_ 410 1;
+BA_ "GenMsgCycleTime" BO_ 410 20;
+BA_ "GenMsgSendType" BO_ 410 0;
+BA_ "ON_PT" BO_ 952 1;
+BA_ "GenMsgSendType" BO_ 952 0;
+BA_ "GenMsgCycleTime" BO_ 952 100;
+BA_ "ON_PT" BO_ 953 1;
+BA_ "GenMsgSendType" BO_ 953 0;
+BA_ "GenMsgCycleTime" BO_ 953 10;
+BA_ "ON_PT" BO_ 951 1;
+BA_ "GenMsgSendType" BO_ 951 0;
+BA_ "GenMsgCycleTime" BO_ 951 10;
+BA_ "ON_PT" BO_ 954 1;
+BA_ "GenMsgSendType" BO_ 954 0;
+BA_ "GenMsgCycleTime" BO_ 954 10;
+BA_ "ON_PT" BO_ 723 1;
+BA_ "GenMsgSendType" BO_ 723 0;
+BA_ "GenMsgCycleTime" BO_ 723 100;
+BA_ "ON_PT" BO_ 721 1;
+BA_ "GenMsgSendType" BO_ 721 0;
+BA_ "GenMsgCycleTime" BO_ 721 100;
+BA_ "ON_PT" BO_ 722 1;
+BA_ "GenMsgSendType" BO_ 722 0;
+BA_ "GenMsgCycleTime" BO_ 722 100;
+BA_ "ON_PT" BO_ 720 1;
+BA_ "GenMsgSendType" BO_ 720 0;
+BA_ "GenMsgCycleTime" BO_ 720 100;
+BA_ "ON_PT" BO_ 570 1;
+BA_ "ON_C" BO_ 570 1;
+BA_ "GenMsgCycleTime" BO_ 570 100;
+BA_ "GenMsgSendType" BO_ 570 0;
+BA_ "GenMsgSendType" BO_ 1425 0;
+BA_ "GenMsgCycleTime" BO_ 1425 1000;
+BA_ "ON_C" BO_ 1425 1;
+BA_ "ON_PT" BO_ 1425 1;
+BA_ "GenMsgSendType" BO_ 1424 0;
+BA_ "GenMsgCycleTime" BO_ 1424 1000;
+BA_ "ON_C" BO_ 1424 1;
+BA_ "ON_PT" BO_ 1424 1;
+BA_ "GenMsgSendType" BO_ 1217 0;
+BA_ "GenMsgCycleTime" BO_ 1217 500;
+BA_ "ON_C" BO_ 1217 1;
+BA_ "ON_PT" BO_ 1217 1;
+BA_ "ON_PT" BO_ 312 1;
+BA_ "GenMsgCycleTime" BO_ 312 1000;
+BA_ "GenMsgDelayTime" BO_ 312 0;
+BA_ "GenMsgSendType" BO_ 312 0;
+BA_ "ON_PT" BO_ 176 1;
+BA_ "GenMsgCycleTime" BO_ 176 10;
+BA_ "GenMsgDelayTime" BO_ 176 0;
+BA_ "GenMsgSendType" BO_ 176 0;
+BA_ "ON_PT" BO_ 514 1;
+BA_ "GenMsgCycleTime" BO_ 514 100;
+BA_ "GenMsgDelayTime" BO_ 514 20;
+BA_ "GenMsgSendType" BO_ 514 0;
+BA_ "GenMsgDelayTime" BO_ 166 0;
+BA_ "ON_PT" BO_ 166 1;
+BA_ "GenMsgCycleTime" BO_ 166 10;
+BA_ "GenMsgSendType" BO_ 166 0;
+BA_ "ON_PT" BO_ 242 1;
+BA_ "GenMsgCycleTime" BO_ 242 10;
+BA_ "GenMsgDelayTime" BO_ 242 0;
+BA_ "GenMsgSendType" BO_ 242 0;
+BA_ "ON_PT" BO_ 417 1;
+BA_ "GenMsgCycleTime" BO_ 417 20;
+BA_ "GenMsgDelayTime" BO_ 417 0;
+BA_ "GenMsgSendType" BO_ 417 0;
+BA_ "ON_PT" BO_ 1298 1;
+BA_ "GenMsgCycleTime" BO_ 1298 640;
+BA_ "GenMsgDelayTime" BO_ 1298 0;
+BA_ "GenMsgSendType" BO_ 1298 0;
+BA_ "ON_PT" BO_ 1281 1;
+BA_ "GenMsgCycleTime" BO_ 1281 640;
+BA_ "GenMsgDelayTime" BO_ 1281 0;
+BA_ "ON_INV" BO_ 1281 1;
+BA_ "GenMsgSendType" BO_ 1281 0;
+BA_ "ON_PT" BO_ 573 1;
+BA_ "GenMsgSendType" BO_ 573 0;
+BA_ "GenMsgCycleTime" BO_ 573 100;
+BA_ "ON_PT" BO_ 560 1;
+BA_ "GenMsgCycleTime" BO_ 560 25;
+BA_ "GenMsgSendType" BO_ 560 0;
+BA_ "GenMsgCycleTimeFast" BO_ 16 10;
+BA_ "ON_PT" BO_ 16 1;
+BA_ "ON_C" BO_ 16 1;
+BA_ "GenMsgNrOfRepetition" BO_ 16 3;
+BA_ "GenMsgCycleTime" BO_ 16 10;
+BA_ "GenMsgDelayTime" BO_ 16 10;
+BA_ "ON_PT" BO_ 1168 1;
+BA_ "ON_B" BO_ 1168 1;
+BA_ "GenMsgDelayTime" BO_ 1168 50;
+BA_ "GenMsgCycleTime" BO_ 1168 1000;
+BA_ "GenMsgSendType" BO_ 1168 0;
+BA_ "ON_PT" BO_ 571 1;
+BA_ "ON_C" BO_ 571 1;
+BA_ "GenMsgCycleTime" BO_ 571 100;
+BA_ "GenMsgSendType" BO_ 571 0;
+BA_ "ON_PT" BO_ 574 1;
+BA_ "GenMsgCycleTime" BO_ 574 100;
+BA_ "GenMsgSendType" BO_ 574 0;
+BA_ "ON_PT" BO_ 572 1;
+BA_ "GenMsgCycleTime" BO_ 572 100;
+BA_ "GenMsgSendType" BO_ 572 0;
+BA_ "ON_PT" BO_ 567 1;
+BA_ "ON_C" BO_ 567 1;
+BA_ "GenMsgCycleTime" BO_ 567 100;
+BA_ "GenMsgSendType" BO_ 567 0;
+BA_ "ON_PT" BO_ 565 1;
+BA_ "GenMsgCycleTime" BO_ 565 25;
+BA_ "GenMsgSendType" BO_ 565 0;
+BA_ "ON_PT" BO_ 575 1;
+BA_ "GenMsgCycleTime" BO_ 575 100;
+BA_ "GenMsgSendType" BO_ 575 0;
+BA_ "ON_PT" BO_ 1169 1;
+BA_ "ON_C" BO_ 1169 1;
+BA_ "GenMsgDelayTime" BO_ 1169 50;
+BA_ "GenMsgCycleTime" BO_ 1169 1000;
+BA_ "GenMsgSendType" BO_ 1169 0;
+BA_ "ON_PT" BO_ 195 1;
+BA_ "GenMsgCycleTime" BO_ 195 10;
+BA_ "GenMsgSendType" BO_ 195 0;
+BA_ "ON_PT" BO_ 169 1;
+BA_ "GenMsgCycleTime" BO_ 169 10;
+BA_ "GenMsgSendType" BO_ 169 0;
+BA_ "ON_PT" BO_ 464 1;
+BA_ "GenMsgCycleTime" BO_ 464 10;
+BA_ "GenMsgSendType" BO_ 464 0;
+BA_ "ON_PT" BO_ 1185 1;
+BA_ "GenMsgCycleTime" BO_ 1185 100;
+BA_ "GenMsgSendType" BO_ 1185 0;
+BA_ "ON_PT" BO_ 192 1;
+BA_ "GenMsgCycleTime" BO_ 192 50;
+BA_ "GenMsgSendType" BO_ 192 0;
+BA_ "ON_INV" BO_ 192 1;
+BA_ "GenMsgILSupport" BO_ 714 1;
+BA_ "ON_PT" BO_ 714 1;
+BA_ "GenMsgCycleTime" BO_ 714 100;
+BA_ "GenMsgSendType" BO_ 714 0;
+BA_ "GenMsgILSupport" BO_ 719 1;
+BA_ "ON_PT" BO_ 719 1;
+BA_ "GenMsgCycleTime" BO_ 719 250;
+BA_ "GenMsgSendType" BO_ 719 0;
+BA_ "GenMsgILSupport" BO_ 718 1;
+BA_ "ON_PT" BO_ 718 1;
+BA_ "GenMsgCycleTime" BO_ 718 100;
+BA_ "GenMsgSendType" BO_ 718 0;
+BA_ "ON_PT" BO_ 716 1;
+BA_ "GenMsgCycleTime" BO_ 716 100;
+BA_ "GenMsgSendType" BO_ 716 0;
+BA_ "ON_PT" BO_ 1408 1;
+BA_ "GenMsgCycleTime" BO_ 1408 200;
+BA_ "GenMsgSendType" BO_ 1408 0;
+BA_ "ON_PT" BO_ 2015 1;
+BA_ "ON_C" BO_ 2015 1;
+BA_ "GenMsgSendType" BO_ 2015 8;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "ON_INV" BO_ 2015 1;
+BA_ "ON_B" BO_ 2015 1;
+BA_ "ON_PT" BO_ 901 1;
+BA_ "GenMsgCycleTime" BO_ 901 100;
+BA_ "GenMsgSendType" BO_ 901 0;
+BA_ "ON_PT" BO_ 1883 1;
+BA_ "GenMsgSendType" BO_ 1883 8;
+BA_ "GenMsgILSupport" BO_ 1883 0;
+BA_ "DiagResponse" BO_ 1883 1;
+BA_ "ON_PT" BO_ 2026 1;
+BA_ "ON_C" BO_ 2026 1;
+BA_ "GenMsgSendType" BO_ 2026 8;
+BA_ "GenMsgILSupport" BO_ 2026 0;
+BA_ "DiagResponse" BO_ 2026 1;
+BA_ "ON_PT" BO_ 1517 1;
+BA_ "GenMsgSendType" BO_ 1517 8;
+BA_ "ON_PT" BO_ 2029 1;
+BA_ "GenMsgCycleTime" BO_ 2029 100;
+BA_ "GenMsgSendType" BO_ 2029 8;
+BA_ "GenMsgILSupport" BO_ 2029 0;
+BA_ "DiagResponse" BO_ 2029 1;
+BA_ "ON_PT" BO_ 2028 1;
+BA_ "GenMsgSendType" BO_ 2028 8;
+BA_ "GenMsgILSupport" BO_ 2028 0;
+BA_ "DiagResponse" BO_ 2028 1;
+BA_ "ON_PT" BO_ 1880 1;
+BA_ "GenMsgSendType" BO_ 1880 8;
+BA_ "GenMsgILSupport" BO_ 1880 0;
+BA_ "DiagResponse" BO_ 1880 1;
+BA_ "ON_PT" BO_ 1875 1;
+BA_ "GenMsgCycleTime" BO_ 1875 100;
+BA_ "GenMsgSendType" BO_ 1875 8;
+BA_ "GenMsgILSupport" BO_ 1875 0;
+BA_ "DiagRequest" BO_ 1875 1;
+BA_ "ON_PT" BO_ 2018 1;
+BA_ "ON_C" BO_ 2018 1;
+BA_ "GenMsgSendType" BO_ 2018 8;
+BA_ "GenMsgILSupport" BO_ 2018 0;
+BA_ "DiagRequest" BO_ 2018 1;
+BA_ "ON_PT" BO_ 2021 1;
+BA_ "GenMsgSendType" BO_ 2021 8;
+BA_ "GenMsgILSupport" BO_ 2021 0;
+BA_ "DiagRequest" BO_ 2021 1;
+BA_ "ON_PT" BO_ 2020 1;
+BA_ "GenMsgSendType" BO_ 2020 8;
+BA_ "GenMsgILSupport" BO_ 2020 0;
+BA_ "DiagRequest" BO_ 2020 1;
+BA_ "ON_PT" BO_ 1872 1;
+BA_ "GenMsgCycleTime" BO_ 1872 100;
+BA_ "GenMsgSendType" BO_ 1872 8;
+BA_ "GenMsgILSupport" BO_ 1872 0;
+BA_ "DiagRequest" BO_ 1872 1;
+BA_ "ON_PT" BO_ 1831 1;
+BA_ "ON_PT" BO_ 1412 1;
+BA_ "GenMsgCycleTime" BO_ 1412 200;
+BA_ "GenMsgSendType" BO_ 1412 0;
+BA_ "ON_PT" BO_ 1162 1;
+BA_ "GenMsgCycleTime" BO_ 1162 250;
+BA_ "GenMsgSendType" BO_ 1162 0;
+BA_ "ON_PT" BO_ 469 1;
+BA_ "GenMsgCycleTime" BO_ 469 25;
+BA_ "GenMsgSendType" BO_ 469 0;
+BA_ "ON_PT" BO_ 471 1;
+BA_ "GenMsgCycleTime" BO_ 471 25;
+BA_ "GenMsgSendType" BO_ 471 0;
+BA_ "DiagState" BO_ 257 1;
+BA_ "ON_C" BO_ 257 1;
+BA_ "ON_B" BO_ 257 1;
+BA_ "ON_INV" BO_ 257 1;
+BA_ "ON_PT" BO_ 257 1;
+BA_ "GenMsgSendType" BO_ 257 8;
+BA_ "ON_PT" BO_ 1839 1;
+BA_ "GenMsgCycleTime" BO_ 1273 1000;
+BA_ "GenMsgSendType" BO_ 1273 0;
+BA_ "ON_PT" BO_ 1273 1;
+BA_ "GenMsgCycleTime" BO_ 1272 1000;
+BA_ "GenMsgSendType" BO_ 1272 0;
+BA_ "ON_PT" BO_ 1272 1;
+BA_ "GenMsgCycleTime" BO_ 1271 1000;
+BA_ "GenMsgSendType" BO_ 1271 0;
+BA_ "ON_PT" BO_ 1271 1;
+BA_ "GenMsgCycleTime" BO_ 1270 1000;
+BA_ "GenMsgSendType" BO_ 1270 0;
+BA_ "ON_PT" BO_ 1270 1;
+BA_ "GenMsgCycleTime" BO_ 1269 1000;
+BA_ "GenMsgSendType" BO_ 1269 0;
+BA_ "ON_PT" BO_ 1269 1;
+BA_ "GenMsgCycleTime" BO_ 1268 1000;
+BA_ "GenMsgSendType" BO_ 1268 0;
+BA_ "ON_PT" BO_ 1268 1;
+BA_ "GenMsgCycleTime" BO_ 1267 1000;
+BA_ "GenMsgSendType" BO_ 1267 0;
+BA_ "ON_PT" BO_ 1267 1;
+BA_ "GenMsgCycleTime" BO_ 1266 1000;
+BA_ "GenMsgSendType" BO_ 1266 0;
+BA_ "ON_PT" BO_ 1266 1;
+BA_ "GenMsgCycleTime" BO_ 1639 1000;
+BA_ "GenMsgSendType" BO_ 1639 0;
+BA_ "ON_PT" BO_ 1639 1;
+BA_ "GenMsgCycleTime" BO_ 1278 1000;
+BA_ "GenMsgSendType" BO_ 1278 0;
+BA_ "ON_PT" BO_ 1278 1;
+BA_ "GenMsgCycleTime" BO_ 1277 1000;
+BA_ "GenMsgSendType" BO_ 1277 0;
+BA_ "ON_PT" BO_ 1277 1;
+BA_ "GenMsgCycleTime" BO_ 1276 1000;
+BA_ "GenMsgSendType" BO_ 1276 0;
+BA_ "ON_PT" BO_ 1276 1;
+BA_ "GenMsgCycleTime" BO_ 1275 1000;
+BA_ "GenMsgSendType" BO_ 1275 0;
+BA_ "ON_PT" BO_ 1275 1;
+BA_ "GenMsgCycleTime" BO_ 1274 1000;
+BA_ "GenMsgSendType" BO_ 1274 0;
+BA_ "ON_PT" BO_ 1274 1;
+BA_ "GenSigStartValue" SG_ 1670 DC_Charging_ExitPath 0;
+BA_ "GenSigSendType" SG_ 1228 ESM_MUTE_SET 3;
+BA_ "GenSigStartValue" SG_ 1228 CIS_REQ_REGEN_MODE_STARTUP 3;
+BA_ "GenSigSendType" SG_ 1228 CIS_REQ_REGEN_MODE_STARTUP 3;
+BA_ "GenSigSendType" SG_ 1228 CIS_REQ_DRIVE_MODE_STARTUP 3;
+BA_ "GenSigStartValue" SG_ 1228 CIS_REQ_DRIVE_MODE_STARTUP 7;
+BA_ "GenSigStartValue" SG_ 1228 CIS_REQ_REGEN_MODE_INSTANT 3;
+BA_ "GenSigSendType" SG_ 1228 CIS_REQ_REGEN_MODE_INSTANT 3;
+BA_ "GenSigSendType" SG_ 1228 CIS_REQ_DRIVE_MODE_INSTANT 3;
+BA_ "GenSigStartValue" SG_ 1228 CIS_REQ_DRIVE_MODE_INSTANT 7;
+BA_ "GenSigSendType" SG_ 1228 DCM_SUSTAIN_Steering 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_SUSTAIN_Steering 3;
+BA_ "GenSigSendType" SG_ 1228 DCM_SUSTAIN_RegenInCustom 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_SUSTAIN_RegenInCustom 15;
+BA_ "GenSigSendType" SG_ 1228 DCM_SUSTAIN_PedalMap 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_SUSTAIN_PedalMap 2;
+BA_ "GenSigSendType" SG_ 1228 DCM_STEALTH_Steering 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_STEALTH_Steering 3;
+BA_ "GenSigSendType" SG_ 1228 DCM_STEALTH_RegenInCustom 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_STEALTH_RegenInCustom 15;
+BA_ "GenSigSendType" SG_ 1228 DCM_STEALTH_PedalMap 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_STEALTH_PedalMap 2;
+BA_ "GenSigSendType" SG_ 1228 DCM_SPORT_Steering 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_SPORT_Steering 3;
+BA_ "GenSigSendType" SG_ 1228 DCM_SPORT_RegenInCustom 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_SPORT_RegenInCustom 15;
+BA_ "GenSigSendType" SG_ 1228 DCM_SPORT_PedalMap 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_SPORT_PedalMap 2;
+BA_ "GenSigSendType" SG_ 1228 DCM_ECO_Steering 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_ECO_Steering 3;
+BA_ "GenSigSendType" SG_ 1228 DCM_ECO_RegenInCustom 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_ECO_RegenInCustom 15;
+BA_ "GenSigSendType" SG_ 1228 DCM_ECO_PedalMap 3;
+BA_ "GenSigStartValue" SG_ 1228 DCM_ECO_PedalMap 2;
+BA_ "GenSigSendType" SG_ 2030 DIAG_RESP_SIG_BECM_CPU2 7;
+BA_ "GenSigSendType" SG_ 2022 DIAG_REQ_SIG_BECM_CPU2 7;
+BA_ "GenSigSendType" SG_ 1791 CCP_RESP_SIG_BMS_CPU1 7;
+BA_ "GenSigSendType" SG_ 1790 CCP_REQ_SIG_BMS_CPU1 7;
+BA_ "GenSigStartValue" SG_ 1667 GearboxTmpEst 40;
+BA_ "GenSigStartValue" SG_ 1667 FuelLevelSensorReading 500;
+BA_ "GenSigStartValue" SG_ 970 TEMP_EX_UNFILT 80;
+BA_ "GenSigStartValue" SG_ 970 TEMP_EX 80;
+BA_ "GenSigSendType" SG_ 1183 PROPSYS_INACTV_EDGE_SINCE_12VRST 7;
+BA_ "GenSigSendType" SG_ 1664 PropPowerState_Internal 7;
+BA_ "GenSigSendType" SG_ 1785 CCP_RESP_SIG_BMS_CPU1 7;
+BA_ "GenSigSendType" SG_ 1784 CCP_REQ_SIG_BMS_CPU1 7;
+BA_ "GenSigSendType" SG_ 2147485905 CCP_RESP_SIG_HCU 7;
+BA_ "GenSigSendType" SG_ 2147485904 CCP_REQ_SIG_HCU 7;
+BA_ "GenSigStartValue" SG_ 953 AVL_COL_TEMP_PTC_BUCU 40;
+BA_ "GenSigStartValue" SG_ 953 FU_TEMP_BUCU 80;
+BA_ "GenSigStartValue" SG_ 723 DC_EVSE_TIME_TO_FULL_SOC 0;
+BA_ "GenSigStartValue" SG_ 723 DC_EVSE_TIME_TO_FAST_SOC 0;
+BA_ "GenSigStartValue" SG_ 723 DC_EVSE_FAST_SOC_CHARGING_END 0;
+BA_ "GenSigStartValue" SG_ 723 DC_EVSE_FULL_SOC_CHARGING_END 0;
+BA_ "GenSigStartValue" SG_ 723 DC_EVSE_I_REQUESTED 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_ENERG_TRNSM 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_AVAILABLE_I 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_AVAILABLE_U 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_PWR_LIM_REACHED 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_I_LIM_REACHED 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_U_LIM_REACHED 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_I 0;
+BA_ "GenSigStartValue" SG_ 721 DC_EVSE_U 0;
+BA_ "GenSigStartValue" SG_ 722 DC_EVSE_MAX_I_RIPPLE 0;
+BA_ "GenSigStartValue" SG_ 722 DC_EVSE_I_RGLTN_TOL 0;
+BA_ "GenSigStartValue" SG_ 722 DC_EVSE_I_MIN 0;
+BA_ "GenSigStartValue" SG_ 722 DC_EVSE_U_MIN 0;
+BA_ "GenSigStartValue" SG_ 720 HCUWakeState 0;
+BA_ "GenSigStartValue" SG_ 720 PilotWakeFFClear 0;
+BA_ "GenSigStartValue" SG_ 720 PilotWakeDisable 0;
+BA_ "GenSigStartValue" SG_ 720 DC_EVSE_ISOLATION_STATUS 0;
+BA_ "GenSigStartValue" SG_ 720 DC_EVSE_STATE 0;
+BA_ "GenSigStartValue" SG_ 720 OBCM_ENABLE_WUP 0;
+BA_ "GenSigStartValue" SG_ 720 CHARGING_TYPE_DETECTED 0;
+BA_ "GenSigStartValue" SG_ 720 AC_EVSE_I_MAX 0;
+BA_ "GenSigStartValue" SG_ 720 CHARGING_END_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 720 CHARGING_PORT_LOCKING_STATUS 0;
+BA_ "GenSigStartValue" SG_ 720 PILOT_STATUS 0;
+BA_ "GenSigStartValue" SG_ 720 PROXIMITY_STATUS 0;
+BA_ "GenSigSendType" SG_ 570 CapacityNomEst 7;
+BA_ "GenSigSendType" SG_ 570 DCResistanceEst 7;
+BA_ "GenSigSendType" SG_ 570 IsoResist 7;
+BA_ "GenSigSendType" SG_ 570 HVBatSOH 7;
+BA_ "GenSigStartValue" SG_ 570 BusbarTempMin 40;
+BA_ "GenSigSendType" SG_ 570 BusbarTempMin 7;
+BA_ "GenSigStartValue" SG_ 570 BusbarTempMax 40;
+BA_ "GenSigSendType" SG_ 570 BusbarTempMax 7;
+BA_ "GenSigStartValue" SG_ 570 BusbarTempAvg 40;
+BA_ "GenSigSendType" SG_ 570 BusbarTempAvg 7;
+BA_ "GenSigSendType" SG_ 1425 VehIdNmDig2_9 7;
+BA_ "GenSigSendType" SG_ 1424 VehIdNmDig10_17 7;
+BA_ "GenSigSendType" SG_ 1217 BatDisDetected 7;
+BA_ "GenSigSendType" SG_ 1217 LegDiagStndCndFltPr 7;
+BA_ "GenSigSendType" SG_ 1217 EngCltTmpV 7;
+BA_ "GenSigSendType" SG_ 1217 EngIntAirTmp 7;
+BA_ "GenSigStartValue" SG_ 1217 EngIntAirTmp 40;
+BA_ "GenSigSendType" SG_ 1217 LgsDiagCldStrtCondFltPrs 7;
+BA_ "GenSigSendType" SG_ 1217 LegDiagStndCndMet 7;
+BA_ "GenSigSendType" SG_ 1217 OAT_PT_EstV 7;
+BA_ "GenSigSendType" SG_ 1217 BarPrsAbs 7;
+BA_ "GenSigSendType" SG_ 1217 LgsDiagCldStrtCondMet 7;
+BA_ "GenSigSendType" SG_ 1217 BarPrsAbsV 7;
+BA_ "GenSigSendType" SG_ 1217 OAT_PT_Est 7;
+BA_ "GenSigStartValue" SG_ 1217 OAT_PT_Est 80;
+BA_ "GenSigSendType" SG_ 1217 EngWrmUpAch 7;
+BA_ "GenSigSendType" SG_ 1217 EngIntAirTmpV 7;
+BA_ "GenSigSendType" SG_ 1217 EngCltTmp 7;
+BA_ "GenSigStartValue" SG_ 1217 EngCltTmp 255;
+BA_ "GenSigSendType" SG_ 1217 PrpWrmUpAch 7;
+BA_ "GenSigSendType" SG_ 1217 ClrLgsDgInfo 7;
+BA_ "GenSigStartValue" SG_ 312 TAR_RPM_MAX_ENG 0;
+BA_ "GenSigStartValue" SG_ 176 TAR_TORQ_CRSH_SLOW 2047;
+BA_ "GenSigStartValue" SG_ 176 TAR_TORQ_CRSH_FAST 2047;
+BA_ "GenSigStartValue" SG_ 176 DRAW_TORQ_CRSH_GRB 2047;
+BA_ "GenSigStartValue" SG_ 166 CRC_TORQ_CRSH_2 0;
+BA_ "GenSigStartValue" SG_ 166 ALIV_TORQ_CRSH_2 0;
+BA_ "GenSigStartValue" SG_ 166 AVL_TORQ_CRSH_MIN 2047;
+BA_ "GenSigStartValue" SG_ 166 AVL_TORQ_CRSH_MAX 2047;
+BA_ "GenSigStartValue" SG_ 166 AVL_TORQ_CRSH_SPAR_NEG 2047;
+BA_ "GenSigStartValue" SG_ 166 AVL_TORQ_CRSH_SPAR_POS 2047;
+BA_ "GenSigStartValue" SG_ 242 CRC_TORQ_CRSH_5_BUCU 0;
+BA_ "GenSigStartValue" SG_ 242 ALIV_TORQ_CRSH_5_BUCU 0;
+BA_ "GenSigStartValue" SG_ 242 AVL_TORQ_CRSH_MIN_IGN_ANG_EFFS_B 2047;
+BA_ "GenSigStartValue" SG_ 242 AVL_TORQ_CRSH_MIN_IGN_ANG_LATE_B 2047;
+BA_ "GenSigStartValue" SG_ 1298 NM2_AUTOSAR_RES_ACAN_IK_DME 0;
+BA_ "GenSigStartValue" SG_ 1298 NM2_USR_DT_ACAN_IK_DME 0;
+BA_ "GenSigSendType" SG_ 573 HVOffTime 7;
+BA_ "GenSigSendType" SG_ 573 BECM_SW_VER_CHAR_VAL 7;
+BA_ "GenSigSendType" SG_ 573 BECM_SW_VER_CHAR_IDX 7;
+BA_ "GenSigSendType" SG_ 573 DCCnt_VMatch 7;
+BA_ "GenSigSendType" SG_ 573 DCCntInputVoltageAbnormal 7;
+BA_ "GenSigStartValue" SG_ 573 DCCntInputVoltage 0;
+BA_ "GenSigSendType" SG_ 573 DCCntInputVoltage 7;
+BA_ "GenSigSendType" SG_ 573 Balancing 7;
+BA_ "GenSigSendType" SG_ 573 Balanced 7;
+BA_ "GenSigSendType" SG_ 573 ACWiringLimit_I 7;
+BA_ "GenSigStartValue" SG_ 573 ACWiringLimit_I 30;
+BA_ "GenSigSendType" SG_ 573 ChargeLimit_V 7;
+BA_ "GenSigStartValue" SG_ 573 ChargeLimit_V 0;
+BA_ "GenSigSendType" SG_ 573 ChargeLimit_I 7;
+BA_ "GenSigStartValue" SG_ 573 ChargeLimit_I 0;
+BA_ "GenSigSendType" SG_ 560 DCContactorCmd 7;
+BA_ "GenSigSendType" SG_ 560 DCChargingActv 7;
+BA_ "GenSigSendType" SG_ 560 ACChargingActv 7;
+BA_ "GenSigSendType" SG_ 560 ACContactorCmd 7;
+BA_ "GenSigSendType" SG_ 560 CNT_TRAC_BATT_COMMAND 7;
+BA_ "GenSigSendType" SG_ 560 ContactorCmd 7;
+BA_ "GenSigSendType" SG_ 16 CRASH_EVENT_STATUS 4;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_MINUTES_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_MINUTES_GPS 7;
+BA_ "GenSigSendType" SG_ 1168 DIRECTION_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_DAY_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_DAY_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_MONTH_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_MONTH_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_HOURS_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_HOURS_GPS 7;
+BA_ "GenSigSendType" SG_ 1168 TIME_DST_STATUS_USER_CONFIG 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_YEAR_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_YEAR_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_ZONE_USER_CONFIG 48;
+BA_ "GenSigSendType" SG_ 1168 TIME_ZONE_USER_CONFIG 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_SECONDS_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_SECONDS_GPS 3;
+BA_ "GenSigSendType" SG_ 571 HVDischargeableCapacity 7;
+BA_ "GenSigSendType" SG_ 571 HVChargeableCapacity 7;
+BA_ "GenSigStartValue" SG_ 571 HVCoolantTemp 40;
+BA_ "GenSigSendType" SG_ 571 HVCoolantTemp 7;
+BA_ "GenSigSendType" SG_ 571 ChargeBuffer 7;
+BA_ "GenSigSendType" SG_ 571 DischargeBuffer 7;
+BA_ "GenSigSendType" SG_ 574 DischargeCurrent10sPeak 7;
+BA_ "GenSigSendType" SG_ 574 DischargeCurrentBuffer 7;
+BA_ "GenSigSendType" SG_ 574 DischargeCurrentBufferActive 7;
+BA_ "GenSigSendType" SG_ 574 DischargeCurrentInst 7;
+BA_ "GenSigSendType" SG_ 574 DischargeCurrentCont 7;
+BA_ "GenSigSendType" SG_ 572 ChargeCurrentCont 7;
+BA_ "GenSigSendType" SG_ 572 ChargeCurrentBuffer 7;
+BA_ "GenSigSendType" SG_ 572 ChargeCurrentInst 7;
+BA_ "GenSigSendType" SG_ 572 ChargeCurrentBufferActive 7;
+BA_ "GenSigSendType" SG_ 572 ChargeCurrent10sPeak 7;
+BA_ "GenSigStartValue" SG_ 567 HVMinCellV 510;
+BA_ "GenSigSendType" SG_ 567 HVMinCellV 7;
+BA_ "GenSigStartValue" SG_ 567 HVAvgCellT 40;
+BA_ "GenSigSendType" SG_ 567 HVAvgCellT 7;
+BA_ "GenSigSendType" SG_ 567 HVMaxCellV 7;
+BA_ "GenSigStartValue" SG_ 567 HVMaxCellV 510;
+BA_ "GenSigStartValue" SG_ 567 HVMaxCellT 40;
+BA_ "GenSigSendType" SG_ 567 HVMaxCellT 7;
+BA_ "GenSigStartValue" SG_ 567 HVMinCellT 40;
+BA_ "GenSigSendType" SG_ 567 HVMinCellT 7;
+BA_ "GenSigStartValue" SG_ 567 HVAvgCellV 510;
+BA_ "GenSigSendType" SG_ 567 HVAvgCellV 7;
+BA_ "GenSigSendType" SG_ 567 HVBatSOC 7;
+BA_ "GenSigSendType" SG_ 565 BECMStat 7;
+BA_ "GenSigSendType" SG_ 565 DCCntStatus 7;
+BA_ "GenSigSendType" SG_ 565 ACCntStatus 7;
+BA_ "GenSigSendType" SG_ 565 LVBatVol 7;
+BA_ "GenSigSendType" SG_ 565 HVHVILSta 7;
+BA_ "GenSigSendType" SG_ 565 HVCntStatus 7;
+BA_ "GenSigSendType" SG_ 565 CriticalBatFault 7;
+BA_ "GenSigSendType" SG_ 565 CordConnected 7;
+BA_ "GenSigSendType" SG_ 565 HVBatVoltage 7;
+BA_ "GenSigStartValue" SG_ 565 HVBatCurrent 1200;
+BA_ "GenSigSendType" SG_ 565 HVBatCurrent 7;
+BA_ "GenSigSendType" SG_ 565 TB_Status 7;
+BA_ "GenSigSendType" SG_ 565 HVChrHVILSta 7;
+BA_ "GenSigSendType" SG_ 575 DCChrRelayWelded 7;
+BA_ "GenSigSendType" SG_ 575 DCChrRelayFlt 7;
+BA_ "GenSigSendType" SG_ 575 BalancingFlt 7;
+BA_ "GenSigSendType" SG_ 575 LostSysVFlt 7;
+BA_ "GenSigSendType" SG_ 575 FuseFlt 7;
+BA_ "GenSigSendType" SG_ 575 ChrRelayFlt 7;
+BA_ "GenSigSendType" SG_ 575 I2T_Dischg_Flt 7;
+BA_ "GenSigSendType" SG_ 575 PreChrFlt 7;
+BA_ "GenSigSendType" SG_ 575 LostSysCurFlt 7;
+BA_ "GenSigSendType" SG_ 575 PreChrTempFlt 7;
+BA_ "GenSigSendType" SG_ 575 PosMCWelded 7;
+BA_ "GenSigSendType" SG_ 575 LostCelTFlt 7;
+BA_ "GenSigSendType" SG_ 575 I2T_Chg_Flt 7;
+BA_ "GenSigSendType" SG_ 575 LVLoFlt 7;
+BA_ "GenSigSendType" SG_ 575 ModHrtbtFlt 7;
+BA_ "GenSigSendType" SG_ 575 BatCommFlt 7;
+BA_ "GenSigSendType" SG_ 575 CelTmpHiFlt 7;
+BA_ "GenSigSendType" SG_ 575 CelOverVFlt 7;
+BA_ "GenSigSendType" SG_ 575 CrashDetected 7;
+BA_ "GenSigSendType" SG_ 575 LostLVVFlt 7;
+BA_ "GenSigSendType" SG_ 575 IsolationFlt 7;
+BA_ "GenSigSendType" SG_ 575 LostChrCANFlt 7;
+BA_ "GenSigSendType" SG_ 575 ChrRelayWelded 7;
+BA_ "GenSigSendType" SG_ 575 NegMCFlt 7;
+BA_ "GenSigSendType" SG_ 575 CPUFlt 7;
+BA_ "GenSigSendType" SG_ 575 CelOverTmpFlt 7;
+BA_ "GenSigSendType" SG_ 575 NegMCWelded 7;
+BA_ "GenSigSendType" SG_ 575 HighLiquidLvl 7;
+BA_ "GenSigSendType" SG_ 575 PreChrRelayFlt 7;
+BA_ "GenSigSendType" SG_ 575 CelUndVFlt 7;
+BA_ "GenSigSendType" SG_ 575 PreChrWelded 7;
+BA_ "GenSigSendType" SG_ 575 LostVehCANFlt 7;
+BA_ "GenSigSendType" SG_ 575 PosMCFlt 7;
+BA_ "GenSigSendType" SG_ 575 LostCelVFlt 7;
+BA_ "GenSigSendType" SG_ 1169 RTC_GPS_TIMEDELTA_VALID 7;
+BA_ "GenSigSendType" SG_ 1169 RTC_GPS_TIMEDELTA_SIGN 7;
+BA_ "GenSigSendType" SG_ 1169 RTC_GPS_TIMEDELTA 7;
+BA_ "GenSigStartValue" SG_ 1169 TIME_UTC_DAY_RTC 255;
+BA_ "GenSigSendType" SG_ 1169 TIME_UTC_DAY_RTC 7;
+BA_ "GenSigStartValue" SG_ 1169 TIME_UTC_MINUTES_RTC 255;
+BA_ "GenSigSendType" SG_ 1169 TIME_UTC_MINUTES_RTC 7;
+BA_ "GenSigStartValue" SG_ 1169 TIME_UTC_HOURS_RTC 255;
+BA_ "GenSigSendType" SG_ 1169 TIME_UTC_HOURS_RTC 7;
+BA_ "GenSigStartValue" SG_ 1169 TIME_UTC_YEAR_RTC 255;
+BA_ "GenSigSendType" SG_ 1169 TIME_UTC_YEAR_RTC 7;
+BA_ "GenSigStartValue" SG_ 1169 TIME_UTC_SECONDS_RTC 255;
+BA_ "GenSigSendType" SG_ 1169 TIME_UTC_SECONDS_RTC 3;
+BA_ "GenSigSendType" SG_ 1169 TIME_UTC_MONTH_RTC 7;
+BA_ "GenSigStartValue" SG_ 1169 TIME_UTC_MONTH_RTC 255;
+BA_ "GenSigSendType" SG_ 195 PrplsnSysAtv 7;
+BA_ "GenSigSendType" SG_ 195 SIRDpl 7;
+BA_ "GenSigSendType" SG_ 195 AirbgVDA 7;
+BA_ "GenSigSendType" SG_ 195 ESSI_HybEngStrtType 7;
+BA_ "GenSigSendType" SG_ 195 ESSI_HybEngStartStopMd 7;
+BA_ "GenSigSendType" SG_ 195 SysPwrMd 7;
+BA_ "GenSigSendType" SG_ 195 HybCrnkAbrted 7;
+BA_ "GenSigSendType" SG_ 169 HybDFCO_Req 7;
+BA_ "GenSigSendType" SG_ 169 HybCmndEngTorqProtVal 7;
+BA_ "GenSigStartValue" SG_ 169 HybCmndEngTorqImmed 1696;
+BA_ "GenSigSendType" SG_ 169 HybCmndEngTorqImmed 7;
+BA_ "GenSigSendType" SG_ 169 HybCmndTorqARC 7;
+BA_ "GenSigSendType" SG_ 169 HybCmndEngTorqRespType 7;
+BA_ "GenSigStartValue" SG_ 169 HybCmndEngTorqPrdtd 1696;
+BA_ "GenSigSendType" SG_ 169 HybCmndEngTorqPrdtd 7;
+BA_ "GenSigSendType" SG_ 464 HybERDTC_CdNum 7;
+BA_ "GenSigSendType" SG_ 464 HybERDTC_SysDes 7;
+BA_ "GenSigSendType" SG_ 464 HybSysEmsMlfAtv 7;
+BA_ "GenSigSendType" SG_ 464 Cat_Heat_Allow 7;
+BA_ "GenSigStartValue" SG_ 1185 WheelCircumfCompPct 0;
+BA_ "GenSigSendType" SG_ 1185 WheelCircumfCompPct 7;
+BA_ "GenSigSendType" SG_ 1185 EngOilLfRstRq 7;
+BA_ "GenSigSendType" SG_ 1185 EngReqAcc 7;
+BA_ "GenSigSendType" SG_ 1185 AccPedPos 7;
+BA_ "GenSigSendType" SG_ 1185 BrkAct 7;
+BA_ "GenSigStartValue" SG_ 192 BRAKE_BOOST_ENABLE_FLAG 3;
+BA_ "GenSigSendType" SG_ 192 BRAKE_BOOST_ENABLE_FLAG 7;
+BA_ "GenSigSendType" SG_ 192 PROP_SYS_ACTIVE_FLAG 7;
+BA_ "GenSigStartValue" SG_ 192 PROP_SYS_ACTIVE_FLAG 3;
+BA_ "GenSigSendType" SG_ 192 HCU_SOLARBOOST_FLAG 7;
+BA_ "GenSigSendType" SG_ 192 HCU_LV_MNTNC_FLAG 7;
+BA_ "GenSigSendType" SG_ 192 HCU_RPC_STATUS 7;
+BA_ "GenSigSendType" SG_ 192 CNT_PROP_MODE_STATUS 7;
+BA_ "GenSigSendType" SG_ 192 PROP_MODE_STAT 7;
+BA_ "GenSigSendType" SG_ 714 OBCM_CALID_CVN_STATUS 7;
+BA_ "GenSigSendType" SG_ 714 OBCM_CALID_CVN_INDEX 7;
+BA_ "GenSigSendType" SG_ 714 OBCM_CALID_CVN_CHAR 7;
+BA_ "GenSigSendType" SG_ 714 OBCM_ACVoltageFlt 7;
+BA_ "GenSigSendType" SG_ 714 OBCM_DTC_STAT 7;
+BA_ "GenSigSendType" SG_ 714 OBCM_DTC_INDEX 7;
+BA_ "GenSigSendType" SG_ 714 ConfHVCurrent 7;
+BA_ "GenSigSendType" SG_ 714 InputACVoltage 7;
+BA_ "GenSigSendType" SG_ 714 InputACCurrent 7;
+BA_ "GenSigSendType" SG_ 714 ACFreq 7;
+BA_ "GenSigSendType" SG_ 714 ChargerTemp 7;
+BA_ "GenSigSendType" SG_ 714 ChargeStatus 7;
+BA_ "GenSigSendType" SG_ 714 ChargerFault 7;
+BA_ "GenSigSendType" SG_ 714 HighestFaultCat 7;
+BA_ "GenSigSendType" SG_ 718 DC_OC_PROT 7;
+BA_ "GenSigSendType" SG_ 718 BLK_GOOD 7;
+BA_ "GenSigSendType" SG_ 718 BIAS_PRI_MICRO 7;
+BA_ "GenSigSendType" SG_ 718 DCDC_MOD2_TEMP_SENS 7;
+BA_ "GenSigSendType" SG_ 718 HV_OUTPUT_VOLTAGE 7;
+BA_ "GenSigSendType" SG_ 718 HV_ON 7;
+BA_ "GenSigSendType" SG_ 718 AC_GOOD 7;
+BA_ "GenSigSendType" SG_ 718 BULK_VOLTAGE 7;
+BA_ "GenSigSendType" SG_ 718 RLY_RDY 7;
+BA_ "GenSigSendType" SG_ 718 BIAS_GOOD 7;
+BA_ "GenSigSendType" SG_ 718 TAPb 7;
+BA_ "GenSigSendType" SG_ 718 DCDC_MOD1_TEMP_SENS 7;
+BA_ "GenSigSendType" SG_ 718 DCDC_VINCOTECH_TEMP_SENS 7;
+BA_ "GenSigSendType" SG_ 718 PFC_ON 7;
+BA_ "GenSigSendType" SG_ 716 OBCM_KeepAlive 7;
+BA_ "GenSigSendType" SG_ 716 OBCMAvailableACCurrent 7;
+BA_ "GenSigSendType" SG_ 716 ChargerEnable 7;
+BA_ "GenSigSendType" SG_ 716 ClearFault 7;
+BA_ "GenSigStartValue" SG_ 716 OBCMVoltageSetting 160;
+BA_ "GenSigSendType" SG_ 716 OBCMVoltageSetting 7;
+BA_ "GenSigSendType" SG_ 716 CurrentSetting 7;
+BA_ "GenSigSendType" SG_ 1408 FUEL_TYPE_OBD 7;
+BA_ "GenSigSendType" SG_ 1408 HCU_SYS_EMIS_REL_FAULT_ACTV 7;
+BA_ "GenSigSendType" SG_ 1408 HCU_CODE_NUMBER 7;
+BA_ "GenSigSendType" SG_ 1408 HCU_SYSTEM_DESIGNATOR 7;
+BA_ "GenSigSendType" SG_ 1408 ACCEL_POSITION_E 7;
+BA_ "GenSigSendType" SG_ 1408 ACCEL_POSITION_D 7;
+BA_ "GenSigSendType" SG_ 2015 FUNC_REQ_SIG 1;
+BA_ "GenSigSendType" SG_ 901 YRSSrNmRq 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat1_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat3_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 901 WHEEL_SPEED_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat4_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat3_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat4_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 901 YRSStpTxRq 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat2_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 901 LASSlfTstRq 7;
+BA_ "GenSigSendType" SG_ 901 WHEEL_SPEED_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat1_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 901 YRSSlfTstRq 7;
+BA_ "GenSigSendType" SG_ 901 VDLngAccSnrSlfTstRq 7;
+BA_ "GenSigSendType" SG_ 901 EBCM_DiagStat2_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 1883 DIAG_RESP_SIG_OBCM 7;
+BA_ "GenSigSendType" SG_ 2026 DIAG_RESP_SIG_HCU 7;
+BA_ "GenSigSendType" SG_ 1517 DIAG_RESP_SIG_EBC_UUDT 7;
+BA_ "GenSigSendType" SG_ 2029 DIAG_RESP_SIG_EBCM 7;
+BA_ "GenSigSendType" SG_ 2028 DIAG_RESP_SIG_BECM 7;
+BA_ "GenSigSendType" SG_ 1880 DIAG_RESP_SIG_APM 7;
+BA_ "GenSigSendType" SG_ 1875 DIAG_REQ_SIG_OBCM 7;
+BA_ "GenSigSendType" SG_ 2018 DIAG_REQ_SIG_HCU 7;
+BA_ "GenSigSendType" SG_ 2021 DIAG_REQ_SIG_EBCM 7;
+BA_ "GenSigSendType" SG_ 2020 DIAG_REQ_SIG_BECM 7;
+BA_ "GenSigSendType" SG_ 1872 DIAG_REQ_SIG_APM 7;
+BA_ "GenSigSendType" SG_ 1412 BECM_SYS_EMIS_REL_FAULT_ACTV 7;
+BA_ "GenSigSendType" SG_ 1412 HYB_BATT_STATE_OF_CHARGE 7;
+BA_ "GenSigSendType" SG_ 1412 BECM_SYSTEM_DESIGNATOR 7;
+BA_ "GenSigSendType" SG_ 1412 BECM_CODE_NUMBER 7;
+BA_ "GenSigStartValue" SG_ 1162 APM_14V_TEMP_SENSE 40;
+BA_ "GenSigSendType" SG_ 1162 APM_14V_TEMP_SENSE 7;
+BA_ "GenSigSendType" SG_ 1162 APM_POWER_LOSS 7;
+BA_ "GenSigStartValue" SG_ 1162 APM_HEAT_PLATE_TEMP_SENSE 40;
+BA_ "GenSigSendType" SG_ 1162 APM_HEAT_PLATE_TEMP_SENSE 7;
+BA_ "GenSigSendType" SG_ 1162 APM_HV_LOW_FAULT 7;
+BA_ "GenSigSendType" SG_ 469 APM_HV_VALIDITY 7;
+BA_ "GenSigSendType" SG_ 469 APM_DTC_STATUS 7;
+BA_ "GenSigSendType" SG_ 469 APM_VOLT_CONDITION_MET 7;
+BA_ "GenSigSendType" SG_ 469 APM_14V_CURRENT_SENSE 7;
+BA_ "GenSigSendType" SG_ 469 APM_14V_VOLTAGE_SENS 7;
+BA_ "GenSigSendType" SG_ 469 APM_DTC_INDEX 7;
+BA_ "GenSigSendType" SG_ 469 APM_MASTER_FAULT 7;
+BA_ "GenSigSendType" SG_ 469 APM_HV_INPUT_CURRENT 7;
+BA_ "GenSigSendType" SG_ 471 APM_14V_ENABLE 7;
+BA_ "GenSigSendType" SG_ 471 APM_VNA 7;
+BA_ "GenSigSendType" SG_ 471 APM_BOOST_ENABLE 7;
+BA_ "GenSigSendType" SG_ 471 APM_SET_POINT 7;
+BA_ "GenSigSendType" SG_ 257 ALL_NODE_REQ_SIG 7;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ OBCM SG_ 716 OBCM_KeepAlive 5000;
+VAL_ 1228 ESM_MUTE_SET 1 "ESM MUTED" 0 "ESM NOT MUTED" ;
+VAL_ 1228 CIS_REQ_REGEN_MODE_STARTUP 3 "Invalid / No Request" 2 "High" 1 "Custom" 0 "Normal" ;
+VAL_ 1228 CIS_REQ_DRIVE_MODE_STARTUP 7 "Invalid / No Request" 3 "ECO mode" 2 "SUSTAIN mode" 1 "SPORT mode" 0 "STEALTH mode" ;
+VAL_ 1228 CIS_REQ_REGEN_MODE_INSTANT 3 "No Request" 2 "High" 1 "Custom" 0 "Normal" ;
+VAL_ 1228 CIS_REQ_DRIVE_MODE_INSTANT 7 "No Request" 3 "ECO mode" 2 "SUSTAIN mode" 1 "SPORT mode" 0 "STEALTH mode" ;
+VAL_ 1228 DCM_SUSTAIN_Steering 3 "Invalid / Do Not Change" 1 "Sport" 0 "Normal" ;
+VAL_ 1228 DCM_SUSTAIN_RegenInCustom 15 "Invalid / Do Not Change" ;
+VAL_ 1228 DCM_SUSTAIN_PedalMap 3 "Sporty" 2 "Normal" 1 "Mellow" ;
+VAL_ 1228 DCM_STEALTH_Steering 3 "Invalid / Do Not Change" 1 "Sport" 0 "Normal" ;
+VAL_ 1228 DCM_STEALTH_RegenInCustom 15 "Invalid / Do Not Change" ;
+VAL_ 1228 DCM_STEALTH_PedalMap 3 "Sporty" 2 "Normal" 1 "Mellow" ;
+VAL_ 1228 DCM_SPORT_Steering 3 "Invalid / Do Not Change" 1 "Sport" 0 "Normal" ;
+VAL_ 1228 DCM_SPORT_RegenInCustom 15 "Invalid / Do Not Change" ;
+VAL_ 1228 DCM_SPORT_PedalMap 3 "Sporty" 2 "Normal" 1 "Mellow" ;
+VAL_ 1228 DCM_ECO_Steering 3 "Invalid / Do Not Change" 1 "Sport" 0 "Normal" ;
+VAL_ 1228 DCM_ECO_RegenInCustom 15 "Invalid / Do Not Change" ;
+VAL_ 1228 DCM_ECO_PedalMap 3 "Sporty" 2 "Normal" 1 "Mellow" ;
+VAL_ 1077 ST_OILV_MEASMT_1 0 "Boundary conditions okay" 1 "Boundary condition gear faulty" 2 "Boundary condition accelerator pedal faulty" 4 "Boundary condition speed faulty" 8 "Boundary condition operating point faulty" 15 "Boundary condition level faulty" 16 "Boundary condition oil pressure faulty" 32 "Boundary condition inclination faulty" 64 "Boundary condition engine speed faulty" 128 "Boundary condition engine oil temperature faulty" 255 "Boundary condition normal operation faulty" 4095 "signal_invalid" ;
+VAL_ 1077 FLLV_EOI_REL 0 "oil level below minimum" 1 "oil level at  minimum" 2 "oil level at 25%" 3 "oil level at 50%" 4 "oil level at 75%" 5 "oil level at 100%" 6 "oil level at 125%" 7 "oil level above maximum" 13 "oil level output OK" 14 "service function is active" 15 "signal_invalid" ;
+VAL_ 1077 ST_OILV_MEASMT_2 0 "calculation inactive" 1 "engine-off time not sufficient" 2 "no function value available from minimum detection" 4 "detail measurement is running" 8 "oil level calculation is running" 16 "value for fill level calculated" 18 "value for fill level not calculated" 32 "no valid reaction exists for control request " 64 "sensor error present" 128 "no valid application data existing" 255 "ECM in wake-up or post-run mode" 4095 "signal_invalid" ;
+VAL_ 1077 ST_OILV_MEASMT_POSS 0 "detailed measurement not allowed, conditions not met" 1 "detailed measurement allowed, conditions met" 3 "signal_invalid" ;
+VAL_ 1279 SOC_Customer 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1279 Relative_SOC_Customer 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1279 Ahr_To_Nominal_BOC_Customer 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1279 Ahr_Customer 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1265 bcm_fgd 255 "ERROR" 254 "NO_VALUE" ;
+VAL_ 1265 bcm_balancing_cnt 255 "ERROR" 254 "NO_VALUE" ;
+VAL_ 1265 bcm_vbus_neg 4095 "ERROR" 4094 "NO_VALUE" ;
+VAL_ 1265 bcm_vbus_pos 4095 "ERROR" 4094 "NO_VALUE" ;
+VAL_ 1265 bcm_mainc_step 14 "ALL_OPEN_SHUTDOWN" 13 "SHUTDOWN_REQUEST" 12 "MAIN_P_CLOSED_CHARGE" 11 "MAIN_PN_CLOSED_DRIVE" 10 "FAILED_MAINP_OPEN" 9 "OPEN_MAINR" 8 "CLOSE_MAINP" 7 "WAIT_PRECHARGE" 6 "FAILED_MAINN_OPEN" 5 "CLOSE_MAINN" 4 "FAILED_MAINN_WELD" 3 "FAILED_MAINR_OPEN" 2 "CLOSE_MAINR" 1 "FAILED_MAINP_OR_R_WELD" 0 "ALL_OPEN" ;
+VAL_ 1265 bcm_ibat2 65534 "NO_VALUE" 65535 "ERROR" ;
+VAL_ 970 TEMP_EX_UNFILT 255 "SNA" ;
+VAL_ 970 TEMP_EX 255 "SNA" ;
+VAL_ 919 ST_OBD_CYC 0 "bit mask used in coding - see excel for details" 63 "signal_invalid" ;
+VAL_ 1183 HCU_TIME_SINCE_12VRST_V 1 "Valid" 0 "Invalid" ;
+VAL_ 1183 PROPSYS_INACTV_EDGE_SINCE_12VRST 1 "False" 0 "True" ;
+VAL_ 1183 HCU_TIME_SINCE_PROPSYS_INACTV_V 1 "Valid" 0 "Invalid" ;
+VAL_ 1167 TIME_SINCE_PROPSYS_INACTIVE_V 1 "Valid" 0 "Invalid" ;
+VAL_ 1167 TIME_SINCE_RTC_READJUST_V 1 "Valid" 0 "Invalid" ;
+VAL_ 1664 KL30B_RELAY_STATE 1 "ON" 0 "OFF" ;
+VAL_ 1664 PT_RELAY_4_STATE 1 "ON" 0 "OFF" ;
+VAL_ 1664 PT_RELAY_3_STATE 1 "ON" 0 "OFF" ;
+VAL_ 1664 PT_RELAY_2_STATE 1 "ON" 0 "OFF" ;
+VAL_ 409 ALIV_ACLNX_COG 15 "signal_invalid" ;
+VAL_ 409 QU_ACLNX_COG 2 "Signal value valid" 3 "Limited signal quality or monitoring " 6 "Signal value invalid" 8 "Initialisation" 10 "Signal value valid, temorary state" 11 "Limited signal quality or monitoring , temporary state" 12 "Replacement value set in signal, temporary state" 14 "Signal value invalid, temporary state" 15 "signal_invalid" ;
+VAL_ 410 ALIV_ACLNY_COG 15 "signal_invalid" ;
+VAL_ 410 QU_ACLNY_COG 1 "Signal value is valid, secured and plausible" 2 "Signal value is valid" 3 "Limited signal quality/monitoring" 6 "Signal value invalid" 8 "Initialisation" 9 "Signal value is valid, secured and plausible, temporary status" 10 "Signal value is valid, temporary state" 11 "Limited signal quality/monitoring, temporary state" 12 "Replacement value set in signal, temporary state" 14 "Signal value invalid, temporary state" 15 "signal_invalid" ;
+VAL_ 952 DMTL_ERR_FLAG_HT_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_HT_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_HT_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_HT_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_HT_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_HT_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_VA_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_VA_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_VA_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_VA_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_VA_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_VA_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_PP_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_PP_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_PP_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_PP_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_ERR_FLAG_PP_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 DMTL_CYC_FLAG_PP_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FTIV_ERR_FLAG_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FTIV_CYC_FLAG_SC_BT_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FTIV_ERR_FLAG_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FTIV_CYC_FLAG_SC_GND_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FTIV_ERR_FLAG_SC_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FTIV_CYC_FLAG_SC_CABR_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FUFF_UNLSW_RQ_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 952 FUFF_SEN_ST_BUCU 3 "Signal_invalid" 1 "Error_present" 0 "No_error" ;
+VAL_ 953 AVL_COL_TEMP_PTC_BUCU 255 "Invalid / Not Available" ;
+VAL_ 953 EVAP_U_FUTAP_SEN_1 65535 "Signal_invalid" ;
+VAL_ 953 EVAP_U_FUTAP_SEN_2 65535 "Signal_invalid" ;
+VAL_ 953 INHI_DMTL_PP_TRGG_BUCU 3 "Signal_invalid" 1 "DMTL_pump_activation_inhibited" 0 "DMTL_pump_activation_not_inhibited" ;
+VAL_ 953 FU_TEMP_BUCU 255 "Signal_invalid" ;
+VAL_ 951 EVAP_PP_MOT_FREQ_FILT_LKD_BUCU 65535 "Signal_invalid" ;
+VAL_ 951 EVAP_PP_MOT_U_LKD_BUCU 65535 "Signal_invalid" ;
+VAL_ 951 EVAP_PP_MOT_I_LKD_BUCU 65535 "Signal_invalid" ;
+VAL_ 951 EVAP_PP_MOT_FREQ_LKD_BUCU 65535 "Signal_invalid" ;
+VAL_ 954 ST_FULG_BUCU 0 "no_refueling" 1 "refueling_demand" 2 "refueling_allowed" 3 "fuel_tank_flap_open" 4 "refueling_step" 5 "driving_with_open_tank_flap_low_tank_pressure" 6 "driving_with_open_tank_flap_high_tank_pressure" 7 "running_fuel_pump_nozzle" 15 "Signal_invalid" ;
+VAL_ 954 ST_FUFC_BUCU 3 "Signal_invalid" 1 "Open_fuel_filler_cap_detected" 0 "Open_fuel_filler_cap_not_detected" ;
+VAL_ 723 DC_EVSE_TIME_TO_FULL_SOC 65533 "Function not available" 65534 "Function reports error" 65535 "SNA" ;
+VAL_ 723 DC_EVSE_TIME_TO_FAST_SOC 65533 "Function not available" 65534 "Function reports error" 65535 "SNA" ;
+VAL_ 723 DC_EVSE_FAST_SOC_CHARGING_END 0 "Fast Charging not complete" 1 "Fast Charging complete" 3 "SNA" ;
+VAL_ 723 DC_EVSE_FULL_SOC_CHARGING_END 0 "Charging not complete" 1 "Charging complete" 3 "SNA" ;
+VAL_ 723 DC_EVSE_I_REQUESTED 253 "Signal not available" 254 "Error" 255 "SNA" ;
+VAL_ 721 DC_EVSE_ENERG_TRNSM 253 "Function not available" 254 "Function reports error" 255 "SNA" ;
+VAL_ 721 DC_EVSE_AVAILABLE_I 2047 "SNA" ;
+VAL_ 721 DC_EVSE_AVAILABLE_U 2047 "SNA" ;
+VAL_ 721 DC_EVSE_PWR_LIM_REACHED 0 "Limit not reached" 1 "Limit reached" 3 "SNA" ;
+VAL_ 721 DC_EVSE_I_LIM_REACHED 0 "Limit not reached" 1 "Limit reached" 3 "SNA" ;
+VAL_ 721 DC_EVSE_U_LIM_REACHED 0 "Limit not reached" 1 "Limit reached" 3 "SNA" ;
+VAL_ 721 DC_EVSE_I 8191 "SNA" ;
+VAL_ 721 DC_EVSE_U 8191 "SNA" ;
+VAL_ 722 DC_EVSE_MAX_I_RIPPLE 4095 "SNA" ;
+VAL_ 722 DC_EVSE_I_RGLTN_TOL 4095 "SNA" ;
+VAL_ 722 DC_EVSE_I_MIN 4095 "SNA" ;
+VAL_ 722 DC_EVSE_U_MIN 4095 "SNA" ;
+VAL_ 720 PilotWakeFFClear 0 "FALSE" 1 "TRUE" ;
+VAL_ 720 PilotWakeDisable 0 "FALSE" 1 "TRUE" ;
+VAL_ 720 DC_EVSE_ISOLATION_STATUS 0 "Invalid (SNA)" 1 "Valid (tested, isolation OK)" 2 "Warning (tested, isolation impaired, WARN range)" 3 "Fault (tested, isolation insufficient, FAULT range)" ;
+VAL_ 720 DC_EVSE_STATE 0 "Charger not ready (unauthorized, standby, maintenance)" 1 "Charger ready" 2 "Charger Shutdown" 3 "Usage Interruption Event (by Utility/Equipment)" 4 "Isolation Monitoring active" 5 "Emergency Shutdown (ESTOP button, System Incompatibilty)" 6 "Malfunction (Nonrecoverable Charger Fault)" 15 "SNA" ;
+VAL_ 720 OBCM_ENABLE_WUP 0 "Inactive" 1 "Active" 2 "HW Fault" 3 "SNA" ;
+VAL_ 720 CHARGING_TYPE_DETECTED 0 "No charging type detected" 1 "AC Type 1" 2 "AC Type 2" 3 "AC China" 4 "DC Type 1" 5 "DC Type 2" 15 "SNA" ;
+VAL_ 720 AC_EVSE_I_MAX 255 "SNA" ;
+VAL_ 720 CHARGING_END_REQUEST 0 "No Charging Stop Request" 1 "Charging Stop Request (Driver)" 2 "Charging Stop Request (CSM)" 3 "SNA" ;
+VAL_ 720 CHARGING_PORT_LOCKING_STATUS 0 "Unlocked" 1 "Locked" 2 "Error" 3 "SNA" ;
+VAL_ 720 PILOT_STATUS 0 "No Pilot Signal detected (A)" 1 "Pilot Detected, AC, EV not ready (B)" 2 "Pilot Detected, AC, EV ready (C)" 3 "Pilot Detected, DC, EV not ready (B)" 4 "Pilot Detected, DC, EV ready (C)" 5 "Static Pilot detected (B1/C1)" 6 "EVSE Fault (F)" 7 "Pilot Voltage/Duty Out Of Range" 8 "Pilot Sensing Fault" 15 "SNA" ;
+VAL_ 720 PROXIMITY_STATUS 0 "Cord Unplugged " 1 "Cord Plugged, Button Pressed" 2 "Cord Plugged, Button Released" 3 "Short To High/B+" 4 "Short To Low/GND" 5 "Proxi Voltage Out of Range" 6 "Error in Proxi Sensing/Supply Circuitry " 15 "SNA" ;
+VAL_ 570 CapacityNomEst 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 570 DCResistanceEst 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 570 IsoResist 1022 "INACTIVE" 1023 "ERROR" ;
+VAL_ 570 HVBatSOH 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 570 BusbarTempMin 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 570 BusbarTempMax 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 570 BusbarTempAvg 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 1217 BatDisDetected 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 LegDiagStndCndFltPr 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 EngCltTmpV 1 "Invalid" 0 "Valid" ;
+VAL_ 1217 LgsDiagCldStrtCondFltPrs 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 LegDiagStndCndMet 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 OAT_PT_EstV 1 "Invalid" 0 "Valid" ;
+VAL_ 1217 LgsDiagCldStrtCondMet 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 BarPrsAbsV 1 "Invalid" 0 "Valid" ;
+VAL_ 1217 EngWrmUpAch 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 EngIntAirTmpV 1 "Invalid" 0 "Valid" ;
+VAL_ 1217 PrpWrmUpAch 1 "TRUE" 0 "FALSE" ;
+VAL_ 1217 ClrLgsDgInfo 1 "TRUE" 0 "FALSE" ;
+VAL_ 312 TAR_RPM_MAX_ENG 255 "signal_invalid" ;
+VAL_ 176 ALIV_RQ_TORQ_CRSH_GRB 15 "signal_invalid" ;
+VAL_ 176 ST_RQ_TORQ_GRB 0 "no torque requested" 1 "absolute torque increase requested" 2 "absolute torque decrease requested" 3 "engine speed control" 4 "relative torque decrease requested" 6 "anticipatory relative torque increase requested" 7 "anticipatory absolute torque increase requested" 8 "absolute torque decrease requested with injection cut-off allowed" 9 "absolute torque decrease requested with injection cut-off not allowed" 10 "relative torque increase requested" 11 "relative torque decrease requested with injection cut-off allowed" 12 "relative torque decrease requested with injection cut-off not allowed" 15 "signal_invalid" ;
+VAL_ 166 ALIV_TORQ_CRSH_2 15 "signal_invalid" ;
+VAL_ 242 ALIV_TORQ_CRSH_5_BUCU 15 "signal_invalid" ;
+VAL_ 417 ALIV_V_VEH 15 "signal_invalid" ;
+VAL_ 417 QU_V_VEH_COG 1 "signal value valid and plausible" 8 "Initialization" 10 "signal value valid, temporary state" 11 "limited signal quality/monitoring, temporary state" 14 "value of data signal is invalid, temporary state" 15 "signal_invalid" ;
+VAL_ 417 DVCO_VEH 0 "vehicle is standing still" 1 "vehicle is moving in forward direction" 2 "vehicle is moving in backward direction" 3 "vehicle is moving" 4 "vehicle is standing still, dyno test bench mode for back-axle" 5 "vehicle is standing still, 2-axle dyno test bench mode" 6 "vehicle is standing still, dyno test bench mode for front-axle" 7 "signal_invalid" ;
+VAL_ 1298 NM2_AUTOSAR_RES_ACAN_IK_DME -2147483648 "signal_invalid" ;
+VAL_ 1281 NM2_AUTOSAR_RES_ACAN_HCU -2147483648 "signal_invalid" ;
+VAL_ 573 HVOffTime 254 "254h or greater." 255 "N/A" ;
+VAL_ 573 DCCnt_VMatch 1 "Delta-V acceptable" 0 "Delta-V too high" ;
+VAL_ 573 DCCntInputVoltageAbnormal 1 "Abnormal" 0 "Normal" ;
+VAL_ 573 DCCntInputVoltage 511 "SNA" ;
+VAL_ 573 Balancing 1 "Cell Balancing In Progress" 0 "Cell Balancing Not In Progress" ;
+VAL_ 573 Balanced 1 "Balanced Within Target Limits" 0 "Unbalanced / Undetermined" ;
+VAL_ 560 BECM_NM 1 "ON" 0 "OFF" ;
+VAL_ 560 DCContactorCmd 1 "Close" 0 "Open" ;
+VAL_ 560 DCChargingActv 1 "Active (DC charging in progress)" 0 "Inactive" ;
+VAL_ 560 ACChargingActv 1 "Active (AC charging in progress)" 0 "Inactive" ;
+VAL_ 560 ACContactorCmd 1 "Close" 0 "Open" ;
+VAL_ 560 ContactorCmd 4 "Un-restricted Close w/ precharge" 3 "Restricted Close" 2 "Un-restricted Open" 1 "Restricted Open" 0 "Invalid" ;
+VAL_ 1168 TIME_UTC_MINUTES_GPS 255 "SNA" ;
+VAL_ 1168 DIRECTION_GPS 15 "SNA" 7 "NW" 6 "W" 5 "SW" 4 "S" 3 "SE" 2 "E" 1 "NE" 0 "N" ;
+VAL_ 1168 TIME_UTC_DAY_GPS 255 "SNA" ;
+VAL_ 1168 TIME_UTC_MONTH_GPS 255 "SNA" 11 "DEC" 10 "NOV" 9 "OCT" 8 "SEP" 7 "AUG" 6 "JUL" 5 "JUN" 4 "MAY" 3 "APR" 2 "MAR" 1 "FEB" 0 "JAN" ;
+VAL_ 1168 TIME_UTC_HOURS_GPS 255 "SNA" ;
+VAL_ 1168 TIME_DST_STATUS_USER_CONFIG 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1168 TIME_UTC_YEAR_GPS 255 "SNA" ;
+VAL_ 1168 TIME_UTC_SECONDS_GPS 255 "SNA" ;
+VAL_ 571 HVDischargeableCapacity 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 571 HVChargeableCapacity 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 571 HVCoolantTemp 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 571 ChargeBuffer 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 571 DischargeBuffer 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 574 DischargeCurrent10sPeak 16383 "ERROR" 16382 "NO_VALUE" ;
+VAL_ 574 DischargeCurrentBuffer 255 "ERROR" 254 "NO_VALUE" ;
+VAL_ 574 DischargeCurrentBufferActive 3 "CELL_VOLTAGE_BUFFER_ACTIVE" 2 "FUSE_BUFFER_ACTIVE" 1 "CURRENT_BUFFER_ACTIVE" 0 "ALL_BUFFERS_EQUAL" ;
+VAL_ 574 DischargeCurrentInst 16383 "ERROR" 16382 "NO_VALUE" ;
+VAL_ 574 DischargeCurrentCont 16383 "ERROR" 16382 "NO_VALUE" ;
+VAL_ 572 ChargeCurrentCont 16383 "ERROR" 16382 "NO_VALUE" ;
+VAL_ 572 ChargeCurrentBuffer 255 "ERROR" 254 "NO_VALUE" ;
+VAL_ 572 ChargeCurrentInst 16383 "ERROR" 16382 "NO_VALUE" ;
+VAL_ 572 ChargeCurrentBufferActive 3 "CELL_VOLTAGE_BUFFER_ACTIVE" 2 "FUSE_BUFFER_ACTIVE" 1 "CURRENT_BUFFER_ACTIVE" 0 "ALL_BUFFERS_EQUAL" ;
+VAL_ 572 ChargeCurrent10sPeak 16383 "ERROR" 16382 "NO_VALUE" ;
+VAL_ 567 HVMinCellV 511 "ERROR" 510 "NO_VALUE" ;
+VAL_ 567 HVAvgCellT 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 567 HVMaxCellV 511 "ERROR" 510 "NO_VALUE" ;
+VAL_ 567 HVMaxCellT 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 567 HVMinCellT 127 "ERROR" 126 "NO_VALUE" ;
+VAL_ 567 HVAvgCellV 511 "ERROR" 510 "NO_VALUE" ;
+VAL_ 567 HVBatSOC 1023 "ERROR" 1022 "NO_VALUE" ;
+VAL_ 565 ChrgHVReadyStat 1 "Ready" 0 "Not Ready" ;
+VAL_ 565 HVReadyStat 3 "Reserved" 2 "Reserved" 1 "Ready" 0 "Not Ready" ;
+VAL_ 565 BECMStat 7 "Reserved" 6 "Reserved" 5 "Shutdown" 4 "Critical Fault" 3 "HV Engaged" 2 "Standby" 1 "Initialization" 0 "Reserved" ;
+VAL_ 565 DCCntStatus 1 "Closed" 0 "Open" ;
+VAL_ 565 ACCntStatus 1 "Closed" 0 "Open" ;
+VAL_ 565 LVBatVol 255 "ERROR" 254 "NO_VALUE" ;
+VAL_ 565 HVHVILSta 3 "Undetermined" 2 "Fail" 1 "Pass" 0 "Not Src" ;
+VAL_ 565 HVCntStatus 3 "Close" 2 "Open" 1 "Precharge" 0 "Inhibit" ;
+VAL_ 565 CriticalBatFault 1 "Error present" 0 "no Error present" ;
+VAL_ 565 CordConnected 1 "Cord plugged" 0 "Cord not plugged" ;
+VAL_ 565 HVBatVoltage 511 "ERROR" 510 "NO_VALUE" ;
+VAL_ 565 HVBatCurrent 2047 "ERROR" 2046 "NO_VALUE" ;
+VAL_ 565 TB_Status 8 "HARD_EPO" 7 "SOFT_EPO" 6 "EPO_REQUEST" 5 "LIMP_HOME_LOW_NO_RESTART" 4 "LIMP_HOME_LOW" 3 "LIMP_HOME_HIGH" 2 "CHARGER_DISABLED" 1 "WARNING" 0 "NO_FAULT" ;
+VAL_ 565 HVChrHVILSta 3 "Undetermined" 2 "Fail" 1 "Pass" 0 "Not Src" ;
+VAL_ 575 DCChrRelayWelded 1 "Yes" 0 "No" ;
+VAL_ 575 DCChrRelayFlt 1 "Yes" 0 "No" ;
+VAL_ 575 BalancingFlt 1 "Yes" 0 "No" ;
+VAL_ 575 LostSysVFlt 1 "Yes" 0 "No" ;
+VAL_ 575 FuseFlt 1 "Yes" 0 "No" ;
+VAL_ 575 ChrRelayFlt 1 "Yes" 0 "No" ;
+VAL_ 575 I2T_Dischg_Flt 1 "Yes" 0 "No" ;
+VAL_ 575 PreChrFlt 1 "Yes" 0 "No" ;
+VAL_ 575 LostSysCurFlt 1 "Yes" 0 "No" ;
+VAL_ 575 PreChrTempFlt 1 "Yes" 0 "No" ;
+VAL_ 575 PosMCWelded 1 "Yes" 0 "No" ;
+VAL_ 575 LostCelTFlt 1 "Yes" 0 "No" ;
+VAL_ 575 I2T_Chg_Flt 1 "Yes" 0 "No" ;
+VAL_ 575 LVLoFlt 1 "Yes" 0 "No" ;
+VAL_ 575 ModHrtbtFlt 1 "Yes" 0 "No" ;
+VAL_ 575 BatCommFlt 1 "Yes" 0 "No" ;
+VAL_ 575 CelTmpHiFlt 1 "Yes" 0 "No" ;
+VAL_ 575 CelOverVFlt 1 "Yes" 0 "No" ;
+VAL_ 575 CrashDetected 1 "Yes" 0 "No" ;
+VAL_ 575 LostLVVFlt 1 "Yes" 0 "No" ;
+VAL_ 575 IsolationFlt 1 "Yes" 0 "No" ;
+VAL_ 575 LostChrCANFlt 1 "Yes" 0 "No" ;
+VAL_ 575 ChrRelayWelded 1 "Yes" 0 "No" ;
+VAL_ 575 NegMCFlt 1 "Yes" 0 "No" ;
+VAL_ 575 CPUFlt 1 "Yes" 0 "No" ;
+VAL_ 575 CelOverTmpFlt 1 "Yes" 0 "No" ;
+VAL_ 575 NegMCWelded 1 "Yes" 0 "No" ;
+VAL_ 575 HighLiquidLvl 1 "Yes" 0 "No" ;
+VAL_ 575 PreChrRelayFlt 1 "Yes" 0 "No" ;
+VAL_ 575 CelUndVFlt 1 "Yes" 0 "No" ;
+VAL_ 575 PreChrWelded 1 "Yes" 0 "No" ;
+VAL_ 575 LostVehCANFlt 1 "Yes" 0 "No" ;
+VAL_ 575 PosMCFlt 1 "Yes" 0 "No" ;
+VAL_ 575 LostCelVFlt 1 "Yes" 0 "No" ;
+VAL_ 1169 RTC_GPS_TIMEDELTA_VALID 1 "Valid" 0 "Invalid" ;
+VAL_ 1169 RTC_GPS_TIMEDELTA_SIGN 1 "RTC is ahead of actual time (GPS)" 0 "RTC is behind actual time (GPS)" ;
+VAL_ 1169 RTC_GPS_TIMEDELTA 16383 "N/A" ;
+VAL_ 1169 TIME_UTC_DAY_RTC 255 "SNA" ;
+VAL_ 1169 TIME_UTC_MINUTES_RTC 255 "SNA" ;
+VAL_ 1169 TIME_UTC_HOURS_RTC 255 "SNA" ;
+VAL_ 1169 TIME_UTC_YEAR_RTC 255 "SNA" ;
+VAL_ 1169 TIME_UTC_SECONDS_RTC 255 "SNA" ;
+VAL_ 1169 TIME_UTC_MONTH_RTC 255 "SNA" 11 "DEC" 10 "NOV" 9 "OCT" 8 "SEP" 7 "AUG" 6 "JUL" 5 "JUN" 4 "MAY" 3 "APR" 2 "MAR" 1 "FEB" 0 "JAN" ;
+VAL_ 195 PrplsnSysAtv 1 "TRUE" 0 "FALSE" ;
+VAL_ 195 SIRDpl 1 "TRUE" 0 "FALSE" ;
+VAL_ 195 AirbgVDA 1 "Virtual Device Available" 0 "Virtual Device Unavailable" ;
+VAL_ 195 ESSI_HybEngStrtType 9 "Compression Test" 8 "Auto Start Generic" 7 "Auto Start Aggressive" 6 "Auto Start Normal" 5 "Auto Start Smooth" 4 "Key Start Generic" 3 "Key Start Low Power B" 2 "Key Start Low Power" 1 "Key Start normal" 0 "No Start" ;
+VAL_ 195 ESSI_HybEngStartStopMd 4 "Producing Troque" 3 "Enable Fuel" 2 "Start pending" 0 "Stop Command" ;
+VAL_ 195 SysPwrMd 3 "KEY CRANK REQUEST" 2 "RUN / IGNITION ON" 1 "ACCESSORY" 0 "OFF" ;
+VAL_ 195 HybCrnkAbrted 1 "request active" 0 "no request" ;
+VAL_ 169 HybDFCO_Req 1 "request active" 0 "no request" ;
+VAL_ 169 HybCmndEngTorqRespType 3 "spark retard / fuel cutoff / auto actuator" 2 "spark retard and fuel cutoff" 1 "Spark retard" 0 "Torque via air path" ;
+VAL_ 464 HybERDTC_SysDes 15 "U3-Network Codes Reserved" 14 "U2-Network Codes Reserved" 13 "U1-Network Codes MFG Controlled" 12 "U0-Network Codes SAE Controlled" 11 "B3-Body Codes Reserved" 10 "B2-Body Codes Reserved" 9 "B1-Body Codes MFG Controlled" 8 "B0-Body Codes SAE Controlled" 7 "C3-Chassis Codes Reserved" 6 "C2-Chassis Codes Reserved" 5 "C1-Chassis Codes MFG Controlled" 4 "C0-Chassis Codes SAE Controlled" 3 "P3-Powertrain Codes Reserved" 2 "P2-Powertrain Codes Reserved" 1 "P1-Powertrain Codes MFG Controlled" 0 "P0-Powertrain Codes SAE Controlled" ;
+VAL_ 464 HybSysEmsMlfAtv 1 "TRUE" 0 "FALSE" ;
+VAL_ 464 Cat_Heat_Allow 1 "Not Allowed" 0 "Allowed" ;
+VAL_ 1185 EngOilLfRstRq 1 "TRUE" 0 "FALSE" ;
+VAL_ 1185 EngReqAcc 3 "engine speed and torque demand granted" 2 "engine torque demand granted" 1 "engine speed demand granted" 0 "no demand or demand denied" ;
+VAL_ 1185 BrkAct 1 "TRUE" 0 "FALSE" ;
+VAL_ 192 BRAKE_BOOST_ENABLE_FLAG 3 "Signal Invalid" 1 "Active" 0 "Inactive" ;
+VAL_ 192 PROP_SYS_ACTIVE_FLAG 3 "Signal Invalid" 1 "Active" 0 "Not Active" ;
+VAL_ 192 HCU_SOLARBOOST_FLAG 3 "FAULT" 2 "COMPLETE" 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 192 HCU_LV_MNTNC_FLAG 3 "FAULT" 2 "COMPLETE" 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 192 HCU_RPC_STATUS 2 "RPC_IN_PROGRESS" 1 "RPC_INITIATED" 0 "RPC_INACTIVE" ;
+VAL_ 192 PROP_MODE_STAT 15 "PT_SHUTDOWN_ESTOP" 14 "HV_DISABLE_ESTOP" 13 "PT_ESTOP" 12 "PT_SHUTDOWN_CHRG" 11 "HV_DISABLE_CHRG" 10 "HV_ACTIVE_CHRG" 9 "HV_POWERUP_CHRG" 8 "PT_SHUTDOWN" 7 "HV_DISABLE" 6 "PROPULSION_DISABLE" 5 "PROPULSION_RAMPOUT" 4 "PROPULSION" 3 "HV_ACTIVE" 2 "HV_POWERUP" 1 "LV_POWERUP" 0 "PT_OFF" ;
+VAL_ 714 OBCM_CALID_CVN_STATUS 2 "CALID and CVN ready" 1 "CALID ready / CVN calculation pending" 0 "Initializing" ;
+VAL_ 714 OBCM_ACVoltageFlt 3 "AC input voltage high" 2 "AC input voltage low" 1 "AC input voltage in operating range" 0 "Diagnose in progress or undeteremined" ;
+VAL_ 714 OBCM_DTC_STAT 4 "Diagnostic Failed" 3 "Diagnostic Passed" 2 "No Status To Report" 1 "Critically Disabled" 0 "Not Supported" ;
+VAL_ 714 ACFreq 1 "60 Hz" 0 "50 Hz" ;
+VAL_ 714 ChargeStatus 1 "Enable" 0 "Disable" ;
+VAL_ 718 DC_OC_PROT 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 BLK_GOOD 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 HV_ON 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 AC_GOOD 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 RLY_RDY 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 BIAS_GOOD 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 TAPb 1 "TRUE" 0 "FALSE" ;
+VAL_ 718 PFC_ON 1 "TRUE" 0 "FALSE" ;
+VAL_ 716 OBCM_KeepAlive 1 "Inhibit Shutdown / Keep Alive" 0 "Allow Shutdown" ;
+VAL_ 716 ChargerEnable 1 "Enable" 0 "Disable" ;
+VAL_ 1408 FUEL_TYPE_OBD 22 "HYB_REG" 21 "HYB_MIX" 20 "HYB_ELEC" 17 "HYB_GAS" 1 "GAS" ;
+VAL_ 1408 HCU_SYS_EMIS_REL_FAULT_ACTV 1 "True (MIL Requested ON)" 0 "False (MIL Requested OFF)" ;
+VAL_ 1408 HCU_SYSTEM_DESIGNATOR 15 "U3-Network Codes Reserved" 14 "U2- Network Codes Reserved" 13 "U1-Network Codes MFG Controlled" 12 "U0-Network Codes SAE Controlled" 11 "B3-Body Codes Reserved" 10 "B2-Body Codes Reserved" 9 "B1-Body Codes MFG Controlled" 8 "B0-Body Codes SAE Controlled" 7 "C3-Chassis Codes Reserved" 6 "C2-Chassis Codes Reserved" 5 "C1-Chassis Codes MFG Controlled" 4 "C0-Chassis Codes SAE Controlled" 3 "P3-Powertrain Codes Reserved" 2 "P2-Powertrain Codes Reserved" 1 "P1-Powertrain Codes MFG Controlled" 0 "P0-Powertrain Codes SAE Controlled" ;
+VAL_ 901 YRSSrNmRq 1 "send serial number" 0 "no action" ;
+VAL_ 901 EBCM_DiagStat1_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 901 EBCM_DiagStat3_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 901 WHEEL_SPEED_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 901 EBCM_DiagStat4_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 901 YRSStpTxRq 1 "initiate self test" 0 "no action" ;
+VAL_ 901 LASSlfTstRq 1 "initiate self test" 0 "no action" ;
+VAL_ 901 YRSSlfTstRq 1 "initiate self test" 0 "no action" ;
+VAL_ 901 VDLngAccSnrSlfTstRq 1 "initiate self test" 0 "no action" ;
+VAL_ 901 EBCM_DiagStat2_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 1412 BECM_SYS_EMIS_REL_FAULT_ACTV 1 "True (MIL Requested ON)" 0 "False (MIL Requested OFF)" ;
+VAL_ 1412 BECM_SYSTEM_DESIGNATOR 15 "U3-Network Codes Reserved" 14 "U2- Network Codes Reserved" 13 "U1-Network Codes MFG Controlled" 12 "U0-Network Codes SAE Controlled" 11 "B3-Body Codes Reserved" 10 "B2-Body Codes Reserved" 9 "B1-Body Codes MFG Controlled" 8 "B0-Body Codes SAE Controlled" 7 "C3-Chassis Codes Reserved" 6 "C2-Chassis Codes Reserved" 5 "C1-Chassis Codes MFG Controlled" 4 "C0-Chassis Codes SAE Controlled" 3 "P3-Powertrain Codes Reserved" 2 "P2-Powertrain Codes Reserved" 1 "P1-Powertrain Codes MFG Controlled" 0 "P0-Powertrain Codes SAE Controlled" ;
+VAL_ 471 APM_BOOST_ENABLE 3 "Enabled" 0 "Disabled" ;
+VAL_ 1273 Ah_Upper_State 7 "PLAUSIBILITY_CHECK" 6 "OCV_CORRECTION" 5 "SOFT_BOC_RESET" 4 "HARD_BOC_RESET" 3 "SOFT_TOC_RESET" 2 "HARD_TOC_RESET" 1 "INTEGRATION" 0 "INITIALIZATION" ;
+VAL_ 1273 SOC_Upper 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1273 SOC_Corrected_Max 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1273 Relative_SOC_Upper 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1273 Ahr_Upper 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1273 Ahr_To_Nominal_BOC_Max 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1272 Ahr_To_Nominal_BOC_Min 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1272 Ah_Lower_State 7 "PLAUSIBILITY_CHECK" 6 "OCV_CORRECTION" 5 "SOFT_BOC_RESET" 4 "HARD_BOC_RESET" 3 "SOFT_TOC_RESET" 2 "HARD_TOC_RESET" 1 "INTEGRATION" 0 "INITIALIZATION" ;
+VAL_ 1272 SOC_Lower 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1272 SOC_Corrected_Min 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1272 Relative_SOC_Lower 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1272 Ahr_Lower 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1271 SOC_Estimate_Actual_Min 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1271 SOC_Estimate_Actual_Max 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1271 SOC_Correction_State_Max 6 "FAULT" 5 "COMPLETE" 4 "PERFORM_CORRECTION" 3 "CHECK_CONDITIONS" 2 "COMPARE_VOLTAGES" 1 "ACQUIRE_KOT" 0 "INITIAL_WAIT" ;
+VAL_ 1271 OCV_Estimate_Actual_Min 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1271 OCV_Estimate_Actual_Max 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1271 SOC_Correction_State_Min 6 "FAULT" 5 "COMPLETE" 4 "PERFORM_CORRECTION" 3 "CHECK_CONDITIONS" 2 "COMPARE_VOLTAGES" 1 "ACQUIRE_KOT" 0 "INITIAL_WAIT" ;
+VAL_ 1270 Capacity_Factor_Temperature_Min 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1270 Capacity_Factor_Temperature_Max 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1269 Capacity_Nominal 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1269 Capacity_Factor_Life 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1269 Capacity_Corrected_Min 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1269 Capacity_Corrected_Max 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1269 Capacity_Corrected_Customer 4094 "NO_VALUE" 4095 "ERROR" ;
+VAL_ 1268 acdc_chrg_state 7 "INHIBIT" 6 "DONE" 5 "DC_PID_CONTROL" 4 "DC_LOOKUP_CONTROL" 3 "AC_BAL_RESTING" 2 "AC_PID_CONTROL" 1 "AC_LOOKUP_CONTROL" 0 "INACTIVE" ;
+VAL_ 1267 balancing_state 5 "BALANCED" 6 "TERMINATED" 4 "FORCE_BALANCING" 3 "SLEEP_BALANCING" 2 "TOC_BALANCING" 1 "NEEDED" 0 "INIT" ;
+VAL_ 1267 balance_ibat_monitor_state 1 "OK" 0 "NOK" ;
+VAL_ 1267 pack_balanced_state 3 "BALANCED" 2 "BALANCING" 1 "NEEDED" 0 "UNDETERMINED" ;
+VAL_ 1278 Calendar_Temp_Factor_Accum -1 "ERROR" -2 "NO_VAL" ;
+VAL_ 1278 Calendar_Soc_Factor_Accum -1 "ERROR" -2 "NO_VAL" ;
+VAL_ 1277 soh_state 2 "UPDATE_CYCLE_LIFE" 1 "UPDATE_CALENDER_LIFE" 0 "INIT" ;
+VAL_ 1277 cycle_life_model 2 "DISABLED_CYCLE" 1 "SUSTAINING_CYCLE" 0 "DEPLETING_CYCLE" ;
+VAL_ 1277 Cycle_Sust_Temp_Factor_Accum -1 "ERROR" -2 "NO_VAL" ;
+VAL_ 1277 SOH 4095 "ERROR" 4094 "NO_VALUE" ;
+VAL_ 1276 Cycle_Life_Energy_Depleting -1 "ERROR" -2 "NO_VALUE" ;
+VAL_ 1276 Cycle_Life_Energy_Sustaining -1 "ERROR" -2 "NO_VALUE" ;
+VAL_ 1275 Cycle_Life_Impedance_Growth 65535 "ERROR" 65534 "NO_VALUE" ;
+VAL_ 1275 Cycle_Life_Capacity_Fade 65535 "ERROR" 65534 "NO_VALUE" ;
+VAL_ 1274 Calendar_Life_Time -1 "ERROR" -2 "NO_VALUE" ;
+VAL_ 1274 Calendar_Life_Impedance_Growth 65535 "ERROR" 65534 "NO_VALUE" ;
+VAL_ 1274 Calendar_Life_Capacity_Fade 65535 "ERROR" 65534 "NO_VALUE" ;
+
