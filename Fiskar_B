@@ -1,0 +1,3017 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TPI_BRB CONTI_TESTER MSM VCM_SC VCM_BC DMR DML PDM KARMA_TESTER DIS CIU BSM SVCS HLMR HLML ESM
+
+
+BO_ 2015 FUNC_REQUEST: 8 KARMA_TESTER
+ SG_ FUNC_REQ_SIG : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PDM,BSM,HLML,HLMR
+
+BO_ 353 CIU_VCM_CMD_MSG: 8 CIU
+ SG_ Lock_Unlock_CMD_RR_Door : 1|2@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ Lock_Unlock_CMD_RL_Door : 3|2@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ Lock_Unlock_CMD_FR_Door : 5|2@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ Lock_Unlock_CMD_FL_Door : 7|2@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ PanicAlarm_Req : 10|2@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ HornChirp_Req : 11|1@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ CIU_TOKEN_REQ : 8|1@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ CIU_VCM_CMD_MAC : 23|48@0+ (1,0) [0|0] ""  VCM_SC
+
+BO_ 352 VCM_TOKEN_MSG: 5 VCM_SC
+ SG_ CIU_CMD_ACK : 39|1@0+ (1,0) [0|0] ""  CIU
+ SG_ VCM_TOKEN_SIG : 7|32@0+ (1,0) [0|0] ""  CIU
+
+BO_ 373 MSM_WINDOW_CTRL: 2 MSM
+ SG_ MSM_WINDOW_CTRL_ARC : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RWS_HeatedSeatsSw_Right : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RWS_HeatedSeatsSw_Left : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RWS_RearRight_Up : 6|1@0+ (1,0) [0|1] ""  DMR
+ SG_ RWS_RearRight_Express : 5|1@0+ (1,0) [0|1] ""  DMR
+ SG_ RWS_RearRight_Down : 7|1@0+ (1,0) [0|1] ""  DMR
+ SG_ RWS_RearLeft_Up : 3|1@0+ (1,0) [0|1] ""  DMR
+ SG_ RWS_RearLeft_Express : 2|1@0+ (1,0) [0|1] ""  DMR
+ SG_ RWS_RearLeft_Down : 4|1@0+ (1,0) [0|1] ""  DMR
+
+BO_ 1545 SWCM_LIN_ECHO: 4 VCM_SC
+ SG_ SWCM_LIN_NoResponse : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_BTN_ACC_TIMEGAP_Enable : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_TactileFeedbackCommand_Rt : 14|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SWCM_TactileFeedbackCommand_Lft : 12|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SWCM_HeaterEnable : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_BacklightPercent : 6|7@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ SWCM_SupplyVoltageFault : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_RightSwitch_HardwareFault : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_RightSwitch_CommFault : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_LINCommError : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_LeftSwitch_HardwareFault : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_LeftSwitch_CommFault : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_HeaterPoweredStatus : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_HeaterFault : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_HapticMotorPoweredStatus : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_HapticMotorPlaybackStatus : 29|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SWCM_HapticMotorFault : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_HapticMotorCommand : 10|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SWCM_ECU_SoftwareFault : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SWCM_ECU_HardwareFault : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1848 DIAG_RESPONSE_ESM: 8 ESM
+ SG_ DIAG_RESP_SIG_ESM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1840 DIAG_REQUEST_ESM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_ESM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  ESM
+
+BO_ 593 ESM_STATUS: 2 ESM
+ SG_ ESM_DTC_PRESENT : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESM_ACTIVE_SOUND_PROFILE : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESM_SYSTEM_STATUS : 3|2@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ ESM_STATUS_ARC : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESM_AVAS_SOUND_ENABLE_STATUS : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESM_SOUND_ACTIVE_STATUS : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 592 ESM_COMMAND: 5 VCM_SC
+ SG_ ESM_NOTIFICATION_EVT : 26|3@0+ (1,0) [0|7] ""  ESM
+ SG_ ESM_NM : 2|1@0+ (1,0) [0|1] ""  ESM
+ SG_ ESM_COMMAND_CRC : 39|8@0+ (1,0) [0|255] ""  ESM
+ SG_ ESM_SELECTED_SOUND_PROFILE : 5|2@0+ (1,0) [0|3] ""  ESM
+ SG_ ESM_ICE_STATUS : 15|1@0+ (1,0) [0|1] ""  ESM
+ SG_ ESM_AVAS_SOUND_ENABLE : 3|1@0+ (1,0) [0|1] ""  ESM
+ SG_ ESM_ACTUATED_GEAR : 7|2@0+ (1,0) [0|3] ""  ESM
+ SG_ ESM_VEH_SPEED_DIRECTIONAL : 14|15@0+ (0.0125,-125) [-125|284.575] "km/h"  ESM
+ SG_ ESM_COMMAND_ARC : 1|2@0+ (1,0) [0|3] ""  ESM
+
+BO_ 1249 CIU_VEHICLE_SETTINGS_B: 8 CIU
+ SG_ SteeringWheelHeaterSetpoint : 15|5@0+ (1,5) [5|36] "°C"  VCM_SC
+ SG_ CIU_VEHICLE_SETTINGS_B_VALID : 10|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ CIU_VEHICLE_SETTINGS_B_CRC : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CIU_VEHICLE_SETTINGS_B_ARC : 9|2@0+ (1,0) [0|3] ""  VCM_SC
+
+BO_ 944 TPI_BRB_STAT: 3 TPI_BRB
+ SG_ TPIBRB_BTN_SEAT_HEATVENT_STAT : 7|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPIBRB_BTN_SVCS_STAT : 11|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPIBRB_BTN_MIRROR_CTRL_STAT : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPIBRB_BTN_FRONT_DEFROST_STAT : 3|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TPIBRB_BTN_REAR_DEFROST_STAT : 5|2@0+ (1,0) [0|0] ""  VCM_BC
+ SG_ TPI_BRB_STAT_ARC : 1|2@0+ (1,0) [0|3] ""  VCM_BC
+
+BO_ 1884 DIAG_RESPONSE_TPI_BRB: 8 TPI_BRB
+ SG_ DIAG_RESP_SIG_TPI_BRB : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1876 DIAG_REQUEST_TPI_BRB: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_TPI_BRB : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  TPI_BRB
+
+BO_ 870 PDM_STATUS_2: 8 PDM
+ SG_ PDM_DISTANCE_REAR_6 : 63|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_REAR_5 : 55|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_REAR_4 : 47|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_REAR_3 : 39|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_REAR_2 : 31|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_REAR_1 : 23|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_STATUS_2_ARC : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1219 GW_MISC_INFO_1: 4 VCM_BC
+ SG_ T_Ambient_V : 2|1@0+ (1,0) [0|1] ""  PDM
+ SG_ T_Ambient : 15|8@0+ (1,-40) [-40|215] "°C"  PDM
+ SG_ GW_MISC_INFO_1_ARC : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 393 LONG_ACCEL_SENSOR: 3 VCM_BC
+ SG_ VEH_DYN_TEMP_SENS_FAULT : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ INMO_LONG_ALIVE_CNT : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VEH_DYN_LONG_ACCEL_SELF_TEST : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_LONG_ACCEL : 11|12@0- (0.015625,0) [-32|31.984375] "m/s^2"  PDM
+ SG_ VEH_DYN_LONG_ACCEL_VALID : 4|1@0+ (1,0) [0|1] ""  PDM
+ SG_ VEH_DYN_SENS_FAULT_2 : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_LONG_ACCEL_SENS_FAULT : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_SENS_FAULT_1 : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_LONG_ACCEL_RANGE_CHECK : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 225 WHEEL_ROTATIONAL_STATUS: 8 VCM_BC
+ SG_ CNT_WHEEL_ROTAT_STAT_UNDRIVEN : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ WRSRNDWhlDistPCntr : 49|10@0+ (1,0) [0|1023] ""  PDM
+ SG_ WRSRNDSeqNum : 53|2@0+ (1,0) [0|3] ""  PDM
+ SG_ WRSRNDWhlRotStRst : 51|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSRNDWhlDistVal : 50|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSLNDWhlDistPCntr : 33|10@0+ (1,0) [0|1023] ""  PDM
+ SG_ WRSLNDSeqNum : 37|2@0+ (1,0) [0|3] ""  PDM
+ SG_ WRSLNDWhlRotStRst : 35|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSLNDWhlDistVal : 34|1@0+ (1,0) [0|1] ""  PDM
+ SG_ CNT_WHEEL_ROTAT_STATUS_DRIVEN : 7|2@0+ (1,0) [0|3] ""  PDM
+ SG_ WRSLDWhlRotStatRst : 3|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSRDWhlDistPlsCntr : 17|10@0+ (1,0) [0|1023] ""  PDM
+ SG_ WRSLDWhlDistVal : 2|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSRDWhlDistVal : 18|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSLDWhlDistPlsCntr : 1|10@0+ (1,0) [0|1023] ""  PDM
+ SG_ WRSRDWhlRotStatRst : 19|1@0+ (1,0) [0|1] ""  PDM
+ SG_ WRSRDSeqNum : 21|2@0+ (1,0) [0|3] ""  PDM
+ SG_ WRSLDSeqNum : 5|2@0+ (1,0) [0|3] ""  PDM
+
+BO_ 869 PDM_STATUS_1: 8 PDM
+ SG_ PDM_DISTANCE_FRONT_6 : 63|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_FRONT_5 : 55|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_FRONT_4 : 47|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_FRONT_3 : 39|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_DISTANCE_FRONT_2 : 31|8@0+ (1,0) [0|255] "cm"  CIU
+ SG_ PDM_STATUS_1_ARC : 15|4@0+ (1,0) [0|15] ""  CIU,DIS
+ SG_ PDM_DISTANCE_FRONT_1 : 23|8@0+ (1,0) [0|255] "cm"  CIU,DIS
+ SG_ PDM_SENSOR_FAULT_REAR : 9|2@0+ (1,0) [0|3] ""  CIU,DIS
+ SG_ PDM_DISTANCE_FRONT : 4|3@0+ (1,0) [0|7] ""  SVCS,CIU,DIS
+ SG_ PDM_DISTANCE_REAR : 7|3@0+ (1,0) [0|7] ""  SVCS,CIU,DIS
+ SG_ PDM_SENSOR_FAULT_FRONT : 11|2@0+ (1,0) [0|3] ""  CIU,DIS
+ SG_ PDM_SYSTEM_STATUS : 1|2@0+ (1,0) [0|3] ""  SVCS,CIU,DIS
+
+BO_ 1027 CIU_DIS_EXCHANGE_B: 7 CIU
+ SG_ TRACTION_POWER_INST : 4|13@0+ (0.1,-400) [-400|400] "kW"  DIS
+ SG_ CIU_DIS_EXCHANGE_B_Validity : 5|1@0+ (1,0) [0|1] ""  DIS
+ SG_ CIU_DIS_EXCHANGE_B_AliveCount : 7|2@0+ (1,0) [0|3] ""  DIS
+
+BO_ 1536 CIU_DEBUG_0: 8 CIU
+ SG_ SIG_CIU_DEBUG_0 : 7|64@0+ (1,0) [0|0] ""  DIS
+
+BO_ 374 CIU_SIDEMIRROR_CTRL: 3 CIU
+ SG_ ENTER_AUTOTILT : 3|1@0+ (1,0) [0|1] ""  DML,DMR
+ SG_ AUTOTILT_ENABLE : 2|1@0+ (1,0) [0|1] ""  DMR,DML
+ SG_ MIRRORPOS_SAVERECALL_RIGHT : 23|4@0+ (1,0) [0|15] ""  DMR
+ SG_ MIRRORPOS_SAVERECALL_LEFT : 19|4@0+ (1,0) [0|15] ""  DML
+ SG_ SIDEMIRROR_KNOB_RIGHT : 15|4@0+ (1,0) [0|4] ""  DMR
+ SG_ SIDEMIRROR_KNOB_LEFT : 11|4@0+ (1,0) [0|4] ""  DML
+ SG_ CIU_SIDEMIRROR_CTRL_AliveCount : 1|2@0+ (1,0) [0|3] ""  DMR,DML
+
+BO_ 1819 DIAG_RESPONSE_BSM_MASTER: 8 BSM
+ SG_ DIAG_RESP_SIG_BSM_MASTER : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1811 DIAG_REQUEST_BSM_MASTER: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_BSM_MASTER : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  BSM
+
+BO_ 1556 HLMR_DEV_REQUEST: 8 Vector__XXX
+
+BO_ 1555 HLML_DEV_REQUEST: 8 Vector__XXX
+
+BO_ 1026 HLMR_STATUS: 3 HLMR
+ SG_ HLMR_SUPPLY_VOLT_FAULT : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLMR_LAMPFAULT_PARK_DRL : 3|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ HLMR_FAILSAFE_MODE_ACTV : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLMR_LAMPSTAT_SWIVEL : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLMR_LAMPSTAT_PARK_DRL : 2|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLMR_HWSWMUX_VAL : 21|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HLMR_HWSWMUX_IDX : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLMR_DTC_PRESENT : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLMR_LAMPSTAT_TURN : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLMR_LAMPFAULT_TURN : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLMR_LAMPFAULT_SWIVEL : 12|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ HLMR_LAMPSTAT_BEAMS : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLMR_ALIVE_COUNT : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLMR_LAMPFAULT_LOWBEAM : 6|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ HLMR_LAMPFAULT_HIGHBEAM : 7|1@0+ (1,0) [0|1] ""  CIU,DIS
+
+BO_ 1881 DIAG_RESPONSE_HLML: 8 HLML
+ SG_ DIAG_RESP_SIG_HLML : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1873 DIAG_REQUEST_HLML: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_HLML : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  HLML
+
+BO_ 1882 DIAG_RESPONSE_HLMR: 8 HLMR
+ SG_ DIAG_RESP_SIG_HLMR : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1874 DIAG_REQUEST_HLMR: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_HLMR : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  HLMR
+
+BO_ 1025 HLML_STATUS: 3 HLML
+ SG_ HLML_SUPPLY_VOLT_FAULT : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLML_FAILSAFE_MODE_ACTV : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLML_DTC_PRESENT : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLML_HWSWMUX_VAL : 21|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HLML_HWSWMUX_IDX : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLML_LAMPSTAT_SWIVEL : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLML_LAMPSTAT_TURN : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLML_LAMPFAULT_TURN : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HLML_LAMPFAULT_SWIVEL : 12|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ HLML_ALIVE_COUNT : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLML_LAMPSTAT_PARK_DRL : 2|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLML_LAMPSTAT_BEAMS : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HLML_LAMPFAULT_PARK_DRL : 3|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ HLML_LAMPFAULT_LOWBEAM : 6|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ HLML_LAMPFAULT_HIGHBEAM : 7|1@0+ (1,0) [0|1] ""  CIU,DIS
+
+BO_ 1024 HLM_COMMAND: 8 VCM_BC
+ SG_ HLM_LAMPSET_SWIVEL_ENABLE : 7|1@0+ (1,0) [0|1] ""  HLMR,HLML
+ SG_ HLM_COMMAND_ALIVE_COUNT : 63|2@0+ (1,0) [0|3] ""  HLMR,HLML
+ SG_ HLM_VehicleSpeed_Validity : 23|1@0+ (1,0) [0|1] ""  HLMR,HLML
+ SG_ HLMR_LAMPCMD_PARK : 1|1@0+ (1,0) [0|1] ""  DIS,HLMR
+ SG_ HLM_NM : 61|2@0+ (1,0) [0|3] ""  HLMR,HLML
+ SG_ HLM_SteeringWheelAngleRate : 55|8@0+ (4,0) [0|1016] "°/s"  HLMR,HLML
+ SG_ HLM_SteeringWheelAngle : 39|16@0- (0.1,0) [-3276|3276] "°"  HLMR,HLML
+ SG_ HLM_ActuatedGear : 58|3@0+ (1,0) [0|7] ""  HLMR,HLML
+ SG_ HLM_VehicleSpeed : 22|15@0+ (0.0125,-125) [-125|284.575] "km/h"  HLMR,HLML
+ SG_ HLMR_LAMPCMD_SUPPRESS_PARK_DRL : 4|1@0+ (1,0) [0|1] ""  HLMR
+ SG_ HLML_LAMPCMD_SUPPRESS_PARK_DRL : 3|1@0+ (1,0) [0|1] ""  HLML
+ SG_ HLML_LAMPCMD_PARK : 0|1@0+ (1,0) [0|1] ""  DIS,HLML
+ SG_ HLM_LAMPCMD_BEAMS : 6|2@0+ (1,0) [0|3] ""  DIS,HLMR,HLML
+ SG_ HLM_LAMPCMD_DRL : 2|1@0+ (1,0) [0|1] ""  DIS,HLMR,HLML
+
+BO_ 1153 SVCS_STATUS: 6 SVCS
+ SG_ SVCS_InpMsngFlt_POWER_MODE : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_DTC_PRESENT : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_STANDALONE_MODE : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_CAMERAS_POWERED : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_REAR_VIEW_ONLY_MODE : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_ECU_SERVICE_REQUIRED : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SVCS_NM_PWROFF_READY : 13|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ SVCS_OVERLAY_MALFUNCTION : 24|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SVCS_ECU_SYSTEM_MALFUNCTION : 25|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SVCS_CAMERA_FAULTED_RIGHT : 20|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SVCS_CAMERA_FAULTED_REAR : 21|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SVCS_CAMERA_FAULTED_LEFT : 22|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SVCS_CAMERA_FAULTED_FRONT : 19|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SVCS_InpMsngFlt_STEERING_ANGLE : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_InpMsngFlt_PDM_INFO : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_InpMsngFlt_DMR_STAT : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_InpMsngFlt_DML_STAT : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_InpMsngFlt_BSM_INFO : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_ACTIVE_VIEW : 12|4@0+ (1,0) [0|15] ""  CIU
+ SG_ SVCS_ACTIVE_OVERLAY : 28|3@0+ (1,0) [0|7] ""  CIU
+ SG_ SVCS_InpMsngFlt_VEHICLE_SPEED : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_InpMsngFlt_SVCS_INPUTS : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_InpMsngFlt_GEAR_POSITION : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_ECU_STATUS : 4|2@0+ (1,0) [0|3] ""  CIU,DIS
+ SG_ SVCS_ECU_Fault_UnderVoltage : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_ECU_Fault_OverVoltage : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SVCS_ECU_CAL_STATUS : 2|3@0+ (1,0) [0|7] ""  CIU
+ SG_ SVCS_STATUS_ALIVE_CNT : 7|2@0+ (1,0) [0|3] ""  CIU
+
+BO_ 1834 DIAG_RESPONSE_SVCS: 8 SVCS
+ SG_ DIAG_RESP_SIG_SVCS : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1826 DIAG_REQUEST_SVCS: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_SVCS : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  SVCS
+
+BO_ 1152 SVCS_INPUTS: 5 CIU
+ SG_ SVCS_3DCAM_LOC_THETA : 24|9@0+ (1,0) [0|359] "°"  SVCS
+ SG_ SVCS_3DCAM_LOC_PHI : 31|7@0+ (1,0) [0|90] "°"  SVCS
+ SG_ SVCS_POWER_FEED_ON_DEMAND_REQ : 23|1@0+ (1,0) [0|1] ""  VCM_BC,SVCS
+ SG_ SVCS_OVERLAY_ENABLE_PDM_FRONT : 7|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_GL_TOPREAR : 11|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_PDM_TOPREAR : 13|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_PDM_TOPFRONT : 12|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_GL_TOPFRONT : 10|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_INPUTS_ALIVE_COUNT : 9|2@0+ (1,0) [0|3] ""  SVCS
+ SG_ SVCS_REQUESTED_VIEW : 6|4@0+ (1,0) [0|15] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_RCTA : 14|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_PDM_REAR : 2|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_GL_SIDES : 15|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_GL_FRONT : 0|1@0+ (1,0) [0|1] ""  SVCS
+ SG_ SVCS_OVERLAY_ENABLE_GL_REAR : 1|1@0+ (1,0) [0|1] ""  SVCS
+
+BO_ 1835 DIAG_RESPONSE_BSM_SLAVE: 8 BSM
+ SG_ DIAG_RESP_SIG_BSM_SLAVE : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1827 DIAG_REQUEST_BSM_SLAVE: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_BSM_SLAVE : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  BSM
+
+BO_ 392 YAW_ACCEL_SENSOR: 7 VCM_BC
+ SG_ VEH_DYN_YAW_RATE_VALID : 7|1@0+ (1,0) [0|1] ""  PDM,BSM
+ SG_ WATCHDOG_RESET_GYRO : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ JUMP_ERROR_GYRO : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RAM_FAIL_YAW : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACCEL_SELF_TEST_STAT : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RASTER_FAIL : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SENS_ALIVE_CNT : 3|4@0+ (1,0) [0|15] ""  BSM
+ SG_ RANGE_ERROR_GYRO : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AD_FAIL_YAW : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_ACCEL : 19|12@0- (0.015625,0) [-32|31.984375] "m/s^2"  BSM
+ SG_ ASIC_FAIL_YAW : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ YAW_SENS_SELF_TEST_STAT : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_YAW_RATE : 15|12@0- (0.0625,0) [-128|127.9375] "deg/s"  PDM,BSM
+ SG_ EEP_FAIL_YAW : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VEH_DYN_ACCEL_VALID : 6|1@0+ (1,0) [0|1] ""  BSM
+ SG_ YAW_OSC_FREQ : 39|8@0- (0.5,0) [-64|63.5] "Hz" Vector__XXX
+ SG_ BIT_FAIL_GYRO : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ROM_FAIL_YAW : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GYRO_FAIL : 47|1@0+ (1,0) [0|1] ""  BSM
+ SG_ VBATT_RANGE_ERROR_YAW : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN_ERROR_GYRO : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 843 WHEEL_GND_VELOCITY: 8 VCM_BC
+ SG_ WhlGrndVlctyRtDrvn : 53|14@0+ (0.03125,0) [0|511.96875] "km/h"  PDM,BSM
+ SG_ WhlGrndVlctyRtDrvnV : 54|1@0+ (1,0) [0|1] ""  PDM,BSM
+ SG_ WhlGrndVlctyLftDrvn : 37|14@0+ (0.03125,0) [0|511.96875] "km/h"  PDM,BSM
+ SG_ WhlGrndVlctyLftDrvnV : 38|1@0+ (1,0) [0|1] ""  PDM,BSM
+ SG_ WhlGrndVlctyRtNnDrvnV : 22|1@0+ (1,0) [0|1] ""  PDM,BSM
+ SG_ WhlGrndVlctyLftNnDrvnV : 6|1@0+ (1,0) [0|1] ""  PDM,BSM
+ SG_ WhlGrndVlctyLftNnDrvn : 5|14@0+ (0.03125,0) [0|511.96875] "km/h"  PDM,BSM
+ SG_ WhlGrndVlctyRtNnDrvn : 21|14@0+ (0.03125,0) [0|511.96875] "km/h"  PDM,BSM
+
+BO_ 384 STEERING_ANGLE: 5 VCM_BC
+ SG_ STEER_ANGLE_CRC_GW_DUMMY : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ STEER_ANGLE_VALID : 24|1@1+ (1,0) [0|1] ""  PDM,SVCS,BSM
+ SG_ STEER_ANGLE_CAL : 25|1@1+ (1,0) [0|1] ""  SVCS,BSM
+ SG_ STEER_ANGLE_SPEED : 16|8@1+ (4,0) [0|1016] "°/s"  BSM
+ SG_ STEER_ANGLE_VALUE : 0|16@1- (0.1,0) [-3276.8|3276.7] "°"  PDM,SVCS,BSM
+ SG_ CNT_STEERING_ANGLE : 32|4@1+ (1,0) [0|15] ""  PDM,SVCS,BSM
+ SG_ CHK_SUM_STEERING_ANGLE : 36|4@1+ (1,0) [0|15] ""  PDM,BSM
+
+BO_ 1045 BSM_STAT: 8 BSM
+ SG_ BSM_STAT_CRC : 7|8@0+ (1,0) [0|0] ""  VCM_SC
+ SG_ BSM_SERVICE_REQUIRED : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSM_INPUTSIGNALFAULT : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSM_DTC_PRESENT : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BSM_BULBCHECK_ACTIVE : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RCTA_WARN_RIGHT : 35|2@0+ (1,0) [0|3] ""  VCM_SC,DIS,SVCS
+ SG_ RCTA_WARN_REAR : 37|2@0+ (1,0) [0|3] ""  DIS,SVCS
+ SG_ BSD_WARN_REAR : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSD_WARN_RIGHT : 27|2@0+ (1,0) [0|0] ""  VCM_SC,DIS
+ SG_ BSD_WARN_LEFT : 25|2@0+ (1,0) [0|0] ""  VCM_SC,DIS
+ SG_ BSM_RIGHT_RADAR_OBSTRUCTED : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSM_RIGHT_RADAR_MISALIGNED : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSM_LEFT_RADAR_MISALIGNED : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSM_STAT_ALIVE_COUNT : 9|2@0+ (1,0) [0|3] ""  VCM_SC,DIS,SVCS
+ SG_ BSM_LEFT_RADAR_OBSTRUCTED : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BSD_STAT : 12|3@0+ (1,0) [0|0] ""  DIS
+ SG_ RCTA_STAT : 15|3@0+ (1,0) [0|0] ""  DIS
+ SG_ RCTA_WARN_LEFT : 33|2@0+ (1,0) [0|3] ""  VCM_SC,DIS,SVCS
+
+BO_ 1833 DIAG_RESPONSE_AMP: 8 CIU
+ SG_ DIAG_RESP_SIG_AMP : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1825 DIAG_REQUEST_AMP: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_AMP : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  CIU
+
+BO_ 1172 GPS_INFO_2: 8 CIU
+ SG_ COURSE_GPS : 17|10@0+ (0.36,0) [0|360] "°"  DIS
+ SG_ SAT_COUNT_GPS : 23|6@0+ (1,0) [0|62] "" Vector__XXX
+ SG_ SPEED_GPS : 51|12@0+ (0.1,0) [0|400] "km/h" Vector__XXX
+ SG_ ALT_GPS : 7|16@0+ (0.2,-1000) [-1000|12000] "m" Vector__XXX
+
+BO_ 1171 GPS_INFO_1: 8 CIU
+ SG_ LON_GPS : 39|32@0- (8.4E-008,0) [-180|180] "°"  PDM,DIS
+ SG_ LAT_GPS : 7|32@0- (4.2E-008,0) [-90|90] "°"  PDM,DIS
+
+BO_ 1538 CIU_DEBUG_2: 8 CIU
+ SG_ SIG_CIU_DEBUG_2 : 7|64@0+ (1,0) [0|0] ""  DIS
+
+BO_ 1542 MSM_DEBUG_1: 8 MSM
+ SG_ SIG_MSM_DEBUG1_DUMMY_32 : 39|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_MSM_DEBUG1_DUMMY_16 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_MSM_DEBUG1_BYTE_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_MSM_DEBUG1_BYTE_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1543 MSM_DEBUG_2: 8 MSM
+ SG_ MSM_HallCount_SeatVertical : 19|12@0+ (1,0) [0|4094] "" Vector__XXX
+ SG_ MSM_HallCount_Recline : 35|12@0+ (1,0) [0|4094] "" Vector__XXX
+ SG_ MSM_Movement_Vertical : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MSM_Movement_SteeringTilt : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MSM_Movement_SteeringTelescope : 49|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MSM_Movement_Recline : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MSM_Movement_Horizontal : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MSM_HallCount_SeatHorizontal : 3|12@0+ (1,0) [0|4094] "" Vector__XXX
+
+BO_ 1544 MSM_DEBUG_3: 8 MSM
+ SG_ SIG_MSM_DEBUG3_DUMMY_32 : 39|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_MSM_DEBUG3_DUMMY_16 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_MSM_DEBUG3_BYTE_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_MSM_DEBUG3_BYTE_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1540 VCM_BC_DEBUG_1: 8 VCM_BC
+ SG_ SIG_VCM_BC_DEBUG_DUMMY_32 : 39|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_VCM_BC_DEBUG_DUMMY_16 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_VCM_BC_DEBUG_BYTE_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_VCM_BC_DEBUG_BYTE_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1541 VCM_SC_DEBUG_1: 8 VCM_SC
+ SG_ SIG_VCM_SC_DEBUG_DUMMY_32 : 39|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_VCM_SC_DEBUG_DUMMY_16 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_VCM_SC_DEBUG_BYTE_1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SIG_VCM_SC_DEBUG_BYTE_0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1539 DIS_DEBUG_1: 8 DIS
+ SG_ SIG_DIS_DEBUG_1 : 7|64@0+ (1,0) [0|0] ""  CIU
+
+BO_ 1537 CIU_DEBUG_1: 8 CIU
+ SG_ SIG_CIU_DEBUG_1 : 7|64@0+ (1,0) [0|0] ""  DIS
+
+BO_ 361 VCM_SC_KEY_AUTH_DATA: 8 VCM_SC
+ SG_ KeyChallengeData : 23|48@0+ (1,0) [0|0] ""  DMR,DML
+ SG_ KeyWakePattern : 7|16@0+ (1,0) [0|0] ""  DMR,DML
+
+BO_ 1168 TIME_STATUS_GPS: 8 CIU
+ SG_ TIME_UTC_MINUTES_GPS : 15|8@0+ (1,0) [0|59] "min"  DIS
+ SG_ DIRECTION_GPS : 59|4@0+ (1,0) [0|0] ""  DIS
+ SG_ TIME_UTC_DAY_GPS : 31|8@0+ (1,0) [1|31] ""  DIS
+ SG_ TIME_UTC_MONTH_GPS : 39|8@0+ (1,0) [0|11] ""  DIS
+ SG_ TIME_UTC_HOURS_GPS : 7|8@0+ (1,0) [0|23] "h"  DIS
+ SG_ TIME_DST_STATUS_USER_CONFIG : 55|1@0+ (1,0) [0|1] ""  DIS
+ SG_ TIME_UTC_YEAR_GPS : 47|8@0+ (1,2000) [2000|2254] ""  DIS
+ SG_ TIME_ZONE_USER_CONFIG : 54|7@0+ (0.25,-12) [-12|14] ""  DIS
+ SG_ TIME_UTC_SECONDS_GPS : 23|8@0+ (1,0) [0|59] "s"  DIS
+
+BO_ 1074 HCU_PNM12V_STATUS: 4 VCM_BC
+ SG_ PNM12V_TELLTALE : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PNM12V_LOAD_SHED : 13|2@0+ (1,0) [0|3] ""  DMR,DML,MSM
+ SG_ PNM12V_HARNESS_FAULT : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PNM12V_BATTERY_FAULT : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PNM12V_SENSOR_FAULT : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PNM12V_APM_FAULT : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1078 RLS_RESPONSE: 8 VCM_BC
+ SG_ LS_Brightness_Forward : 48|11@1+ (1,0) [0|2046] "" Vector__XXX
+ SG_ LS_Brightness_IR : 32|11@1+ (1,0) [0|2046] ""  CIU
+ SG_ LS_Brightness_Upwards : 16|11@1+ (1,50) [50|1200] "" Vector__XXX
+ SG_ LS_Error : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RS_Error : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RLS_Status : 10|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RS_Splash : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LS_HeadLights_On : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RLS_ResponseError : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RS_WiperSpeed : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RLS_MessageCounter : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1028 CIU_CONTROL_STATUS: 7 CIU
+ SG_ CIU_FlashLamps_Req : 23|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ FOTA_Status : 51|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ FOTA_HV_Req : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_TIMEOUT_INHIBIT_REQUEST : 30|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ CIU_DiagTool_TP_Request : 31|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ CIU_DiagTool_WupCmd_Bitmask : 44|5@0+ (1,0) [0|31] ""  VCM_SC
+ SG_ SB_TransitionLockout_Request : 39|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ CIU_CONTROL_STATUS_Validity : 45|1@0+ (1,0) [0|1] ""  VCM_SC,VCM_BC
+ SG_ CIU_CONTROL_STATUS_AliveCount : 47|2@0+ (1,0) [0|3] ""  VCM_SC,VCM_BC
+ SG_ SPBC_INST_SOLAR_POWER : 29|6@0+ (5,0) [0|310] "W" Vector__XXX
+ SG_ TPMS_TurnIndicatorBitMask : 38|4@0+ (1,0) [0|15] ""  VCM_BC
+ SG_ TPMS_ManualLearningActive : 32|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ TPMS_ChirpRequest : 34|2@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ CIU_PROFILE_INDEX_EVT_SET : 21|2@0+ (1,0) [1|3] ""  VCM_SC
+ SG_ CIU_PROFILE_INDEX_SET : 19|3@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ SLEEP_INHIBIT_REQUEST : 16|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ CIU_LVBUS_VOLTAGE_SENSE : 15|8@0+ (0.05,4) [4|16.6] "V" Vector__XXX
+ SG_ CIU_RPC_COMMAND : 7|2@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ BT_CALL_ACTIVE : 1|2@0+ (1,0) [0|3] ""  VCM_SC
+
+BO_ 1832 DIAG_RESPONSE_DIS: 8 DIS
+ SG_ DIAG_RESP_SIG_DIS : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1824 DIAG_REQUEST_DIS: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_DIS : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  DIS
+
+BO_ 257 ALL_NODE_REQUEST: 8 KARMA_TESTER
+ SG_ ALL_NODE_REQ_SIG : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  SVCS,DIS,DML,DMR,MSM,VCM_BC,VCM_SC
+
+BO_ 1868 DIAG_RESPONSE_DMR: 8 DMR
+ SG_ DIAG_RESP_SIG_DMR : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1867 DIAG_RESPONSE_DML: 8 DML
+ SG_ DIAG_RESP_SIG_DML : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1866 DIAG_RESPONSE_MSM: 8 MSM
+ SG_ DIAG_RESP_SIG_MSM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1836 DIAG_RESPONSE_VCM_BC: 8 VCM_BC
+ SG_ DIAG_RESP_SIG_VCM_BC : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1838 DIAG_RESPONSE_VCM_SC: 8 VCM_SC
+ SG_ DIAG_RESP_SIG_VCM_SC : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 372 VCM_BC_WINDOW_CTRL: 3 VCM_BC
+ SG_ VCM_BC_WINDOW_CTRL_ARC : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FWS_LockoutSwitchStat : 14|1@0+ (1,0) [0|1] ""  MSM,DMR
+ SG_ FWS_RearRight_Up : 0|1@0+ (1,0) [0|1] ""  DMR
+ SG_ FWS_RearRight_Express : 15|1@0+ (1,0) [0|1] ""  DMR
+ SG_ FWS_RearRight_Down : 1|1@0+ (1,0) [0|1] ""  DMR
+ SG_ FWS_RearLeft_Up : 3|1@0+ (1,0) [0|1] ""  DMR
+ SG_ FWS_RearLeft_Express : 2|1@0+ (1,0) [0|1] ""  DMR
+ SG_ FWS_RearLeft_Down : 4|1@0+ (1,0) [0|1] ""  DMR
+ SG_ FWS_FrontRight_Up : 6|1@0+ (1,0) [0|1] ""  DML
+ SG_ FWS_FrontRight_Express : 5|1@0+ (1,0) [0|1] ""  DML
+ SG_ FWS_FrontRight_Down : 7|1@0+ (1,0) [0|1] ""  DML
+
+BO_ 880 VCM_BC_LAMP_STAT: 5 VCM_BC
+ SG_ LampStat_SideMarkers_RearRight : 35|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_SideMarkers_RearLeft : 37|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_SideMarkers_FrontRight : 39|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampFault_SideMarkers_RearRight : 34|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_SideMarkers_RearLeft : 36|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampStat_SideMarkers_FrontLeft : 25|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_DRL : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_SideMarkers_FrontRight : 38|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_SideMarkers_FrontLeft : 24|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_DRL_Right : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_DRL_Left : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampStat_LowBeam : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampStat_HighBeam : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_LowBeam_Right : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_LowBeam_Left : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_HighBeam_Right : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_HighBeam_Left : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampStat_Reverse : 16|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_Fog : 30|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampFault_Reverse : 31|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_Fog : 29|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampStat_Park : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_Park_RearRight : 13|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_Park_RearLeft : 14|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_Park_FrontRight : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampFault_Park_FrontLeft : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LampStat_Brake : 20|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampFault_Brake_Right : 18|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_Brake_Left : 19|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_Brake_Chmsl : 17|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_TurnSignal_RearRight : 21|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_TurnSignal_RearLeft : 23|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_TurnSignal_FrontRight : 9|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampFault_TurnSignal_FrontLeft : 11|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ LampStat_TurnSignal_RearRight : 22|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_TurnSignal_RearLeft : 8|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_TurnSignal_FrontRight : 10|1@0+ (1,0) [0|1] ""  DIS
+ SG_ LampStat_TurnSignal_FrontLeft : 12|1@0+ (1,0) [0|1] ""  DIS
+
+BO_ 1860 DIAG_REQUEST_DMR: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_DMR : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  DMR
+
+BO_ 1859 DIAG_REQUEST_DML: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_DML : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  DML
+
+BO_ 1858 DIAG_REQUEST_MSM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_MSM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  MSM
+
+BO_ 368 VCM_SC_STAT: 8 VCM_SC
+ SG_ PANIC_AlertStatus : 62|1@0+ (1,0) [0|1] ""  CIU,DIS,VCM_BC
+ SG_ FOB_LockBtn_PressAndHold_Evt : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_Timer_Expiring : 58|1@0+ (1,0) [0|1] ""  CIU
+ SG_ VCM_SC_DTC_Present : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SLEEP_INHIBIT_CONF : 56|1@0+ (1,0) [0|1] ""  CIU
+ SG_ SB_TransitionLockout_Conf : 57|1@0+ (1,0) [0|1] ""  CIU
+ SG_ PwrMdng_VehicleAttendedStat : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AuthenticationEventStatus : 55|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DelayedLockTimerStat : 43|2@0+ (1,0) [0|3] ""  DIS
+ SG_ PROFILE_INDEX_MASTER_EVT : 52|2@0+ (1,0) [1|3] ""  DMR,DML,CIU
+ SG_ PROFILE_INDEX_MASTER : 50|3@0+ (1,0) [1|3] ""  DMR,DML,MSM,CIU
+ SG_ FOB_IN_TRUNK : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FOB3_PRESENT_OUTSIDE : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FOB2_PRESENT_OUTSIDE : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FOB1_PRESENT_OUTSIDE : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockingEventStatus : 41|2@0+ (1,0) [0|0] ""  VCM_BC
+ SG_ PwrMdng_BrakePedalStatBool : 33|1@0+ (1,0) [0|1] ""  BSM,VCM_BC
+ SG_ VTA_AlertStatus : 34|1@0+ (1,0) [0|1] ""  DIS,CIU,VCM_BC
+ SG_ ParkingLampSwitchStatus : 8|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ FOB3_PRESENT_INSIDE : 37|1@0+ (1,0) [0|1] ""  MSM,CIU
+ SG_ FOB2_PRESENT_INSIDE : 38|1@0+ (1,0) [0|1] ""  MSM,CIU
+ SG_ FOB1_PRESENT_INSIDE : 39|1@0+ (1,0) [0|1] ""  MSM,CIU
+ SG_ KEY_FOB_LEFT_VEH : 35|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ KEY_FOB_BATT_LOW : 36|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ AjarStatus_Trunk : 11|1@0+ (1,0) [0|1] ""  CIU,DIS,VCM_BC
+ SG_ AjarStatus_RearRightDoor : 12|1@0+ (1,0) [0|1] ""  DML,VCM_BC,DMR,CIU,DIS
+ SG_ AjarStatus_RearLeftDoor : 13|1@0+ (1,0) [0|1] ""  DMR,VCM_BC,DML,CIU,DIS
+ SG_ AjarStatus_Hood : 10|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ AjarStatus_FrontRightDoor : 14|1@0+ (1,0) [0|1] ""  DML,VCM_BC,DMR,CIU,DIS
+ SG_ AjarStatus_FrontLeftDoor : 15|1@0+ (1,0) [0|1] ""  DMR,VCM_BC,DML,MSM,CIU,DIS
+ SG_ HazardSwitchStatus : 9|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ EntrySystemStatus : 5|2@0+ (1,0) [0|0] ""  CIU,DIS,DMR,DML
+ SG_ VCM_SC_STAT_AliveCount : 7|2@0+ (1,0) [0|3] ""  MSM,BSM
+ SG_ SB_HoldApplicable : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockingStatus_RearRightDoor : 0|1@0+ (1,0) [0|1] ""  DMR
+ SG_ LockingStatus_RearLeftDoor : 1|1@0+ (1,0) [0|1] ""  DML
+ SG_ LockingStatus_FrontRightDoor : 2|1@0+ (1,0) [0|1] ""  DMR
+ SG_ LockingStatus_FrontLeftDoor : 3|1@0+ (1,0) [0|1] ""  DML
+ SG_ SB_PressedStat : 24|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ SB_HoldProgress : 31|7@0+ (1,0) [0|100] "%"  DIS
+ SG_ SB_HoldTarget : 23|7@0+ (100,0) [0|12700] "ms" Vector__XXX
+
+BO_ 371 DMR_STAT: 4 DMR
+ SG_ DMR_SeatOccupSnsr_RearRight : 1|2@0+ (1,0) [0|3] ""  DIS
+ SG_ DMR_SeatOccupSnsr_FrontRight : 23|2@0+ (1,0) [0|3] ""  DIS
+ SG_ DMR_DTC_Present : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DOOR_AJAR_SW_RRWM : 9|1@0+ (1,0) [0|1] ""  VCM_BC,SVCS,VCM_SC,DIS
+ SG_ DOOR_AJAR_SW_LRWM : 10|1@0+ (1,0) [0|1] ""  VCM_BC,SVCS,VCM_SC,DIS
+ SG_ RRWM_NOT_NORM : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LRWM_NOT_NORM : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DMR_STAT_AliveCount : 7|2@0+ (1,0) [0|3] ""  VCM_BC,SVCS
+ SG_ DMR_FrontDoorExteriorRequest : 5|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ DMR_MirrorHeaterStat : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DMR_FoldingMirrorStat : 15|2@0+ (1,0) [0|3] ""  SVCS,CIU
+ SG_ DMR_RearDoorInteriorRequest : 2|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ DMR_RearDoorExteriorRequest : 3|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ DMR_FrontDoorInteriorRequest : 4|1@0+ (1,0) [0|1] ""  VCM_SC
+
+BO_ 370 DML_STAT: 4 DML
+ SG_ DML_SeatOccupSnsr_RearLeft : 1|2@0+ (1,0) [0|3] ""  DIS
+ SG_ DML_DTC_Present : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DOOR_AJAR_SW_RFWM : 9|1@0+ (1,0) [0|1] ""  VCM_BC,SVCS,VCM_SC,DIS
+ SG_ DOOR_AJAR_SW_LFWM : 10|1@0+ (1,0) [0|1] ""  VCM_BC,SVCS,VCM_SC,MSM,DIS
+ SG_ RFWM_NOT_NORM : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LFWM_NOT_NORM : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DML_FrontDoorExteriorRequest : 5|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ DML_STAT_AliveCount : 7|2@0+ (1,0) [0|3] ""  MSM,VCM_BC,SVCS
+ SG_ DML_MirrorHeaterStat : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DML_FoldingMirrorStat : 15|2@0+ (1,0) [0|3] ""  SVCS,CIU
+ SG_ DML_RearDoorInteriorRequest : 2|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ DML_RearDoorExteriorRequest : 3|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ DML_FrontDoorInteriorRequest : 4|1@0+ (1,0) [0|1] ""  VCM_SC
+
+BO_ 369 VCM_BC_STAT: 6 VCM_BC
+ SG_ AutoHighbeam_Active_Stat : 47|2@0+ (1,0) [0|2] ""  DIS
+ SG_ SVCS_POWER_FEED_STAT : 29|1@0+ (1,0) [0|1] ""  CIU
+ SG_ Wiper_Motor_Speed : 28|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ VCM_BC_DTC_Present : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HazardModeStatus : 26|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ AutoHeadlamp_Active_Stat : 35|1@0+ (1,0) [0|1] ""  DIS
+ SG_ SCS_FogSwitchPos : 39|2@0+ (1,0) [0|3] ""  DIS
+ SG_ SCS_HeadlampSwitchPos : 34|3@0+ (1,0) [0|7] ""  DIS
+ SG_ SCS_BeamSwitchPos : 37|2@0+ (1,0) [0|3] ""  DIS
+ SG_ AUTO_WIPER_NOT_AVAILABLE : 25|1@0+ (1,0) [0|1] ""  DIS
+ SG_ AUTO_HEADLAMP_NOT_AVAILABLE : 24|1@0+ (1,0) [0|1] ""  DIS
+ SG_ REAR_DEFROST_STAT : 23|2@0+ (1,0) [0|3] ""  TPI_BRB,CIU
+ SG_ SCS_WiperWishWash : 8|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ SCS_WiperIntermittentLvl : 21|3@0+ (1,0) [0|7] ""  VCM_SC,DIS
+ SG_ SCS_WiperSwitchPos : 18|3@0+ (1,0) [0|7] ""  VCM_SC,DIS
+ SG_ DIMMING_LEVEL : 12|4@0+ (1,0) [0|15] ""  MSM,VCM_SC,CIU,DIS
+ SG_ DAY_NIGHT_MODE : 13|1@0+ (1,0) [0|1] ""  MSM,BSM,DIS,CIU
+ SG_ WASHER_FLUID_LOW : 14|1@0+ (1,0) [0|1] ""  CIU,DIS
+ SG_ SCS_TurnSignal_Right : 2|1@0+ (1,0) [0|1] ""  BSM
+ SG_ SCS_TurnSignal_Left : 3|1@0+ (1,0) [0|1] ""  BSM
+ SG_ VCM_BC_STAT_AliveCount : 7|2@0+ (1,0) [0|3] ""  TPI_BRB,BSM
+ SG_ Wiper_Park_Stat : 0|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ Wiper_Motor_Stat : 1|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ BRAKE_FLUID_LOW : 5|2@0+ (1,0) [0|3] ""  CIU,DIS
+ SG_ MirrorHeaterRequest : 15|1@0+ (1,0) [0|1] ""  DMR,DML
+
+BO_ 256 WAKE_UP: 0 KARMA_TESTER
+
+BO_ 892 VEHICLE_UNITS: 3 CIU
+ SG_ CUR_LANGUAGE : 13|5@0+ (1,0) [0|31] ""  DIS
+ SG_ TEMP_UNIT : 15|2@0+ (1,0) [0|3] ""  DIS
+ SG_ POWER_USAGE_UNIT : 3|3@0+ (1,0) [0|7] ""  DIS
+ SG_ DISTANCE_UNIT : 7|2@0+ (1,0) [0|3] ""  DIS
+ SG_ TIME_UNIT : 5|2@0+ (1,0) [0|3] ""  DIS
+
+BO_ 1170 TIME_STATUS_USER: 8 CIU
+ SG_ TIME_SOURCE : 58|3@0+ (1,0) [0|0] ""  PDM,BSM,VCM_SC
+ SG_ TIME_ZONE_USER : 54|7@0+ (0.25,-12) [-12|14] ""  PDM,BSM,VCM_SC
+ SG_ TIME_DST_STATUS_USER : 55|1@0+ (1,0) [0|1] ""  PDM,BSM,VCM_SC
+ SG_ TIME_SECONDS_USER : 23|8@0+ (1,0) [0|59] "s"  PDM,BSM,VCM_SC,DIS
+ SG_ TIME_YEAR_USER : 47|8@0+ (1,2000) [2000|2254] ""  PDM,BSM,VCM_SC,DIS
+ SG_ TIME_MONTH_USER : 39|8@0+ (1,0) [0|11] ""  PDM,BSM,VCM_SC,DIS
+ SG_ TIME_MINUTES_USER : 15|8@0+ (1,0) [0|59] "min"  PDM,BSM,VCM_SC,DIS
+ SG_ TIME_DAY_USER : 31|8@0+ (1,0) [1|31] ""  PDM,BSM,VCM_SC,DIS
+ SG_ TIME_HOURS_USER : 7|8@0+ (1,0) [0|23] "h"  PDM,BSM,VCM_SC,DIS
+
+BO_ 920 MSM_STAT: 7 MSM
+ SG_ MSM_InternalProfileRecallEvent : 1|1@0+ (1,0) [0|1] ""  DMR,DML
+ SG_ MSM_ManualAdjustmentActive : 2|1@0+ (1,0) [0|1] ""  CIU
+ SG_ MSM_DTC_Present : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MSM_ValetModeActive : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MSM_SeatTemp_RearRight : 55|8@0- (1,0) [-128|126] "°C" Vector__XXX
+ SG_ MSM_SeatTemp_RearLeft : 47|8@0- (1,0) [-128|126] "°C" Vector__XXX
+ SG_ MSM_SeatTemp_FrontRight : 39|8@0- (1,0) [-128|126] "°C" Vector__XXX
+ SG_ MSM_SeatTemp_FrontLeft : 31|8@0- (1,0) [-128|126] "°C" Vector__XXX
+ SG_ MSM_STAT_AliveCount : 7|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_FaultStat_RearRight : 17|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_FaultStat_RearLeft : 19|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_FaultStat_FrontRight : 21|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_FaultStat_FrontLeft : 23|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_HeatStat_RearRight : 9|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_HeatStat_RearLeft : 11|2@0+ (1,0) [0|3] ""  CIU
+ SG_ ACTIVE_MEMORY_POS : 5|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_HeatStat_FrontLeft : 15|2@0+ (1,0) [0|3] ""  CIU
+ SG_ MSM_HeatStat_FrontRight : 13|2@0+ (1,0) [0|3] ""  CIU
+
+BO_ 1040 QH_VEHICLE_SPEED_AND_DISTANCE: 8 VCM_SC
+ SG_ VehicleSpeedDirectionalV : 55|1@0+ (1,0) [0|1] ""  PDM
+ SG_ VehicleSpeedDirectional : 38|15@0+ (0.0125,-125) [-125|284.575] "km/h"  PDM
+ SG_ VEHICLE_SPEED_AND_DISTANCE_CNT : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VEHICLE_SPEED_AND_DISTANCE_CRC : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VehDir : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DstRolCntAvgDrnRstOc : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DistRollCntAvgDrvnV : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DistRollCntAvgDrvn : 20|13@0+ (0.125,0) [0|1023.875] "" Vector__XXX
+ SG_ DistRollCntAvgDrvnSrc : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehSpdAvgDrvn : 7|16@0+ (0.0078125,0) [0|511.9921875] "km/h"  SVCS,BSM,MSM,DMR,DML
+ SG_ VehSpdAvgDrvnV : 22|1@0+ (1,0) [0|1] ""  BSM,MSM,DMR,DML
+ SG_ VehSpdAvgDrvnSrc : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 261 POWER_MODE: 3 VCM_SC
+ SG_ READY_FLAG : 8|1@0+ (1,0) [0|1] ""  BSM
+ SG_ POWER_MODE_CNT : 15|2@0+ (1,0) [0|3] ""  BSM
+ SG_ POWER_MODE_CRC : 23|8@0+ (1,0) [0|255] ""  BSM
+ SG_ VCM_RPC_COMMAND : 4|1@0+ (1,0) [0|1] ""  MSM,VCM_BC
+ SG_ PAD_STATUS : 3|1@0+ (1,0) [0|1] ""  VCM_BC,DMR,DML,MSM
+ SG_ HVPROP_STATUS : 6|2@0+ (1,0) [0|3] ""  VCM_BC,DMR,DML,MSM
+ SG_ ESTOP : 7|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ POWER_MODE_STATUS : 2|3@0+ (1,0) [0|7] ""  BSM,SVCS,VCM_BC,DMR,DML,MSM
+
+BO_ 406 GEAR_POSITION: 4 VCM_SC
+ SG_ GEAR_POSITION_CRC : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GEAR_POSITION_ARC : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DUMMY_5BIT_ALWAYS_ZERO : 7|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AUTOPARK_EVENT_STAT : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PRND_USER_INPUT : 13|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ REGEN_MODE : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACTUATED_GEAR : 2|3@0+ (1,0) [0|3] ""  DMR,DML,SVCS,BSM,MSM,PDM
+
+BO_ 1853 DIAG_RESPONSE_PDM: 8 PDM
+ SG_ DIAG_RESP_SIG_PDM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1839 DIAG_RESPONSE_CIU: 8 CIU
+ SG_ DIAG_RESP_SIG_CIU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1828 DIAG_REQUEST_VCM_BC: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_VCM_BC : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  VCM_BC
+
+BO_ 1830 DIAG_REQUEST_VCM_SC: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_VCM_SC : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  VCM_SC
+
+BO_ 1845 DIAG_REQUEST_PDM: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_PDM : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PDM
+
+BO_ 1831 DIAG_REQUEST_CIU: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_CIU : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  CIU
+
+BO_ 917 CIU_SWITCH_STATUS_B: 8 CIU
+ SG_ AHBO_ENABLE_SET : 57|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ BSM_LED_BRIGHTNESS_NIGHT : 45|2@0+ (1,0) [0|2] ""  BSM
+ SG_ BSM_LED_BRIGHTNESS_DAY : 47|2@0+ (1,0) [0|2] ""  BSM
+ SG_ BSM_SENSITIVITY_SET : 43|2@0+ (1,0) [0|3] ""  BSM
+ SG_ RCTA_ENABLE_SET : 41|1@0+ (1,0) [0|1] ""  BSM
+ SG_ BSM_ENABLE_SET : 40|1@0+ (1,0) [0|1] ""  BSM
+ SG_ CIU_SWITCH_STATUS_B_Validity : 61|1@0+ (1,0) [0|1] ""  MSM,DMR,DML,BSM,VCM_SC,VCM_BC
+ SG_ CIU_SWITCH_STATUS_B_AliveCount : 63|2@0+ (1,0) [0|3] ""  MSM,DMR,DML,BSM,VCM_SC,VCM_BC
+ SG_ AUTO_RECALL_SET : 56|1@0+ (1,0) [0|1] ""  MSM
+ SG_ FOB_PRESELECTS_PROFILE_SET : 55|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ STEERING_WHEEL_HEATER_ENABLE : 15|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ REARRIGHT_HEAT_SEAT_SET : 54|1@0+ (1,0) [0|1] ""  MSM
+ SG_ REARLEFT_HEAT_SEAT_SET : 53|1@0+ (1,0) [0|1] ""  MSM
+ SG_ RPC_CONFIRMATION_SET : 34|2@0+ (1,0) [0|2] ""  VCM_SC
+ SG_ PASV_UNLOCKING_RIGHT_SET : 52|2@0+ (1,0) [0|2] ""  VCM_SC
+ SG_ PASV_UNLOCKING_LEFT_SET : 50|2@0+ (1,0) [0|2] ""  VCM_SC
+ SG_ AUTO_WIPER_CTRL_SET : 48|1@0+ (1,0) [0|1] ""  VCM_SC,VCM_BC
+ SG_ MEMORY_POSITION_SAVE : 1|2@0+ (1,0) [0|3] ""  MSM
+ SG_ MEMORY_POSITION_RECALL : 3|2@0+ (1,0) [0|3] ""  MSM
+ SG_ REAR_DEFROST_CMD : 7|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ FRONTRIGHT_HEAT_SEAT_SET : 6|1@0+ (1,0) [0|1] ""  MSM
+ SG_ EASY_ENTRY_EXIT_SET : 4|1@0+ (1,0) [0|1] ""  MSM
+ SG_ FRONTLEFT_HEAT_SEAT_SET : 5|1@0+ (1,0) [0|1] ""  MSM
+ SG_ AUTO_DOOR_LOCK_SET : 22|2@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ EXIT_LIGHT_SETTING_SET : 27|2@0+ (1,0) [0|3] ""  VCM_BC
+ SG_ AUTO_FOLD_SET : 29|1@0+ (1,0) [0|1] ""  VCM_BC,DMR,DML
+ SG_ DIMMING_LEVEL_USER : 11|4@0+ (1,0) [0|15] ""  VCM_BC
+ SG_ DELAYED_DOOR_LOCK_SET : 23|1@0+ (1,0) [0|1] ""  VCM_SC,DMR,DML
+ SG_ APPR_EXIT_LIGHT_USE_LS_SET : 35|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ PDM_DISABLE : 39|2@0+ (1,0) [0|3] ""  DIS,PDM
+ SG_ GLOBAL_RESET : 14|1@0+ (1,0) [0|1] ""  DIS
+ SG_ RPC_SETTING_SET : 32|1@0+ (1,0) [0|1] ""  VCM_SC
+ SG_ CHILD_LOCKOUT_SET : 36|1@0+ (1,0) [0|1] ""  VCM_SC,DMR,DML
+ SG_ RTE_DOOR_LOCK_SET : 17|2@0+ (1,0) [0|3] ""  VCM_BC,VCM_SC
+ SG_ RTE_DOOR_UNLOCK_SET : 18|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ FOLD_MIRROR_CMD : 31|2@0+ (1,0) [0|3] ""  VCM_BC,DMR,DML
+ SG_ TRIP_RESET : 13|1@0+ (1,0) [0|1] ""  DIS
+ SG_ APPR_LIGHT_SETTING_SET : 28|1@0+ (1,0) [0|1] ""  VCM_BC
+ SG_ PAD_DELAY_SET : 25|2@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ TRIP_SELECT : 12|1@0+ (1,0) [0|1] ""  DIS
+ SG_ RTE_KEY_ENTRY_SET : 20|2@0+ (1,0) [0|3] ""  VCM_SC
+ SG_ VALET_MODE_SET : 37|1@0+ (1,0) [0|1] ""  MSM,VCM_SC
+
+
+
+CM_ "BODY CAN ONLY";
+CM_ BU_ TPI_BRB "TPI Bottom Row Buttons";
+CM_ BU_ CONTI_TESTER "TPMS Tester for EOL and Debugging";
+CM_ BU_ MSM "Memory Seat Module";
+CM_ BU_ VCM_SC "VCM Security Controller";
+CM_ BU_ VCM_BC "VCM Body Controller";
+CM_ BU_ DMR "Door Module Right";
+CM_ BU_ DML "Door Module Left";
+CM_ BU_ PDM "Park Distance Module";
+CM_ BU_ DIS "Driver Information System";
+CM_ BU_ CIU "Central Infotainment Unit";
+CM_ BU_ BSM "Blind Spot Monitor";
+CM_ BU_ SVCS "Surround View Camera System";
+CM_ BU_ HLMR "Headlamp Module Right";
+CM_ BU_ HLML "Headlamp Module Left";
+CM_ BU_ ESM "External Sound Module";
+CM_ BO_ 2015 "Functional Request (All-Node)";
+CM_ SG_ 373 MSM_WINDOW_CTRL_ARC "Alive Rolling Counter for MSM_WINDOW_CTRL message.";
+CM_ SG_ 373 RWS_HeatedSeatsSw_Right "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_HeatedSeatsSw_Left "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_RearRight_Up "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_RearRight_Express "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_RearRight_Down "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_RearLeft_Up "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_RearLeft_Express "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 373 RWS_RearLeft_Down "Boolean window switch command taken from corresponding LIN signal.";
+CM_ BO_ 1545 "Copy of select LIN Tx and Rx signals from VCM_SC<=>SWCM communication.";
+CM_ SG_ 1545 SWCM_LIN_NoResponse "Loss of Comm with SWCM. VCM_SC sends LIN header, but SWCM does not add the payload. Signal is generated by VCM - not a LIN signal!";
+CM_ SG_ 1545 SWCM_BTN_ACC_TIMEGAP_Enable "SWSR_BTN_ACC_TIMEGAP_Enable LIN Tx signal to SWCM.";
+CM_ SG_ 1545 SWCM_TactileFeedbackCommand_Rt "TactileFeedbackCommand_Right LIN Tx signal to SWCM.";
+CM_ SG_ 1545 SWCM_TactileFeedbackCommand_Lft "TactileFeedbackCommand_Left LIN Tx signal to SWCM.";
+CM_ SG_ 1545 SWCM_HeaterEnable "HeaterEnable LIN Tx signal to SWCM.";
+CM_ SG_ 1545 SWCM_BacklightPercent "BacklightPercent LIN Tx signal to SWCM.";
+CM_ SG_ 1545 SWCM_SupplyVoltageFault "SupplyVoltageFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_RightSwitch_HardwareFault "RightSwitch_HardwareFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_RightSwitch_CommFault "RightSwitch_CommFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_LINCommError "LINCommError LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_LeftSwitch_HardwareFault "LeftSwitch_HardwareFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_LeftSwitch_CommFault "LeftSwitch_CommFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_HeaterPoweredStatus "HeaterPoweredStatus LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_HeaterFault "HeaterFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_HapticMotorPoweredStatus "HapticMotorPoweredStatus LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_HapticMotorPlaybackStatus "HapticMotorPlaybackStatus LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_HapticMotorFault "HapticMotorFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_HapticMotorCommand "HapticMotorCommand LIN Tx signal to SWCM.";
+CM_ SG_ 1545 SWCM_ECU_SoftwareFault "ECU_SoftwareFault LIN Rx signal from SWCM.";
+CM_ SG_ 1545 SWCM_ECU_HardwareFault "ECU_HardwareFault LIN Rx signal from SWCM.";
+CM_ BO_ 1848 "Diagnostic response from ESM.";
+CM_ BO_ 1840 "Diagnostic request to ESM.";
+CM_ SG_ 593 ESM_DTC_PRESENT "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 593 ESM_ACTIVE_SOUND_PROFILE "ESM Active Sound Profile.";
+CM_ SG_ 593 ESM_SYSTEM_STATUS "ESM System Status.";
+CM_ SG_ 593 ESM_STATUS_ARC "Alive Rolling Counter for ESM_STATUS message.";
+CM_ SG_ 593 ESM_AVAS_SOUND_ENABLE_STATUS "ESM AVAS Sound Enable Status.";
+CM_ SG_ 593 ESM_SOUND_ACTIVE_STATUS "ESM Sound Playback Status.";
+CM_ SG_ 592 ESM_NOTIFICATION_EVT "ESM Notification Event. Rising edge is trigger for one-time playback. Falling edge does not cancel ongoing playback.";
+CM_ SG_ 592 ESM_NM "ESM Network Management Command to either stay awake or to disable and go to sleep, when ready.";
+CM_ SG_ 592 ESM_COMMAND_CRC "Checksum based on entire message payload (0xFF initial value for CRC signal) following SAE J1850 standard with CRC-8-SAE Polynomial.";
+CM_ SG_ 592 ESM_SELECTED_SOUND_PROFILE "ESM Selected Sound Profile.";
+CM_ SG_ 592 ESM_ICE_STATUS "Status of the Internal Combustion Engine.";
+CM_ SG_ 592 ESM_AVAS_SOUND_ENABLE "ESM Sound Enable Switch for AVAS feature. Default ON. Can be requested OFF via AVAS_MUTE_SET.";
+CM_ SG_ 592 ESM_ACTUATED_GEAR "Vehicle Gear Position.";
+CM_ SG_ 592 ESM_VEH_SPEED_DIRECTIONAL "Vehicle Speed Directional.";
+CM_ SG_ 592 ESM_COMMAND_ARC "Alive Rolling Counter for ESM_COMMAND message.";
+CM_ SG_ 1249 CIU_VEHICLE_SETTINGS_B_VALID "Validity flag for CIU_VEHICLE_SETTINGS_B message.";
+CM_ SG_ 1249 CIU_VEHICLE_SETTINGS_B_CRC "Checksum based on entire message payload except CRC byte. Following SAE J1850 standard with CRC-8-SAE Polynomial.";
+CM_ SG_ 1249 CIU_VEHICLE_SETTINGS_B_ARC "Alive Rolling Counter for CIU_VEHICLE_SETTINGS_B message.";
+CM_ BO_ 944 "TPI BRB Status Message.";
+CM_ SG_ 944 TPIBRB_BTN_SEAT_HEATVENT_STAT "TPI_BRB Seat Heat/Vent Controls Button Status.";
+CM_ SG_ 944 TPIBRB_BTN_SVCS_STAT "TPI_BRB SVCS/CAMERA Button Status.";
+CM_ SG_ 944 TPIBRB_BTN_MIRROR_CTRL_STAT "TPI_BRB Sidemirror Controls Button Status.";
+CM_ SG_ 944 TPIBRB_BTN_FRONT_DEFROST_STAT "TPI_BRB Front Defrost Button Status.";
+CM_ SG_ 944 TPIBRB_BTN_REAR_DEFROST_STAT "TPI_BRB Rear Defrost Button Status.";
+CM_ SG_ 944 TPI_BRB_STAT_ARC "Alive Rolling Counter for TPI_BRB_STAT message.";
+CM_ BO_ 1884 "Diagnostic response from TPI_BRB.";
+CM_ SG_ 1884 DIAG_RESP_SIG_TPI_BRB "Diagnostic Response Signal from TPI_BRB.";
+CM_ BO_ 1876 "Diagnostic request to TPI_BRB.";
+CM_ SG_ 1876 DIAG_REQ_SIG_TPI_BRB "Diagnostic Request Signal to TPI_BRB.";
+CM_ BO_ 870 "PDM Status Message 2.";
+CM_ SG_ 870 PDM_DISTANCE_REAR_6 "PDM Rear Sensor Zone #6, sixth from left, 3 o'clock position.";
+CM_ SG_ 870 PDM_DISTANCE_REAR_5 "PDM Rear Sensor Zone #5, fifth from left, 4 o'clock position.";
+CM_ SG_ 870 PDM_DISTANCE_REAR_4 "PDM Rear Sensor Zone #4, fourth from left, 5 o'clock position.";
+CM_ SG_ 870 PDM_DISTANCE_REAR_3 "PDM Rear Sensor Zone #3, third from left, 7 o'clock position.";
+CM_ SG_ 870 PDM_DISTANCE_REAR_2 "PDM Rear Sensor Zone #2, second from left, 8 o'clock position.";
+CM_ SG_ 870 PDM_DISTANCE_REAR_1 "PDM Rear Sensor Zone #1, first from left, 9 o'clock position.";
+CM_ SG_ 870 PDM_STATUS_2_ARC "Alive Rolling Counter for PDM_SYSTEM_STATUS message.";
+CM_ BO_ 1219 "Misc. gateway signals compiled from multiple source messages.";
+CM_ SG_ 393 VEH_DYN_TEMP_SENS_FAULT "Vehicle Dynamics Internal Temporary Sensor Fault
+BIS Diagnostics #3,14";
+CM_ SG_ 393 INMO_LONG_ALIVE_CNT "Inertial Longitudinal Sensor Alive Rolling Counter
+Increments the counter for every message";
+CM_ SG_ 393 VEH_DYN_LONG_ACCEL_SELF_TEST "Vehicle Dynamics Longitudinal Acceleration Sensor Self Test Status
+Indicates when AST signal has settled, and data being sent includes offset. Valid for 2 CAN cycle.";
+CM_ SG_ 393 VEH_DYN_LONG_ACCEL "Vehicle Dynamics Longitudinal Acceleration data, filtered digitally.";
+CM_ SG_ 393 VEH_DYN_LONG_ACCEL_VALID "Vehicle Dynamics Longitudinal Acceleration Validity
+Indicates if accel data is valid";
+CM_ SG_ 393 VEH_DYN_SENS_FAULT_2 "Vehicle Dynamics Internal Sensor Fault Symptom Active
+BIT Diagnostics, #1,9,12";
+CM_ SG_ 393 VEH_DYN_LONG_ACCEL_SENS_FAULT "Vehicle Dynamics Longitudinal Acceleration Sensor Circuit Error Present
+If Long.Accel's output signal is constant (within a tolerance band) for at least 40 ms after a critical slope was detected, LongAccel_Fail is flagged as long as the signal remains in the tolerance band";
+CM_ SG_ 393 VEH_DYN_SENS_FAULT_1 "Vehicle Dynamics Internal Sensor Fault Present
+BIT Diagnostics, #2,7,8,10,11,12,13";
+CM_ SG_ 393 VEH_DYN_LONG_ACCEL_RANGE_CHECK "Vehicle Dynamics Longitudinal Acceleration Sensor Range Check Error Present
+Is |acc| > 1.7g signal are active for more than 200ms, error is flagged";
+CM_ BO_ 225 "Wheel Rotational Status, all wheels.";
+CM_ SG_ 225 CNT_WHEEL_ROTAT_STAT_UNDRIVEN "Alive Rolling Counter from C-CAN::WHEEL_ROTAT_STAT_UNDRIVEN message.";
+CM_ SG_ 225 WRSRNDWhlDistPCntr "Wheel Rotational Status Right non-Driven : Wheel Distance Pulse Counter";
+CM_ SG_ 225 WRSRNDSeqNum "Wheel Rotational Status Right non-Driven : Sequence Number";
+CM_ SG_ 225 WRSRNDWhlRotStRst "Wheel Rotational Status Right non-Driven : Wheel Rotational Status Reset Occurred";
+CM_ SG_ 225 WRSRNDWhlDistVal "Wheel Rotational Status Right non-Driven : Wheel Distance Validity";
+CM_ SG_ 225 WRSLNDWhlDistPCntr "Wheel Rotational Status Left non-Driven : Wheel Distance Pulse Counter";
+CM_ SG_ 225 WRSLNDSeqNum "Wheel Rotational Status Left non-Driven : Sequence Number";
+CM_ SG_ 225 WRSLNDWhlRotStRst "Wheel Rotational Status Left non-Driven : Wheel Rotational Status Reset Occurred";
+CM_ SG_ 225 WRSLNDWhlDistVal "Wheel Rotational Status Left non-Driven : Wheel Distance Validity";
+CM_ SG_ 225 CNT_WHEEL_ROTAT_STATUS_DRIVEN "Alive Rolling Counter from C-CAN::WHEEL_ROTAT_STATUS_DRIVEN message.";
+CM_ SG_ 225 WRSLDWhlRotStatRst "Wheel Rotational Status Left Driven : Wheel Rotational Status Reset Occurred";
+CM_ SG_ 225 WRSRDWhlDistPlsCntr "Wheel Rotational Status Right Driven : Wheel Distance Pulse Counter";
+CM_ SG_ 225 WRSLDWhlDistVal "Wheel Rotational Status Left Driven : Wheel Distance Validity";
+CM_ SG_ 225 WRSRDWhlDistVal "Wheel Rotational Status Right Driven : Wheel Distance Validity";
+CM_ SG_ 225 WRSLDWhlDistPlsCntr "Wheel Rotational Status Left Driven : Wheel Distance Pulse Counter";
+CM_ SG_ 225 WRSRDWhlRotStatRst "Wheel Rotational Status Right Driven : Wheel Rotational Status Reset Occurred";
+CM_ SG_ 225 WRSRDSeqNum "Wheel Rotational Status Right Driven : Sequence Number";
+CM_ SG_ 225 WRSLDSeqNum "Wheel Rotational Status Left Driven : Sequence Number";
+CM_ BO_ 869 "PDM Status Message 1.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT_6 "PDM Front Sensor Zone #6, sixth from left, 3 o'clock position.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT_5 "PDM Front Sensor Zone #5, fifth from left, 2 o'clock position.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT_4 "PDM Front Sensor Zone #4, fourth from left, 1 o'clock position.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT_3 "PDM Front Sensor Zone #3, third from left, 11 o'clock position.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT_2 "PDM Front Sensor Zone #2, second from left, 10 o'clock position.";
+CM_ SG_ 869 PDM_STATUS_1_ARC "Alive Rolling Counter for PDM_SYSTEM_STATUS message.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT_1 "PDM Front Sensor Zone #1, first from left, 9 o'clock position.";
+CM_ SG_ 869 PDM_SENSOR_FAULT_REAR "PDM Rear Sensors Fault Status.";
+CM_ SG_ 869 PDM_DISTANCE_FRONT "PDM (combined) Front Distance.";
+CM_ SG_ 869 PDM_DISTANCE_REAR "PDM (combined) Rear Distance.";
+CM_ SG_ 869 PDM_SENSOR_FAULT_FRONT "PDM Front Sensors Fault Status.";
+CM_ SG_ 869 PDM_SYSTEM_STATUS "PDM System Status.";
+CM_ BO_ 1027 "Signal Exchange Message for CIU=>DIS. Not to be used for signals that need to be transmitted while B-CAN is asleep.";
+CM_ SG_ 1027 TRACTION_POWER_INST "Combined instantaneous power to (positive) or from (negative) the traction motors, observed at traction motor inverters.";
+CM_ SG_ 1027 CIU_DIS_EXCHANGE_B_Validity "Validity flag for CIU_DIS_EXCHANGE_B message.";
+CM_ SG_ 1027 CIU_DIS_EXCHANGE_B_AliveCount "Alive Rolling Counter for CIU_DIS_EXCHANGE_B message.";
+CM_ BO_ 1536 "Temporary Infotainment Debug Message";
+CM_ SG_ 374 ENTER_AUTOTILT "Manual request for sidemirror Auto-Tilt. Used for Auto-Tilt position adjustment.";
+CM_ SG_ 374 AUTOTILT_ENABLE "Sidemirror Auto-Tilt in Reverse ON/OFF, both mirrors.";
+CM_ SG_ 374 MIRRORPOS_SAVERECALL_RIGHT "Command to save/recall right sidemirror position. Nominal pulse length 3 messages, max 500ms. Rising edge is trigger.";
+CM_ SG_ 374 MIRRORPOS_SAVERECALL_LEFT "Command to save/recall left sidemirror position. Nominal pulse length 3 messages, max 500ms. Rising edge is trigger.";
+CM_ SG_ 374 SIDEMIRROR_KNOB_RIGHT "Virtual control knob for right sidemirror.";
+CM_ SG_ 374 SIDEMIRROR_KNOB_LEFT "Virtual control knob for left sidemirror.";
+CM_ SG_ 374 CIU_SIDEMIRROR_CTRL_AliveCount "Alive Rolling Counter for CIU_SIDEMIRROR_CTRL message.";
+CM_ BO_ 1819 "Diagnostic response from Blind Spot Monitor Master ECU.";
+CM_ SG_ 1819 DIAG_RESP_SIG_BSM_MASTER "Diagnostic Response Signal from BSM Master ECU.";
+CM_ BO_ 1811 "Diagnostic request to Blind Spot Monitor Master ECU.";
+CM_ SG_ 1811 DIAG_REQ_SIG_BSM_MASTER "Diagnostic Request Signal to BSM Master ECU.";
+CM_ BO_ 1556 "Headlamp Module Right Development Message, Tester to HLMR";
+CM_ BO_ 1555 "Headlamp Module Left Development Message, Tester to HLML";
+CM_ BO_ 1026 "Headlamp Module Right Status Message.";
+CM_ SG_ 1026 HLMR_SUPPLY_VOLT_FAULT "HLMR Supply Voltage Fault.";
+CM_ SG_ 1026 HLMR_LAMPFAULT_PARK_DRL "Right Park Lamp / DRL Fault.";
+CM_ SG_ 1026 HLMR_FAILSAFE_MODE_ACTV "HLMR Fail Safe Mode active.";
+CM_ SG_ 1026 HLMR_LAMPSTAT_SWIVEL "Right Swivel Feature Status.";
+CM_ SG_ 1026 HLMR_LAMPSTAT_PARK_DRL "Right Park Lamp / DRL Status.";
+CM_ SG_ 1026 HLMR_HWSWMUX_VAL "HLMR HW/SW Info MUX-Value.";
+CM_ SG_ 1026 HLMR_HWSWMUX_IDX "HLMR HW/SW Info MUX-Index.";
+CM_ SG_ 1026 HLMR_DTC_PRESENT "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 1026 HLMR_LAMPSTAT_TURN "Right Turn Indicator Status.";
+CM_ SG_ 1026 HLMR_LAMPFAULT_TURN "Right Turn Indicator Lamp Fault.";
+CM_ SG_ 1026 HLMR_LAMPFAULT_SWIVEL "Right Swivel Lamp/Feature Fault.";
+CM_ SG_ 1026 HLMR_LAMPSTAT_BEAMS "Right Beams Status.";
+CM_ SG_ 1026 HLMR_ALIVE_COUNT "HLMR_STATUS Alive Rolling Counter.";
+CM_ SG_ 1026 HLMR_LAMPFAULT_LOWBEAM "Right Low Beam Fault.";
+CM_ SG_ 1026 HLMR_LAMPFAULT_HIGHBEAM "Right High Beam Fault.";
+CM_ BO_ 1881 "Diagnostic response from HLML.";
+CM_ SG_ 1881 DIAG_RESP_SIG_HLML "Diagnostic Response Signal from HLML.";
+CM_ BO_ 1873 "Diagnostic request to HLML.";
+CM_ SG_ 1873 DIAG_REQ_SIG_HLML "Diagnostic Request Signal to HLML.";
+CM_ BO_ 1882 "Diagnostic response from HLMR.";
+CM_ SG_ 1882 DIAG_RESP_SIG_HLMR "Diagnostic Response Signal from HLMR.";
+CM_ BO_ 1874 "Diagnostic request to HLMR.";
+CM_ SG_ 1874 DIAG_REQ_SIG_HLMR "Diagnostic Request Signal to HLMR.";
+CM_ BO_ 1025 "Headlamp Module Left Status Message.";
+CM_ SG_ 1025 HLML_SUPPLY_VOLT_FAULT "HLML Supply Voltage Fault.";
+CM_ SG_ 1025 HLML_FAILSAFE_MODE_ACTV "HLML Fail Safe Mode active.";
+CM_ SG_ 1025 HLML_DTC_PRESENT "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 1025 HLML_HWSWMUX_VAL "HLML HW/SW Info MUX-Value.";
+CM_ SG_ 1025 HLML_HWSWMUX_IDX "HLML HW/SW Info MUX-Index.";
+CM_ SG_ 1025 HLML_LAMPSTAT_SWIVEL "Left Swivel Feature Status.";
+CM_ SG_ 1025 HLML_LAMPSTAT_TURN "Left Turn Indicator Status.";
+CM_ SG_ 1025 HLML_LAMPFAULT_TURN "Left Turn Indicator Lamp Fault.";
+CM_ SG_ 1025 HLML_LAMPFAULT_SWIVEL "Left Swivel Lamp/Feature Fault.";
+CM_ SG_ 1025 HLML_ALIVE_COUNT "HLML_STATUS Alive Rolling Counter.";
+CM_ SG_ 1025 HLML_LAMPSTAT_PARK_DRL "Left Park Lamp / DRL Status.";
+CM_ SG_ 1025 HLML_LAMPSTAT_BEAMS "Left Beams Status.";
+CM_ SG_ 1025 HLML_LAMPFAULT_PARK_DRL "Left Park Lamp / DRL Fault.";
+CM_ SG_ 1025 HLML_LAMPFAULT_LOWBEAM "Left Low Beam Fault.";
+CM_ SG_ 1025 HLML_LAMPFAULT_HIGHBEAM "Left High Beam Fault.";
+CM_ BO_ 1024 "Lamp Module Control Message targeting both Headlamp Modules.";
+CM_ SG_ 1024 HLM_LAMPSET_SWIVEL_ENABLE "Lamp Setting: Swivel Feature Enable/Disable.";
+CM_ SG_ 1024 HLM_COMMAND_ALIVE_COUNT "HLM_COMMAND Alive Rolling Counter.";
+CM_ SG_ 1024 HLM_VehicleSpeed_Validity "Vehicle Speed Validity Bit.";
+CM_ SG_ 1024 HLMR_LAMPCMD_PARK "Front Right Park Lamp Commanded State.";
+CM_ SG_ 1024 HLM_NM "Lamp Modules Network Management.";
+CM_ SG_ 1024 HLM_SteeringWheelAngleRate "Steering Wheel Angle Rate of Change.";
+CM_ SG_ 1024 HLM_SteeringWheelAngle "Steering Wheel Angle.";
+CM_ SG_ 1024 HLM_ActuatedGear "Vehicle Actuated Gear Position.";
+CM_ SG_ 1024 HLM_VehicleSpeed "Vehicle Speed.";
+CM_ SG_ 1024 HLMR_LAMPCMD_SUPPRESS_PARK_DRL "Right PARK/DRL Suppression Commanded State.";
+CM_ SG_ 1024 HLML_LAMPCMD_SUPPRESS_PARK_DRL "Left PARK/DRL Suppression Commanded State.";
+CM_ SG_ 1024 HLML_LAMPCMD_PARK "Left Park Lamps Commanded State.";
+CM_ SG_ 1024 HLM_LAMPCMD_BEAMS "Beams Commanded State.";
+CM_ SG_ 1024 HLM_LAMPCMD_DRL "DRL Commanded State.";
+CM_ BO_ 1153 "Surround view camera system status message";
+CM_ SG_ 1153 SVCS_InpMsngFlt_POWER_MODE "Input missing fault POWER_MODE.";
+CM_ SG_ 1153 SVCS_DTC_PRESENT "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 1153 SVCS_STANDALONE_MODE "Indicates that SVCS is operating in standalone mode, either because SVCS_INPUTS is not yet available and valid, or because SVCS_INPUTS has become missing or invalid.";
+CM_ SG_ 1153 SVCS_CAMERAS_POWERED "SVCS DSP System On A Chip and Cameras powered.";
+CM_ SG_ 1153 SVCS_REAR_VIEW_ONLY_MODE "SVCS Available Views restricted to Rear Only";
+CM_ SG_ 1153 SVCS_ECU_SERVICE_REQUIRED "SVCS ECU Service Required.";
+CM_ SG_ 1153 SVCS_NM_PWROFF_READY "SVCS Network Management: ECU is ready for 12V Disconnect.";
+CM_ SG_ 1153 SVCS_OVERLAY_MALFUNCTION "SVCS ECU Overlay malfunction status, which pertains to overlay functionality.";
+CM_ SG_ 1153 SVCS_ECU_SYSTEM_MALFUNCTION "SVCS ECU System malfunction status, which pertains to image stitching functionality (OR'ed together all faults).";
+CM_ SG_ 1153 SVCS_CAMERA_FAULTED_RIGHT "Fault Status of the Right SVCS camera.";
+CM_ SG_ 1153 SVCS_CAMERA_FAULTED_REAR "Fault Status of the Rear SVCS camera.";
+CM_ SG_ 1153 SVCS_CAMERA_FAULTED_LEFT "Fault Status of the Left SVCS camera.";
+CM_ SG_ 1153 SVCS_CAMERA_FAULTED_FRONT "Fault Status of the Front SVCS camera.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_STEERING_ANGLE "Input missing fault STEERING_ANGLE.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_PDM_INFO "Input missing fault PDM_INFO.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_DMR_STAT "Input missing fault DMR_STAT.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_DML_STAT "Input missing fault DML_STAT.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_BSM_INFO "Input missing fault BSM_INFO.";
+CM_ SG_ 1153 SVCS_ACTIVE_VIEW "Currently active View-Id.";
+CM_ SG_ 1153 SVCS_ACTIVE_OVERLAY "Currently active overlay(s), bitmasked.
+0bXX1: Parking Assist
+0bX1X: Steering Guidelines
+0b1XX: RCTA
+";
+CM_ SG_ 1153 SVCS_InpMsngFlt_VEHICLE_SPEED "Input missing fault VEHICLE_SPEED.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_SVCS_INPUTS "Input missing fault SVCM_INPUTS.";
+CM_ SG_ 1153 SVCS_InpMsngFlt_GEAR_POSITION "Input missing fault GEAR_POSITION.";
+CM_ SG_ 1153 SVCS_ECU_STATUS "SVCS ECU availability status.";
+CM_ SG_ 1153 SVCS_ECU_Fault_UnderVoltage "SVCS ECU under voltage fault.";
+CM_ SG_ 1153 SVCS_ECU_Fault_OverVoltage "SVCS ECU over voltage fault.";
+CM_ SG_ 1153 SVCS_ECU_CAL_STATUS "SVCS Calibration status.";
+CM_ SG_ 1153 SVCS_STATUS_ALIVE_CNT "Alive counter for SVCS_STATUS message.";
+CM_ BO_ 1834 "Diagnostic response from SVCS.";
+CM_ BO_ 1826 "Diagnostic request to SVCS.";
+CM_ BO_ 1152 "Surround view camera system input message";
+CM_ SG_ 1152 SVCS_3DCAM_LOC_THETA "3D Camera location on virtual sphere, THETA angle.";
+CM_ SG_ 1152 SVCS_3DCAM_LOC_PHI "3D Camera location on virtual sphere, PHI angle.";
+CM_ SG_ 1152 SVCS_POWER_FEED_ON_DEMAND_REQ "On-demand request to enable the power feed to the SVCS, to be able to operate it outside of normal (SYSTEM_ON) operation.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_PDM_FRONT "Park Distance Module guidelines overlay ON/OFF in front view.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_GL_TOPREAR "Rear guidelines overlay in TopView ON/OFF.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_PDM_TOPREAR "Park Distance Module bumper zone overlay ON/OFF in top/rear view.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_PDM_TOPFRONT "Park Distance Module bumper zone overlay ON/OFF in top/front view.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_GL_TOPFRONT "Front guidelines overlay in TopView ON/OFF.";
+CM_ SG_ 1152 SVCS_INPUTS_ALIVE_COUNT "Alive Rolling Counter for SVCS_INPUTS message.";
+CM_ SG_ 1152 SVCS_REQUESTED_VIEW "Requested View-ID.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_RCTA "Rear Cross Traffic Alert overlay ON/OFF.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_PDM_REAR "Park Distance Module guidelines overlay ON/OFF in rear view.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_GL_SIDES "Side guidelines overlay ON/OFF.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_GL_FRONT "Front guidelines overlay ON/OFF.";
+CM_ SG_ 1152 SVCS_OVERLAY_ENABLE_GL_REAR "Rear guidelines overlay ON/OFF.";
+CM_ BO_ 1835 "Diagnostic response from Blind Spot Monitor Slave ECU.";
+CM_ SG_ 1835 DIAG_RESP_SIG_BSM_SLAVE "Diagnostic Response Signal from BSM Slave ECU.";
+CM_ BO_ 1827 "Diagnostic request to Blind Spot Monitor Slave ECU.";
+CM_ SG_ 1827 DIAG_REQ_SIG_BSM_SLAVE "Diagnostic Request Signal to BSM Slave ECU.";
+CM_ BO_ 392 "Yaw Accelerator Sensor";
+CM_ SG_ 392 VEH_DYN_YAW_RATE_VALID "Vehicle Dynamics Yaw Rate Validity.
+Indicates if yaw data is valid.";
+CM_ SG_ 392 WATCHDOG_RESET_GYRO "Fault condition:
+Micro fault – functionality
+
+Notes:
+Micro watchdog was activated for any reason.";
+CM_ SG_ 392 JUMP_ERROR_GYRO "Fault condition:
+If accel´s output signal is constant (within a tolerance band) for at least 40ms after a critical slope was detected, Accel_Fail is flagged as long as the signal remains in the tolerance band
+
+Notes:
+The maximum deviation of accel´s output signal is defined by 1,19g.";
+CM_ SG_ 392 RAM_FAIL_YAW "Fault condition:
+RAM error
+
+Notes:
+Permanent cyclical test. (currently only tested at startup)";
+CM_ SG_ 392 ACCEL_SELF_TEST_STAT "Accelerometer Self Test Status
+Indicates when AST signal has settled, and data being sent includes offset.";
+CM_ SG_ 392 RASTER_FAIL "Fault condition:
+I/O error.
+
+Notes:
+Raster reading beyond +/- 40Hz of calibrated value.
+Refreshed every 1sec.
+This flag is not active the first 4.5s of operation.";
+CM_ SG_ 392 SENS_ALIVE_CNT "Internal Sensor ALive Rolling Counter
+Increments the counter for every message";
+CM_ SG_ 392 RANGE_ERROR_GYRO "Fault condition:
+Accel output is within 125mV of either rail for at least 200ms.
+Is |acc| > 1.7g signal are active for more than 200ms, error is flagged
+
+Notes:
+This check is used to detect in-range-errors caused by an open/short circuit.";
+CM_ SG_ 392 AD_FAIL_YAW "Fault condition:
+A/D conversion fault
+
+Notes:
+Does not match known PWM output for at least 40 ms, or time-out error.";
+CM_ SG_ 392 VEH_DYN_ACCEL "Vehicle Dynamics Lateral Acceleration
+Accel data, filtered digitally.";
+CM_ SG_ 392 ASIC_FAIL_YAW "Fault condition:
+Gyro or ASIC error. Covers range check, secondary / primary loop outputs If BIT signal are active for more than
+
+Notes:
+Alarm signal received from ASIC.";
+CM_ SG_ 392 YAW_SENS_SELF_TEST_STAT "Yaw Rate Sensor Self Test Status
+Indicates when CBIT signal has settled, and data being sent includes offset.";
+CM_ SG_ 392 VEH_DYN_YAW_RATE "Vehicle Dynamics Yaw Rate
+Gyro data, filtered digitally.";
+CM_ SG_ 392 EEP_FAIL_YAW "Fault condition:
+Micro EEPROM failure
+
+Notes:
+EEPROM not initialized, or cannot be read, or Checksum does not match contents.";
+CM_ SG_ 392 VEH_DYN_ACCEL_VALID "Vehicle Dynamics Acceleration Validity
+Indicates if accel data is valid.";
+CM_ SG_ 392 YAW_OSC_FREQ "Yaw Rate Oscillator Freq. Deviation
+Offset value from Raster (Gyro ring frequency = Raster frequency is stored in EEPROM at EOL tester @ room temperature; deviation between actual and stored frequency is transmitted on CAN).
+00 at 23°C is ideal";
+CM_ SG_ 392 BIT_FAIL_GYRO "Fault condition:
+ASIC BIT alarm not functional.
+
+Notes:
+Tested at start up and during CBIT test.";
+CM_ SG_ 392 ROM_FAIL_YAW "Fault condition:
+ROM error
+
+Notes:
+Permanent cyclical test. Tested at each startup and cyclic during runtime.";
+CM_ SG_ 392 GYRO_FAIL "Fault condition:
+If gyro’s output signal is constant (within a tolerance band) for at least 40 ms after a critical level is detected, Gyro_Fail is flagged as long as the signal remains in the tolerance band.
+
+Notes:
+This check is used to detect in-range-errors caused by an open/short circuit. Not shown the first 500msec.
+The minimum deviation of gyro’s output signal which causes the Gyro-fail flag to be set is 63 °/s.";
+CM_ SG_ 392 VBATT_RANGE_ERROR_YAW "Fault condition:
+Vehicle supply voltage below 7.5V for at least 1 s.
+Vehicle supply voltage over 18V for at least 1 s.
+
+Notes:
+Possible system voltage problem.
+The CAN-Module is not switched off as a result of a certain supply voltage";
+CM_ SG_ 392 CAN_ERROR_GYRO "Fault condition:
+CAN transmission error, CAN Bus Off, Receive Message TMO (Time out)
+
+Notes:
+Last CAN transmission not acknowledged by any other device on the bus during timeout.";
+CM_ BO_ 843 "Wheel Ground Velocity";
+CM_ SG_ 843 WhlGrndVlctyRtDrvn "Vehicle Ground Velocity Right Driven";
+CM_ SG_ 843 WhlGrndVlctyRtDrvnV "Vehicle Ground Velocity Right Driven Validity";
+CM_ SG_ 843 WhlGrndVlctyLftDrvn "Vehicle Ground Velocity Left Driven";
+CM_ SG_ 843 WhlGrndVlctyLftDrvnV "Vehicle Ground Velocity Left Driven Validity";
+CM_ SG_ 843 WhlGrndVlctyRtNnDrvnV "Vehicle Ground Velocity Right Non-Driven Validity";
+CM_ SG_ 843 WhlGrndVlctyLftNnDrvnV "Vehicle Ground Velocity Left Non-Driven Validity";
+CM_ SG_ 843 WhlGrndVlctyLftNnDrvn "Vehicle Ground Velocity Left Non-Driven";
+CM_ SG_ 843 WhlGrndVlctyRtNnDrvn "Vehicle Ground Velocity Right Non-Driven";
+CM_ BO_ 384 "The actual Steering Angle";
+CM_ SG_ 384 STEER_ANGLE_CRC_GW_DUMMY "Dummy signal to ensure the undocumented message space is gatewayed properly.";
+CM_ SG_ 384 STEER_ANGLE_VALID "Indicates the failure of the steering angle sensor.
+Signal is set to 0 (invalid) if an internal sensor fault occured.";
+CM_ SG_ 384 STEER_ANGLE_CAL "Indicates the calibration status of the steering angle sensor.";
+CM_ SG_ 384 STEER_ANGLE_SPEED "Specifies the current rotation speed of the steering wheel.
+This signal is set to the fault value, if the sensor has detected an internal failure.";
+CM_ SG_ 384 STEER_ANGLE_VALUE "Specifies the current angle of the steering wheel.
+This signal is set to the fault value, if the sensor is not calibrated or the sensor has detected an internal failure.";
+CM_ SG_ 384 CNT_STEERING_ANGLE "This signal indicates a free running message counter, which is incremented by 1 each time a CAN message has been transmitted by the sensor.";
+CM_ SG_ 384 CHK_SUM_STEERING_ANGLE "The signal provides a checksum. Byte 1 up to 4 and the low nibble of byte 5 of the whole message are used to calculate the checsum.
+
+temp _result = Byte1 XOR Byte2 XOR Byte3 XOR Byte4
+CHK_SUM_STEERING_ANGLE = higher_nibble(temp_result) XOR lower_nibble(temp_result) XOR CNT_STEERING_ANGLE";
+CM_ SG_ 1045 BSM_STAT_CRC "Checksum based on entire message payload (0xFF initial value for CRC signal) following SAE J1850 standard with CRC-8-SAE Polynomial.";
+CM_ BO_ 1833 "Diagnostic response from Amplifier - gatewayed from MOST by CIU.";
+CM_ BO_ 1825 "Diagnostic request to Amplifier - gatewayed onto MOST by CIU.";
+CM_ SG_ 1172 COURSE_GPS "Course: N=0°, E=90°, S=180°, W=270°.";
+CM_ SG_ 1172 SAT_COUNT_GPS "Number of GPS Satellites in use.";
+CM_ SG_ 1172 SPEED_GPS "Speed over ground in km/h.";
+CM_ SG_ 1172 ALT_GPS "Altitude above MSL in meters.";
+CM_ BO_ 1171 "GPS Latitude, Longitude, Altitude.";
+CM_ SG_ 1171 LON_GPS "Longitude as signed degree (-180° to +180°).";
+CM_ SG_ 1171 LAT_GPS "Latitude as signed degree (-90° to +90°).";
+CM_ BO_ 1543 "MSM Hall Sensor Debug Info.";
+CM_ SG_ 1543 MSM_HallCount_SeatVertical "Hall Count for Driver Seat Vertical Movement.";
+CM_ SG_ 1543 MSM_HallCount_Recline "Hall Count for Driver Seat Recline Movement.";
+CM_ SG_ 1543 MSM_Movement_Vertical "Driver Seat Vertical Movement Status.";
+CM_ SG_ 1543 MSM_Movement_SteeringTilt "Steering Column Tilt Movement Status.";
+CM_ SG_ 1543 MSM_Movement_SteeringTelescope "Steering Column Telescopic Movement Status.";
+CM_ SG_ 1543 MSM_Movement_Recline "Driver Seat Recline Movement Status.";
+CM_ SG_ 1543 MSM_Movement_Horizontal "Driver Seat Horizontal Movement Status.";
+CM_ SG_ 1543 MSM_HallCount_SeatHorizontal "Hall Count for Driver Seat Horizontal Movement.";
+CM_ BO_ 361 "Key Fob Wake Pattern and Challenge Data.";
+CM_ SG_ 361 KeyChallengeData "Challenge Data for Key Fob Authentication.";
+CM_ SG_ 361 KeyWakePattern "Wake Pattern for Key Fob.";
+CM_ BO_ 1168 "Time and Driving-Direction info from GPS.";
+CM_ SG_ 1168 TIME_UTC_MINUTES_GPS "GPS Time - Minutes.";
+CM_ SG_ 1168 DIRECTION_GPS "GPS Driving Direction.";
+CM_ SG_ 1168 TIME_UTC_DAY_GPS "GPS Time - Day.";
+CM_ SG_ 1168 TIME_UTC_MONTH_GPS "GPS Time - Month.";
+CM_ SG_ 1168 TIME_UTC_HOURS_GPS "GPS Time - Hours.";
+CM_ SG_ 1168 TIME_DST_STATUS_USER_CONFIG "DST Status User.";
+CM_ SG_ 1168 TIME_UTC_YEAR_GPS "GPS Time - Year.";
+CM_ SG_ 1168 TIME_ZONE_USER_CONFIG "Timezone User Config.";
+CM_ SG_ 1168 TIME_UTC_SECONDS_GPS "GPS Time - Seconds.";
+CM_ BO_ 1074 "Used by the HCU to communicate issues detected with the 12V system.";
+CM_ SG_ 1074 PNM12V_TELLTALE "12V Battery/Charging SystemTelltale Status.";
+CM_ SG_ 1074 PNM12V_LOAD_SHED "12V Load Shed request to participating ECUs.";
+CM_ BO_ 1078 "Rain Light Sensor status from LIN_SCRTY. Update rate 20ms in LIN schedule table. Gatewayed onto B-CAN by VCM_SC.";
+CM_ SG_ 1078 LS_Brightness_Forward "Brightness in driver eye level, frontal spot, for tunnel and bridge detection";
+CM_ SG_ 1078 LS_Brightness_IR "Brightness in IR range of visible spectrum  ";
+CM_ SG_ 1078 LS_Brightness_Upwards "Ambient light values from upper wide apex angle sensor, upper cone ";
+CM_ SG_ 1078 LS_Error "Light Sensor Error bit";
+CM_ SG_ 1078 RS_Error "Rain Sensor Error bit";
+CM_ SG_ 1078 RLS_Status "RLS module status";
+CM_ SG_ 1078 RS_Splash "Splash detected status";
+CM_ SG_ 1078 LS_HeadLights_On "Requested headlamp comand from LS";
+CM_ SG_ 1078 RLS_ResponseError "RLS LIN Communication failure";
+CM_ SG_ 1078 RS_WiperSpeed "Requested wiper speed from RS";
+CM_ SG_ 1078 RLS_MessageCounter "RLS alive counter ";
+CM_ BO_ 1028 "CIU Control and Network Management Message.";
+CM_ SG_ 1028 CIU_FlashLamps_Req "Flash Lamps request to VCM_BC. Rising edge is trigger.";
+CM_ SG_ 1028 FOTA_Status "Status flag for FOTA or related diagnostic activity.";
+CM_ SG_ 1028 FOTA_HV_Req "Request for HV+APM operation to stabilize 12V bus during FOTA. HCU to confirm via FOTA_HV_Conf on C-CAN.";
+CM_ SG_ 1028 ACC_TIMEOUT_INHIBIT_REQUEST "Request to inhibit the automatic ACC=>OFF_AWAKE transition once the ACC timer has expired.";
+CM_ SG_ 1028 CIU_DiagTool_TP_Request "Request to transmit Tester-Present CAN messages every 3s.
+B-CAN::0x101  02 3E 80 [00 00 00 00 00]
+C-CAN::0x101  02 3E 80 [00 00 00 00 00]
+C-CAN::0x7DF  02 3E 80 [00 00 00 00 00]";
+CM_ SG_ 1028 CIU_DiagTool_WupCmd_Bitmask "Bit Mask to request and indicate the DiagTool commanded ECU wakeup/connectivity state.
+00000b => No Request.
+XXXX1b => OFF_AWAKE ECUs.
+XXX1Xb => PT Charge/Drive Common ECUs.
+XX1XXb => PT Drive Mode ECUs.
+X1XXXb => CL15 / CL15R ECUs.
+1XXXXb => OBCM.";
+CM_ SG_ 1028 SB_TransitionLockout_Request "Request to intercept start button trigger for OFF_AWAKE=>ACC and OFF_AWAKE=>SYSTEM_READY transition.";
+CM_ SG_ 1028 CIU_CONTROL_STATUS_Validity "Validity flag for CIU_CONTROL_STATUS message.";
+CM_ SG_ 1028 CIU_CONTROL_STATUS_AliveCount "Alive Rolling Counter for CIU_CONTROL_STATUS message.";
+CM_ SG_ 1028 SPBC_INST_SOLAR_POWER "The SPBC's collected and converted solar power as reported via LIN.";
+CM_ SG_ 1028 TPMS_TurnIndicatorBitMask "Bit Mask to command the four turn indicators in any combination:
+0000b => All OFF.
+1xxxb => Front Left Indicator ON.
+x1xxb => Front Right Indicator ON.
+xx1xb => Rear Left Indicator ON.
+xxx1b => Rear Right Indicator ON.
+1111b => All ON.";
+CM_ SG_ 1028 TPMS_ManualLearningActive "Indicates that the CIU's manual TPMS learning/localization routine is active.";
+CM_ SG_ 1028 TPMS_ChirpRequest "Horn Chirp request to VCM_SC.";
+CM_ SG_ 1028 CIU_PROFILE_INDEX_EVT_SET "The event signal that can reapply an already selected profile.";
+CM_ SG_ 1028 CIU_PROFILE_INDEX_SET "The CIU's signal to take control over PROFILE_INDEX_MASTER.";
+CM_ SG_ 1028 SLEEP_INHIBIT_REQUEST "Request to inhibit OFF_AWAKE=>OFF transition.";
+CM_ SG_ 1028 CIU_LVBUS_VOLTAGE_SENSE "The CIU's B+ voltage reading, calibrated (if applicable).";
+CM_ SG_ 1028 CIU_RPC_COMMAND "Initiate or cancel cabin conditioning.";
+CM_ BO_ 1832 "Diagnostic response from DIS.";
+CM_ BO_ 1824 "Diagnostic request to DIS.";
+CM_ BO_ 1868 "Diagnostic response from DMR.";
+CM_ BO_ 1867 "Diagnostic response from DML.";
+CM_ BO_ 1866 "Diagnostic response from MSM.";
+CM_ BO_ 1836 "Diagnostic response from VCM_BC.";
+CM_ BO_ 1838 "Diagnostic response from VCM_SC.";
+CM_ SG_ 372 VCM_BC_WINDOW_CTRL_ARC "Alive Rolling Counter for VCM_BC_WINDOW_CTRL message.";
+CM_ SG_ 372 FWS_LockoutSwitchStat "Preprocessed lockout switch status.";
+CM_ SG_ 372 FWS_RearRight_Up "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_RearRight_Express "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_RearRight_Down "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_RearLeft_Up "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_RearLeft_Express "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_RearLeft_Down "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_FrontRight_Up "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_FrontRight_Express "Boolean window switch command taken from corresponding LIN signal.";
+CM_ SG_ 372 FWS_FrontRight_Down "Boolean window switch command taken from corresponding LIN signal.";
+CM_ BO_ 1860 "Diagnostic request to DMR.";
+CM_ BO_ 1859 "Diagnostic request to DML.";
+CM_ BO_ 1858 "Diagnostic request to MSM.";
+CM_ BO_ 368 "VCM Security Controller Main Status Message.";
+CM_ SG_ 368 PANIC_AlertStatus "PANIC alerting status, used by BC to activate exterior lamps.";
+CM_ SG_ 368 FOB_LockBtn_PressAndHold_Evt "Indicates that a press-and-hold event (a single long-press) has been received via KeyFob. Used to trigger certain events, such as SOC indication on CHMSL.";
+CM_ SG_ 368 ACC_Timer_Expiring "Indicates that the ACC timer will expire soon (TRUE if in ACC and remaining time is10s or less).";
+CM_ SG_ 368 VCM_SC_DTC_Present "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 368 SLEEP_INHIBIT_CONF "Confirmation signal for CIU_CONTROL_STATUS::SLEEP_INHIBIT_REQUEST.";
+CM_ SG_ 368 SB_TransitionLockout_Conf "Confirmation signal for CIU_CONTROL_STATUS::SB_TransitionLockout_Request.";
+CM_ SG_ 368 PwrMdng_VehicleAttendedStat "Vehicle Attended Status/Assessment.";
+CM_ SG_ 368 AuthenticationEventStatus "Informs about key fob authentication activity.";
+CM_ SG_ 368 DelayedLockTimerStat "The timer status for delayed door locking.";
+CM_ SG_ 368 PROFILE_INDEX_MASTER_EVT "The event signal that can reapply an already selected profile.";
+CM_ SG_ 368 PROFILE_INDEX_MASTER "The master signal for the applied (or to be applied) driver profile.";
+CM_ SG_ 368 FOB_IN_TRUNK "Confirms that FOB (any) has responded to polling and was concluded to be in trunk.";
+CM_ SG_ 368 FOB3_PRESENT_OUTSIDE "Confirms that FOB has responded to polling and was concluded to be outside.";
+CM_ SG_ 368 FOB2_PRESENT_OUTSIDE "Confirms that FOB has responded to polling and was concluded to be outside.";
+CM_ SG_ 368 FOB1_PRESENT_OUTSIDE "Confirms that FOB has responded to polling and was concluded to be outside.";
+CM_ SG_ 368 LockingEventStatus "Informs about a locking or unlocking event taking place.";
+CM_ SG_ 368 PwrMdng_BrakePedalStatBool "The brake pedal status concluded by the VCM_SC from multiple sources.";
+CM_ SG_ 368 VTA_AlertStatus "Vehicle theft alarm alerting status, used by BC to activate exterior lamps.";
+CM_ SG_ 368 ParkingLampSwitchStatus "Indicates whether parking lamps are requested via steering column switch position.";
+CM_ SG_ 368 FOB3_PRESENT_INSIDE "Confirms that FOB has responded to polling and was concluded to be inside.";
+CM_ SG_ 368 FOB2_PRESENT_INSIDE "Confirms that FOB has responded to polling and was concluded to be inside.";
+CM_ SG_ 368 FOB1_PRESENT_INSIDE "Confirms that FOB has responded to polling and was concluded to be inside.";
+CM_ SG_ 368 KEY_FOB_LEFT_VEH "Warning that the KeyFob has left the vehicle.";
+CM_ SG_ 368 KEY_FOB_BATT_LOW "Status if the Key-Fob battery is low.";
+CM_ SG_ 368 AjarStatus_Trunk "Status of the trunk door.";
+CM_ SG_ 368 AjarStatus_RearRightDoor "Door Open Status. CATCH Position reported as CLOSED.";
+CM_ SG_ 368 AjarStatus_RearLeftDoor "Door Open Status. CATCH Position reported as CLOSED.";
+CM_ SG_ 368 AjarStatus_Hood "Status of the hood.";
+CM_ SG_ 368 AjarStatus_FrontRightDoor "Door Open Status. CATCH Position reported as CLOSED.";
+CM_ SG_ 368 AjarStatus_FrontLeftDoor "Door Open Status. CATCH Position reported as CLOSED.";
+CM_ SG_ 368 HazardSwitchStatus "The momentary status of the hazard switch on the dashboard.";
+CM_ SG_ 368 EntrySystemStatus "The overall locking status.";
+CM_ SG_ 368 VCM_SC_STAT_AliveCount "Alive Rolling Counter for VCM_SC_STAT message.";
+CM_ SG_ 368 SB_HoldApplicable "Indicates that a button-hold is required (as opposed to a simple press without hold)";
+CM_ SG_ 368 LockingStatus_RearRightDoor "Commanded door locking state to be obeyed by door module.";
+CM_ SG_ 368 LockingStatus_RearLeftDoor "Commanded door locking state to be obeyed by door module.";
+CM_ SG_ 368 LockingStatus_FrontRightDoor "Commanded door locking state to be obeyed by door module.";
+CM_ SG_ 368 LockingStatus_FrontLeftDoor "Commanded door locking state to be obeyed by door module.";
+CM_ SG_ 368 SB_PressedStat "The momentary status of the start button.";
+CM_ SG_ 368 SB_HoldProgress "Elapsed press and hold status in percent of hold target.";
+CM_ SG_ 368 SB_HoldTarget "Press and hold requirement in ms for the button press to be accepted.";
+CM_ SG_ 371 DMR_SeatOccupSnsr_RearRight "Seat Occupancy Sensor Status, Rear Right.";
+CM_ SG_ 371 DMR_SeatOccupSnsr_FrontRight "Seat Occupancy Sensor Status, Front Right.";
+CM_ SG_ 371 DMR_DTC_Present "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 371 DOOR_AJAR_SW_RRWM "DOOR AJAR switch status from latch. ACTIVE when in OPEN or CATCH position. INACTIVE when in CLOSED position.";
+CM_ SG_ 371 DOOR_AJAR_SW_LRWM "DOOR AJAR switch status from latch. ACTIVE when in OPEN or CATCH position. INACTIVE when in CLOSED position.";
+CM_ SG_ 371 RRWM_NOT_NORM "Window Motor Not Normalized Status.";
+CM_ SG_ 371 LRWM_NOT_NORM "Window Motor Not Normalized Status.";
+CM_ SG_ 371 DMR_STAT_AliveCount "Alive Rolling Counter for DMR_STAT message.";
+CM_ SG_ 371 DMR_FrontDoorExteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 371 DMR_FoldingMirrorStat "Status of folding side mirror. FOLDED/UNFOLDED (if known), or UNKNOWN otherwise.";
+CM_ SG_ 371 DMR_RearDoorInteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 371 DMR_RearDoorExteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 371 DMR_FrontDoorInteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 370 DML_SeatOccupSnsr_RearLeft "Seat Occupancy Sensor Status, Rear Left.";
+CM_ SG_ 370 DML_DTC_Present "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 370 DOOR_AJAR_SW_RFWM "DOOR AJAR switch status from latch. ACTIVE when in OPEN or CATCH position. INACTIVE when in CLOSED position.";
+CM_ SG_ 370 DOOR_AJAR_SW_LFWM "DOOR AJAR switch status from latch. ACTIVE when in OPEN or CATCH position. INACTIVE when in CLOSED position.";
+CM_ SG_ 370 RFWM_NOT_NORM "Window Motor Not Normalized Status.";
+CM_ SG_ 370 LFWM_NOT_NORM "Window Motor Not Normalized Status.";
+CM_ SG_ 370 DML_FrontDoorExteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 370 DML_STAT_AliveCount "Alive Rolling Counter for DML_STAT message.";
+CM_ SG_ 370 DML_FoldingMirrorStat "Status of folding side mirror. FOLDED/UNFOLDED (if known), or UNKNOWN otherwise.";
+CM_ SG_ 370 DML_RearDoorInteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 370 DML_RearDoorExteriorRequest "Door open switch actuation as seen by door module.";
+CM_ SG_ 370 DML_FrontDoorInteriorRequest "Door open switch actuation as seen by door module.";
+CM_ BO_ 369 "VCM Body Controller Main Status Message.";
+CM_ SG_ 369 AutoHighbeam_Active_Stat "Auto-Highbeam Mode Status. Indicates that the VCM currently operates in Auto-Highbeam mode, honoring AHBO control signal from AWCM.";
+CM_ SG_ 369 SVCS_POWER_FEED_STAT "The status of the SVCS Power Feed.";
+CM_ SG_ 369 Wiper_Motor_Speed "Commanded Wiper Motor Speed.";
+CM_ SG_ 369 VCM_BC_DTC_Present "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 369 HazardModeStatus "The Hazard Mode/Feature Status.";
+CM_ SG_ 369 AutoHeadlamp_Active_Stat "Auto Headlamp Control Status.";
+CM_ SG_ 369 SCS_FogSwitchPos "Steering Column Fog Lamp Switch Status.";
+CM_ SG_ 369 SCS_HeadlampSwitchPos "Steering Column Switch Headlamp Switch Status.";
+CM_ SG_ 369 SCS_BeamSwitchPos "Steering Column Switch Low/High Beam Selection Switch Status.";
+CM_ SG_ 369 AUTO_WIPER_NOT_AVAILABLE "Auto Wiper Unavailable Telltale signal";
+CM_ SG_ 369 AUTO_HEADLAMP_NOT_AVAILABLE "Auto Headlamp Unavailable Telltale signal";
+CM_ SG_ 369 REAR_DEFROST_STAT "The status of the rear defrost.";
+CM_ SG_ 369 DIMMING_LEVEL "The master dimming level.";
+CM_ SG_ 369 WASHER_FLUID_LOW "Indicates a low windshield washer fluid level.";
+CM_ SG_ 369 VCM_BC_STAT_AliveCount "Alive Rolling Counter for VCM_BC_STAT message.";
+CM_ SG_ 369 Wiper_Park_Stat "USED for ADAS/RLS";
+CM_ SG_ 369 Wiper_Motor_Stat "Used for ADAS/RLS";
+CM_ SG_ 369 BRAKE_FLUID_LOW "Indicates a low brake fluid level.";
+CM_ BO_ 256 "This message is only used by modules that follow the GMW3110 specification (GM-carryover).";
+CM_ SG_ 892 CUR_LANGUAGE "Shows the actual language setting.";
+CM_ SG_ 892 TEMP_UNIT "Shows the actual temperature measurement setting.";
+CM_ SG_ 892 POWER_USAGE_UNIT "Shows the actual time measurement unit setting.";
+CM_ SG_ 892 DISTANCE_UNIT "Shows the actual distance measurement unit setting.";
+CM_ SG_ 892 TIME_UNIT "Shows the actual time measurement unit setting.";
+CM_ SG_ 1170 TIME_ZONE_USER "Applied Timezone User Time.";
+CM_ SG_ 1170 TIME_DST_STATUS_USER "DST Status User.";
+CM_ BO_ 920 "Status of the Memory and heated seat.";
+CM_ SG_ 920 MSM_InternalProfileRecallEvent "Indicates the occurence of a MSM-internal (proprietary) profile recall event (upon driver door close or upwards power mode transition). Used to trigger a simultaneous side-mirror position recall. Pulse length 3 CAN frames. Rising edge is trigger.";
+CM_ SG_ 920 MSM_ManualAdjustmentActive "Indicates a manual seat or steering column adjustment (or recall intervention) via physical switches on seat or steering column.";
+CM_ SG_ 920 MSM_DTC_Present "ECU has Diagnostic Trouble Code(s) stored.";
+CM_ SG_ 920 MSM_ValetModeActive "Indicates if MSM is operating in Valet Mode.";
+CM_ SG_ 920 MSM_SeatTemp_RearRight "Seat Temperature Rear Right from NTC.";
+CM_ SG_ 920 MSM_SeatTemp_RearLeft "Seat Temperature Rear Left from NTC.";
+CM_ SG_ 920 MSM_SeatTemp_FrontRight "Seat Temperature Front Right from NTC.";
+CM_ SG_ 920 MSM_SeatTemp_FrontLeft "Seat Temperature Front Left from NTC.";
+CM_ SG_ 920 MSM_STAT_AliveCount "Alive Rolling Counter for MSM_STAT message.";
+CM_ SG_ 920 MSM_FaultStat_RearRight "Fault status for rear right heated seat.";
+CM_ SG_ 920 MSM_FaultStat_RearLeft "Fault status for rear left heated seat.";
+CM_ SG_ 920 MSM_FaultStat_FrontRight "Fault status for front right heated seat.";
+CM_ SG_ 920 MSM_FaultStat_FrontLeft "Fault status for front left heated seat.";
+CM_ SG_ 920 MSM_HeatStat_RearRight "Indicated command/operation status for rear right heated seat.";
+CM_ SG_ 920 MSM_HeatStat_RearLeft "Indicated command/operation status for rear left heated seat.";
+CM_ SG_ 920 ACTIVE_MEMORY_POS "Confirms that/if the configuration of the seats matches one of the three stored configurations.";
+CM_ SG_ 920 MSM_HeatStat_FrontLeft "Loop back command/operation status for front left heated seat.";
+CM_ SG_ 920 MSM_HeatStat_FrontRight "Loop back command/operation status for front right heated seat.";
+CM_ SG_ 1040 VehicleSpeedDirectionalV "Validity Bit for VehicleSpeedDirectional.";
+CM_ SG_ 1040 VehicleSpeedDirectional "Vehicle Speed Directional.";
+CM_ SG_ 1040 VEHICLE_SPEED_AND_DISTANCE_CNT "Alive Rolling Counter for VEHICLE_SPEED_AND_DISTANCE message.";
+CM_ SG_ 1040 VEHICLE_SPEED_AND_DISTANCE_CRC "Checksum based on entire message payload (0xFF initial value for CRC signal) following SAE J1850 standard with CRC-8-SAE Polynomial.";
+CM_ SG_ 1040 VehDir "Vehicle Direction to indicate general vehicle movement. Not associated with the PRND position.";
+CM_ SG_ 1040 DstRolCntAvgDrnRstOc "Distance Rolling Count Average Driven Reset Occurred
+Reset will occur when there is a ECM powerfail or a calibrated reset time is exceeded
+";
+CM_ SG_ 1040 DistRollCntAvgDrvnV "Distance Rolling Count Average Driven Validity";
+CM_ SG_ 1040 DistRollCntAvgDrvn "Distance Rolling Count Average Driven
+integral of velocity, driven axle; signal will count from 0 to 1023; then it is reset to 0";
+CM_ SG_ 1040 DistRollCntAvgDrvnSrc "Distance Rolling Count Average Driven Source";
+CM_ SG_ 1040 VehSpdAvgDrvn "Vehicle Speed Average Driven
+Vehicle speed driven wheels filtered";
+CM_ SG_ 1040 VehSpdAvgDrvnV "Vehicle Speed Average Driven Validity";
+CM_ SG_ 1040 VehSpdAvgDrvnSrc "Vehicle Speed Average Driven Source";
+CM_ BO_ 261 "This message represents the Ignition Status for the Vehicle.
+
+The available Ignition Status and Power Modes are described in FISKER C1-800-STS-100 (Power Moding for FISKER KARMA). This also defines parts of the wakeup and shutdown strategy.";
+CM_ SG_ 261 READY_FLAG "ON-READY Flag accompanying POWER_MODE_STATUS signal. Turns SYSTEM_ON power mode into SYSTEM_ON_READY power mode, granting propulsion,";
+CM_ SG_ 261 POWER_MODE_CNT "Alive Rolling Counter for POWER_MODE Message.";
+CM_ SG_ 261 POWER_MODE_CRC "Checksum based on entire message payload except CRC byte. Following SAE J1850 standard with CRC-8-SAE Polynomial.";
+CM_ SG_ 261 VCM_RPC_COMMAND "Remote Preconditioning Enable/Disable Flag.";
+CM_ SG_ 261 PAD_STATUS "Power Accessory Delay Status";
+CM_ SG_ 261 HVPROP_STATUS "High-Voltage system status";
+CM_ SG_ 261 ESTOP "Driver emergency stop indicator";
+CM_ SG_ 261 POWER_MODE_STATUS "This signal shows the actual vehicle power mode.";
+CM_ BO_ 406 "The vehicle PRND position.";
+CM_ SG_ 406 GEAR_POSITION_CRC "Checksum based on entire message payload (0xFF initial value for CRC signal) following SAE J1850 standard with CRC-8-SAE Polynomial.";
+CM_ SG_ 406 GEAR_POSITION_ARC "Alive Rolling Counter for GEAR_POSITION message.";
+CM_ SG_ 406 DUMMY_5BIT_ALWAYS_ZERO "Dummy signal to enforce all-zeros. To be removed when all legacy modules have stopped listening to any of the covered bits.";
+CM_ SG_ 406 AUTOPARK_EVENT_STAT "Auto-Park Event status signal. Pulse length approx. 500ms.";
+CM_ SG_ 406 PRND_USER_INPUT "User input (processed) from the PRND button assembly. Any button combination of P (0x1), R (0x2), N (0x4), D (0x8).";
+CM_ SG_ 406 REGEN_MODE "This shows the actual REGEN MODE (applied drag torque) status.";
+CM_ SG_ 406 ACTUATED_GEAR "Transmits the validated Powertrain actuated PRND positon";
+CM_ BO_ 1853 "Diagnostic response from PDM.";
+CM_ BO_ 1839 "Diagnostic response from CIU.";
+CM_ BO_ 1828 "Diagnostic request to VCM_BC.";
+CM_ BO_ 1830 "Diagnostic request to VCM_SC.";
+CM_ BO_ 1845 "Diagnostic request to PDM.";
+CM_ BO_ 1831 "Diagnostic request to CIU.";
+CM_ BO_ 917 "Shows the actual status of switches and buttons on the user-interface.";
+CM_ SG_ 917 AHBO_ENABLE_SET "The VCM's setting to either follow the AWCM's Auto High Beam Override recommendation, or to follow the stalk switch position.";
+CM_ SG_ 917 BSM_LED_BRIGHTNESS_NIGHT "BSM LED Night-Brightness Adjustment for both side mirrors.";
+CM_ SG_ 917 BSM_LED_BRIGHTNESS_DAY "BSM LED Day-Brightness Adjustment for both side mirrors.";
+CM_ SG_ 917 BSM_SENSITIVITY_SET "Sensitivity setting for BSM/LCA.";
+CM_ SG_ 917 RCTA_ENABLE_SET "Rear Cross Traffic Alert Enable Switch";
+CM_ SG_ 917 BSM_ENABLE_SET "Blind Spot Monitor Enable Switch";
+CM_ SG_ 917 CIU_SWITCH_STATUS_B_Validity "Validity flag for CIU_SWITCH_STATUS message.";
+CM_ SG_ 917 CIU_SWITCH_STATUS_B_AliveCount "Alive Rolling Counter for CIU_SWITCH_STATUS message.";
+CM_ SG_ 917 AUTO_RECALL_SET "Enable switch for auto-recall of seat and steering column position.";
+CM_ SG_ 917 FOB_PRESELECTS_PROFILE_SET "Enables or disables automatic driver profile selection based on Key Fob in VCM_SC.";
+CM_ SG_ 917 STEERING_WHEEL_HEATER_ENABLE "CIU commanded ON/OFF state for the steering wheel heater.";
+CM_ SG_ 917 REARRIGHT_HEAT_SEAT_SET "Command to set the rear right heated seat";
+CM_ SG_ 917 REARLEFT_HEAT_SEAT_SET "Command to set the rear left heated seat";
+CM_ SG_ 917 RPC_CONFIRMATION_SET "User selection for RPC confirmation via horn or lamps.";
+CM_ SG_ 917 PASV_UNLOCKING_RIGHT_SET "Passive Unlocking Right Side Response.";
+CM_ SG_ 917 PASV_UNLOCKING_LEFT_SET "Passive Unlocking Left Side Response.";
+CM_ SG_ 917 MEMORY_POSITION_SAVE "Command to save seat adjustment to memory location";
+CM_ SG_ 917 MEMORY_POSITION_RECALL "Command to recall seat adjustment from memory location";
+CM_ SG_ 917 REAR_DEFROST_CMD "The command to enable/disable the rear-defrost.";
+CM_ SG_ 917 FRONTRIGHT_HEAT_SEAT_SET "Command to set the front right heated seat";
+CM_ SG_ 917 EASY_ENTRY_EXIT_SET "Command to change setting for easy entry/exit.";
+CM_ SG_ 917 FRONTLEFT_HEAT_SEAT_SET "Command to set the front left heated seat";
+CM_ SG_ 917 AUTO_DOOR_LOCK_SET "Change the setting of the Auto door lock mode.";
+CM_ SG_ 917 EXIT_LIGHT_SETTING_SET "Change the setting of the exit light setting.";
+CM_ SG_ 917 AUTO_FOLD_SET "Show the actual setting of the auto fold setting.										
+";
+CM_ SG_ 917 DIMMING_LEVEL_USER "The user-selected (via TPI) dimming level.";
+CM_ SG_ 917 DELAYED_DOOR_LOCK_SET "Enable/Disable switch for delayed door locking.";
+CM_ SG_ 917 APPR_EXIT_LIGHT_USE_LS_SET "Use light sensor for Approach Lighting and Exit Lighting - don't turn on lights in bright environment.";
+CM_ SG_ 917 PDM_DISABLE "Command to set the PDC function.";
+CM_ SG_ 917 GLOBAL_RESET "User initiated global reset.";
+CM_ SG_ 917 RPC_SETTING_SET "Enable or disable Key Fob based Remote Preconditioning.";
+CM_ SG_ 917 CHILD_LOCKOUT_SET "Current setting of the child lockout feature.";
+CM_ SG_ 917 RTE_DOOR_LOCK_SET "Change the setting of the Remote door lock.";
+CM_ SG_ 917 RTE_DOOR_UNLOCK_SET "Current setting of the RTE door unlock.";
+CM_ SG_ 917 FOLD_MIRROR_CMD "Command to DMx to fold or unfold the side mirrors.";
+CM_ SG_ 917 TRIP_RESET "Resets the trip for the actual shown tripmeter-value.";
+CM_ SG_ 917 APPR_LIGHT_SETTING_SET "Actual setting of the approach light.";
+CM_ SG_ 917 PAD_DELAY_SET "Power Accessory Delay Set";
+CM_ SG_ 917 TRIP_SELECT "Shows the actual selected Trip-Computer for the driver display.";
+CM_ SG_ 917 RTE_KEY_ENTRY_SET "Change the setting of the Remote Keyless entry.";
+CM_ SG_ 917 VALET_MODE_SET "Change the setting of the Valet Mode.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "ON_PT" ENUM  "NO","YES";
+BA_DEF_ BO_  "ON_C" ENUM  "NO","YES";
+BA_DEF_ BO_  "ON_B" ENUM  "NO","YES";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BO_  "ON_INV" ENUM  "NO","YES";
+BA_DEF_  "Status" ENUM  "DRAFT","RELEASE";
+BA_DEF_  "Baseline" STRING ;
+BA_DEF_  "Model" STRING ;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BU_  "BusConnection4" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN";
+BA_DEF_ BU_  "BusConnection3" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN";
+BA_DEF_ BU_  "BusConnection2" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN","SW-CAN";
+BA_DEF_ BU_  "BusConnection1" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN","SW-CAN";
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "ON_PT" "NO";
+BA_DEF_DEF_  "ON_C" "NO";
+BA_DEF_DEF_  "ON_B" "NO";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "ON_INV" "NO";
+BA_DEF_DEF_  "Status" "DRAFT";
+BA_DEF_DEF_  "Baseline" "";
+BA_DEF_DEF_  "Model" "";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "Manufacturer" "KARMA AUTOMOTIVE LLC";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "BusConnection4" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection3" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection2" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection1" "NoBusConnection";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "BusType" "CAN";
+BA_ "Model" "K1 2.0";
+BA_ "Baudrate" 500000;
+BA_ "Manufacturer" "KARMAAUTOMOTIVE";
+BA_ "Baseline" "K1-2.0_MY20_BL900B1_DRAFT";
+BA_ "BusConnection1" BU_ TPI_BRB 1;
+BA_ "BusConnection1" BU_ CONTI_TESTER 1;
+BA_ "BusConnection1" BU_ MSM 1;
+BA_ "ILUsed" BU_ MSM 1;
+BA_ "ILUsed" BU_ VCM_SC 1;
+BA_ "BusConnection2" BU_ VCM_SC 2;
+BA_ "BusConnection1" BU_ VCM_SC 1;
+BA_ "ILUsed" BU_ VCM_BC 1;
+BA_ "BusConnection2" BU_ VCM_BC 2;
+BA_ "BusConnection1" BU_ VCM_BC 1;
+BA_ "ILUsed" BU_ DMR 1;
+BA_ "BusConnection1" BU_ DMR 1;
+BA_ "ILUsed" BU_ DML 1;
+BA_ "BusConnection1" BU_ DML 1;
+BA_ "BusConnection1" BU_ PDM 1;
+BA_ "BusConnection4" BU_ KARMA_TESTER 4;
+BA_ "BusConnection3" BU_ KARMA_TESTER 3;
+BA_ "BusConnection2" BU_ KARMA_TESTER 2;
+BA_ "BusConnection1" BU_ KARMA_TESTER 1;
+BA_ "BusConnection2" BU_ DIS 2;
+BA_ "BusConnection1" BU_ DIS 1;
+BA_ "BusConnection4" BU_ CIU 4;
+BA_ "BusConnection3" BU_ CIU 3;
+BA_ "BusConnection2" BU_ CIU 2;
+BA_ "BusConnection1" BU_ CIU 1;
+BA_ "BusConnection1" BU_ BSM 1;
+BA_ "BusConnection1" BU_ SVCS 1;
+BA_ "BusConnection1" BU_ HLMR 1;
+BA_ "BusConnection1" BU_ HLML 1;
+BA_ "BusConnection1" BU_ ESM 1;
+BA_ "ON_PT" BO_ 2015 1;
+BA_ "ON_C" BO_ 2015 1;
+BA_ "ON_INV" BO_ 2015 1;
+BA_ "ON_B" BO_ 2015 1;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "ON_B" BO_ 353 1;
+BA_ "ON_B" BO_ 352 1;
+BA_ "GenMsgSendType" BO_ 373 0;
+BA_ "GenMsgCycleTime" BO_ 373 100;
+BA_ "GenMsgDelayTime" BO_ 373 10;
+BA_ "ON_B" BO_ 373 1;
+BA_ "ON_B" BO_ 1545 1;
+BA_ "GenMsgCycleTime" BO_ 1545 200;
+BA_ "GenMsgSendType" BO_ 1545 0;
+BA_ "GenMsgDelayTime" BO_ 1545 10;
+BA_ "ON_B" BO_ 1848 1;
+BA_ "DiagResponse" BO_ 1848 1;
+BA_ "ON_B" BO_ 1840 1;
+BA_ "DiagRequest" BO_ 1840 1;
+BA_ "GenMsgCycleTime" BO_ 593 100;
+BA_ "GenMsgSendType" BO_ 593 0;
+BA_ "ON_B" BO_ 593 1;
+BA_ "GenMsgCycleTime" BO_ 592 20;
+BA_ "GenMsgSendType" BO_ 592 0;
+BA_ "ON_B" BO_ 592 1;
+BA_ "GenMsgSendType" BO_ 1249 0;
+BA_ "GenMsgCycleTime" BO_ 1249 200;
+BA_ "ON_B" BO_ 1249 1;
+BA_ "GenMsgSendType" BO_ 944 0;
+BA_ "GenMsgCycleTime" BO_ 944 100;
+BA_ "ON_B" BO_ 944 1;
+BA_ "GenMsgDelayTime" BO_ 944 20;
+BA_ "ON_B" BO_ 1884 1;
+BA_ "DiagResponse" BO_ 1884 1;
+BA_ "ON_B" BO_ 1876 1;
+BA_ "GenMsgSendType" BO_ 1876 8;
+BA_ "GenMsgILSupport" BO_ 1876 0;
+BA_ "DiagRequest" BO_ 1876 1;
+BA_ "GenMsgSendType" BO_ 870 0;
+BA_ "GenMsgCycleTime" BO_ 870 100;
+BA_ "GenMsgDelayTime" BO_ 870 20;
+BA_ "ON_B" BO_ 870 1;
+BA_ "GenMsgSendType" BO_ 1219 0;
+BA_ "GenMsgCycleTime" BO_ 1219 100;
+BA_ "ON_B" BO_ 1219 1;
+BA_ "GenMsgCycleTime" BO_ 393 10;
+BA_ "GenMsgSendType" BO_ 393 0;
+BA_ "ON_B" BO_ 393 1;
+BA_ "ON_B" BO_ 225 1;
+BA_ "GenMsgSendType" BO_ 225 0;
+BA_ "GenMsgCycleTime" BO_ 225 10;
+BA_ "ON_B" BO_ 869 1;
+BA_ "GenMsgDelayTime" BO_ 869 20;
+BA_ "GenMsgCycleTime" BO_ 869 100;
+BA_ "GenMsgSendType" BO_ 869 0;
+BA_ "ON_B" BO_ 1027 1;
+BA_ "GenMsgDelayTime" BO_ 1027 20;
+BA_ "GenMsgCycleTime" BO_ 1027 100;
+BA_ "GenMsgSendType" BO_ 1027 0;
+BA_ "ON_B" BO_ 1536 1;
+BA_ "GenMsgCycleTime" BO_ 374 100;
+BA_ "GenMsgDelayTime" BO_ 374 10;
+BA_ "ON_B" BO_ 374 1;
+BA_ "DiagResponse" BO_ 1819 1;
+BA_ "GenMsgILSupport" BO_ 1819 0;
+BA_ "GenMsgSendType" BO_ 1819 8;
+BA_ "ON_B" BO_ 1819 1;
+BA_ "DiagRequest" BO_ 1811 1;
+BA_ "GenMsgILSupport" BO_ 1811 0;
+BA_ "GenMsgSendType" BO_ 1811 8;
+BA_ "ON_B" BO_ 1811 1;
+BA_ "GenMsgDelayTime" BO_ 1556 10;
+BA_ "ON_B" BO_ 1556 1;
+BA_ "GenMsgDelayTime" BO_ 1555 10;
+BA_ "ON_B" BO_ 1555 1;
+BA_ "GenMsgCycleTime" BO_ 1026 100;
+BA_ "GenMsgDelayTime" BO_ 1026 10;
+BA_ "ON_B" BO_ 1026 1;
+BA_ "DiagResponse" BO_ 1881 1;
+BA_ "ON_B" BO_ 1881 1;
+BA_ "DiagRequest" BO_ 1873 1;
+BA_ "GenMsgILSupport" BO_ 1873 0;
+BA_ "GenMsgSendType" BO_ 1873 8;
+BA_ "ON_B" BO_ 1873 1;
+BA_ "DiagResponse" BO_ 1882 1;
+BA_ "ON_B" BO_ 1882 1;
+BA_ "DiagRequest" BO_ 1874 1;
+BA_ "GenMsgILSupport" BO_ 1874 0;
+BA_ "GenMsgSendType" BO_ 1874 8;
+BA_ "ON_B" BO_ 1874 1;
+BA_ "GenMsgCycleTime" BO_ 1025 100;
+BA_ "GenMsgDelayTime" BO_ 1025 10;
+BA_ "ON_B" BO_ 1025 1;
+BA_ "GenMsgDelayTime" BO_ 1024 10;
+BA_ "GenMsgCycleTime" BO_ 1024 100;
+BA_ "ON_B" BO_ 1024 1;
+BA_ "GenMsgCycleTime" BO_ 1153 100;
+BA_ "GenMsgSendType" BO_ 1153 0;
+BA_ "ON_B" BO_ 1153 1;
+BA_ "DiagResponse" BO_ 1834 1;
+BA_ "GenMsgILSupport" BO_ 1834 0;
+BA_ "GenMsgSendType" BO_ 1834 8;
+BA_ "ON_B" BO_ 1834 1;
+BA_ "DiagRequest" BO_ 1826 1;
+BA_ "GenMsgILSupport" BO_ 1826 1;
+BA_ "GenMsgSendType" BO_ 1826 8;
+BA_ "ON_B" BO_ 1826 1;
+BA_ "GenMsgDelayTime" BO_ 1152 20;
+BA_ "GenMsgCycleTime" BO_ 1152 100;
+BA_ "GenMsgSendType" BO_ 1152 0;
+BA_ "ON_B" BO_ 1152 1;
+BA_ "ON_B" BO_ 1835 1;
+BA_ "GenMsgSendType" BO_ 1835 8;
+BA_ "GenMsgILSupport" BO_ 1835 0;
+BA_ "DiagResponse" BO_ 1835 1;
+BA_ "ON_B" BO_ 1827 1;
+BA_ "GenMsgSendType" BO_ 1827 8;
+BA_ "GenMsgILSupport" BO_ 1827 0;
+BA_ "DiagRequest" BO_ 1827 1;
+BA_ "GenMsgSendType" BO_ 392 0;
+BA_ "GenMsgCycleTime" BO_ 392 10;
+BA_ "ON_C" BO_ 392 1;
+BA_ "ON_B" BO_ 392 1;
+BA_ "ON_B" BO_ 843 1;
+BA_ "GenMsgSendType" BO_ 843 0;
+BA_ "GenMsgCycleTime" BO_ 843 20;
+BA_ "GenMsgSendType" BO_ 384 0;
+BA_ "GenMsgCycleTime" BO_ 384 10;
+BA_ "ON_C" BO_ 384 1;
+BA_ "ON_B" BO_ 384 1;
+BA_ "GenMsgDelayTime" BO_ 1045 10;
+BA_ "GenMsgCycleTime" BO_ 1045 100;
+BA_ "ON_B" BO_ 1045 1;
+BA_ "ON_B" BO_ 1833 1;
+BA_ "GenMsgSendType" BO_ 1833 8;
+BA_ "GenMsgILSupport" BO_ 1833 0;
+BA_ "DiagResponse" BO_ 1833 1;
+BA_ "ON_B" BO_ 1825 1;
+BA_ "GenMsgSendType" BO_ 1825 8;
+BA_ "GenMsgILSupport" BO_ 1825 0;
+BA_ "DiagRequest" BO_ 1825 1;
+BA_ "ON_B" BO_ 1172 1;
+BA_ "GenMsgSendType" BO_ 1172 0;
+BA_ "GenMsgCycleTime" BO_ 1172 500;
+BA_ "ON_B" BO_ 1171 1;
+BA_ "GenMsgCycleTime" BO_ 1171 500;
+BA_ "GenMsgSendType" BO_ 1171 0;
+BA_ "ON_B" BO_ 1538 1;
+BA_ "GenMsgCycleTime" BO_ 1542 100;
+BA_ "ON_B" BO_ 1542 1;
+BA_ "ON_B" BO_ 1543 1;
+BA_ "GenMsgDelayTime" BO_ 1543 20;
+BA_ "GenMsgCycleTime" BO_ 1543 200;
+BA_ "ON_B" BO_ 1544 1;
+BA_ "GenMsgCycleTime" BO_ 1540 100;
+BA_ "ON_B" BO_ 1540 1;
+BA_ "ON_B" BO_ 1541 1;
+BA_ "ON_B" BO_ 1539 1;
+BA_ "ON_B" BO_ 1537 1;
+BA_ "GenMsgSendType" BO_ 361 8;
+BA_ "ON_B" BO_ 361 1;
+BA_ "GenMsgDelayTime" BO_ 361 20;
+BA_ "ON_PT" BO_ 1168 1;
+BA_ "ON_B" BO_ 1168 1;
+BA_ "GenMsgDelayTime" BO_ 1168 50;
+BA_ "GenMsgCycleTime" BO_ 1168 1000;
+BA_ "GenMsgSendType" BO_ 1168 0;
+BA_ "ON_C" BO_ 1074 1;
+BA_ "GenMsgCycleTime" BO_ 1074 100;
+BA_ "GenMsgSendType" BO_ 1074 0;
+BA_ "ON_B" BO_ 1074 1;
+BA_ "GenMsgSendType" BO_ 1078 8;
+BA_ "GenMsgDelayTime" BO_ 1078 10;
+BA_ "ON_B" BO_ 1078 1;
+BA_ "ON_B" BO_ 1028 1;
+BA_ "ON_C" BO_ 1028 1;
+BA_ "GenMsgSendType" BO_ 1028 0;
+BA_ "GenMsgCycleTime" BO_ 1028 100;
+BA_ "GenMsgDelayTime" BO_ 1028 20;
+BA_ "DiagResponse" BO_ 1832 1;
+BA_ "GenMsgILSupport" BO_ 1832 0;
+BA_ "GenMsgSendType" BO_ 1832 8;
+BA_ "ON_B" BO_ 1832 1;
+BA_ "DiagRequest" BO_ 1824 1;
+BA_ "GenMsgILSupport" BO_ 1824 0;
+BA_ "GenMsgSendType" BO_ 1824 8;
+BA_ "ON_B" BO_ 1824 1;
+BA_ "ON_B" BO_ 257 1;
+BA_ "DiagState" BO_ 257 1;
+BA_ "ON_PT" BO_ 257 1;
+BA_ "ON_C" BO_ 257 1;
+BA_ "ON_INV" BO_ 257 1;
+BA_ "DiagResponse" BO_ 1868 1;
+BA_ "ON_B" BO_ 1868 1;
+BA_ "DiagResponse" BO_ 1867 1;
+BA_ "ON_B" BO_ 1867 1;
+BA_ "DiagResponse" BO_ 1866 1;
+BA_ "ON_B" BO_ 1866 1;
+BA_ "DiagResponse" BO_ 1836 1;
+BA_ "ON_B" BO_ 1836 1;
+BA_ "ON_C" BO_ 1836 1;
+BA_ "DiagResponse" BO_ 1838 1;
+BA_ "ON_B" BO_ 1838 1;
+BA_ "ON_C" BO_ 1838 1;
+BA_ "GenMsgDelayTime" BO_ 372 10;
+BA_ "ON_B" BO_ 372 1;
+BA_ "GenMsgSendType" BO_ 372 0;
+BA_ "GenMsgCycleTime" BO_ 372 100;
+BA_ "GenMsgDelayTime" BO_ 880 10;
+BA_ "ON_B" BO_ 880 1;
+BA_ "GenMsgCycleTime" BO_ 880 100;
+BA_ "GenMsgSendType" BO_ 880 8;
+BA_ "ON_C" BO_ 1860 1;
+BA_ "ON_B" BO_ 1860 1;
+BA_ "DiagRequest" BO_ 1860 1;
+BA_ "GenMsgILSupport" BO_ 1860 0;
+BA_ "GenMsgSendType" BO_ 1860 8;
+BA_ "ON_C" BO_ 1859 1;
+BA_ "ON_B" BO_ 1859 1;
+BA_ "DiagRequest" BO_ 1859 1;
+BA_ "GenMsgILSupport" BO_ 1859 0;
+BA_ "GenMsgSendType" BO_ 1859 8;
+BA_ "ON_C" BO_ 1858 1;
+BA_ "ON_B" BO_ 1858 1;
+BA_ "DiagRequest" BO_ 1858 1;
+BA_ "GenMsgILSupport" BO_ 1858 0;
+BA_ "GenMsgSendType" BO_ 1858 8;
+BA_ "GenMsgSendType" BO_ 368 0;
+BA_ "ON_C" BO_ 368 1;
+BA_ "ON_B" BO_ 368 1;
+BA_ "GenMsgDelayTime" BO_ 368 20;
+BA_ "GenMsgCycleTime" BO_ 368 100;
+BA_ "GenMsgNrOfRepetition" BO_ 371 3;
+BA_ "GenMsgCycleTimeFast" BO_ 371 30;
+BA_ "GenMsgCycleTime" BO_ 371 100;
+BA_ "GenMsgDelayTime" BO_ 371 20;
+BA_ "ON_B" BO_ 371 1;
+BA_ "GenMsgSendType" BO_ 371 8;
+BA_ "GenMsgNrOfRepetition" BO_ 370 3;
+BA_ "GenMsgCycleTimeFast" BO_ 370 30;
+BA_ "GenMsgCycleTime" BO_ 370 100;
+BA_ "GenMsgDelayTime" BO_ 370 20;
+BA_ "ON_B" BO_ 370 1;
+BA_ "GenMsgSendType" BO_ 370 8;
+BA_ "ON_C" BO_ 369 1;
+BA_ "ON_B" BO_ 369 1;
+BA_ "GenMsgDelayTime" BO_ 369 20;
+BA_ "GenMsgSendType" BO_ 369 8;
+BA_ "GenMsgCycleTime" BO_ 369 100;
+BA_ "ON_C" BO_ 256 1;
+BA_ "ON_B" BO_ 256 1;
+BA_ "GenMsgSendType" BO_ 256 8;
+BA_ "DiagRequest" BO_ 256 1;
+BA_ "ON_C" BO_ 892 1;
+BA_ "ON_B" BO_ 892 1;
+BA_ "GenMsgDelayTime" BO_ 892 50;
+BA_ "GenMsgCycleTime" BO_ 892 500;
+BA_ "GenMsgSendType" BO_ 892 0;
+BA_ "ON_B" BO_ 1170 1;
+BA_ "GenMsgCycleTime" BO_ 1170 1000;
+BA_ "GenMsgSendType" BO_ 1170 0;
+BA_ "GenMsgDelayTime" BO_ 1170 50;
+BA_ "ON_B" BO_ 920 1;
+BA_ "GenMsgDelayTime" BO_ 920 20;
+BA_ "GenMsgCycleTime" BO_ 920 200;
+BA_ "GenMsgSendType" BO_ 920 0;
+BA_ "ON_PT" BO_ 1040 1;
+BA_ "ON_C" BO_ 1040 1;
+BA_ "ON_B" BO_ 1040 1;
+BA_ "GenMsgCycleTime" BO_ 1040 10;
+BA_ "GenMsgSendType" BO_ 1040 0;
+BA_ "ON_C" BO_ 261 1;
+BA_ "ON_B" BO_ 261 1;
+BA_ "GenMsgDelayTime" BO_ 261 10;
+BA_ "GenMsgCycleTime" BO_ 261 20;
+BA_ "GenMsgSendType" BO_ 261 0;
+BA_ "ON_C" BO_ 406 1;
+BA_ "ON_B" BO_ 406 1;
+BA_ "GenMsgDelayTime" BO_ 406 10;
+BA_ "GenMsgCycleTime" BO_ 406 100;
+BA_ "GenMsgSendType" BO_ 406 0;
+BA_ "ON_B" BO_ 1853 1;
+BA_ "GenMsgSendType" BO_ 1853 8;
+BA_ "GenMsgILSupport" BO_ 1853 0;
+BA_ "DiagResponse" BO_ 1853 1;
+BA_ "ON_B" BO_ 1839 1;
+BA_ "GenMsgSendType" BO_ 1839 8;
+BA_ "GenMsgILSupport" BO_ 1839 0;
+BA_ "DiagResponse" BO_ 1839 1;
+BA_ "ON_C" BO_ 1828 1;
+BA_ "ON_B" BO_ 1828 1;
+BA_ "GenMsgSendType" BO_ 1828 8;
+BA_ "GenMsgILSupport" BO_ 1828 0;
+BA_ "DiagRequest" BO_ 1828 1;
+BA_ "ON_B" BO_ 1830 1;
+BA_ "ON_C" BO_ 1830 1;
+BA_ "GenMsgSendType" BO_ 1830 8;
+BA_ "GenMsgILSupport" BO_ 1830 0;
+BA_ "DiagRequest" BO_ 1830 1;
+BA_ "ON_B" BO_ 1845 1;
+BA_ "GenMsgSendType" BO_ 1845 8;
+BA_ "GenMsgILSupport" BO_ 1845 0;
+BA_ "DiagRequest" BO_ 1845 1;
+BA_ "ON_B" BO_ 1831 1;
+BA_ "GenMsgSendType" BO_ 1831 8;
+BA_ "GenMsgILSupport" BO_ 1831 0;
+BA_ "DiagRequest" BO_ 1831 1;
+BA_ "ON_C" BO_ 917 1;
+BA_ "ON_B" BO_ 917 1;
+BA_ "GenMsgDelayTime" BO_ 917 10;
+BA_ "GenMsgCycleTime" BO_ 917 100;
+BA_ "GenMsgSendType" BO_ 917 0;
+BA_ "GenSigSendType" SG_ 2015 FUNC_REQ_SIG 1;
+BA_ "GenSigSendType" SG_ 373 MSM_WINDOW_CTRL_ARC 0;
+BA_ "GenSigSendType" SG_ 373 RWS_HeatedSeatsSw_Right 3;
+BA_ "GenSigSendType" SG_ 373 RWS_HeatedSeatsSw_Left 3;
+BA_ "GenSigSendType" SG_ 373 RWS_RearRight_Up 3;
+BA_ "GenSigSendType" SG_ 373 RWS_RearRight_Express 3;
+BA_ "GenSigSendType" SG_ 373 RWS_RearRight_Down 3;
+BA_ "GenSigSendType" SG_ 373 RWS_RearLeft_Up 3;
+BA_ "GenSigSendType" SG_ 373 RWS_RearLeft_Express 3;
+BA_ "GenSigSendType" SG_ 373 RWS_RearLeft_Down 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_LIN_NoResponse 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_BTN_ACC_TIMEGAP_Enable 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_TactileFeedbackCommand_Rt 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_TactileFeedbackCommand_Lft 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HeaterEnable 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_BacklightPercent 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_SupplyVoltageFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_RightSwitch_HardwareFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_RightSwitch_CommFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_LINCommError 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_LeftSwitch_HardwareFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_LeftSwitch_CommFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HeaterPoweredStatus 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HeaterFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HapticMotorPoweredStatus 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HapticMotorPlaybackStatus 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HapticMotorFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_HapticMotorCommand 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_ECU_SoftwareFault 3;
+BA_ "GenSigSendType" SG_ 1545 SWCM_ECU_HardwareFault 3;
+BA_ "GenSigStartValue" SG_ 593 ESM_ACTIVE_SOUND_PROFILE 0;
+BA_ "GenSigStartValue" SG_ 593 ESM_SYSTEM_STATUS 3;
+BA_ "GenSigStartValue" SG_ 592 ESM_NOTIFICATION_EVT 0;
+BA_ "GenSigStartValue" SG_ 592 ESM_SELECTED_SOUND_PROFILE 0;
+BA_ "GenSigStartValue" SG_ 592 ESM_AVAS_SOUND_ENABLE 1;
+BA_ "GenSigStartValue" SG_ 592 ESM_ACTUATED_GEAR 0;
+BA_ "GenSigStartValue" SG_ 592 ESM_VEH_SPEED_DIRECTIONAL 32767;
+BA_ "GenSigStartValue" SG_ 1249 SteeringWheelHeaterSetpoint 31;
+BA_ "GenSigSendType" SG_ 1249 CIU_VEHICLE_SETTINGS_B_VALID 3;
+BA_ "GenSigSendType" SG_ 944 TPIBRB_BTN_SEAT_HEATVENT_STAT 3;
+BA_ "GenSigSendType" SG_ 944 TPIBRB_BTN_SVCS_STAT 3;
+BA_ "GenSigSendType" SG_ 944 TPIBRB_BTN_MIRROR_CTRL_STAT 3;
+BA_ "GenSigSendType" SG_ 944 TPIBRB_BTN_FRONT_DEFROST_STAT 3;
+BA_ "GenSigSendType" SG_ 944 TPIBRB_BTN_REAR_DEFROST_STAT 3;
+BA_ "GenSigSendType" SG_ 944 TPI_BRB_STAT_ARC 0;
+BA_ "GenSigSendType" SG_ 1876 DIAG_REQ_SIG_TPI_BRB 7;
+BA_ "GenSigSendType" SG_ 870 PDM_DISTANCE_REAR_6 3;
+BA_ "GenSigSendType" SG_ 870 PDM_DISTANCE_REAR_5 3;
+BA_ "GenSigSendType" SG_ 870 PDM_DISTANCE_REAR_4 3;
+BA_ "GenSigSendType" SG_ 870 PDM_DISTANCE_REAR_3 3;
+BA_ "GenSigSendType" SG_ 870 PDM_DISTANCE_REAR_2 3;
+BA_ "GenSigSendType" SG_ 870 PDM_DISTANCE_REAR_1 3;
+BA_ "GenSigStartValue" SG_ 1219 T_Ambient 40;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_TEMP_SENS_FAULT 7;
+BA_ "GenSigSendType" SG_ 393 INMO_LONG_ALIVE_CNT 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_LONG_ACCEL_SELF_TEST 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_LONG_ACCEL 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_LONG_ACCEL_VALID 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_SENS_FAULT_2 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_LONG_ACCEL_SENS_FAULT 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_SENS_FAULT_1 7;
+BA_ "GenSigSendType" SG_ 393 VEH_DYN_LONG_ACCEL_RANGE_CHECK 7;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT_6 3;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT_5 3;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT_4 3;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT_3 3;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT_2 3;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT_1 3;
+BA_ "GenSigSendType" SG_ 869 PDM_SENSOR_FAULT_REAR 7;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_FRONT 3;
+BA_ "GenSigSendType" SG_ 869 PDM_DISTANCE_REAR 3;
+BA_ "GenSigSendType" SG_ 869 PDM_SENSOR_FAULT_FRONT 7;
+BA_ "GenSigSendType" SG_ 869 PDM_SYSTEM_STATUS 3;
+BA_ "GenSigStartValue" SG_ 1027 TRACTION_POWER_INST 4000;
+BA_ "GenSigSendType" SG_ 1027 CIU_DIS_EXCHANGE_B_AliveCount 0;
+BA_ "GenSigSendType" SG_ 374 ENTER_AUTOTILT 3;
+BA_ "GenSigStartValue" SG_ 374 ENTER_AUTOTILT 0;
+BA_ "GenSigStartValue" SG_ 374 AUTOTILT_ENABLE 1;
+BA_ "GenSigSendType" SG_ 374 AUTOTILT_ENABLE 3;
+BA_ "GenSigSendType" SG_ 374 MIRRORPOS_SAVERECALL_RIGHT 3;
+BA_ "GenSigSendType" SG_ 374 MIRRORPOS_SAVERECALL_LEFT 3;
+BA_ "GenSigSendType" SG_ 374 SIDEMIRROR_KNOB_RIGHT 3;
+BA_ "GenSigSendType" SG_ 374 SIDEMIRROR_KNOB_LEFT 3;
+BA_ "GenSigSendType" SG_ 374 CIU_SIDEMIRROR_CTRL_AliveCount 0;
+BA_ "GenSigSendType" SG_ 1819 DIAG_RESP_SIG_BSM_MASTER 7;
+BA_ "GenSigSendType" SG_ 1811 DIAG_REQ_SIG_BSM_MASTER 7;
+BA_ "GenSigSendType" SG_ 1026 HLMR_SUPPLY_VOLT_FAULT 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPFAULT_PARK_DRL 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_FAILSAFE_MODE_ACTV 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPSTAT_SWIVEL 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPSTAT_PARK_DRL 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_HWSWMUX_VAL 7;
+BA_ "GenSigSendType" SG_ 1026 HLMR_HWSWMUX_IDX 7;
+BA_ "GenSigSendType" SG_ 1026 HLMR_DTC_PRESENT 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPSTAT_TURN 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPFAULT_TURN 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPFAULT_SWIVEL 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPSTAT_BEAMS 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_ALIVE_COUNT 0;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPFAULT_LOWBEAM 3;
+BA_ "GenSigSendType" SG_ 1026 HLMR_LAMPFAULT_HIGHBEAM 3;
+BA_ "GenSigSendType" SG_ 1873 DIAG_REQ_SIG_HLML 7;
+BA_ "GenSigSendType" SG_ 1874 DIAG_REQ_SIG_HLMR 7;
+BA_ "GenSigSendType" SG_ 1025 HLML_SUPPLY_VOLT_FAULT 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_FAILSAFE_MODE_ACTV 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_DTC_PRESENT 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_HWSWMUX_VAL 7;
+BA_ "GenSigSendType" SG_ 1025 HLML_HWSWMUX_IDX 7;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPSTAT_SWIVEL 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPSTAT_TURN 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPFAULT_TURN 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPFAULT_SWIVEL 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_ALIVE_COUNT 0;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPSTAT_PARK_DRL 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPSTAT_BEAMS 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPFAULT_PARK_DRL 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPFAULT_LOWBEAM 3;
+BA_ "GenSigSendType" SG_ 1025 HLML_LAMPFAULT_HIGHBEAM 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_LAMPSET_SWIVEL_ENABLE 3;
+BA_ "GenSigStartValue" SG_ 1024 HLM_LAMPSET_SWIVEL_ENABLE 1;
+BA_ "GenSigSendType" SG_ 1024 HLM_COMMAND_ALIVE_COUNT 0;
+BA_ "GenSigSendType" SG_ 1024 HLM_VehicleSpeed_Validity 3;
+BA_ "GenSigSendType" SG_ 1024 HLMR_LAMPCMD_PARK 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_NM 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_SteeringWheelAngleRate 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_SteeringWheelAngle 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_ActuatedGear 3;
+BA_ "GenSigStartValue" SG_ 1024 HLM_ActuatedGear 7;
+BA_ "GenSigSendType" SG_ 1024 HLM_VehicleSpeed 3;
+BA_ "GenSigStartValue" SG_ 1024 HLM_VehicleSpeed 32767;
+BA_ "GenSigSendType" SG_ 1024 HLMR_LAMPCMD_SUPPRESS_PARK_DRL 3;
+BA_ "GenSigSendType" SG_ 1024 HLML_LAMPCMD_SUPPRESS_PARK_DRL 3;
+BA_ "GenSigSendType" SG_ 1024 HLML_LAMPCMD_PARK 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_LAMPCMD_BEAMS 3;
+BA_ "GenSigSendType" SG_ 1024 HLM_LAMPCMD_DRL 3;
+BA_ "GenSigSendType" SG_ 1153 SVCS_DTC_PRESENT 7;
+BA_ "GenSigStartValue" SG_ 1153 SVCS_STANDALONE_MODE 1;
+BA_ "GenSigSendType" SG_ 1834 DIAG_RESP_SIG_SVCS 7;
+BA_ "GenSigSendType" SG_ 1826 DIAG_REQ_SIG_SVCS 7;
+BA_ "GenSigSendType" SG_ 1152 SVCS_3DCAM_LOC_THETA 3;
+BA_ "GenSigStartValue" SG_ 1152 SVCS_3DCAM_LOC_PHI 35;
+BA_ "GenSigSendType" SG_ 1152 SVCS_3DCAM_LOC_PHI 3;
+BA_ "GenSigSendType" SG_ 1152 SVCS_POWER_FEED_ON_DEMAND_REQ 3;
+BA_ "GenSigSendType" SG_ 1152 SVCS_INPUTS_ALIVE_COUNT 0;
+BA_ "GenSigSendType" SG_ 1152 SVCS_REQUESTED_VIEW 3;
+BA_ "GenSigSendType" SG_ 1835 DIAG_RESP_SIG_BSM_SLAVE 7;
+BA_ "GenSigSendType" SG_ 1827 DIAG_REQ_SIG_BSM_SLAVE 7;
+BA_ "GenSigSendType" SG_ 392 VEH_DYN_YAW_RATE_VALID 7;
+BA_ "GenSigSendType" SG_ 392 WATCHDOG_RESET_GYRO 7;
+BA_ "GenSigSendType" SG_ 392 JUMP_ERROR_GYRO 7;
+BA_ "GenSigSendType" SG_ 392 RAM_FAIL_YAW 7;
+BA_ "GenSigSendType" SG_ 392 ACCEL_SELF_TEST_STAT 7;
+BA_ "GenSigSendType" SG_ 392 RASTER_FAIL 7;
+BA_ "GenSigSendType" SG_ 392 SENS_ALIVE_CNT 7;
+BA_ "GenSigSendType" SG_ 392 RANGE_ERROR_GYRO 7;
+BA_ "GenSigSendType" SG_ 392 AD_FAIL_YAW 7;
+BA_ "GenSigSendType" SG_ 392 VEH_DYN_ACCEL 7;
+BA_ "GenSigSendType" SG_ 392 ASIC_FAIL_YAW 7;
+BA_ "GenSigSendType" SG_ 392 YAW_SENS_SELF_TEST_STAT 7;
+BA_ "GenSigSendType" SG_ 392 VEH_DYN_YAW_RATE 7;
+BA_ "GenSigSendType" SG_ 392 EEP_FAIL_YAW 7;
+BA_ "GenSigSendType" SG_ 392 VEH_DYN_ACCEL_VALID 7;
+BA_ "GenSigSendType" SG_ 392 YAW_OSC_FREQ 7;
+BA_ "GenSigSendType" SG_ 392 BIT_FAIL_GYRO 7;
+BA_ "GenSigSendType" SG_ 392 ROM_FAIL_YAW 7;
+BA_ "GenSigSendType" SG_ 392 GYRO_FAIL 7;
+BA_ "GenSigSendType" SG_ 392 VBATT_RANGE_ERROR_YAW 7;
+BA_ "GenSigSendType" SG_ 392 CAN_ERROR_GYRO 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyRtDrvn 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyRtDrvnV 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyLftDrvn 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyLftDrvnV 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyRtNnDrvnV 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyLftNnDrvnV 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyLftNnDrvn 7;
+BA_ "GenSigSendType" SG_ 843 WhlGrndVlctyRtNnDrvn 7;
+BA_ "GenSigSendType" SG_ 384 STEER_ANGLE_VALID 7;
+BA_ "GenSigSendType" SG_ 384 STEER_ANGLE_CAL 7;
+BA_ "GenSigSendType" SG_ 384 STEER_ANGLE_SPEED 7;
+BA_ "GenSigSendType" SG_ 384 STEER_ANGLE_VALUE 7;
+BA_ "GenSigSendType" SG_ 384 CNT_STEERING_ANGLE 7;
+BA_ "GenSigSendType" SG_ 384 CHK_SUM_STEERING_ANGLE 7;
+BA_ "GenSigSendType" SG_ 1045 BSM_SERVICE_REQUIRED 3;
+BA_ "GenSigSendType" SG_ 1045 BSM_INPUTSIGNALFAULT 3;
+BA_ "GenSigSendType" SG_ 1045 BSM_DTC_PRESENT 3;
+BA_ "GenSigSendType" SG_ 1045 RCTA_WARN_RIGHT 3;
+BA_ "GenSigSendType" SG_ 1045 RCTA_WARN_REAR 3;
+BA_ "GenSigSendType" SG_ 1045 BSD_WARN_REAR 3;
+BA_ "GenSigSendType" SG_ 1045 BSD_WARN_RIGHT 3;
+BA_ "GenSigSendType" SG_ 1045 BSD_WARN_LEFT 3;
+BA_ "GenSigSendType" SG_ 1045 BSM_STAT_ALIVE_COUNT 0;
+BA_ "GenSigSendType" SG_ 1045 RCTA_WARN_LEFT 3;
+BA_ "GenSigSendType" SG_ 1833 DIAG_RESP_SIG_AMP 7;
+BA_ "GenSigSendType" SG_ 1825 DIAG_REQ_SIG_AMP 7;
+BA_ "GenSigStartValue" SG_ 1172 COURSE_GPS 0;
+BA_ "GenSigStartValue" SG_ 1172 SPEED_GPS 0;
+BA_ "GenSigStartValue" SG_ 1172 ALT_GPS 5000;
+BA_ "GenSigStartValue" SG_ 1171 LAT_GPS 0;
+BA_ "GenSigSendType" SG_ 1542 SIG_MSM_DEBUG1_DUMMY_32 1;
+BA_ "GenSigSendType" SG_ 1542 SIG_MSM_DEBUG1_DUMMY_16 1;
+BA_ "GenSigSendType" SG_ 1542 SIG_MSM_DEBUG1_BYTE_1 1;
+BA_ "GenSigSendType" SG_ 1542 SIG_MSM_DEBUG1_BYTE_0 1;
+BA_ "GenSigSendType" SG_ 1543 MSM_HallCount_SeatVertical 0;
+BA_ "GenSigStartValue" SG_ 1543 MSM_HallCount_SeatVertical 4095;
+BA_ "GenSigSendType" SG_ 1543 MSM_HallCount_Recline 0;
+BA_ "GenSigStartValue" SG_ 1543 MSM_HallCount_Recline 4095;
+BA_ "GenSigSendType" SG_ 1543 MSM_Movement_Vertical 3;
+BA_ "GenSigSendType" SG_ 1543 MSM_Movement_SteeringTilt 3;
+BA_ "GenSigSendType" SG_ 1543 MSM_Movement_SteeringTelescope 3;
+BA_ "GenSigSendType" SG_ 1543 MSM_Movement_Recline 3;
+BA_ "GenSigSendType" SG_ 1543 MSM_Movement_Horizontal 3;
+BA_ "GenSigSendType" SG_ 1543 MSM_HallCount_SeatHorizontal 0;
+BA_ "GenSigStartValue" SG_ 1543 MSM_HallCount_SeatHorizontal 4095;
+BA_ "GenSigSendType" SG_ 1544 SIG_MSM_DEBUG3_DUMMY_32 1;
+BA_ "GenSigSendType" SG_ 1544 SIG_MSM_DEBUG3_DUMMY_16 1;
+BA_ "GenSigSendType" SG_ 1544 SIG_MSM_DEBUG3_BYTE_1 1;
+BA_ "GenSigSendType" SG_ 1544 SIG_MSM_DEBUG3_BYTE_0 1;
+BA_ "GenSigSendType" SG_ 1540 SIG_VCM_BC_DEBUG_DUMMY_32 1;
+BA_ "GenSigSendType" SG_ 1540 SIG_VCM_BC_DEBUG_DUMMY_16 1;
+BA_ "GenSigSendType" SG_ 1540 SIG_VCM_BC_DEBUG_BYTE_1 1;
+BA_ "GenSigSendType" SG_ 1540 SIG_VCM_BC_DEBUG_BYTE_0 1;
+BA_ "GenSigSendType" SG_ 1541 SIG_VCM_SC_DEBUG_DUMMY_32 1;
+BA_ "GenSigSendType" SG_ 1541 SIG_VCM_SC_DEBUG_DUMMY_16 1;
+BA_ "GenSigSendType" SG_ 1541 SIG_VCM_SC_DEBUG_BYTE_1 1;
+BA_ "GenSigSendType" SG_ 1541 SIG_VCM_SC_DEBUG_BYTE_0 1;
+BA_ "GenSigSendType" SG_ 361 KeyChallengeData 1;
+BA_ "GenSigSendType" SG_ 361 KeyWakePattern 1;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_MINUTES_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_MINUTES_GPS 7;
+BA_ "GenSigSendType" SG_ 1168 DIRECTION_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_DAY_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_DAY_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_MONTH_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_MONTH_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_HOURS_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_HOURS_GPS 7;
+BA_ "GenSigSendType" SG_ 1168 TIME_DST_STATUS_USER_CONFIG 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_YEAR_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_YEAR_GPS 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_ZONE_USER_CONFIG 48;
+BA_ "GenSigSendType" SG_ 1168 TIME_ZONE_USER_CONFIG 7;
+BA_ "GenSigStartValue" SG_ 1168 TIME_UTC_SECONDS_GPS 255;
+BA_ "GenSigSendType" SG_ 1168 TIME_UTC_SECONDS_GPS 3;
+BA_ "GenSigSendType" SG_ 1074 PNM12V_TELLTALE 7;
+BA_ "GenSigStartValue" SG_ 1074 PNM12V_TELLTALE 0;
+BA_ "GenSigStartValue" SG_ 1074 PNM12V_LOAD_SHED 0;
+BA_ "GenSigSendType" SG_ 1074 PNM12V_LOAD_SHED 7;
+BA_ "GenSigSendType" SG_ 1074 PNM12V_HARNESS_FAULT 7;
+BA_ "GenSigSendType" SG_ 1074 PNM12V_BATTERY_FAULT 7;
+BA_ "GenSigSendType" SG_ 1074 PNM12V_SENSOR_FAULT 7;
+BA_ "GenSigSendType" SG_ 1074 PNM12V_APM_FAULT 7;
+BA_ "GenSigSendType" SG_ 1078 LS_Brightness_Forward 7;
+BA_ "GenSigSendType" SG_ 1078 LS_Brightness_IR 7;
+BA_ "GenSigSendType" SG_ 1078 LS_Brightness_Upwards 7;
+BA_ "GenSigSendType" SG_ 1078 LS_Error 7;
+BA_ "GenSigSendType" SG_ 1078 RS_Error 7;
+BA_ "GenSigSendType" SG_ 1078 RLS_Status 7;
+BA_ "GenSigSendType" SG_ 1078 RS_Splash 7;
+BA_ "GenSigSendType" SG_ 1078 LS_HeadLights_On 7;
+BA_ "GenSigSendType" SG_ 1078 RLS_ResponseError 7;
+BA_ "GenSigSendType" SG_ 1078 RS_WiperSpeed 7;
+BA_ "GenSigSendType" SG_ 1078 RLS_MessageCounter 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_FlashLamps_Req 3;
+BA_ "GenSigSendType" SG_ 1028 FOTA_Status 3;
+BA_ "GenSigStartValue" SG_ 1028 FOTA_Status 0;
+BA_ "GenSigSendType" SG_ 1028 FOTA_HV_Req 3;
+BA_ "GenSigSendType" SG_ 1028 ACC_TIMEOUT_INHIBIT_REQUEST 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_DiagTool_TP_Request 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_DiagTool_WupCmd_Bitmask 3;
+BA_ "GenSigSendType" SG_ 1028 SB_TransitionLockout_Request 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_CONTROL_STATUS_Validity 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_CONTROL_STATUS_AliveCount 0;
+BA_ "GenSigSendType" SG_ 1028 SPBC_INST_SOLAR_POWER 0;
+BA_ "GenSigSendType" SG_ 1028 TPMS_TurnIndicatorBitMask 3;
+BA_ "GenSigSendType" SG_ 1028 TPMS_ManualLearningActive 3;
+BA_ "GenSigSendType" SG_ 1028 TPMS_ChirpRequest 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_PROFILE_INDEX_EVT_SET 3;
+BA_ "GenSigStartValue" SG_ 1028 CIU_PROFILE_INDEX_EVT_SET 0;
+BA_ "GenSigSendType" SG_ 1028 CIU_PROFILE_INDEX_SET 3;
+BA_ "GenSigStartValue" SG_ 1028 CIU_PROFILE_INDEX_SET 0;
+BA_ "GenSigSendType" SG_ 1028 SLEEP_INHIBIT_REQUEST 3;
+BA_ "GenSigSendType" SG_ 1028 CIU_LVBUS_VOLTAGE_SENSE 0;
+BA_ "GenSigStartValue" SG_ 1028 CIU_LVBUS_VOLTAGE_SENSE 255;
+BA_ "GenSigSendType" SG_ 1028 CIU_RPC_COMMAND 3;
+BA_ "GenSigSendType" SG_ 1028 BT_CALL_ACTIVE 3;
+BA_ "GenSigSendType" SG_ 1832 DIAG_RESP_SIG_DIS 7;
+BA_ "GenSigSendType" SG_ 1824 DIAG_REQ_SIG_DIS 7;
+BA_ "GenSigSendType" SG_ 372 VCM_BC_WINDOW_CTRL_ARC 0;
+BA_ "GenSigSendType" SG_ 372 FWS_LockoutSwitchStat 3;
+BA_ "GenSigSendType" SG_ 372 FWS_RearRight_Up 3;
+BA_ "GenSigSendType" SG_ 372 FWS_RearRight_Express 3;
+BA_ "GenSigSendType" SG_ 372 FWS_RearRight_Down 3;
+BA_ "GenSigSendType" SG_ 372 FWS_RearLeft_Up 3;
+BA_ "GenSigSendType" SG_ 372 FWS_RearLeft_Express 3;
+BA_ "GenSigSendType" SG_ 372 FWS_RearLeft_Down 3;
+BA_ "GenSigSendType" SG_ 372 FWS_FrontRight_Up 3;
+BA_ "GenSigSendType" SG_ 372 FWS_FrontRight_Express 3;
+BA_ "GenSigSendType" SG_ 372 FWS_FrontRight_Down 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_SideMarkers_RearRight 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_SideMarkers_RearLeft 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_SideMarkers_FrontRight 3;
+BA_ "GenSigSendType" SG_ 880 LampFault_SideMarkers_RearRight 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_SideMarkers_RearLeft 0;
+BA_ "GenSigSendType" SG_ 880 LampStat_SideMarkers_FrontLeft 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_DRL 3;
+BA_ "GenSigSendType" SG_ 880 LampFault_SideMarkers_FrontRight 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_SideMarkers_FrontLeft 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_DRL_Right 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_DRL_Left 0;
+BA_ "GenSigSendType" SG_ 880 LampStat_LowBeam 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_HighBeam 3;
+BA_ "GenSigSendType" SG_ 880 LampFault_LowBeam_Right 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_LowBeam_Left 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_HighBeam_Right 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_HighBeam_Left 0;
+BA_ "GenSigSendType" SG_ 880 LampStat_Reverse 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_Fog 3;
+BA_ "GenSigSendType" SG_ 880 LampFault_Reverse 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_Fog 0;
+BA_ "GenSigSendType" SG_ 880 LampStat_Park 3;
+BA_ "GenSigSendType" SG_ 880 LampFault_Park_RearRight 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_Park_RearLeft 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_Park_FrontRight 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_Park_FrontLeft 0;
+BA_ "GenSigSendType" SG_ 880 LampStat_Brake 3;
+BA_ "GenSigSendType" SG_ 880 LampFault_Brake_Right 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_Brake_Left 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_Brake_Chmsl 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_TurnSignal_RearRight 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_TurnSignal_RearLeft 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_TurnSignal_FrontRight 0;
+BA_ "GenSigSendType" SG_ 880 LampFault_TurnSignal_FrontLeft 0;
+BA_ "GenSigSendType" SG_ 880 LampStat_TurnSignal_RearRight 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_TurnSignal_RearLeft 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_TurnSignal_FrontRight 3;
+BA_ "GenSigSendType" SG_ 880 LampStat_TurnSignal_FrontLeft 3;
+BA_ "GenSigSendType" SG_ 1860 DIAG_REQ_SIG_DMR 7;
+BA_ "GenSigSendType" SG_ 1859 DIAG_REQ_SIG_DML 7;
+BA_ "GenSigSendType" SG_ 1858 DIAG_REQ_SIG_MSM 7;
+BA_ "GenSigSendType" SG_ 368 PANIC_AlertStatus 3;
+BA_ "GenSigSendType" SG_ 368 FOB_LockBtn_PressAndHold_Evt 3;
+BA_ "GenSigSendType" SG_ 368 ACC_Timer_Expiring 3;
+BA_ "GenSigSendType" SG_ 368 VCM_SC_DTC_Present 7;
+BA_ "GenSigSendType" SG_ 368 SLEEP_INHIBIT_CONF 3;
+BA_ "GenSigSendType" SG_ 368 SB_TransitionLockout_Conf 3;
+BA_ "GenSigSendType" SG_ 368 PwrMdng_VehicleAttendedStat 3;
+BA_ "GenSigSendType" SG_ 368 AuthenticationEventStatus 3;
+BA_ "GenSigSendType" SG_ 368 DelayedLockTimerStat 3;
+BA_ "GenSigStartValue" SG_ 368 PROFILE_INDEX_MASTER_EVT 0;
+BA_ "GenSigSendType" SG_ 368 PROFILE_INDEX_MASTER_EVT 3;
+BA_ "GenSigStartValue" SG_ 368 PROFILE_INDEX_MASTER 1;
+BA_ "GenSigSendType" SG_ 368 PROFILE_INDEX_MASTER 3;
+BA_ "GenSigSendType" SG_ 368 FOB_IN_TRUNK 3;
+BA_ "GenSigSendType" SG_ 368 FOB3_PRESENT_OUTSIDE 3;
+BA_ "GenSigSendType" SG_ 368 FOB2_PRESENT_OUTSIDE 3;
+BA_ "GenSigSendType" SG_ 368 FOB1_PRESENT_OUTSIDE 3;
+BA_ "GenSigSendType" SG_ 368 LockingEventStatus 3;
+BA_ "GenSigSendType" SG_ 368 PwrMdng_BrakePedalStatBool 3;
+BA_ "GenSigSendType" SG_ 368 VTA_AlertStatus 3;
+BA_ "GenSigSendType" SG_ 368 ParkingLampSwitchStatus 3;
+BA_ "GenSigSendType" SG_ 368 FOB3_PRESENT_INSIDE 3;
+BA_ "GenSigSendType" SG_ 368 FOB2_PRESENT_INSIDE 3;
+BA_ "GenSigSendType" SG_ 368 FOB1_PRESENT_INSIDE 3;
+BA_ "GenSigSendType" SG_ 368 KEY_FOB_LEFT_VEH 3;
+BA_ "GenSigSendType" SG_ 368 KEY_FOB_BATT_LOW 3;
+BA_ "GenSigSendType" SG_ 368 AjarStatus_Trunk 3;
+BA_ "GenSigSendType" SG_ 368 AjarStatus_RearRightDoor 3;
+BA_ "GenSigSendType" SG_ 368 AjarStatus_RearLeftDoor 3;
+BA_ "GenSigSendType" SG_ 368 AjarStatus_Hood 3;
+BA_ "GenSigSendType" SG_ 368 AjarStatus_FrontRightDoor 3;
+BA_ "GenSigSendType" SG_ 368 AjarStatus_FrontLeftDoor 3;
+BA_ "GenSigSendType" SG_ 368 HazardSwitchStatus 3;
+BA_ "GenSigSendType" SG_ 368 EntrySystemStatus 3;
+BA_ "GenSigSendType" SG_ 368 VCM_SC_STAT_AliveCount 0;
+BA_ "GenSigSendType" SG_ 368 SB_HoldApplicable 3;
+BA_ "GenSigStartValue" SG_ 368 LockingStatus_RearRightDoor 1;
+BA_ "GenSigSendType" SG_ 368 LockingStatus_RearRightDoor 3;
+BA_ "GenSigStartValue" SG_ 368 LockingStatus_RearLeftDoor 1;
+BA_ "GenSigSendType" SG_ 368 LockingStatus_RearLeftDoor 3;
+BA_ "GenSigStartValue" SG_ 368 LockingStatus_FrontRightDoor 1;
+BA_ "GenSigSendType" SG_ 368 LockingStatus_FrontRightDoor 3;
+BA_ "GenSigStartValue" SG_ 368 LockingStatus_FrontLeftDoor 1;
+BA_ "GenSigSendType" SG_ 368 LockingStatus_FrontLeftDoor 3;
+BA_ "GenSigSendType" SG_ 368 SB_PressedStat 3;
+BA_ "GenSigSendType" SG_ 368 SB_HoldProgress 3;
+BA_ "GenSigSendType" SG_ 368 SB_HoldTarget 3;
+BA_ "GenSigStartValue" SG_ 371 DMR_SeatOccupSnsr_RearRight 0;
+BA_ "GenSigSendType" SG_ 371 DMR_SeatOccupSnsr_RearRight 3;
+BA_ "GenSigStartValue" SG_ 371 DMR_SeatOccupSnsr_FrontRight 0;
+BA_ "GenSigSendType" SG_ 371 DMR_SeatOccupSnsr_FrontRight 3;
+BA_ "GenSigSendType" SG_ 371 DMR_DTC_Present 7;
+BA_ "GenSigSendType" SG_ 371 DOOR_AJAR_SW_RRWM 3;
+BA_ "GenSigStartValue" SG_ 371 DOOR_AJAR_SW_RRWM 0;
+BA_ "GenSigSendType" SG_ 371 DOOR_AJAR_SW_LRWM 3;
+BA_ "GenSigStartValue" SG_ 371 DOOR_AJAR_SW_LRWM 0;
+BA_ "GenSigSendType" SG_ 371 RRWM_NOT_NORM 3;
+BA_ "GenSigStartValue" SG_ 371 RRWM_NOT_NORM 0;
+BA_ "GenSigStartValue" SG_ 371 LRWM_NOT_NORM 0;
+BA_ "GenSigSendType" SG_ 371 LRWM_NOT_NORM 3;
+BA_ "GenSigSendType" SG_ 371 DMR_STAT_AliveCount 0;
+BA_ "GenSigSendType" SG_ 371 DMR_FrontDoorExteriorRequest 4;
+BA_ "GenSigSendType" SG_ 371 DMR_MirrorHeaterStat 3;
+BA_ "GenSigStartValue" SG_ 371 DMR_FoldingMirrorStat 3;
+BA_ "GenSigSendType" SG_ 371 DMR_FoldingMirrorStat 3;
+BA_ "GenSigSendType" SG_ 371 DMR_RearDoorInteriorRequest 4;
+BA_ "GenSigSendType" SG_ 371 DMR_RearDoorExteriorRequest 4;
+BA_ "GenSigSendType" SG_ 371 DMR_FrontDoorInteriorRequest 4;
+BA_ "GenSigSendType" SG_ 370 DML_SeatOccupSnsr_RearLeft 3;
+BA_ "GenSigStartValue" SG_ 370 DML_SeatOccupSnsr_RearLeft 0;
+BA_ "GenSigSendType" SG_ 370 DML_DTC_Present 7;
+BA_ "GenSigSendType" SG_ 370 DOOR_AJAR_SW_RFWM 3;
+BA_ "GenSigStartValue" SG_ 370 DOOR_AJAR_SW_RFWM 0;
+BA_ "GenSigSendType" SG_ 370 DOOR_AJAR_SW_LFWM 3;
+BA_ "GenSigStartValue" SG_ 370 DOOR_AJAR_SW_LFWM 0;
+BA_ "GenSigStartValue" SG_ 370 RFWM_NOT_NORM 0;
+BA_ "GenSigSendType" SG_ 370 RFWM_NOT_NORM 3;
+BA_ "GenSigStartValue" SG_ 370 LFWM_NOT_NORM 0;
+BA_ "GenSigSendType" SG_ 370 LFWM_NOT_NORM 3;
+BA_ "GenSigSendType" SG_ 370 DML_FrontDoorExteriorRequest 4;
+BA_ "GenSigSendType" SG_ 370 DML_STAT_AliveCount 0;
+BA_ "GenSigSendType" SG_ 370 DML_MirrorHeaterStat 3;
+BA_ "GenSigSendType" SG_ 370 DML_FoldingMirrorStat 3;
+BA_ "GenSigStartValue" SG_ 370 DML_FoldingMirrorStat 3;
+BA_ "GenSigSendType" SG_ 370 DML_RearDoorInteriorRequest 4;
+BA_ "GenSigSendType" SG_ 370 DML_RearDoorExteriorRequest 4;
+BA_ "GenSigSendType" SG_ 370 DML_FrontDoorInteriorRequest 4;
+BA_ "GenSigSendType" SG_ 369 AutoHighbeam_Active_Stat 3;
+BA_ "GenSigSendType" SG_ 369 SVCS_POWER_FEED_STAT 3;
+BA_ "GenSigSendType" SG_ 369 Wiper_Motor_Speed 3;
+BA_ "GenSigSendType" SG_ 369 VCM_BC_DTC_Present 7;
+BA_ "GenSigSendType" SG_ 369 HazardModeStatus 3;
+BA_ "GenSigSendType" SG_ 369 AutoHeadlamp_Active_Stat 3;
+BA_ "GenSigSendType" SG_ 369 SCS_FogSwitchPos 3;
+BA_ "GenSigStartValue" SG_ 369 SCS_FogSwitchPos 3;
+BA_ "GenSigSendType" SG_ 369 SCS_HeadlampSwitchPos 3;
+BA_ "GenSigStartValue" SG_ 369 SCS_HeadlampSwitchPos 7;
+BA_ "GenSigSendType" SG_ 369 SCS_BeamSwitchPos 3;
+BA_ "GenSigStartValue" SG_ 369 SCS_BeamSwitchPos 3;
+BA_ "GenSigSendType" SG_ 369 AUTO_WIPER_NOT_AVAILABLE 3;
+BA_ "GenSigSendType" SG_ 369 AUTO_HEADLAMP_NOT_AVAILABLE 3;
+BA_ "GenSigSendType" SG_ 369 REAR_DEFROST_STAT 3;
+BA_ "GenSigSendType" SG_ 369 SCS_WiperWishWash 3;
+BA_ "GenSigSendType" SG_ 369 SCS_WiperIntermittentLvl 3;
+BA_ "GenSigSendType" SG_ 369 SCS_WiperSwitchPos 3;
+BA_ "GenSigSendType" SG_ 369 DIMMING_LEVEL 3;
+BA_ "GenSigSendType" SG_ 369 DAY_NIGHT_MODE 3;
+BA_ "GenSigSendType" SG_ 369 WASHER_FLUID_LOW 3;
+BA_ "GenSigSendType" SG_ 369 SCS_TurnSignal_Right 3;
+BA_ "GenSigSendType" SG_ 369 SCS_TurnSignal_Left 3;
+BA_ "GenSigSendType" SG_ 369 VCM_BC_STAT_AliveCount 0;
+BA_ "GenSigSendType" SG_ 369 Wiper_Park_Stat 3;
+BA_ "GenSigSendType" SG_ 369 Wiper_Motor_Stat 3;
+BA_ "GenSigSendType" SG_ 369 BRAKE_FLUID_LOW 3;
+BA_ "GenSigSendType" SG_ 369 MirrorHeaterRequest 3;
+BA_ "GenSigSendType" SG_ 892 CUR_LANGUAGE 3;
+BA_ "GenSigSendType" SG_ 892 TEMP_UNIT 3;
+BA_ "GenSigSendType" SG_ 892 POWER_USAGE_UNIT 3;
+BA_ "GenSigSendType" SG_ 892 DISTANCE_UNIT 3;
+BA_ "GenSigSendType" SG_ 892 TIME_UNIT 3;
+BA_ "GenSigStartValue" SG_ 1170 TIME_SOURCE 0;
+BA_ "GenSigStartValue" SG_ 1170 TIME_ZONE_USER 48;
+BA_ "GenSigSendType" SG_ 1170 TIME_ZONE_USER 7;
+BA_ "GenSigSendType" SG_ 1170 TIME_DST_STATUS_USER 7;
+BA_ "GenSigStartValue" SG_ 1170 TIME_SECONDS_USER 255;
+BA_ "GenSigSendType" SG_ 1170 TIME_SECONDS_USER 3;
+BA_ "GenSigStartValue" SG_ 1170 TIME_YEAR_USER 255;
+BA_ "GenSigSendType" SG_ 1170 TIME_YEAR_USER 7;
+BA_ "GenSigStartValue" SG_ 1170 TIME_MONTH_USER 255;
+BA_ "GenSigSendType" SG_ 1170 TIME_MONTH_USER 7;
+BA_ "GenSigStartValue" SG_ 1170 TIME_MINUTES_USER 255;
+BA_ "GenSigSendType" SG_ 1170 TIME_MINUTES_USER 7;
+BA_ "GenSigSendType" SG_ 1170 TIME_DAY_USER 7;
+BA_ "GenSigStartValue" SG_ 1170 TIME_DAY_USER 255;
+BA_ "GenSigStartValue" SG_ 1170 TIME_HOURS_USER 255;
+BA_ "GenSigSendType" SG_ 1170 TIME_HOURS_USER 7;
+BA_ "GenSigSendType" SG_ 920 MSM_InternalProfileRecallEvent 3;
+BA_ "GenSigSendType" SG_ 920 MSM_ManualAdjustmentActive 3;
+BA_ "GenSigSendType" SG_ 920 MSM_DTC_Present 7;
+BA_ "GenSigSendType" SG_ 920 MSM_ValetModeActive 3;
+BA_ "GenSigSendType" SG_ 920 MSM_SeatTemp_RearRight 0;
+BA_ "GenSigStartValue" SG_ 920 MSM_SeatTemp_RearRight 127;
+BA_ "GenSigSendType" SG_ 920 MSM_SeatTemp_RearLeft 0;
+BA_ "GenSigStartValue" SG_ 920 MSM_SeatTemp_RearLeft 127;
+BA_ "GenSigSendType" SG_ 920 MSM_SeatTemp_FrontRight 0;
+BA_ "GenSigStartValue" SG_ 920 MSM_SeatTemp_FrontRight 127;
+BA_ "GenSigSendType" SG_ 920 MSM_SeatTemp_FrontLeft 0;
+BA_ "GenSigStartValue" SG_ 920 MSM_SeatTemp_FrontLeft 127;
+BA_ "GenSigSendType" SG_ 920 MSM_STAT_AliveCount 0;
+BA_ "GenSigSendType" SG_ 920 MSM_FaultStat_RearRight 3;
+BA_ "GenSigSendType" SG_ 920 MSM_FaultStat_RearLeft 3;
+BA_ "GenSigSendType" SG_ 920 MSM_FaultStat_FrontRight 3;
+BA_ "GenSigSendType" SG_ 920 MSM_FaultStat_FrontLeft 3;
+BA_ "GenSigSendType" SG_ 920 MSM_HeatStat_RearRight 3;
+BA_ "GenSigSendType" SG_ 920 MSM_HeatStat_RearLeft 3;
+BA_ "GenSigSendType" SG_ 920 ACTIVE_MEMORY_POS 3;
+BA_ "GenSigSendType" SG_ 920 MSM_HeatStat_FrontLeft 3;
+BA_ "GenSigSendType" SG_ 920 MSM_HeatStat_FrontRight 3;
+BA_ "GenSigSendType" SG_ 1040 VehicleSpeedDirectionalV 7;
+BA_ "GenSigSendType" SG_ 1040 VehicleSpeedDirectional 7;
+BA_ "GenSigStartValue" SG_ 1040 VehicleSpeedDirectional 32767;
+BA_ "GenSigSendType" SG_ 1040 VEHICLE_SPEED_AND_DISTANCE_CNT 7;
+BA_ "GenSigSendType" SG_ 1040 VEHICLE_SPEED_AND_DISTANCE_CRC 7;
+BA_ "GenSigSendType" SG_ 1040 VehDir 7;
+BA_ "GenSigSendType" SG_ 1040 DstRolCntAvgDrnRstOc 7;
+BA_ "GenSigSendType" SG_ 1040 DistRollCntAvgDrvnV 7;
+BA_ "GenSigSendType" SG_ 1040 DistRollCntAvgDrvn 7;
+BA_ "GenSigSendType" SG_ 1040 DistRollCntAvgDrvnSrc 7;
+BA_ "GenSigSendType" SG_ 1040 VehSpdAvgDrvn 7;
+BA_ "GenSigSendType" SG_ 1040 VehSpdAvgDrvnV 7;
+BA_ "GenSigSendType" SG_ 1040 VehSpdAvgDrvnSrc 7;
+BA_ "GenSigSendType" SG_ 261 READY_FLAG 3;
+BA_ "GenSigSendType" SG_ 261 VCM_RPC_COMMAND 3;
+BA_ "GenSigSendType" SG_ 261 PAD_STATUS 3;
+BA_ "GenSigSendType" SG_ 261 HVPROP_STATUS 3;
+BA_ "GenSigSendType" SG_ 261 ESTOP 3;
+BA_ "GenSigSendType" SG_ 261 POWER_MODE_STATUS 3;
+BA_ "GenSigSendType" SG_ 406 GEAR_POSITION_CRC 7;
+BA_ "GenSigSendType" SG_ 406 GEAR_POSITION_ARC 0;
+BA_ "GenSigSendType" SG_ 406 AUTOPARK_EVENT_STAT 3;
+BA_ "GenSigSendType" SG_ 406 PRND_USER_INPUT 3;
+BA_ "GenSigSendType" SG_ 406 REGEN_MODE 3;
+BA_ "GenSigSendType" SG_ 406 ACTUATED_GEAR 3;
+BA_ "GenSigSendType" SG_ 1853 DIAG_RESP_SIG_PDM 7;
+BA_ "GenSigSendType" SG_ 1839 DIAG_RESP_SIG_CIU 7;
+BA_ "GenSigSendType" SG_ 1828 DIAG_REQ_SIG_VCM_BC 7;
+BA_ "GenSigSendType" SG_ 1830 DIAG_REQ_SIG_VCM_SC 7;
+BA_ "GenSigSendType" SG_ 1845 DIAG_REQ_SIG_PDM 7;
+BA_ "GenSigSendType" SG_ 1831 DIAG_REQ_SIG_CIU 7;
+BA_ "GenSigSendType" SG_ 917 AHBO_ENABLE_SET 3;
+BA_ "GenSigSendType" SG_ 917 BSM_LED_BRIGHTNESS_NIGHT 3;
+BA_ "GenSigStartValue" SG_ 917 BSM_LED_BRIGHTNESS_NIGHT 1;
+BA_ "GenSigStartValue" SG_ 917 BSM_LED_BRIGHTNESS_DAY 2;
+BA_ "GenSigSendType" SG_ 917 BSM_LED_BRIGHTNESS_DAY 3;
+BA_ "GenSigStartValue" SG_ 917 BSM_SENSITIVITY_SET 1;
+BA_ "GenSigSendType" SG_ 917 BSM_SENSITIVITY_SET 3;
+BA_ "GenSigSendType" SG_ 917 RCTA_ENABLE_SET 3;
+BA_ "GenSigStartValue" SG_ 917 RCTA_ENABLE_SET 1;
+BA_ "GenSigSendType" SG_ 917 BSM_ENABLE_SET 3;
+BA_ "GenSigStartValue" SG_ 917 BSM_ENABLE_SET 1;
+BA_ "GenSigSendType" SG_ 917 CIU_SWITCH_STATUS_B_Validity 3;
+BA_ "GenSigSendType" SG_ 917 CIU_SWITCH_STATUS_B_AliveCount 0;
+BA_ "GenSigSendType" SG_ 917 AUTO_RECALL_SET 3;
+BA_ "GenSigSendType" SG_ 917 FOB_PRESELECTS_PROFILE_SET 3;
+BA_ "GenSigStartValue" SG_ 917 FOB_PRESELECTS_PROFILE_SET 1;
+BA_ "GenSigSendType" SG_ 917 STEERING_WHEEL_HEATER_ENABLE 3;
+BA_ "GenSigSendType" SG_ 917 REARRIGHT_HEAT_SEAT_SET 3;
+BA_ "GenSigSendType" SG_ 917 REARLEFT_HEAT_SEAT_SET 3;
+BA_ "GenSigSendType" SG_ 917 RPC_CONFIRMATION_SET 3;
+BA_ "GenSigStartValue" SG_ 917 RPC_CONFIRMATION_SET 1;
+BA_ "GenSigStartValue" SG_ 917 PASV_UNLOCKING_RIGHT_SET 2;
+BA_ "GenSigSendType" SG_ 917 PASV_UNLOCKING_RIGHT_SET 3;
+BA_ "GenSigStartValue" SG_ 917 PASV_UNLOCKING_LEFT_SET 2;
+BA_ "GenSigSendType" SG_ 917 PASV_UNLOCKING_LEFT_SET 3;
+BA_ "GenSigStartValue" SG_ 917 AUTO_WIPER_CTRL_SET 1;
+BA_ "GenSigSendType" SG_ 917 AUTO_WIPER_CTRL_SET 3;
+BA_ "GenSigSendType" SG_ 917 MEMORY_POSITION_SAVE 3;
+BA_ "GenSigSendType" SG_ 917 MEMORY_POSITION_RECALL 3;
+BA_ "GenSigSendType" SG_ 917 REAR_DEFROST_CMD 3;
+BA_ "GenSigSendType" SG_ 917 FRONTRIGHT_HEAT_SEAT_SET 3;
+BA_ "GenSigSendType" SG_ 917 EASY_ENTRY_EXIT_SET 3;
+BA_ "GenSigSendType" SG_ 917 FRONTLEFT_HEAT_SEAT_SET 3;
+BA_ "GenSigSendType" SG_ 917 AUTO_DOOR_LOCK_SET 3;
+BA_ "GenSigSendType" SG_ 917 EXIT_LIGHT_SETTING_SET 3;
+BA_ "GenSigSendType" SG_ 917 AUTO_FOLD_SET 3;
+BA_ "GenSigSendType" SG_ 917 DIMMING_LEVEL_USER 3;
+BA_ "GenSigSendType" SG_ 917 DELAYED_DOOR_LOCK_SET 3;
+BA_ "GenSigSendType" SG_ 917 APPR_EXIT_LIGHT_USE_LS_SET 3;
+BA_ "GenSigSendType" SG_ 917 PDM_DISABLE 3;
+BA_ "GenSigSendType" SG_ 917 GLOBAL_RESET 3;
+BA_ "GenSigSendType" SG_ 917 RPC_SETTING_SET 3;
+BA_ "GenSigSendType" SG_ 917 CHILD_LOCKOUT_SET 3;
+BA_ "GenSigSendType" SG_ 917 RTE_DOOR_LOCK_SET 3;
+BA_ "GenSigSendType" SG_ 917 RTE_DOOR_UNLOCK_SET 3;
+BA_ "GenSigSendType" SG_ 917 FOLD_MIRROR_CMD 3;
+BA_ "GenSigSendType" SG_ 917 TRIP_RESET 3;
+BA_ "GenSigSendType" SG_ 917 APPR_LIGHT_SETTING_SET 3;
+BA_ "GenSigStartValue" SG_ 917 PAD_DELAY_SET 2;
+BA_ "GenSigSendType" SG_ 917 PAD_DELAY_SET 3;
+BA_ "GenSigSendType" SG_ 917 TRIP_SELECT 3;
+BA_ "GenSigSendType" SG_ 917 RTE_KEY_ENTRY_SET 3;
+BA_ "GenSigSendType" SG_ 917 VALET_MODE_SET 3;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 373 RWS_RearRight_Up 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 593 ESM_SYSTEM_STATUS 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 1249 CIU_VEHICLE_SETTINGS_B_ARC 700;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 374 SIDEMIRROR_KNOB_RIGHT 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 374 SIDEMIRROR_KNOB_LEFT 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 1153 SVCS_NM_PWROFF_READY 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 392 SENS_ALIVE_CNT 55;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 843 WhlGrndVlctyLftDrvn 70;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 384 CNT_STEERING_ANGLE 55;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 1045 BSM_STAT_ALIVE_COUNT 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 1074 PNM12V_LOAD_SHED 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 1074 PNM12V_LOAD_SHED 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 1074 PNM12V_LOAD_SHED 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 1028 CIU_CONTROL_STATUS_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 1028 CIU_CONTROL_STATUS_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 372 FWS_LockoutSwitchStat 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 372 FWS_RearRight_Up 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 372 FWS_FrontRight_Up 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 368 AjarStatus_FrontLeftDoor 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 368 HazardSwitchStatus 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 368 EntrySystemStatus 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 368 EntrySystemStatus 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 368 VCM_SC_STAT_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 371 DOOR_AJAR_SW_LRWM 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 371 DMR_FrontDoorExteriorRequest 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 370 DOOR_AJAR_SW_LFWM 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 370 DOOR_AJAR_SW_LFWM 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 370 DML_FrontDoorExteriorRequest 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 369 VCM_BC_STAT_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 369 Wiper_Motor_Stat 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 369 MirrorHeaterRequest 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 369 MirrorHeaterRequest 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 1170 TIME_SECONDS_USER 3500;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 1170 TIME_HOURS_USER 3500;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 1040 VehSpdAvgDrvn 55;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 1040 VehSpdAvgDrvn 35;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 1040 VehSpdAvgDrvn 35;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 1040 VehSpdAvgDrvn 35;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 261 POWER_MODE_STATUS 70;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 261 POWER_MODE_STATUS 70;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 261 POWER_MODE_STATUS 70;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 261 POWER_MODE_STATUS 70;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 261 POWER_MODE_STATUS 70;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 406 ACTUATED_GEAR 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 406 ACTUATED_GEAR 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BSM SG_ 917 CIU_SWITCH_STATUS_B_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_SC SG_ 917 CIU_SWITCH_STATUS_B_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ VCM_BC SG_ 917 CIU_SWITCH_STATUS_B_AliveCount 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ MSM SG_ 917 FRONTLEFT_HEAT_SEAT_SET 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DMR SG_ 917 FOLD_MIRROR_CMD 350;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DML SG_ 917 FOLD_MIRROR_CMD 350;
+VAL_ 353 Lock_Unlock_CMD_RR_Door 2 "Unlock" 1 "Lock" 0 "No Command" ;
+VAL_ 353 Lock_Unlock_CMD_RL_Door 2 "Unlock" 1 "Lock" 0 "No Command" ;
+VAL_ 353 Lock_Unlock_CMD_FR_Door 2 "Unlock" 1 "Lock" 0 "No Command" ;
+VAL_ 353 Lock_Unlock_CMD_FL_Door 2 "Unlock" 1 "Lock" 0 "No Command" ;
+VAL_ 353 PanicAlarm_Req 2 "Cancel" 1 "Initiate" 0 "No Command" ;
+VAL_ 353 HornChirp_Req 1 "Initiate" 0 "No Command" ;
+VAL_ 353 CIU_TOKEN_REQ 1 "Active (Token requested)" 0 "Inactive" ;
+VAL_ 352 CIU_CMD_ACK 1 "PASS" 0 "FAIL" ;
+VAL_ 1545 SWCM_LIN_NoResponse 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_BTN_ACC_TIMEGAP_Enable 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_TactileFeedbackCommand_Rt 3 "Reserved 0x3" 2 "Reserved 0x2" 1 "TactilePattern_A" 0 "No_Command" ;
+VAL_ 1545 SWCM_TactileFeedbackCommand_Lft 3 "Reserved 0x3" 2 "Reserved 0x2" 1 "TactilePattern_A" 0 "No_Command" ;
+VAL_ 1545 SWCM_HeaterEnable 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_SupplyVoltageFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_RightSwitch_HardwareFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_RightSwitch_CommFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_LINCommError 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_LeftSwitch_HardwareFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_LeftSwitch_CommFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_HeaterPoweredStatus 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_HeaterFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_HapticMotorPoweredStatus 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_HapticMotorPlaybackStatus 7 "Motor_On" 6 "Cancel_Playback" 5 "Reserved 0x5" 4 "Reserved 0x4" 3 "HapticPattern_C" 2 "HapticPattern_B" 1 "HapticPattern_A" 0 "No_Command" ;
+VAL_ 1545 SWCM_HapticMotorFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_HapticMotorCommand 7 "Motor_On" 6 "Cancel_Playback" 5 "Reserved 0x5" 4 "Reserved 0x4" 3 "HapticPattern_C" 2 "HapticPattern_B" 1 "HapticPattern_A" 0 "No_Command" ;
+VAL_ 1545 SWCM_ECU_SoftwareFault 1 "True" 0 "False" ;
+VAL_ 1545 SWCM_ECU_HardwareFault 1 "True" 0 "False" ;
+VAL_ 593 ESM_DTC_PRESENT 1 "TRUE" 0 "FALSE" ;
+VAL_ 593 ESM_ACTIVE_SOUND_PROFILE 3 "Sound Profile D" 2 "Sound Profile C" 1 "Sound Profile B" 0 "Sound Profile A" ;
+VAL_ 593 ESM_SYSTEM_STATUS 3 "SNA" 1 "Fault" 0 "Normal" ;
+VAL_ 593 ESM_AVAS_SOUND_ENABLE_STATUS 1 "AVAS Sound Enabled" 0 "AVAS Sound Disabled" ;
+VAL_ 593 ESM_SOUND_ACTIVE_STATUS 1 "Sound Playback Active" 0 "Sound Playback Inactive" ;
+VAL_ 592 ESM_NOTIFICATION_EVT 6 "Terminating RPC Event" 5 "Starting RPC Event" 4 "Fob leaving in READY Event" 3 "Mislock Event" 2 "Locking Event" 1 "Unlocking Event" 0 "No Event" ;
+VAL_ 592 ESM_NM 1 "ON" 0 "OFF" ;
+VAL_ 592 ESM_SELECTED_SOUND_PROFILE 3 "Sound Profile D" 2 "Sound Profile C" 1 "Sound Profile B" 0 "Sound Profile A" ;
+VAL_ 592 ESM_ICE_STATUS 1 "ICE Spinning" 0 "ICE Off" ;
+VAL_ 592 ESM_AVAS_SOUND_ENABLE 1 "AVAS Sound Enabled" 0 "AVAS Sound Disabled" ;
+VAL_ 592 ESM_ACTUATED_GEAR 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_ 592 ESM_VEH_SPEED_DIRECTIONAL 32767 "SNA" ;
+VAL_ 1249 CIU_VEHICLE_SETTINGS_B_VALID 1 "Valid" 0 "Invalid (Cached or Default Values)" ;
+VAL_ 944 TPIBRB_BTN_SEAT_HEATVENT_STAT 3 "Fault" 2 "Initializing" 1 "Pressed" 0 "Idle" ;
+VAL_ 944 TPIBRB_BTN_SVCS_STAT 3 "Fault" 2 "Initializing" 1 "Pressed" 0 "Idle" ;
+VAL_ 944 TPIBRB_BTN_MIRROR_CTRL_STAT 3 "Fault" 2 "Initializing" 1 "Pressed" 0 "Idle" ;
+VAL_ 944 TPIBRB_BTN_FRONT_DEFROST_STAT 3 "Fault" 2 "Initializing" 1 "Pressed" 0 "Idle" ;
+VAL_ 944 TPIBRB_BTN_REAR_DEFROST_STAT 3 "Fault" 2 "Initializing" 1 "Pressed" 0 "Idle" ;
+VAL_ 870 PDM_DISTANCE_REAR_6 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 870 PDM_DISTANCE_REAR_5 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 870 PDM_DISTANCE_REAR_4 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 870 PDM_DISTANCE_REAR_3 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 870 PDM_DISTANCE_REAR_2 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 870 PDM_DISTANCE_REAR_1 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 1219 T_Ambient_V 1 "Valid" 0 "Invalid" ;
+VAL_ 393 VEH_DYN_TEMP_SENS_FAULT 1 "Error condition present" 0 "Error free" ;
+VAL_ 393 VEH_DYN_LONG_ACCEL_SELF_TEST 1 "Offset applied" 0 "No Offset applied" ;
+VAL_ 393 VEH_DYN_LONG_ACCEL_VALID 1 "Invalid" 0 "Valid" ;
+VAL_ 393 VEH_DYN_SENS_FAULT_2 1 "Error condition present" 0 "Error free" ;
+VAL_ 393 VEH_DYN_LONG_ACCEL_SENS_FAULT 1 "Error condition present" 0 "Error free" ;
+VAL_ 393 VEH_DYN_SENS_FAULT_1 1 "Error condition present" 0 "Error free" ;
+VAL_ 393 VEH_DYN_LONG_ACCEL_RANGE_CHECK 1 "Error condition present" 0 "Error free" ;
+VAL_ 225 WRSRNDWhlRotStRst 1 "TRUE" 0 "FALSE" ;
+VAL_ 225 WRSRNDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 225 WRSLNDWhlRotStRst 1 "TRUE" 0 "FALSE" ;
+VAL_ 225 WRSLNDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 225 WRSLDWhlRotStatRst 1 "TRUE" 0 "FALSE" ;
+VAL_ 225 WRSLDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 225 WRSRDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 225 WRSRDWhlRotStatRst 1 "TRUE" 0 "FALSE" ;
+VAL_ 869 PDM_DISTANCE_FRONT_6 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 869 PDM_DISTANCE_FRONT_5 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 869 PDM_DISTANCE_FRONT_4 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 869 PDM_DISTANCE_FRONT_3 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 869 PDM_DISTANCE_FRONT_2 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 869 PDM_DISTANCE_FRONT_1 255 "Sensor Fault" 254 "SNA" 253 "Out Of Range" ;
+VAL_ 869 PDM_SENSOR_FAULT_REAR 3 "SNA" 2 "Temporary Failure" 1 "Permanent Failure" 0 "No Error" ;
+VAL_ 869 PDM_DISTANCE_FRONT 7 "Signal not available" 4 "Farthest" 3 "Far" 2 "Near" 1 "Nearest" 0 "None / no obstruction" ;
+VAL_ 869 PDM_DISTANCE_REAR 7 "Signal not available" 4 "Farthest" 3 "Far" 2 "Near" 1 "Nearest" 0 "None / no obstruction" ;
+VAL_ 869 PDM_SENSOR_FAULT_FRONT 3 "SNA" 2 "Temporary Failure" 1 "Permanent Failure" 0 "No Error" ;
+VAL_ 869 PDM_SYSTEM_STATUS 3 "Service" 2 "Faulty" 1 "Off" 0 "On" ;
+VAL_ 1027 TRACTION_POWER_INST 8191 "SNA" ;
+VAL_ 1027 CIU_DIS_EXCHANGE_B_Validity 1 "Valid" 0 "Invalid (Cached or Default Values)" ;
+VAL_ 374 ENTER_AUTOTILT 1 "TRUE" 0 "FALSE" ;
+VAL_ 374 AUTOTILT_ENABLE 1 "ON" 0 "OFF" ;
+VAL_ 374 MIRRORPOS_SAVERECALL_RIGHT 13 "Recall from Profile 3" 12 "Recall from Profile 2" 11 "Recall from Profile 1" 3 "Save to Profile 3" 2 "Save to Profile 2" 1 "Save to Profile 1" 0 "No Action" ;
+VAL_ 374 MIRRORPOS_SAVERECALL_LEFT 13 "Recall from Profile 3" 12 "Recall from Profile 2" 11 "Recall from Profile 1" 3 "Save to Profile 3" 2 "Save to Profile 2" 1 "Save to Profile 1" 0 "No Action" ;
+VAL_ 374 SIDEMIRROR_KNOB_RIGHT 8 "RESERVED (DIAG4)" 7 "RESERVED (DIAG3)" 6 "RESERVED (DIAG2)" 5 "RESERVED (DIAG1)" 4 "RIGHT" 3 "LEFT" 2 "DOWN" 1 "UP" 0 "KNOB RELEASED" ;
+VAL_ 374 SIDEMIRROR_KNOB_LEFT 8 "RESERVED (DIAG4)" 7 "RESERVED (DIAG3)" 6 "RESERVED (DIAG2)" 5 "RESERVED (DIAG1)" 4 "RIGHT" 3 "LEFT" 2 "DOWN" 1 "UP" 0 "KNOB RELEASED" ;
+VAL_ 1026 HLMR_SUPPLY_VOLT_FAULT 1 "FAULT - Supply Voltage Out-Of-Range" 0 "NO FAULT" ;
+VAL_ 1026 HLMR_LAMPFAULT_PARK_DRL 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1026 HLMR_FAILSAFE_MODE_ACTV 1 "TRUE" 0 "FALSE" ;
+VAL_ 1026 HLMR_LAMPSTAT_SWIVEL 2 "ON" 1 "OFF - Condition Not Met" 0 "OFF - Disabled" ;
+VAL_ 1026 HLMR_LAMPSTAT_PARK_DRL 3 "SUPPRESSED" 2 "DRL" 1 "PARK" 0 "OFF" ;
+VAL_ 1026 HLMR_HWSWMUX_IDX 3 "SW_BUILD" 2 "SW_MINOR" 1 "SW_MAJOR" 0 "HW" ;
+VAL_ 1026 HLMR_DTC_PRESENT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1026 HLMR_LAMPSTAT_TURN 1 "ON" 0 "OFF" ;
+VAL_ 1026 HLMR_LAMPFAULT_TURN 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1026 HLMR_LAMPFAULT_SWIVEL 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1026 HLMR_LAMPSTAT_BEAMS 3 "FLASH TO PASS" 2 "HIGH BEAM" 1 "LOW BEAM" 0 "OFF" ;
+VAL_ 1026 HLMR_LAMPFAULT_LOWBEAM 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1026 HLMR_LAMPFAULT_HIGHBEAM 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1025 HLML_SUPPLY_VOLT_FAULT 1 "FAULT - Supply Voltage Out-Of-Range" 0 "NO FAULT" ;
+VAL_ 1025 HLML_FAILSAFE_MODE_ACTV 1 "TRUE" 0 "FALSE" ;
+VAL_ 1025 HLML_DTC_PRESENT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1025 HLML_HWSWMUX_IDX 3 "SW_BUILD" 2 "SW_MINOR" 1 "SW_MAJOR" 0 "HW" ;
+VAL_ 1025 HLML_LAMPSTAT_SWIVEL 2 "ON" 1 "OFF - Condition Not Met" 0 "OFF - Disabled" ;
+VAL_ 1025 HLML_LAMPSTAT_TURN 1 "ON" 0 "OFF" ;
+VAL_ 1025 HLML_LAMPFAULT_TURN 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1025 HLML_LAMPFAULT_SWIVEL 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1025 HLML_LAMPSTAT_PARK_DRL 3 "SUPPRESSED" 2 "DRL" 1 "PARK" 0 "OFF" ;
+VAL_ 1025 HLML_LAMPSTAT_BEAMS 3 "FLASH TO PASS" 2 "HIGH BEAM" 1 "LOW BEAM" 0 "OFF" ;
+VAL_ 1025 HLML_LAMPFAULT_PARK_DRL 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1025 HLML_LAMPFAULT_LOWBEAM 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1025 HLML_LAMPFAULT_HIGHBEAM 1 "FAULT" 0 "NO FAULT" ;
+VAL_ 1024 HLM_LAMPSET_SWIVEL_ENABLE 1 "ENABLED" 0 "DISABLED" ;
+VAL_ 1024 HLM_VehicleSpeed_Validity 1 "Valid" 0 "Invalid" ;
+VAL_ 1024 HLMR_LAMPCMD_PARK 1 "ON" 0 "OFF" ;
+VAL_ 1024 HLM_NM 2 "ON SILENT" 1 "ON" 0 "OFF" ;
+VAL_ 1024 HLM_SteeringWheelAngleRate 255 "SNA" ;
+VAL_ 1024 HLM_SteeringWheelAngle 32767 "SNA" ;
+VAL_ 1024 HLM_ActuatedGear 7 "SNA" 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_ 1024 HLM_VehicleSpeed 32767 "SNA" ;
+VAL_ 1024 HLMR_LAMPCMD_SUPPRESS_PARK_DRL 1 "ON" 0 "OFF" ;
+VAL_ 1024 HLML_LAMPCMD_SUPPRESS_PARK_DRL 1 "ON" 0 "OFF" ;
+VAL_ 1024 HLML_LAMPCMD_PARK 1 "ON" 0 "OFF" ;
+VAL_ 1024 HLM_LAMPCMD_BEAMS 3 "FLASH TO PASS" 2 "HIGH BEAM" 1 "LOW BEAM" 0 "OFF" ;
+VAL_ 1024 HLM_LAMPCMD_DRL 1 "ON" 0 "OFF" ;
+VAL_ 1153 SVCS_InpMsngFlt_POWER_MODE 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_DTC_PRESENT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1153 SVCS_STANDALONE_MODE 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_CAMERAS_POWERED 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_REAR_VIEW_ONLY_MODE 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_ECU_SERVICE_REQUIRED 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_NM_PWROFF_READY 1 "Ready for PWR OFF" 0 "Not ready for PWR OFF" ;
+VAL_ 1153 SVCS_OVERLAY_MALFUNCTION 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_ECU_SYSTEM_MALFUNCTION 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_CAMERA_FAULTED_RIGHT 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_CAMERA_FAULTED_REAR 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_CAMERA_FAULTED_LEFT 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_CAMERA_FAULTED_FRONT 1 "True" 0 "False" ;
+VAL_ 1153 SVCS_InpMsngFlt_STEERING_ANGLE 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_InpMsngFlt_PDM_INFO 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_InpMsngFlt_DMR_STAT 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_InpMsngFlt_DML_STAT 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_InpMsngFlt_BSM_INFO 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_ACTIVE_VIEW 8 "View 8" 7 "View 7" 6 "3D" 5 "Left and Right" 4 "Front" 3 "Top and Front" 2 "Rear" 1 "Top and Rear" 0 "No View" ;
+VAL_ 1153 SVCS_InpMsngFlt_VEHICLE_SPEED 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_InpMsngFlt_SVCS_INPUTS 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_InpMsngFlt_GEAR_POSITION 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_ECU_STATUS 2 "Not Available" 1 "Available" 0 "Unknown / In Transition" ;
+VAL_ 1153 SVCS_ECU_Fault_UnderVoltage 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_ECU_Fault_OverVoltage 1 "Fault" 0 "No Fault" ;
+VAL_ 1153 SVCS_ECU_CAL_STATUS 3 "Calibration in Progress" 2 "Calibration Error" 1 "Calibrated" 0 "Not Calibrated" ;
+VAL_ 1152 SVCS_POWER_FEED_ON_DEMAND_REQ 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_PDM_FRONT 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_GL_TOPREAR 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_PDM_TOPREAR 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_PDM_TOPFRONT 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_GL_TOPFRONT 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_REQUESTED_VIEW 8 "View 8" 7 "View 7" 6 "3D" 5 "Left and Right" 4 "Front" 3 "Top and Front" 2 "Rear" 1 "Top and Rear" 0 "No View" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_RCTA 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_PDM_REAR 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_GL_SIDES 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_GL_FRONT 1 "ON" 0 "OFF" ;
+VAL_ 1152 SVCS_OVERLAY_ENABLE_GL_REAR 1 "ON" 0 "OFF" ;
+VAL_ 392 VEH_DYN_YAW_RATE_VALID 1 "Invalid" 0 "Valid" ;
+VAL_ 392 WATCHDOG_RESET_GYRO 1 "Watchdog error present (micro)" 0 "no Watchdog error" ;
+VAL_ 392 JUMP_ERROR_GYRO 1 "Lateral Acceleration Sensor Jump error" 0 "no jump error on Lateral Acceleration Sensor" ;
+VAL_ 392 RAM_FAIL_YAW 1 "RAM error present" 0 "no RAM error" ;
+VAL_ 392 ACCEL_SELF_TEST_STAT 1 "Offset applied" 0 "No Offset applied" ;
+VAL_ 392 RASTER_FAIL 1 "Micro I/O error present" 0 "no Micro I/O error" ;
+VAL_ 392 RANGE_ERROR_GYRO 1 "Lateral Acceleration Sensor Range error" 0 "no range error on Lateral Acceleration sensor" ;
+VAL_ 392 AD_FAIL_YAW 1 "A/D conversion error present" 0 "no error for A/D conversion" ;
+VAL_ 392 ASIC_FAIL_YAW 1 "Gyro ASIC bit set" 0 "Gyro ASIC bit not set" ;
+VAL_ 392 YAW_SENS_SELF_TEST_STAT 1 "Offset applied" 0 "No Offset applied" ;
+VAL_ 392 EEP_FAIL_YAW 1 "EEPROM test (Micro) failed" 0 "EEPROM test (Micro) ok" ;
+VAL_ 392 VEH_DYN_ACCEL_VALID 1 "Invalid" 0 "Valid" ;
+VAL_ 392 BIT_FAIL_GYRO 1 "plausibility error" 0 "no plausibility error" ;
+VAL_ 392 ROM_FAIL_YAW 1 "ROM error present" 0 "no ROM error" ;
+VAL_ 392 GYRO_FAIL 1 "Range check Error present" 0 "Range check ok" ;
+VAL_ 392 VBATT_RANGE_ERROR_YAW 1 "Yaw Sensor Voltage out of range" 0 "Yaw Sensor Voltage range ok" ;
+VAL_ 392 CAN_ERROR_GYRO 1 "CAN functionality error present" 0 "no CAN functionality error" ;
+VAL_ 843 WhlGrndVlctyRtDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 843 WhlGrndVlctyLftDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 843 WhlGrndVlctyRtNnDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 843 WhlGrndVlctyLftNnDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 384 STEER_ANGLE_VALID 1 "Valid" 0 "Invalid" ;
+VAL_ 384 STEER_ANGLE_CAL 1 "Sensor calibrated" 0 "Sensor not calibrated" ;
+VAL_ 384 STEER_ANGLE_SPEED 255 "Fault value" ;
+VAL_ 384 STEER_ANGLE_VALUE 32767 "Fault value" ;
+VAL_ 1045 BSM_SERVICE_REQUIRED 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSM_INPUTSIGNALFAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSM_DTC_PRESENT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSM_BULBCHECK_ACTIVE 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 RCTA_WARN_RIGHT 2 "Object Detected / Alert" 1 "Object Detected" 0 "No Warning" ;
+VAL_ 1045 RCTA_WARN_REAR 2 "Object Detected / Alert" 1 "Object Detected" 0 "No Warning" ;
+VAL_ 1045 BSD_WARN_REAR 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSD_WARN_RIGHT 2 "Mirror Telltale Blinking / Play Alert" 1 "Mirror Telltale On / Object in Blindspot" 0 "No Warning" ;
+VAL_ 1045 BSD_WARN_LEFT 2 "Mirror Telltale Blinking / Play Alert" 1 "Mirror Telltale On / Object in Blindspot" 0 "No Warning" ;
+VAL_ 1045 BSM_RIGHT_RADAR_OBSTRUCTED 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSM_RIGHT_RADAR_MISALIGNED 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSM_LEFT_RADAR_MISALIGNED 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSM_LEFT_RADAR_OBSTRUCTED 1 "TRUE" 0 "FALSE" ;
+VAL_ 1045 BSD_STAT 5 "BSD Initializing" 4 "BSD Malfunction" 3 "BSD Unavailable" 2 "BSD Enabled Active" 1 "BSD Enabled Inactive" 0 "BSD Disabled" ;
+VAL_ 1045 RCTA_STAT 4 "RCTA Malfunction" 3 "RCTA Unavailable" 2 "RCTA Enabled Active" 1 "RCTA Enabled Inactive" 0 "RCTA Disabled" ;
+VAL_ 1045 RCTA_WARN_LEFT 2 "Object Detected / Alert" 1 "Object Detected" 0 "No Warning" ;
+VAL_ 1172 COURSE_GPS 1023 "SNA" ;
+VAL_ 1172 SAT_COUNT_GPS 63 "SNA" ;
+VAL_ 1172 SPEED_GPS 4095 "SNA" ;
+VAL_ 1172 ALT_GPS 65535 "SNA" ;
+VAL_ 1171 LON_GPS -1 "SNA" ;
+VAL_ 1171 LAT_GPS -1 "SNA" ;
+VAL_ 1543 MSM_HallCount_SeatVertical 4095 "SNA" ;
+VAL_ 1543 MSM_HallCount_Recline 4095 "SNA" ;
+VAL_ 1543 MSM_Movement_Vertical 3 "Downward" 1 "Upward" 0 "No Movement" ;
+VAL_ 1543 MSM_Movement_SteeringTilt 3 "Downward" 1 "Upward" 0 "No Movement" ;
+VAL_ 1543 MSM_Movement_SteeringTelescope 3 "Compressing" 1 "Extending" 0 "No Movement" ;
+VAL_ 1543 MSM_Movement_Recline 3 "Rearward" 1 "Forward" 0 "No Movement" ;
+VAL_ 1543 MSM_Movement_Horizontal 3 "Rearward" 1 "Forward" 0 "No Movement" ;
+VAL_ 1543 MSM_HallCount_SeatHorizontal 4095 "SNA" ;
+VAL_ 1168 TIME_UTC_MINUTES_GPS 255 "SNA" ;
+VAL_ 1168 DIRECTION_GPS 15 "SNA" 7 "NW" 6 "W" 5 "SW" 4 "S" 3 "SE" 2 "E" 1 "NE" 0 "N" ;
+VAL_ 1168 TIME_UTC_DAY_GPS 255 "SNA" ;
+VAL_ 1168 TIME_UTC_MONTH_GPS 255 "SNA" 11 "DEC" 10 "NOV" 9 "OCT" 8 "SEP" 7 "AUG" 6 "JUL" 5 "JUN" 4 "MAY" 3 "APR" 2 "MAR" 1 "FEB" 0 "JAN" ;
+VAL_ 1168 TIME_UTC_HOURS_GPS 255 "SNA" ;
+VAL_ 1168 TIME_DST_STATUS_USER_CONFIG 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1168 TIME_UTC_YEAR_GPS 255 "SNA" ;
+VAL_ 1168 TIME_UTC_SECONDS_GPS 255 "SNA" ;
+VAL_ 1074 PNM12V_TELLTALE 3 "RESERVED" 2 "ON CRITICAL (FLASHING)" 1 "ON" 0 "OFF" ;
+VAL_ 1074 PNM12V_LOAD_SHED 3 "RESERVED  (POSSIBLY LEVEL 3)" 2 "RESERVED (POSSIBLY LEVEL 2)" 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1074 PNM12V_HARNESS_FAULT 1 "Fault detected" 0 "No Status / No Fault" ;
+VAL_ 1074 PNM12V_BATTERY_FAULT 1 "Fault detected" 0 "No Status / No Fault" ;
+VAL_ 1074 PNM12V_SENSOR_FAULT 1 "Fault detected" 0 "No Status / No Fault" ;
+VAL_ 1074 PNM12V_APM_FAULT 1 "Fault detected" 0 "No Status / No Fault" ;
+VAL_ 1078 LS_Error 1 "Description for the Value '0x1'" 0 "No Error" ;
+VAL_ 1078 RS_Error 1 "Description for the Value '0x1'" 0 "No Error" ;
+VAL_ 1078 RLS_Status 3 "RLS Active" 2 "Over Voltage" 1 "Low Voltage" 0 "RLS Rebooting" ;
+VAL_ 1078 RS_Splash 1 "Splash" 0 "No Splash" ;
+VAL_ 1078 LS_HeadLights_On 1 "ON" 0 "OFF" ;
+VAL_ 1078 RLS_ResponseError 1 "Fault" 0 "No Fault" ;
+VAL_ 1078 RS_WiperSpeed 2 "Speed 2" 1 "Speed 1" 0 "No Wiping" ;
+VAL_ 1028 CIU_FlashLamps_Req 1 "Flash Lamps Request" 0 "No Request" ;
+VAL_ 1028 FOTA_Status 2 "Active" 1 "Inactive" 0 "Signal Invalid" ;
+VAL_ 1028 FOTA_HV_Req 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1028 ACC_TIMEOUT_INHIBIT_REQUEST 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1028 CIU_DiagTool_TP_Request 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1028 SB_TransitionLockout_Request 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1028 CIU_CONTROL_STATUS_Validity 1 "Valid" 0 "Invalid (Cached or Default Values)" ;
+VAL_ 1028 SPBC_INST_SOLAR_POWER 63 "SNA" ;
+VAL_ 1028 TPMS_ManualLearningActive 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1028 TPMS_ChirpRequest 3 "Long Chirp" 2 "Double Chirp" 1 "Short Chirp" 0 "No Request" ;
+VAL_ 1028 CIU_PROFILE_INDEX_EVT_SET 3 "Profile save (reserved)" 2 "Profile confirmed/recalled automatically" 1 "Profile confirmed/recalled manually" 0 "No Event" ;
+VAL_ 1028 CIU_PROFILE_INDEX_SET 0 "VCM_SC CONTROLLED / NO OVERRIDE" 3 "PROFILE 3" 2 "PROFILE 2" 1 "PROFILE 1" ;
+VAL_ 1028 SLEEP_INHIBIT_REQUEST 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1028 CIU_LVBUS_VOLTAGE_SENSE 255 "SNA" 254 "Voltage > 16.6V." 253 "Voltage < 4V." ;
+VAL_ 1028 CIU_RPC_COMMAND 2 "CANCEL" 1 "INITIATE" 0 "NO_COMMAND" ;
+VAL_ 1028 BT_CALL_ACTIVE 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 880 LampStat_SideMarkers_RearRight 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_SideMarkers_RearLeft 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_SideMarkers_FrontRight 1 "ON" 0 "OFF" ;
+VAL_ 880 LampFault_SideMarkers_RearRight 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_SideMarkers_RearLeft 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampStat_SideMarkers_FrontLeft 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_DRL 1 "ON" 0 "OFF" ;
+VAL_ 880 LampFault_SideMarkers_FrontRight 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_SideMarkers_FrontLeft 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_DRL_Right 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_DRL_Left 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampStat_LowBeam 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_HighBeam 1 "ON" 0 "OFF" ;
+VAL_ 880 LampFault_LowBeam_Right 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_LowBeam_Left 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_HighBeam_Right 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_HighBeam_Left 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampStat_Reverse 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_Fog 1 "ON" 0 "OFF" ;
+VAL_ 880 LampFault_Reverse 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_Fog 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampStat_Park 1 "ON" 0 "OFF" ;
+VAL_ 880 LampFault_Park_RearRight 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_Park_RearLeft 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_Park_FrontRight 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_Park_FrontLeft 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampStat_Brake 1 "ON" 0 "OFF" ;
+VAL_ 880 LampFault_Brake_Right 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_Brake_Left 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_Brake_Chmsl 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_TurnSignal_RearRight 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_TurnSignal_RearLeft 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_TurnSignal_FrontRight 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampFault_TurnSignal_FrontLeft 1 "Fault" 0 "No Fault" ;
+VAL_ 880 LampStat_TurnSignal_RearRight 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_TurnSignal_RearLeft 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_TurnSignal_FrontRight 1 "ON" 0 "OFF" ;
+VAL_ 880 LampStat_TurnSignal_FrontLeft 1 "ON" 0 "OFF" ;
+VAL_ 368 PANIC_AlertStatus 1 "ALERT" 0 "NO ALERT" ;
+VAL_ 368 FOB_LockBtn_PressAndHold_Evt 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 ACC_Timer_Expiring 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 VCM_SC_DTC_Present 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 SLEEP_INHIBIT_CONF 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 368 SB_TransitionLockout_Conf 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 368 PwrMdng_VehicleAttendedStat 1 "ATTENDED" 0 "NOT ATTENDED" ;
+VAL_ 368 AuthenticationEventStatus 6 "Authentication Expired" 5 "Authentication Attempt Failed" 4 "Successful Authentication Event - FOB3" 3 "Successful Authentication Event - FOB2" 2 "Successful Authentication Event - FOB1" 1 "Authentication Attempt Start" 0 "No Event" ;
+VAL_ 368 DelayedLockTimerStat 2 "5s Door Lock Timer active." 1 "20s Door Close Timer active." 0 "Delayed Locking Timer Inactive." ;
+VAL_ 368 PROFILE_INDEX_MASTER_EVT 3 "Profile save (reserved)" 2 "Profile confirmed/recalled automatically" 1 "Profile confirmed/recalled manually" 0 "No Event" ;
+VAL_ 368 PROFILE_INDEX_MASTER 3 "PROFILE 3" 2 "PROFILE 2" 1 "PROFILE 1" ;
+VAL_ 368 FOB_IN_TRUNK 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 FOB3_PRESENT_OUTSIDE 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 FOB2_PRESENT_OUTSIDE 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 FOB1_PRESENT_OUTSIDE 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 LockingEventStatus 3 "Failed Locking Event / Locking Reversal" 2 "Locking Event" 1 "Unlocking Event" 0 "No Event" ;
+VAL_ 368 PwrMdng_BrakePedalStatBool 1 "BRAKE PEDAL APPLIED" 0 "NOT APPLIED OR BELOW THRESHOLD" ;
+VAL_ 368 VTA_AlertStatus 1 "ALERT" 0 "NO ALERT" ;
+VAL_ 368 ParkingLampSwitchStatus 1 "ON" 0 "OFF" ;
+VAL_ 368 FOB3_PRESENT_INSIDE 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 FOB2_PRESENT_INSIDE 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 FOB1_PRESENT_INSIDE 1 "TRUE" 0 "FALSE" ;
+VAL_ 368 KEY_FOB_LEFT_VEH 1 "KeyFob left vehicle" 0 "KeyFob OK" ;
+VAL_ 368 KEY_FOB_BATT_LOW 1 "Battery LOW" 0 "Battery OK" ;
+VAL_ 368 AjarStatus_Trunk 1 "Open" 0 "Closed" ;
+VAL_ 368 AjarStatus_RearRightDoor 1 "Open" 0 "Closed" ;
+VAL_ 368 AjarStatus_RearLeftDoor 1 "Open" 0 "Closed" ;
+VAL_ 368 AjarStatus_Hood 1 "Open" 0 "Closed" ;
+VAL_ 368 AjarStatus_FrontRightDoor 1 "Open" 0 "Closed" ;
+VAL_ 368 AjarStatus_FrontLeftDoor 1 "Open" 0 "Closed" ;
+VAL_ 368 HazardSwitchStatus 1 "Button Pressed" 0 "Button Released" ;
+VAL_ 368 EntrySystemStatus 3 "Secured" 2 "Locked" 1 "Closed" 0 "Open" ;
+VAL_ 368 SB_HoldApplicable 1 "Press + Hold Required" 0 "Simple Press Sufficient" ;
+VAL_ 368 LockingStatus_RearRightDoor 1 "Locked (Default)" 0 "Unlocked" ;
+VAL_ 368 LockingStatus_RearLeftDoor 1 "Locked (Default)" 0 "Unlocked" ;
+VAL_ 368 LockingStatus_FrontRightDoor 1 "Locked (Default)" 0 "Unlocked" ;
+VAL_ 368 LockingStatus_FrontLeftDoor 1 "Locked (Default)" 0 "Unlocked" ;
+VAL_ 368 SB_PressedStat 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 371 DMR_SeatOccupSnsr_RearRight 2 "Fault" 3 "Not Configured" 1 "Closed (Seat Occupied)" 0 "Open" ;
+VAL_ 371 DMR_SeatOccupSnsr_FrontRight 2 "Fault" 3 "Not Configured" 1 "Closed (Seat Occupied)" 0 "Open" ;
+VAL_ 371 DMR_DTC_Present 1 "TRUE" 0 "FALSE" ;
+VAL_ 371 DOOR_AJAR_SW_RRWM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 371 DOOR_AJAR_SW_LRWM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 371 RRWM_NOT_NORM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 371 LRWM_NOT_NORM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 371 DMR_FoldingMirrorStat 3 "UNKNOWN" 1 "FOLDED" 0 "UNFOLDED" ;
+VAL_ 370 DML_SeatOccupSnsr_RearLeft 2 "Fault" 3 "Not Configured" 1 "Closed (Seat Occupied)" 0 "Open" ;
+VAL_ 370 DML_DTC_Present 1 "TRUE" 0 "FALSE" ;
+VAL_ 370 DOOR_AJAR_SW_RFWM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 370 DOOR_AJAR_SW_LFWM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 370 RFWM_NOT_NORM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 370 LFWM_NOT_NORM 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 370 DML_FoldingMirrorStat 3 "UNKNOWN" 1 "FOLDED" 0 "UNFOLDED" ;
+VAL_ 369 AutoHighbeam_Active_Stat 2 "Feature Unavailable" 1 "Highbeams currently in Auto-Mode" 0 "Highbeams currently not in Auto-Mode" ;
+VAL_ 369 SVCS_POWER_FEED_STAT 1 "ON" 0 "OFF" ;
+VAL_ 369 Wiper_Motor_Speed 2 "Speed Level 2 / High Speed" 1 "Speed Level I / Low Speed" 0 "Wiper Motor OFF" ;
+VAL_ 369 VCM_BC_DTC_Present 1 "TRUE" 0 "FALSE" ;
+VAL_ 369 HazardModeStatus 1 "Hazard ON" 0 "Hazard OFF" ;
+VAL_ 369 AutoHeadlamp_Active_Stat 1 "Headlamps currently in Auto-Mode" 0 "Headlamps currently not in Auto-Mode" ;
+VAL_ 369 SCS_FogSwitchPos 3 "SNA" 1 "FOG LAMPS ON OFF TOGGLE POSITION" 0 "FOG LAMPS ON OFF STATIONARY POSITION" ;
+VAL_ 369 SCS_HeadlampSwitchPos 7 "SNA" 3 "LOW OR HIGH BEAM" 2 "PARK LAMPS" 1 "OFF OR AUTO STATIONARY" 0 "OFF OR AUTO MOMENTARY TOGGLE" ;
+VAL_ 369 SCS_BeamSwitchPos 3 "SNA" 2 "FLASH TO PASS" 1 "HIGH BEAM" 0 "LOW BEAM" ;
+VAL_ 369 AUTO_WIPER_NOT_AVAILABLE 1 "TRUE" 0 "FALSE" ;
+VAL_ 369 AUTO_HEADLAMP_NOT_AVAILABLE 1 "TRUE" 0 "FALSE" ;
+VAL_ 369 REAR_DEFROST_STAT 3 "ON LOADSHED - OUTPUT DISABLED" 2 "ON MAINTAIN - REDUCED DUTY CYCLE" 1 "ON" 0 "OFF" ;
+VAL_ 369 SCS_WiperWishWash 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 369 SCS_WiperIntermittentLvl 7 "SNA" 4 "LEVEL 5 (FASTEST)" 3 "LEVEL 4" 2 "LEVEL 3" 1 "LEVEL 2" 0 "LEVEL 1 (SLOWEST)" ;
+VAL_ 369 SCS_WiperSwitchPos 7 "SNA" 4 "MOMENTARY" 3 "HIGH" 2 "LOW" 1 "INT" 0 "OFF" ;
+VAL_ 369 DIMMING_LEVEL 10 "Level 10 (brightest)" 9 "Level 9" 8 "Level 8" 7 "Level 7" 6 "Level 6" 5 "Level 5" 4 "Level 4" 3 "Level 3" 2 "Level 2" 1 "Level 1" 0 "Level 0 (darkest)" ;
+VAL_ 369 DAY_NIGHT_MODE 1 "NIGHT" 0 "DAY" ;
+VAL_ 369 WASHER_FLUID_LOW 1 "Fluid level LOW" 0 "Fluid level OK" ;
+VAL_ 369 SCS_TurnSignal_Right 1 "Turn Signal Switch In Right Position" 0 "Turn Signal Switch Not In Right Position" ;
+VAL_ 369 SCS_TurnSignal_Left 1 "Turn Signal Switch In Left Position" 0 "Turn Signal Switch Not In Left Position" ;
+VAL_ 369 Wiper_Park_Stat 1 "Wipers In Park Position" 0 "Wipers Not In Park Position" ;
+VAL_ 369 Wiper_Motor_Stat 1 "Wiper Motor Is Running" 0 "Wiper Motor Is Not Running" ;
+VAL_ 369 BRAKE_FLUID_LOW 3 "Signal not available" 1 "Fluid level LOW" 0 "Fluid level OK" ;
+VAL_ 369 MirrorHeaterRequest 1 "Mirror Heater ON" 0 "Mirror Heater OFF" ;
+VAL_ 892 CUR_LANGUAGE 21 "L_NOTAVAILABLE" 20 "MALAY" 19 "THAI" 18 "PORTUGUESE" 17 "SPANISH" 16 "ITALIAN" 15 "TURKISH" 14 "HEBREW" 13 "ARABIC" 12 "POLISH" 11 "RUSSIAN" 10 "SWEDISH" 9 "DANISH" 8 "NORWEGIAN" 7 "DUTCH" 6 "GERMAN" 5 "FRENCH" 4 "ENGLISH" 3 "CHINESE" 2 "SPANISHNA" 1 "FRENCHNA" 0 "ENGLISHNA" ;
+VAL_ 892 TEMP_UNIT 3 "Signal not available" 1 "Celsius / C" 0 "Fahrenheit / F" ;
+VAL_ 892 POWER_USAGE_UNIT 7 "Signal not available" 2 "kilometer-per-liter" 1 "liter/100 kilometer" 0 "mile-per-gallon / MPG" ;
+VAL_ 892 DISTANCE_UNIT 3 "Signal not available" 1 "KILOMETERS" 0 "MILES" ;
+VAL_ 892 TIME_UNIT 3 "Signal not available" 1 "24 hours" 0 "12 hours" ;
+VAL_ 1170 TIME_SOURCE 4 "CELLULAR (CIU)" 3 "RTC (CIU)" 2 "GPS" 1 "RTC (BECM)" 0 "NO VALID SOURCE" ;
+VAL_ 1170 TIME_DST_STATUS_USER 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 1170 TIME_SECONDS_USER 255 "SNA" ;
+VAL_ 1170 TIME_YEAR_USER 255 "SNA" ;
+VAL_ 1170 TIME_MONTH_USER 255 "SNA" 11 "DEC" 10 "NOV" 9 "OCT" 8 "SEP" 7 "AUG" 6 "JUL" 5 "JUN" 4 "MAY" 3 "APR" 2 "MAR" 1 "FEB" 0 "JAN" ;
+VAL_ 1170 TIME_MINUTES_USER 255 "SNA" ;
+VAL_ 1170 TIME_DAY_USER 255 "SNA" ;
+VAL_ 1170 TIME_HOURS_USER 255 "SNA" ;
+VAL_ 920 MSM_InternalProfileRecallEvent 1 "TRUE" 0 "FALSE" ;
+VAL_ 920 MSM_ManualAdjustmentActive 1 "TRUE" 0 "FALSE" ;
+VAL_ 920 MSM_DTC_Present 1 "TRUE" 0 "FALSE" ;
+VAL_ 920 MSM_ValetModeActive 1 "TRUE" 0 "FALSE" ;
+VAL_ 920 MSM_SeatTemp_RearRight 127 "SNA" ;
+VAL_ 920 MSM_SeatTemp_RearLeft 127 "SNA" ;
+VAL_ 920 MSM_SeatTemp_FrontRight 127 "SNA" ;
+VAL_ 920 MSM_SeatTemp_FrontLeft 127 "SNA" ;
+VAL_ 920 MSM_FaultStat_RearRight 3 "OTHER / LOAD SHEDDING" 2 "OVER-CURRENT" 1 "UNDER-CURRENT" 0 "NORMAL OPERATION" ;
+VAL_ 920 MSM_FaultStat_RearLeft 3 "OTHER / LOAD SHEDDING" 2 "OVER-CURRENT" 1 "UNDER-CURRENT" 0 "NORMAL OPERATION" ;
+VAL_ 920 MSM_FaultStat_FrontRight 3 "OTHER / LOAD SHEDDING" 2 "OVER-CURRENT" 1 "UNDER-CURRENT" 0 "NORMAL OPERATION" ;
+VAL_ 920 MSM_FaultStat_FrontLeft 3 "OTHER / LOAD SHEDDING" 2 "OVER-CURRENT" 1 "UNDER-CURRENT" 0 "NORMAL OPERATION" ;
+VAL_ 920 MSM_HeatStat_RearRight 3 "HIGH" 2 "MEDIUM" 1 "LOW" 0 "OFF" ;
+VAL_ 920 MSM_HeatStat_RearLeft 3 "HIGH" 2 "MEDIUM" 1 "LOW" 0 "OFF" ;
+VAL_ 920 ACTIVE_MEMORY_POS 3 "MEMORY 3" 2 "MEMORY 2" 1 "MEMORY 1" 0 "NONE / UNKNOWN" ;
+VAL_ 920 MSM_HeatStat_FrontLeft 3 "HIGH" 2 "MEDIUM" 1 "LOW" 0 "OFF" ;
+VAL_ 920 MSM_HeatStat_FrontRight 3 "HIGH" 2 "MEDIUM" 1 "LOW" 0 "OFF" ;
+VAL_ 1040 VehicleSpeedDirectionalV 1 "Valid" 0 "Invalid" ;
+VAL_ 1040 VehicleSpeedDirectional 32767 "SNA" ;
+VAL_ 1040 VehDir 3 "Signal Invalid / SNA" 2 "Unsigned" 1 "Vehicle moving Reverse" 0 "Vehicle moving Forward" ;
+VAL_ 1040 DstRolCntAvgDrnRstOc 1 "TRUE" 0 "FALSE" ;
+VAL_ 1040 DistRollCntAvgDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 1040 DistRollCntAvgDrvnSrc 1 "ABS info as source" 0 "Transmission Output as Source" ;
+VAL_ 1040 VehSpdAvgDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 1040 VehSpdAvgDrvnSrc 1 "ABS info as source" 0 "Transmission Output as Source" ;
+VAL_ 261 READY_FLAG 1 "TRUE" 0 "FALSE" ;
+VAL_ 261 VCM_RPC_COMMAND 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 261 PAD_STATUS 1 "PAD_ACTIVE" 0 "PAD_INACTIVE" ;
+VAL_ 261 HVPROP_STATUS 2 "HV & PROP ACTIVE" 1 "HV ONLY ACTIVE" 0 "HV & PROP INACTIVE" ;
+VAL_ 261 ESTOP 1 "ESTOP_ACTIVE" 0 "ESTOP_INACTIVE" ;
+VAL_ 261 POWER_MODE_STATUS 4 "SYSTEM_ON" 3 "RPC" 2 "ACC" 1 "OFF_AWAKE" 0 "OFF" ;
+VAL_ 406 AUTOPARK_EVENT_STAT 3 "Reserved 0x3" 2 "Reserved 0x2" 1 "Smart-Apply (door open)" 0 "No Event" ;
+VAL_ 406 PRND_USER_INPUT 15 "P+R+N+D" 14 "R+N+D" 13 "P+N+D" 12 "N+D" 11 "P+R+D" 10 "R+D" 9 "P+D" 8 "D" 7 "P+R+N" 6 "R+N" 5 "P+N" 4 "N" 3 "P+R" 2 "R" 1 "P" 0 "No Input" ;
+VAL_ 406 REGEN_MODE 3 "Not Applicable" 2 "Regen-3 (High)" 1 "Regen-2 (Medium)" 0 "Regen-1 (Low)" ;
+VAL_ 406 ACTUATED_GEAR 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_ 917 AHBO_ENABLE_SET 1 "ON (Follow AHBO)" 0 "OFF (Follow Stalk)" ;
+VAL_ 917 BSM_LED_BRIGHTNESS_NIGHT 2 "HIGH" 1 "NORMAL" 0 "LOW" ;
+VAL_ 917 BSM_LED_BRIGHTNESS_DAY 2 "HIGH" 1 "NORMAL" 0 "LOW" ;
+VAL_ 917 BSM_SENSITIVITY_SET 2 "EARLY" 1 "MEDIUM (DEFAULT)" 0 "LATE" ;
+VAL_ 917 RCTA_ENABLE_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 BSM_ENABLE_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 CIU_SWITCH_STATUS_B_Validity 1 "Valid" 0 "Invalid (Cached or Default Values)" ;
+VAL_ 917 AUTO_RECALL_SET 1 "Auto-Recall enabled" 0 "Auto-Recall disabled" ;
+VAL_ 917 FOB_PRESELECTS_PROFILE_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 STEERING_WHEEL_HEATER_ENABLE 1 "ON" 0 "OFF" ;
+VAL_ 917 REARRIGHT_HEAT_SEAT_SET 1 "Button pressed" 0 "no action" ;
+VAL_ 917 REARLEFT_HEAT_SEAT_SET 1 "Button pressed" 0 "no action" ;
+VAL_ 917 RPC_CONFIRMATION_SET 3 "BOTH" 2 "HORN" 1 "PARK LAMPS" 0 "NONE" ;
+VAL_ 917 PASV_UNLOCKING_RIGHT_SET 2 "GLOBAL unlock" 1 "THIS SIDE" 0 "THIS DOOR" ;
+VAL_ 917 PASV_UNLOCKING_LEFT_SET 2 "GLOBAL unlock" 1 "THIS SIDE" 0 "THIS DOOR" ;
+VAL_ 917 AUTO_WIPER_CTRL_SET 1 "AUTOMATIC WIPER CONTROL ENABLED" 0 "AUTOMATIC WIPER CONTROL DISABLED" ;
+VAL_ 917 MEMORY_POSITION_SAVE 3 "save MEMORY 3" 2 "save MEMORY 2" 1 "save MEMORY 1" 0 "no action" ;
+VAL_ 917 MEMORY_POSITION_RECALL 3 "recall MEMORY 3" 2 "recall MEMORY 2" 1 "recall MEMORY 1" 0 "no action" ;
+VAL_ 917 REAR_DEFROST_CMD 1 "Button pressed" 0 "no action" ;
+VAL_ 917 FRONTRIGHT_HEAT_SEAT_SET 1 "Button pressed" 0 "no action" ;
+VAL_ 917 EASY_ENTRY_EXIT_SET 1 "enable Easy Entry/Exit" 0 "disable Easy Entry/Exit" ;
+VAL_ 917 FRONTLEFT_HEAT_SEAT_SET 1 "Button pressed" 0 "no action" ;
+VAL_ 917 AUTO_DOOR_LOCK_SET 2 "OFF" 1 "at vehicle speed (V_THRESH)" 0 "shift out of park" ;
+VAL_ 917 EXIT_LIGHT_SETTING_SET 3 "2 minutes" 2 "1 minute" 1 "30 seconds" 0 "OFF" ;
+VAL_ 917 AUTO_FOLD_SET 1 "AUTO FOLD ON" 0 "AUTO FOLD OFF" ;
+VAL_ 917 DIMMING_LEVEL_USER 10 "Level 10 (brightest)" 9 "Level 9" 8 "Level 8" 7 "Level 7" 6 "Level 6" 5 "Level 5" 4 "Level 4" 3 "Level 3" 2 "Level 2" 1 "Level 1" 0 "Level 0 (darkest)" ;
+VAL_ 917 DELAYED_DOOR_LOCK_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 APPR_EXIT_LIGHT_USE_LS_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 PDM_DISABLE 2 "PDM ENABLED, MUTED BY DIS" 1 "PDM DISABLED" 0 "PDM ENABLED" ;
+VAL_ 917 GLOBAL_RESET 1 "RESET" 0 "no reset" ;
+VAL_ 917 RPC_SETTING_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 CHILD_LOCKOUT_SET 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 917 RTE_DOOR_LOCK_SET 2 "OFF" 1 "Turn Signals only" 0 "Turn Signals and Horn" ;
+VAL_ 917 RTE_DOOR_UNLOCK_SET 1 "Turn Signals" 0 "OFF" ;
+VAL_ 917 FOLD_MIRROR_CMD 2 "Unfold" 1 "Fold" 0 "No Command" ;
+VAL_ 917 TRIP_RESET 1 "Trip computer reset initiated" 0 "no action" ;
+VAL_ 917 APPR_LIGHT_SETTING_SET 1 "ON" 0 "OFF" ;
+VAL_ 917 PAD_DELAY_SET 3 "15 minutes" 2 "5 minutes" 1 "1 minutes" 0 "OFF" ;
+VAL_ 917 TRIP_SELECT 1 "Trip B selected" 0 "Trip A selected" ;
+VAL_ 917 RTE_KEY_ENTRY_SET 2 "GLOBAL unlock" 1 "driver SIDE" 0 "driver DOOR" ;
+VAL_ 917 VALET_MODE_SET 1 "ON" 0 "OFF" ;
+
+
