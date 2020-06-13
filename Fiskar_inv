@@ -1,0 +1,1231 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PIM_TM2 PIM_TM1 PIM_GEN PIM_ALL HCU KARMA_TESTER CIU ECM
+VAL_TABLE_ Vt_Sig_MILE_KM 376926741 "SNA" ;
+
+
+BO_ 1672 DEBUG_MSG2_TM2: 8 PIM_TM2
+
+BO_ 1671 DEBUG_MSG2_TM1: 8 PIM_TM1
+
+BO_ 673 DT_TRGG_PFUTA: 5 ECM
+ SG_ EX_TEMP_PLB : 6|2@1+ (1,0) [0|3] ""  HCU
+
+BO_ 2016 OBD_RQ_ECU_1: 8 HCU
+ SG_ OBD_RQ_1_ECU_1_BYTE : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_2_BYTE : 8|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_3_BYTE : 16|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_4_BYTE : 24|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_5_BYTE : 32|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_6_BYTE : 40|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_7_BYTE : 48|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_RQ_1_ECU_8_BYTE : 56|8@1+ (1,0) [0|255] ""  ECM
+
+BO_ 819 Kilometerstand_2: 8 HCU
+ SG_ MILE_KM_TOT : 0|32@1+ (0.001,0) [0|4294967.292] "km"  ECM
+
+BO_ 206 TM2_FEEDBACK_2: 2 PIM_TM2
+ SG_ TM2_SPEED_GRADIENT : 7|16@0+ (2,-65000) [-65000|65000] "RPM/s"  HCU
+
+BO_ 205 TM1_FEEDBACK_2: 2 PIM_TM1
+ SG_ TM1_SPEED_GRADIENT : 7|16@0+ (2,-65000) [-65000|65000] "RPM/s"  HCU
+
+BO_ 714 A_TEMP: 2 HCU
+ SG_ TEMP_EX : 0|8@1+ (0.5,-40) [-40|87.5] "°C"  ECM
+ SG_ TEMP_EX_UNFILT : 8|8@1+ (0.5,-40) [-40|87.5] "°C"  ECM
+
+BO_ 133 AB_CR_ST_BUCU: 2 HCU
+ SG_ CRC_AB_CR_ST_BUCU : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ST_CR_CONF_BUCU : 8|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 552 BEDIENUNG_SONDERFUNKTION: 2 HCU
+ SG_ ID_SPFN : 0|16@1+ (1,0) [0|65534] ""  ECM
+
+BO_ 921 CTR_DIAG_OBD_BUCU: 2 HCU
+ SG_ RQ_MIL_DIAG_OBD_BUCU : 0|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 1777 Diag_BMW_Tester1: 8 HCU
+ SG_ TA : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ TPCI : 8|8@1+ (1,0) [0|255] ""  ECM
+ SG_ Byte3 : 16|8@1+ (1,0) [0|255] ""  ECM
+ SG_ Byte4 : 24|8@1+ (1,0) [0|255] ""  ECM
+ SG_ Byte5 : 32|8@1+ (1,0) [0|255] ""  ECM
+ SG_ Byte6 : 40|8@1+ (1,0) [0|255] ""  ECM
+ SG_ Byte7 : 48|8@1+ (1,0) [0|255] ""  ECM
+ SG_ Byte8 : 56|8@1+ (1,0) [0|255] ""  ECM
+
+BO_ 1554 Diag_IK_DME_SP2013: 8 ECM
+ SG_ TA : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ TPCI : 8|8@1+ (1,0) [0|255] ""  HCU
+ SG_ Byte3 : 16|8@1+ (1,0) [0|255] ""  HCU
+ SG_ Byte4 : 24|8@1+ (1,0) [0|255] ""  HCU
+ SG_ Byte5 : 32|8@1+ (1,0) [0|255] ""  HCU
+ SG_ Byte6 : 40|8@1+ (1,0) [0|255] ""  HCU
+ SG_ Byte7 : 48|8@1+ (1,0) [0|255] ""  HCU
+ SG_ Byte8 : 56|8@1+ (1,0) [0|255] ""  HCU
+
+BO_ 919 DIAG_OBD_ENG: 7 ECM
+ SG_ OBD_CALCVL_LD_ENG : 16|8@1+ (0.3937,0) [0|100] "%"  HCU
+ SG_ ST_OBD_CYC : 0|6@1+ (1,0) [0|63] ""  HCU
+
+BO_ 918 DIAG_OBD_GRB: 2 HCU
+ SG_ RQ_MIL_DIAG_OBD_GRB : 0|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 1019 DT_PT_1_BUCU: 6 ECM
+ SG_ AIP_ENG_DRV : 0|8@1+ (2,598) [600|1106] "hPa"  CIU,HCU
+ SG_ ST_INFS_DRV : 32|2@1+ (1,0) [0|3] ""  HCU
+
+BO_ 1017 DT_PT_2: 8 ECM
+ SG_ CRC_DT_PT_2 : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ALIV_DT_PT_2 : 8|4@1+ (1,0) [0|14] ""  HCU
+ SG_ ST_ENG_RUN_DRV : 24|2@1+ (1,0) [0|3] ""  HCU
+ SG_ TEMP_ENG_DRV : 32|8@1+ (1,-48) [-48|144] "°C"  HCU
+ SG_ TEMP_EOI_DRV : 40|8@1+ (1,-48) [-48|170] "°C"  HCU
+ SG_ RLS_ENGSTA : 52|2@1+ (1,0) [0|3] ""  HCU
+
+BO_ 816 KILOMETERSTAND: 8 HCU
+ SG_ MILE_KM : 0|24@1+ (1,0) [0|16777215] "km"  ECM
+ SG_ FLLV_FUTA : 24|8@1+ (1,0) [0|255] "l"  ECM
+
+BO_ 303 KLEMMEN: 8 HCU
+ SG_ CRC_KL : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_COU_KL : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ ST_KL : 16|4@1+ (1,0) [0|15] ""  ECM
+ SG_ ST_KL_KEY_VLD : 32|4@1+ (1,0) [0|15] ""  ECM
+ SG_ CON_CLT_SW : 38|2@1+ (1,0) [0|3] ""  ECM
+ SG_ ST_SSP : 46|2@1+ (1,0) [0|3] ""  ECM
+ SG_ RWDT_BLS : 48|4@1+ (1,0) [0|15] ""  ECM
+ SG_ RQ_DRVG_RDI : 54|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 1077 MEASMT_EOI: 4 ECM
+ SG_ ST_OILV_MEASMT_1 : 0|12@1+ (1,0) [0|4095] ""  HCU
+ SG_ FLLV_EOI_REL : 12|4@1+ (1,0) [0|15] ""  HCU
+ SG_ ST_OILV_MEASMT_2 : 16|12@1+ (1,0) [0|4095] ""  HCU
+ SG_ ST_OILV_MEASMT_POSS : 28|2@1+ (1,0) [0|3] ""  HCU
+
+BO_ 2024 OBD_ANSW_ECU_1: 8 ECM
+ SG_ OBD_ANSW_1_ECU_1_BYTE : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_2_BYTE : 8|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_3_BYTE : 16|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_4_BYTE : 24|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_5_BYTE : 32|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_6_BYTE : 40|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_7_BYTE : 48|8@1+ (1,0) [0|255] ""  HCU
+ SG_ OBD_ANSW_1_ECU_8_BYTE : 56|8@1+ (1,0) [0|255] ""  HCU
+
+BO_ 808 RELATIVZEIT: 6 HCU
+ SG_ T_SEC_COU_REL : 0|32@1+ (1,0) [0|4294967294] "s"  ECM
+ SG_ T_DAY_COU_ABSL : 32|16@1+ (1,0) [0|65535] ""  ECM
+
+BO_ 273 RQ_2_WMOM_PT_SUM_DRS: 8 HCU
+ SG_ CRC_RQ_2_WMOM_PT_SUM_DRS : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_RQ_2_WMOM_PT_SUM_DRS : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ TAR_2_WMOM_PT_SUM_DRS : 16|16@1+ (1,-32000) [-32000|32000] "Nm"  ECM
+ SG_ QU_TAR_2_WMOM_PT_SUM_DRS : 32|12@1+ (1,0) [0|4095] ""  ECM
+ SG_ TAR_2_OPMO_PT_DRS : 44|4@1+ (1,0) [0|15] ""  ECM
+
+BO_ 142 RQ_BUCU_2: 5 HCU
+ SG_ ST_ACPD_BUCU : 36|2@1+ (1,0) [0|3] ""  ECM
+ SG_ RQ_OPMO_THRO_BUCU : 24|2@1+ (1,0) [0|3] ""  ECM
+ SG_ ST_EXHF_REL_BUCU : 16|8@1+ (1,0) [0|100] "%"  ECM
+ SG_ CRC_RQ_BUCU_2 : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_RQ_BUCU_2 : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ RQ_MSA_BUCU : 26|4@1+ (1,0) [0|15] ""  ECM
+ SG_ ST_EXHF_BUCU : 30|2@1+ (1,0) [0|3] ""  ECM
+ SG_ RLS_INJ_IGN_BUCU : 32|4@1+ (1,0) [0|15] ""  ECM
+
+BO_ 1022 RQ_BUCU_3: 5 ECM
+ SG_ AVL_LOCO_AKF_MDL_BUCU : 23|17@1+ (0.00390625,0) [0|255.9661] "g"  HCU
+ SG_ ST_MIL_MESS_BUCU : 16|2@1+ (1,0) [0|3] ""  HCU
+ SG_ ST_CCLK_FLS_MIL_BUCU : 18|2@1+ (1,0) [0|3] ""  HCU
+ SG_ RQ_EFAN_ENG_BUCU : 0|8@1+ (1,0) [0|100] "%"  HCU
+ SG_ TARVL_RPM_EWP22_BUCU : 8|8@1+ (1,0) [0|254] ""  HCU
+
+BO_ 833 RQ_OPRNG_HYB_BUCU: 8 ECM
+ SG_ RQ_PRIO_RPM_CRSH_LOWLIM_BUCU : 0|8@1+ (25,0) [0|6000] "1/min"  HCU
+ SG_ RQ_PRIO_RPM_CRSH_UPLIM_BUCU : 8|8@1+ (25,0) [0|6000] "1/min"  HCU
+ SG_ RQ_PRIO_TORQ_CRSH_LOWLIM_BUCU : 16|16@1+ (0.1,-3276.7) [-3276.7|3276.7] "Nm"  HCU
+ SG_ RQ_PRIO_TORQ_CRSH_UPLIM_BUCU : 32|16@1+ (0.1,-3276.7) [-3276.7|3276.7] "Nm"  HCU
+ SG_ SLCTN_FN_PRIO_ACV_BUCU : 48|4@1+ (1,0) [0|15] ""  HCU
+
+BO_ 514 ST_BUCU_2: 8 ECM
+ SG_ MANO_EXT_DME_BUCU : 56|8@1+ (1,0) [0|254] ""  HCU
+ SG_ CRC_ST_BUCU_2 : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ALIV_ST_BUCU_2 : 8|4@1+ (1,0) [0|14] ""  HCU
+ SG_ ST_MSA_BUCU : 24|8@1+ (1,0) [0|255] ""  HCU
+ SG_ MANO_DME_BUCU : 48|8@1+ (1,0) [0|254] ""  HCU
+
+BO_ 708 ST_COSP_FU_ENG: 8 ECM
+ SG_ IJV_FU_ENG : 0|16@1+ (1,0) [0|65534] "µl"  HCU
+
+BO_ 261 ST_DO_FLAP_BUCU: 2 HCU
+ SG_ ST_BON_HOPN_BUCU : 10|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 1154 SVC_BUCU: 8 HCU
+ SG_ ID2 M : 0|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ALIV_OBD_SER_6_FN_1 m141 : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ ALIV_OBD_SER_6_FN_2 m142 : 8|4@1+ (1,0) [0|14] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_1 m130 : 8|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ID_OBD_SEN m140 : 8|8@1+ (1,0) [0|255] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_2 m130 : 16|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ERR_OBD_SEN_1 m140 : 16|4@1+ (1,0) [0|15] ""  ECM
+ SG_ OBD_SER_6_PART_1_FN_ID m141 : 16|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_SER_6_PART_2_FN_ID m142 : 16|8@1+ (1,0) [0|255] ""  ECM
+ SG_ ERR_OBD_SEN_2 m140 : 20|4@1+ (1,0) [0|15] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_3 m130 : 24|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_SER_6_MIN_TST_LIM m142 : 24|16@1+ (1,0) [0|65535] ""  ECM
+ SG_ OBD_SER_6_UN_ID m141 : 24|8@1+ (1,0) [0|254] ""  ECM
+ SG_ RWDT_OBD_SEN_1 m140 : 24|16@1+ (1,0) [0|65534] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_4 m130 : 32|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_SER_6_TST_VL m141 : 32|16@1+ (1,0) [0|65535] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_5 m130 : 40|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_SER_6_MAX_TST_LIM m142 : 40|16@1+ (1,0) [0|65535] ""  ECM
+ SG_ RWDT_OBD_SEN_2 m140 : 40|16@1+ (1,0) [0|65534] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_6 m130 : 48|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_SER_6_PART_1_VLDY m141 : 48|2@1+ (1,0) [0|3] ""  ECM
+ SG_ DT_EWS_DME1_DDE1_7 m130 : 56|8@1+ (1,0) [0|255] ""  ECM
+ SG_ OBD_SER_6_PART_2_VLDY m142 : 56|2@1+ (1,0) [0|3] ""  ECM
+
+BO_ 1170 SVC_IK_DME: 8 ECM
+ SG_ ID2 M : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ DT_EWS_CAS_1 m128 : 8|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ID_FN_RQ_BUS m12 : 8|16@1+ (1,0) [0|65535] ""  HCU
+ SG_ NO_CC_MESS_EXT m65 : 8|16@1+ (1,0) [0|65534] ""  HCU
+ SG_ NO_CC_MESS_STD m64 : 8|16@1+ (1,0) [0|65534] ""  HCU
+ SG_ DT_EWS_CAS_2 m128 : 16|8@1+ (1,0) [0|255] ""  HCU
+ SG_ DT_EWS_CAS_3 m128 : 24|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ID_RQ_BUS m12 : 24|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ST_CC_MESS_EXT m65 : 24|2@1+ (1,0) [0|3] ""  HCU
+ SG_ ST_CC_MESS_STD m64 : 24|2@1+ (1,0) [0|3] ""  HCU
+ SG_ TRANF_CC_MESS_EXT m65 : 26|4@1+ (1,0) [0|14] ""  HCU
+ SG_ TRANF_CC_MESS_STD m64 : 26|4@1+ (1,0) [0|14] ""  HCU
+ SG_ ST_IDC_CCLK_CC_MESS_EXT m65 : 30|2@1+ (1,0) [0|3] ""  HCU
+ SG_ ST_IDC_CCLK_CC_MESS_STD m64 : 30|2@1+ (1,0) [0|3] ""  HCU
+ SG_ DT_EWS_CAS_4 m128 : 32|8@1+ (1,0) [0|255] ""  HCU
+ SG_ NO_FRM_CC_MESS_EXT m65 : 32|4@1+ (1,0) [0|14] ""  HCU
+ SG_ ST_RQ_BUS m12 : 32|4@1+ (1,0) [0|15] ""  HCU
+ SG_ QUAN_FRM_CC_MESS_EXT m65 : 36|4@1+ (1,0) [0|14] ""  HCU
+ SG_ ST_LAW_RQ m12 : 36|4@1+ (1,0) [0|15] ""  HCU
+ SG_ DT_EWS_CAS_5 m128 : 40|8@1+ (1,0) [0|255] ""  HCU
+ SG_ DUR_FLLUPT m12 : 40|8@1+ (1,0) [0|254] "min"  HCU
+ SG_ UTDT_CC_MESS m65 : 40|24@1+ (1,0) [0|16777215] ""  HCU
+ SG_ DT_EWS_CAS_6 m128 : 48|8@1+ (1,0) [0|255] ""  HCU
+ SG_ DT_EWS_CAS_7 m128 : 56|8@1+ (1,0) [0|255] ""  HCU
+
+BO_ 165 TORQ_CRSH_1: 8 ECM
+ SG_ CRC_TORQ_CRSH_1 : 0|8@1+ (1,0) [0|255] ""  HCU
+ SG_ ALIV_TORQ_CRSH_1 : 8|4@1+ (1,0) [0|14] ""  HCU
+ SG_ AVL_TORQ_CRSH : 16|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  HCU
+ SG_ AVL_RPM_ENG_CRSH : 40|16@1+ (0.25,0) [0|12000] "1/min"  HCU
+ SG_ QU_AVL_RPM_ENG_CRSH : 56|4@1+ (1,0) [0|15] ""  HCU
+
+BO_ 1298 NM2_FA_CAN_IK_DME: 8 ECM
+ SG_ NM2_AUTOSAR_RES_FACAN : 0|32@1+ (1,0) [0|4294967295] ""  HCU
+ SG_ NM2_USR_DT_FACAN : 32|32@1+ (1,0) [0|4294967295] ""  HCU
+
+BO_ 1281 NM2_FA_CAN_HCU: 8 HCU
+ SG_ NM2_AUTOSAR_RES_FACAN : 0|32@1+ (1,0) [0|4294967295] ""  ECM,HCU
+ SG_ NM2_USR_DT_FACAN : 32|32@1+ (1,0) [0|4294967295] ""  ECM,HCU
+
+BO_ 1669 DEBUG_MSG_TM2: 8 PIM_TM2
+
+BO_ 1668 DEBUG_MSG_TM1: 8 PIM_TM1
+
+BO_ 1667 DEBUG_MSG_GEN: 8 PIM_GEN
+
+BO_ 72 TM2_TORQUE_COMMAND: 7 HCU
+ SG_ ACTUATED_GEAR : 5|3@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TM2_SHUTDOWN_CMD : 23|2@0+ (1,0) [0|2] ""  PIM_TM2
+ SG_ TM2_ENABLE_CMD : 21|3@0+ (1,0) [0|3] ""  PIM_TM2
+ SG_ TM2_ARC_TORQUE_CMD : 7|2@0+ (1,0) [0|3] ""  PIM_TM2
+ SG_ TM2_CRC : 55|8@0+ (1,0) [0|255] ""  PIM_TM2
+ SG_ AccPedPosTM2 : 39|8@0+ (0.392157,0) [0|100] "%"  PIM_TM2
+ SG_ TM2_TORQUE_CMD : 2|11@0+ (1,-1024) [-1024|1023] "Nm"  PIM_TM2
+ SG_ TM2_DIRECTION : 43|4@0+ (1,0) [0|15] ""  PIM_TM2
+ SG_ TM2_TORQUE_PROTECT_VAL : 18|11@0+ (1,0) [0|2047] ""  PIM_TM2
+
+BO_ 340 TM2_STATUS: 6 PIM_TM2
+ SG_ TM2_PCM_TEST_FAIL : 22|1@0+ (1,0) [0|1] ""  HCU
+ SG_ TM2_GEN_CAPABILITY : 47|8@0+ (0.392157,0) [0|100.000035] "%"  HCU
+ SG_ TM2_INV_TEMP_SENS : 7|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ TM2_STATUS_SIG : 21|14@0+ (1,0) [0|16383] ""  HCU
+ SG_ TM2_MOTOR_TEMP_SENS : 15|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ TM2_MOTOR_CAPABILITY : 39|8@0+ (0.392157,0) [0|100.000035] "%"  HCU
+
+BO_ 203 TM2_FEEDBACK: 8 PIM_TM2
+ SG_ TM2_SM_STATUS : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ TM2_TORQUE_DIR_MODE : 39|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ TM2_ARC_FEEDBACK : 54|2@0+ (1,0) [0|3] ""  HCU
+ SG_ TM2_TORQUE_SENS : 2|11@0+ (1,-1024) [-1024|1023] ""  HCU
+ SG_ TM2_VOLTAGE_SENS : 35|12@0+ (0.25,0) [0|1023.75] "V"  HCU
+ SG_ TM2_SPEED_SENS : 23|16@0+ (0.5,-16384) [-16384|16383.5] "RPM"  HCU,PIM_TM1
+ SG_ TM2_CURRENT_SENS : 52|13@0+ (0.25,-1024) [-1024|1023.75] "A"  HCU
+
+BO_ 903 TM2_DIAG_OBD2: 5 PIM_TM2
+ SG_ DMCB_DiagStat1_DiagTrblCdStat : 2|3@0+ (1,0) [0|7] ""  HCU
+ SG_ DMCB_CALID_CVN_Stat : 30|2@0+ (1,0) [0|3] ""  HCU
+ SG_ DMCB_DiagStat1_DiagTrblCdIndx : 7|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCB_DiagStat3_DiagTrblCdStat : 18|3@0+ (1,0) [0|7] ""  HCU
+ SG_ DMCB_DiagStat2_DiagTrblCdIndx : 15|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCB_CALID_CVN_Character : 39|8@0+ (1,0) [0|255] ""  HCU
+ SG_ DMCB_CALID_CVN_CALIndx : 28|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCB_DiagStat2_DiagTrblCdStat : 10|3@0+ (1,0) [0|7] ""  HCU
+ SG_ DMCB_DiagStat3_DiagTrblCdIndx : 23|5@0+ (1,0) [0|31] ""  HCU
+
+BO_ 71 TM1_TORQUE_COMMAND: 7 HCU
+ SG_ ACTUATED_GEAR : 5|3@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TM1_SHUTDOWN_CMD : 23|2@0+ (1,0) [0|2] ""  PIM_TM1
+ SG_ TM1_ENABLE_CMD : 21|3@0+ (1,0) [0|3] ""  PIM_TM1
+ SG_ TM1_DIRECTION : 43|4@0+ (1,0) [0|15] ""  PIM_TM1
+ SG_ TM1_TORQUE_CMD : 2|11@0+ (1,-1024) [-1024|1023] "Nm"  PIM_TM1
+ SG_ TM1_CRC : 55|8@0+ (1,0) [0|255] ""  PIM_TM1
+ SG_ AccPedPosTM1 : 39|8@0+ (0.392157,0) [0|100] "%"  PIM_TM1
+ SG_ TM1_TORQUE_PROTECT_VAL : 18|11@0+ (1,0) [0|2047] ""  PIM_TM1
+ SG_ TM1_ARC_TORQUE_CMD : 7|2@0+ (1,0) [0|3] ""  PIM_TM1
+
+BO_ 339 TM1_STATUS: 6 PIM_TM1
+ SG_ TM1_STATUS_SIG : 21|14@0+ (1,0) [0|16383] ""  HCU
+ SG_ TM1_INV_TEMP_SENS : 7|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ TM1_PCM_TEST_FAIL : 22|1@0+ (1,0) [0|1] ""  HCU
+ SG_ TM1_MOTOR_CAPABILITY : 39|8@0+ (0.392157,0) [0|100.000035] "%"  HCU
+ SG_ TM1_MOTOR_TEMP_SENS : 15|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ TM1_GEN_CAPABILITY : 47|8@0+ (0.392157,0) [0|100.000035] "%"  HCU
+
+BO_ 202 TM1_FEEDBACK: 8 PIM_TM1
+ SG_ TM1_TORQUE_DIR_MODE : 39|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ TM1_SM_STATUS : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ TM1_CURRENT_SENS : 52|13@0+ (0.25,-1024) [-1024|1023.75] "A"  HCU
+ SG_ TM1_SPEED_SENS : 23|16@0+ (0.5,-16384) [-16384|16383.5] "RPM"  PIM_TM2,HCU
+ SG_ TM1_ARC_FEEDBACK : 54|2@0+ (1,0) [0|3] ""  HCU
+ SG_ TM1_VOLTAGE_SENS : 35|12@0+ (0.25,0) [0|1023.75] "V"  HCU
+ SG_ TM1_TORQUE_SENS : 2|11@0+ (1,-1024) [-1024|1023] ""  HCU
+
+BO_ 902 TM1_DIAG_OBD2: 5 PIM_TM1
+ SG_ DMCA_CALID_CVN_CALIndx : 28|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCA_DiagStat3_DiagTrblCdIndx : 23|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCA_DiagStat3_DiagTrblCdStat : 18|3@0+ (1,0) [0|7] ""  HCU
+ SG_ DMCA_DiagStat1_DiagTrblCdIndx : 7|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCA_DiagStat2_DiagTrblCdStat : 10|3@0+ (1,0) [0|7] ""  HCU
+ SG_ DMCA_DiagStat1_DiagTrblCdStat : 2|3@0+ (1,0) [0|7] ""  HCU
+ SG_ DMCA_DiagStat2_DiagTrblCdIndx : 15|5@0+ (1,0) [0|31] ""  HCU
+ SG_ DMCA_CALID_CVN_Stat : 30|2@0+ (1,0) [0|3] ""  HCU
+ SG_ DMCA_CALID_CVN_Character : 39|8@0+ (1,0) [0|255] ""  HCU
+
+BO_ 192 PROPULSION_MODE: 2 HCU
+ SG_ PROP_SYS_ACTIVE_FLAG : 9|2@0+ (1,0) [0|3] ""  PIM_TM2,PIM_TM1,PIM_GEN
+ SG_ HCU_SOLARBOOST_FLAG : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HCU_LV_MNTNC_FLAG : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HCU_RPC_STATUS : 15|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ CNT_PROP_MODE_STATUS : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ PROP_MODE_STAT : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1413 HCU_OBD2_AUTONOMOUS: 4 HCU
+ SG_ HVOffTime : 7|8@0+ (1,0) [0|255] "h"  PIM_GEN,PIM_TM2,PIM_TM1
+ SG_ CLEAR_DTC : 24|1@0+ (1,0) [0|1] ""  PIM_TM2,PIM_TM1,PIM_GEN
+
+BO_ 355 GEN_STATUS: 6 PIM_GEN
+ SG_ GEN_MOTOR_TEMP_SENS : 15|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ GEN_MOTOR_CAPABILITY : 39|8@0+ (0.392157,0) [0|100.000035] "%"  HCU
+ SG_ GEN_STATUS_SIG : 21|14@0+ (1,0) [0|16383] ""  HCU
+ SG_ GEN_INV_TEMP_SENS : 7|8@0+ (1,-40) [-40|215] "°C"  HCU
+ SG_ GEN_GEN_CAPABILITY : 47|8@0+ (0.392157,0) [0|100.000035] "%"  HCU
+
+BO_ 211 GEN_FEEDBACK: 8 PIM_GEN
+ SG_ GEN_VOLTAGE_SENS : 35|12@0+ (0.25,0) [0|1023.75] "V"  HCU
+ SG_ GEN_CURRENT_SENS : 52|13@0+ (0.25,-1024) [-1024|1023.75] "A"  HCU
+ SG_ GEN_TORQUE_SENS : 2|11@0+ (1,-1024) [-1024|1023] ""  HCU
+ SG_ GEN_SPEED_SENS : 23|16@0+ (0.5,-16384) [-16384|16383.5] "RPM"  HCU
+ SG_ GEN_ARC_FEEDBACK : 7|2@0+ (1,0) [0|3] ""  HCU
+
+BO_ 904 GEN_DIAG_OBD2: 5 PIM_GEN
+ SG_ SGCM_CALID_CVN_Stat : 30|2@0+ (1,0) [0|3] ""  HCU
+ SG_ SGCM_DiagStat2_DiagTrblCdIndx : 15|5@0+ (1,0) [0|31] ""  HCU
+ SG_ SGCM_DiagStat3_DiagTrblCdStat : 18|3@0+ (1,0) [0|7] ""  HCU
+ SG_ SGCM_DiagStat2_DiagTrblCdStat : 10|3@0+ (1,0) [0|7] ""  HCU
+ SG_ SGCM_DiagStat1_DiagTrblCdStat : 2|3@0+ (1,0) [0|7] ""  HCU
+ SG_ SGCM_CALID_CVN_Character : 39|8@0+ (1,0) [0|255] ""  HCU
+ SG_ SGCM_DiagStat1_DiagTrblCdIndx : 7|5@0+ (1,0) [0|31] ""  HCU
+ SG_ SGCM_CALID_CVN_CALIndx : 28|5@0+ (1,0) [0|31] ""  HCU
+ SG_ SGCM_DiagStat3_DiagTrblCdIndx : 23|5@0+ (1,0) [0|31] ""  HCU
+
+BO_ 210 GEN_COMMAND: 8 HCU
+ SG_ GEN_SHUTDOWN_CMD : 52|2@0+ (1,0) [0|2] ""  PIM_GEN
+ SG_ GEN_ENABLE_CMD : 2|3@0+ (1,0) [0|3] ""  PIM_GEN
+ SG_ GEN_GEN_TRQ_LIMIT : 50|11@0+ (1,-1024) [-1024|1023] ""  PIM_GEN
+ SG_ GEN_SPEED_PROTECT_VAL : 31|16@0+ (1,0) [0|65535] ""  PIM_GEN
+ SG_ GEN_MOTOR_TRQ_LIMIT : 47|11@0+ (1,-1024) [-1024|1023] ""  PIM_GEN
+ SG_ GEN_ARC_COMMAND : 7|2@0+ (1,0) [0|3] ""  PIM_GEN
+ SG_ GEN_DIRECTION : 4|1@0+ (1,0) [0|1] ""  PIM_GEN
+ SG_ GEN_SPEED_CMD : 15|16@0+ (0.5,-16384) [-16384|16383.5] "RPM"  PIM_GEN
+
+BO_ 2015 FUNC_REQUEST: 8 KARMA_TESTER
+ SG_ FUNC_REQ_SIG : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  ECM,PIM_TM1,HCU,PIM_TM2,PIM_ALL,PIM_GEN
+
+BO_ 1930 DIAG_RESPONSE_PIM_TM2: 8 PIM_TM2
+ SG_ DIAG_RESP_SIG_PIM_TM2 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1929 DIAG_RESPONSE_PIM_TM1: 8 PIM_TM1
+ SG_ DIAG_RESP_SIG_PIM_TM1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1928 DIAG_RESPONSE_PIM_GEN: 8 PIM_GEN
+ SG_ DIAG_RESP_SIG_PIM_GEN : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1931 DIAG_RESPONSE_PIM_BOOT: 8 PIM_ALL
+ SG_ DIAG_RESP_SIG_PIM_BOOT : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  KARMA_TESTER
+
+BO_ 1922 DIAG_REQUEST_PIM_TM2: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_PIM_TM2 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PIM_TM2
+
+BO_ 1921 DIAG_REQUEST_PIM_TM1: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_PIM_TM1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PIM_TM1
+
+BO_ 1920 DIAG_REQUEST_PIM_GEN: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_PIM_GEN : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PIM_GEN
+
+BO_ 1923 DIAG_REQUEST_PIM_BOOT: 8 KARMA_TESTER
+ SG_ DIAG_REQ_SIG_PIM_BOOT : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PIM_ALL
+
+BO_ 257 ALL_NODE_REQUEST: 8 KARMA_TESTER
+ SG_ ALL_NODE_REQ_SIG : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  PIM_TM1,PIM_TM2,PIM_ALL,PIM_GEN
+
+
+
+CM_ "INVERTER CAN ONLY";
+CM_ BU_ PIM_TM2 "Power Inverter Module for Traction Motor 2";
+CM_ BU_ PIM_TM1 "Power Inverter Module for Traction Motor 1";
+CM_ BU_ PIM_GEN "Power Inverter Module for Generator";
+CM_ BU_ HCU "Hybrid Control Unit";
+CM_ BU_ CIU "Central Infotainment Unit";
+CM_ BO_ 1672 "Debug Message #2 for TM2";
+CM_ BO_ 1671 "Debug Message #2 for TM1";
+CM_ SG_ 673 EX_TEMP_PLB "More Details in Excelsheet: This signal contains the plausibility information of the exterior temperature at the end of a drive.";
+CM_ SG_ 2016 OBD_RQ_1_ECU_1_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_2_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_3_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_4_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_5_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_6_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_7_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2016 OBD_RQ_1_ECU_8_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ BO_ 819 "Note: Message cycle time per BMW database was 300ms. Modified to 250ms to accomodate HCU toolchain.";
+CM_ SG_ 819 MILE_KM_TOT "More Details in Excelsheet: This signal transmits the total mileage in [km] independant from the configured unit.";
+CM_ SG_ 206 TM2_SPEED_GRADIENT "Traction Motor 2 Speed Gradient.";
+CM_ SG_ 205 TM1_SPEED_GRADIENT "Traction Motor 1 Speed Gradient.";
+CM_ SG_ 714 TEMP_EX "More Details in Excelsheet: In this signal the exterior temperature (filtered value) is sent.";
+CM_ SG_ 714 TEMP_EX_UNFILT "More Details in Excelsheet: In this signal the exterior temperature (unfiltered raw data) is sent.";
+CM_ SG_ 133 CRC_AB_CR_ST_BUCU "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 15 (dez) = F (hex)";
+CM_ SG_ 133 ST_CR_CONF_BUCU "More Details in Excelsheet: Vehicle crash status";
+CM_ SG_ 552 ID_SPFN "More Details in Excelsheet: The signal gives the requested function ID.";
+CM_ SG_ 921 RQ_MIL_DIAG_OBD_BUCU "More Details in Excelsheet: This signal contains the MIL-request from the BUCU-OBD host sent to the DME (MIL = malfunction indication light).";
+CM_ SG_ 1777 TA "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 TPCI "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 Byte3 "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 Byte4 "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 Byte5 "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 Byte6 "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 Byte7 "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1777 Byte8 "More Details in Excelsheet: Diagnostic signal - Request from tester to ECU in UDS format";
+CM_ SG_ 1554 TA "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 TPCI "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 Byte3 "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 Byte4 "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 Byte5 "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 Byte6 "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 Byte7 "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 1554 Byte8 "More Details in Excelsheet: Diagnostic signal - Response to tester request in UDS format";
+CM_ SG_ 919 OBD_CALCVL_LD_ENG "More Details in Excelsheet: Calculated engine load";
+CM_ SG_ 919 ST_OBD_CYC "More Details in Excelsheet: OBD signal with information whether the  conditions for the different cycles are met. If this is true the corresponding bit is set to '1', meaning 'cycle is active', else it remains '0'. Signal is set invalid (11 1111b), i ...";
+CM_ SG_ 918 RQ_MIL_DIAG_OBD_GRB "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 1019 AIP_ENG_DRV "More Details in Excelsheet: This signal contains the absolute ambient air pressure.";
+CM_ SG_ 1019 ST_INFS_DRV "More Details in Excelsheet: In this signal the ECM communicates whether a deceleration fuel cut-off is active or not.";
+CM_ SG_ 1017 CRC_DT_PT_2 "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 55 (dez) = 37 (hex)";
+CM_ SG_ 1017 ALIV_DT_PT_2 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 1017 ST_ENG_RUN_DRV "More Details in Excelsheet: This signal communicates the present engine status.";
+CM_ SG_ 1017 TEMP_ENG_DRV "More Details in Excelsheet: This signal communicates the present engine temperature (coolant temperature). In case of a sensor defect, the code FFh (invalid) is transmitted.";
+CM_ SG_ 1017 TEMP_EOI_DRV "More Details in Excelsheet: This signal communicates the present engine oil temperature. In case of a sensor defect, the code FFh (invalid) is transmitted.";
+CM_ SG_ 1017 RLS_ENGSTA "More Details in Excelsheet: In this signal the ECM indicates whether it is ready for an engine start (allow activation of KL50).";
+CM_ SG_ 816 MILE_KM "More Details in Excelsheet: This signal contains the displayed value of the total mileage counter. (OBD & DTC-entry relevant)";
+CM_ SG_ 816 FLLV_FUTA "More Details in Excelsheet: This signal contains the fuel tank level (averaged value of left and right fuel tank halfs). ";
+CM_ SG_ 303 CRC_KL "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 19 (dez) = 13 (hex)";
+CM_ SG_ 303 ALIV_COU_KL "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 303 ST_KL "More Details in Excelsheet: This signal transmits the valid logical terminal status. (annotation: physical terminal and logical terminal have to be synchronous, 20ms delay allowed)";
+CM_ SG_ 303 ST_KL_KEY_VLD "More Details in Excelsheet: This signal contains the information whether the key is valid or not.";
+CM_ SG_ 303 CON_CLT_SW "More Details in Excelsheet: In this signal the status of the clutch switch is sent.";
+CM_ SG_ 303 ST_SSP "More Details in Excelsheet: this signal indicates the type the Start/Stop pushbutton hall sensor";
+CM_ SG_ 303 RWDT_BLS "More Details in Excelsheet: raw data of the brake light switch";
+CM_ SG_ 303 RQ_DRVG_RDI "More Details in Excelsheet: This signal requests the ECM to establish driving readiness.";
+CM_ SG_ 1077 ST_OILV_MEASMT_1 "More Details in Excelsheet: This signal contains status information concerning the measured engine oil level (electronic engine oil bar generation 2).";
+CM_ SG_ 1077 FLLV_EOI_REL "More Details in Excelsheet: This signal contains the measured oil level above its minimum or a quantitative value of the oil level, respectively.";
+CM_ SG_ 1077 ST_OILV_MEASMT_2 "More Details in Excelsheet: This signal contains status information concerning the measured oil level.";
+CM_ SG_ 1077 ST_OILV_MEASMT_POSS "More Details in Excelsheet: this signal indicates, whether a detailed measurement of the engine oil level at the general inspection is possible or not.";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_1_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_2_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_3_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_4_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_5_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_6_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_7_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 2024 OBD_ANSW_1_ECU_8_BYTE "More Details in Excelsheet: Diagnostic signal";
+CM_ SG_ 808 T_SEC_COU_REL "More Details in Excelsheet: This counter counts the seconds synchronously to the system clock.";
+CM_ SG_ 808 T_DAY_COU_ABSL "More Details in Excelsheet: This counter counts all days which are registered if a board net voltage is present. The times without battery are not counted and thus not taken into account in this signal.";
+CM_ SG_ 273 CRC_RQ_2_WMOM_PT_SUM_DRS "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 33 (dez) = 21 (hex)";
+CM_ SG_ 273 ALIV_RQ_2_WMOM_PT_SUM_DRS "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 273 TAR_2_WMOM_PT_SUM_DRS "More Details in Excelsheet: This signal communicates the wheel torque request from the cruise control function.";
+CM_ SG_ 273 QU_TAR_2_WMOM_PT_SUM_DRS "More Details in Excelsheet: This is the qualifier to the data signal of the cruise control torque request.";
+CM_ SG_ 273 TAR_2_OPMO_PT_DRS "More Details in Excelsheet: This signal contains the vehicles moving direction. Dummy value possible here.";
+CM_ SG_ 142 ST_ACPD_BUCU "More Details in Excelsheet: Accelerator pedal pressed or not pressed (in REX-system, accelerator pedal connected to BUCU-ECU).";
+CM_ SG_ 142 RQ_OPMO_THRO_BUCU "More Details in Excelsheet: This signal contains of the request for the activation of the throtteled operation mode (GD_Mode_Switch).";
+CM_ SG_ 142 ST_EXHF_REL_BUCU "More Details in Excelsheet: This signal contains of the exhaust flap position in steps of 1% steps (0 = closed, 100 = open).";
+CM_ SG_ 142 CRC_RQ_BUCU_2 "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 20 (dez) = 14 (hex)";
+CM_ SG_ 142 ALIV_RQ_BUCU_2 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 142 RQ_MSA_BUCU "More Details in Excelsheet: Engine start-stop request (ESS-interface)";
+CM_ SG_ 142 ST_EXHF_BUCU "More Details in Excelsheet: This signal communicates the satus of the exhaust flap";
+CM_ SG_ 142 RLS_INJ_IGN_BUCU "More Details in Excelsheet: This signal informs the engine control if releases for the parameters fuel injection and ignition are cancelled, for each case with and without start announcement. (ESS interface)";
+CM_ SG_ 1022 AVL_LOCO_AKF_MDL_BUCU "More Details in Excelsheet: This signal contains the current value of the AKF loading modell.";
+CM_ SG_ 1022 ST_MIL_MESS_BUCU "Malfunction Indicator Lamp Status.";
+CM_ SG_ 1022 ST_CCLK_FLS_MIL_BUCU "Malfunction Indicator Lamp Blink Rate.
+More Details in Excelsheet: This signal contains the current flashing status of the MIL (sent also in the checkcontrol message) and is sent in cyclical patterns.
+(Service-CCM Switch64: ST_IDC_CCLK_CC_MESS_STD)";
+CM_ SG_ 1022 RQ_EFAN_ENG_BUCU "More Details in Excelsheet: This signal contains the coordinated request of the engine heat management coordination (WMK) for controlling the electric fan.";
+CM_ SG_ 1022 TARVL_RPM_EWP22_BUCU "More Details in Excelsheet: This signal contains the coordinated request of the engine heat management coordination (WMK) for controlling the speed of the auxiliary water pump EWP22 as a dimensionless value.";
+CM_ SG_ 833 RQ_PRIO_RPM_CRSH_LOWLIM_BUCU "More Details in Excelsheet: This signal contains the lower limit of the operational range for the revolutions per minute, which is valid for the function being currently active with the highest priority. The function being currently active with the h ...";
+CM_ SG_ 833 RQ_PRIO_RPM_CRSH_UPLIM_BUCU "More Details in Excelsheet: This signal contains the upper limit of the operational range for the revolutions per minute, which is valid for the function being currently active with the highest priority. The function being currently active with the h ...";
+CM_ SG_ 833 RQ_PRIO_TORQ_CRSH_LOWLIM_BUCU "More Details in Excelsheet: This signal contains the lower limit of the operational range for the revolutions per minute, which is valid for the function being currently active with the highest priority. The function being currently active with the h ...";
+CM_ SG_ 833 RQ_PRIO_TORQ_CRSH_UPLIM_BUCU "More Details in Excelsheet: This signal contains the upper limit of the operational range for the revolutions per minute, which is valid for the function being currently active with the highest priority. The function being currently active with the h ...";
+CM_ SG_ 833 SLCTN_FN_PRIO_ACV_BUCU "More Details in Excelsheet: This signal specifies the function being currently active with the highest priority.";
+CM_ SG_ 514 MANO_EXT_DME_BUCU "More Details in Excelsheet: This signal contains the front (extended) part (=first byte) of the Magic Number saved in the IK-DME (not the Magic Number of the current data set).";
+CM_ SG_ 514 CRC_ST_BUCU_2 "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 22 (dez) = 16 (hex)";
+CM_ SG_ 514 ALIV_ST_BUCU_2 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 514 ST_MSA_BUCU "More Details in Excelsheet: in this signal the DME communicates if engine start-stop (ESS-interface) is possible or not, basing on DME internal factors (e.g. engine speed, engine temperature, …).";
+CM_ SG_ 514 MANO_DME_BUCU "More Details in Excelsheet: This signal contains the rear part of the Magic Number (second byte) saved in the IK-DME (not the Magic Number of the current data set).";
+CM_ SG_ 708 IJV_FU_ENG "More Details in Excelsheet: This signal indicates fuel consumption. The value stands for the summed up volume of fuel injected.";
+CM_ SG_ 261 ST_BON_HOPN_BUCU "More Details in Excelsheet: Status of bonnet";
+CM_ SG_ 1154 ID2 "More Details in Excelsheet: Multiplexer ID Signal";
+CM_ SG_ 1154 ALIV_OBD_SER_6_FN_1 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 1154 ALIV_OBD_SER_6_FN_2 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_1 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 ID_OBD_SEN "More Details in Excelsheet: This signal defines which OBD-relevant sensor is currently considered";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_2 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 ERR_OBD_SEN_1 "More Details in Excelsheet: This signal contains the error symptom of the OBD-relevant sensor for storing in the error memory of the DME. The considered Sensor is defined in signal 'ID_OBD_SEN'.";
+CM_ SG_ 1154 OBD_SER_6_PART_1_FN_ID "More Details in Excelsheet: This signal contains up to 254 different IDs by which the sending OBD Service 6-relevant function is referenced.
+";
+CM_ SG_ 1154 OBD_SER_6_PART_2_FN_ID "More Details in Excelsheet: This signal contains up to 254 different IDs by which the sending OBD Service 6-relevant function is referenced.
+";
+CM_ SG_ 1154 ERR_OBD_SEN_2 "More Details in Excelsheet: This signal contains the error symptom of the OBD-relevant sensor for storing in the error memory of the DME. The considered Sensor is defined in signal 'ID_OBD_SEN'.";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_3 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 OBD_SER_6_MIN_TST_LIM "More Details in Excelsheet: This signal contains the Test Limit Minimum (cor. SAE J1979).";
+CM_ SG_ 1154 OBD_SER_6_UN_ID "More Details in Excelsheet: The content of this signal is defined via Unit and Scaling ID corresponding to SAE J1979.";
+CM_ SG_ 1154 RWDT_OBD_SEN_1 "More Details in Excelsheet: This signal contains the physical sensor raw data (not filtered).
+
+The raw data of the exterior temperature (ID_OBD_Sensor=0) only uses the first (lower) 8 Bits.
+The representation of the signal corresponds to the signal ' ...";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_4 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 OBD_SER_6_TST_VL "More Details in Excelsheet: The content of this signal contains test results (SAE J1979).";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_5 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 OBD_SER_6_MAX_TST_LIM "More Details in Excelsheet: This signal contains the Test Limit Maximum (cor. SAE J1979).";
+CM_ SG_ 1154 RWDT_OBD_SEN_2 "More Details in Excelsheet: This signal contains the physical sensor raw data (not filtered).
+
+The raw data of the fuel level sensor (ID_OBD_Sensor=1) only uses the first (lower) 8 Bits (fuel level sensor 2).
+The representation of the signal correspo ...";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_6 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 OBD_SER_6_PART_1_VLDY "More Details in Excelsheet: This signal contains the invalid-state of the signal 'OBD_SER_6_TST_VL'.";
+CM_ SG_ 1154 DT_EWS_DME1_DDE1_7 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1154 OBD_SER_6_PART_2_VLDY "More Details in Excelsheet: This signal contains the invalid-state of the signals 'OBD_SER_6_MIN_TST_LIM' and 'OBD_SER_6_MAX_TST_LIM'.
+";
+CM_ SG_ 1170 ID2 "More Details in Excelsheet: Multiplexer ID Signal";
+CM_ SG_ 1170 DT_EWS_CAS_1 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1170 ID_FN_RQ_BUS "More Details in Excelsheet: This signal contains the function, from which the present message originates.
+Thus the Terminal-30g-Master recognizes, which function is responsible for the sending the request of activating the required bus/sub network.";
+CM_ SG_ 1170 NO_CC_MESS_EXT "More Details in Excelsheet: This signal contains the number of the notification, which the check control should show or delete. The number is unique in the system and thus independent from the ECU on which the respective functionality is realized.";
+CM_ SG_ 1170 NO_CC_MESS_STD "More Details in Excelsheet: Number of check-control-message to be displayed";
+CM_ SG_ 1170 DT_EWS_CAS_2 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1170 DT_EWS_CAS_3 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1170 ID_RQ_BUS "More Details in Excelsheet: This signal defines the bus/sub network which is requested to be active.";
+CM_ SG_ 1170 ST_CC_MESS_EXT "More Details in Excelsheet: This signal defines if the notification is to be shown or to be deleted.";
+CM_ SG_ 1170 ST_CC_MESS_STD "More Details in Excelsheet: Switching on/off a particular check-control-message.";
+CM_ SG_ 1170 TRANF_CC_MESS_EXT "More Details in Excelsheet: This Signal contains the way, in which the sender transmits the notification for the check control message. The notification to be shown has to be send cyclical (repeatedly) as long as the CCM is active and should bei show ...";
+CM_ SG_ 1170 TRANF_CC_MESS_STD "More Details in Excelsheet: Indication how many seconds are between two check-control-messages sent on CAN.";
+CM_ SG_ 1170 ST_IDC_CCLK_CC_MESS_EXT "More Details in Excelsheet: This signal contains the frequency for the flashing of a hardware control lamp requested by the current notification. The flash frequencies for slow and fast flashing can be coded.";
+CM_ SG_ 1170 ST_IDC_CCLK_CC_MESS_STD "More Details in Excelsheet: Selecting blinking mode for a particular check-control-message";
+CM_ SG_ 1170 DT_EWS_CAS_4 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1170 NO_FRM_CC_MESS_EXT "More Details in Excelsheet: This signal contains the number of the currently transmitted frame.
+
+WARNING: The used value range is between 0 and 14, thus 0 is the start of counting (= frame number 1) and a signal value 14 corresponds to frame number 1 ...";
+CM_ SG_ 1170 ST_RQ_BUS "More Details in Excelsheet: This signal contains the information if either a request of activating terminal 30g or for a reboot of the terminal 30g after-running counter is present.";
+CM_ SG_ 1170 QUAN_FRM_CC_MESS_EXT "More Details in Excelsheet: This signal contains the total amount of frames, which are necessary for the transmission of all user data (CCM-data).";
+CM_ SG_ 1170 ST_LAW_RQ "More Details in Excelsheet: This signal contains the information, if the function that requests a extension of the after-running period, is mandatory (by law).
+Within the maximum after-running period an early deactivation of the terminals when reachi ...";
+CM_ SG_ 1170 DT_EWS_CAS_5 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1170 DUR_FLLUPT "More Details in Excelsheet: This signal contains the required  after-running period.";
+CM_ SG_ 1170 UTDT_CC_MESS "More Details in Excelsheet: The user data (CCM-data) has to be defined for each use case individually. Currently the maximum amount of user data is limited to 15*3 Bytes, which are individually specified. In the extended message the ASCII-symbols are ...";
+CM_ SG_ 1170 DT_EWS_CAS_6 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 1170 DT_EWS_CAS_7 "More Details in Excelsheet: Immobilizer service";
+CM_ SG_ 165 CRC_TORQ_CRSH_1 "More Details in Excelsheet: Checksum calculation according CAN Specification (ALGO SAE J 1850). CRC-ID: 9 (dez) = 9 (hex)";
+CM_ SG_ 165 ALIV_TORQ_CRSH_1 "More Details in Excelsheet: Standard Alive Counter: Signal value will increase by one each time the signal is sent and reset to zero when the value is greater than 14 (0xE). The value 15 (0xF) is sent, in case that the signal is invalid.";
+CM_ SG_ 165 AVL_TORQ_CRSH "More Details in Excelsheet: This signal contains the present crankshaft torque including all internal (engine speed limits, knock control, smoke limit, ... ) and external (ESC control, gear change, ...) interventions. Inertia moments are not taken in ...";
+CM_ SG_ 165 AVL_RPM_ENG_CRSH "More Details in Excelsheet: This signal communicates the present engine crankshaft speed.";
+CM_ SG_ 165 QU_AVL_RPM_ENG_CRSH "More Details in Excelsheet: quality information to the signal 'actual-value_RPM_engine_crankshaft'";
+CM_ SG_ 1298 NM2_AUTOSAR_RES_FACAN "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 1298 NM2_USR_DT_FACAN "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 1281 NM2_AUTOSAR_RES_FACAN "More Details in Excelsheet: Network Management Signal";
+CM_ SG_ 1281 NM2_USR_DT_FACAN "More Details in Excelsheet: Network Management Signal";
+CM_ BO_ 1669 "Debug Message #1 for TM2";
+CM_ BO_ 1668 "Debug Message #1 for TM1";
+CM_ SG_ 72 ACTUATED_GEAR "The validated, powertrain actuated gear or PRND position. Duplicate of the same name signal on C-CAN.";
+CM_ SG_ 72 TM2_SHUTDOWN_CMD "Shutdown command to inverter (with or without active discharge on HV bus).";
+CM_ SG_ 72 TM2_ENABLE_CMD "Initialization and Enable/Disable command to inverter.";
+CM_ SG_ 72 TM2_CRC "CRC check for TM2";
+CM_ SG_ 72 TM2_DIRECTION "Direction command for TM2.";
+CM_ SG_ 203 TM2_SM_STATUS "TM2 Safety Mechanisms Status.";
+CM_ SG_ 203 TM2_TORQUE_DIR_MODE "Currently applied torque direction operation mode, propelling the vehicle either 'Forward' or 'Backwards'. 'None' when inverter is in non-propulsion state.";
+CM_ BO_ 903 "OBD2 architecture - Power Interver Module for Traction Motor 2 report to OBD2 master.";
+CM_ SG_ 903 DMCB_DiagStat1_DiagTrblCdStat "Drive Motor B Control Module Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 903 DMCB_CALID_CVN_Stat "Drive Motor B Control Module: CALID Index. CALID & CVN Status";
+CM_ SG_ 903 DMCB_DiagStat1_DiagTrblCdIndx "Drive Motor B Control Module Diagnositcs Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 903 DMCB_DiagStat3_DiagTrblCdStat "Drive Motor B Control Module Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 903 DMCB_DiagStat2_DiagTrblCdIndx "Drive Motor B Control Module Diagnositcs Status 2: Diagnostic Trouble Code Status";
+CM_ SG_ 903 DMCB_CALID_CVN_Character "Drive Motor B Control Module: CALID Index. CALID/CVN Character";
+CM_ SG_ 903 DMCB_CALID_CVN_CALIndx "Drive Motor B Control Module: CALID Index. Value represents Index to 0 thru 20.";
+CM_ SG_ 903 DMCB_DiagStat2_DiagTrblCdStat "Drive Motor B Control Module Status 2: Diagnostic Trouble Code Status";
+CM_ SG_ 903 DMCB_DiagStat3_DiagTrblCdIndx "Drive Motor B Control Module Diagnositcs Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 71 ACTUATED_GEAR "The validated, powertrain actuated gear or PRND position. Duplicate of the same name signal on C-CAN.";
+CM_ SG_ 71 TM1_SHUTDOWN_CMD "Shutdown command to inverter (with or without active discharge on HV bus).";
+CM_ SG_ 71 TM1_ENABLE_CMD "Initialization and Enable/Disable command to inverter.";
+CM_ SG_ 71 TM1_DIRECTION "Direction for TM1";
+CM_ SG_ 71 TM1_CRC "CRC check for TM1";
+CM_ SG_ 202 TM1_TORQUE_DIR_MODE "Currently applied torque direction operation mode, propelling the vehicle either 'Forward' or 'Backwards'. 'None' when inverter is in non-propulsion state.";
+CM_ SG_ 202 TM1_SM_STATUS "TM1 Safety Mechanisms Status.";
+CM_ BO_ 902 "OBD2 architecture - Power Inverter Module for Traction Motor 1 report to OBD2 master.";
+CM_ SG_ 902 DMCA_CALID_CVN_CALIndx "Drive Motor A Control Module: CALID Index. Value represents Index to 0 thru 20.";
+CM_ SG_ 902 DMCA_DiagStat3_DiagTrblCdIndx "Drive Motor A Control Module Diagnositcs Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 902 DMCA_DiagStat3_DiagTrblCdStat "Drive Motor A Control Module Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 902 DMCA_DiagStat1_DiagTrblCdIndx "Drive Motor A Control Module Diagnositcs Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 902 DMCA_DiagStat2_DiagTrblCdStat "Drive Motor A Control Module Status 2: Diagnostic Trouble Code Status";
+CM_ SG_ 902 DMCA_DiagStat1_DiagTrblCdStat "Drive Motor A Control Module Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 902 DMCA_DiagStat2_DiagTrblCdIndx "Drive Motor A Control Module Diagnositcs Status 2: Diagnostic Trouble Code Status";
+CM_ SG_ 902 DMCA_CALID_CVN_Stat "Drive Motor A Control Module: CALID Index. CALID & CVN Status";
+CM_ SG_ 902 DMCA_CALID_CVN_Character "Drive Motor A Control Module: CALID Index. CALID/CVN Character";
+CM_ BO_ 192 "The propulsion system moding status.";
+CM_ SG_ 192 PROP_SYS_ACTIVE_FLAG "Handshake Flag for Drive-Cycle Management.";
+CM_ SG_ 192 CNT_PROP_MODE_STATUS "Rolling alive counter.";
+CM_ SG_ 192 PROP_MODE_STAT "The propulsion system moding status. ";
+CM_ SG_ 1413 HVOffTime "Time (hours) since HV contactors were last opened.";
+CM_ SG_ 1413 CLEAR_DTC "Clear Legislated Diagnostic Trouble Code Information.";
+CM_ BO_ 904 "OBD2 architecture - Power Inverter Module for Generator report to OBD2 master.";
+CM_ SG_ 904 SGCM_CALID_CVN_Stat "Starter Generator Control Module: CALID Index. CALID & CVN Status";
+CM_ SG_ 904 SGCM_DiagStat2_DiagTrblCdIndx "Starter Generator Control Module Diagnositcs Status 2: Diagnostic Trouble Code Status";
+CM_ SG_ 904 SGCM_DiagStat3_DiagTrblCdStat "Starter Generator Control Module Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 904 SGCM_DiagStat2_DiagTrblCdStat "Starter Generator Control Module Status 2: Diagnostic Trouble Code Status";
+CM_ SG_ 904 SGCM_DiagStat1_DiagTrblCdStat "Starter Generator Control Module Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 904 SGCM_CALID_CVN_Character "Starter Generator Control Module: CALID Index. CALID/CVN Character";
+CM_ SG_ 904 SGCM_DiagStat1_DiagTrblCdIndx "Starter Generator Control Module Diagnositcs Status 1: Diagnostic Trouble Code Status";
+CM_ SG_ 904 SGCM_CALID_CVN_CALIndx "Starter Generator Control Module: CALID Index. Value represents Index to 0 thru 20.";
+CM_ SG_ 904 SGCM_DiagStat3_DiagTrblCdIndx "Starter Generator Control Module Diagnositcs Status 3: Diagnostic Trouble Code Status";
+CM_ SG_ 210 GEN_SHUTDOWN_CMD "Shutdown command to inverter (with or without active discharge on HV bus).";
+CM_ SG_ 210 GEN_ENABLE_CMD "Initialization and Enable/Disable command to inverter.";
+CM_ BO_ 1930 "Diagnostic response to PIM_TM2.";
+CM_ BO_ 1929 "Diagnostic response to PIM_TM1.";
+CM_ BO_ 1928 "Diagnostic response to PIM_GEN.";
+CM_ BO_ 1931 "Diagnostic response to PIM_BOOT.";
+CM_ BO_ 1922 "Diagnostic request to PIM_TM2.";
+CM_ BO_ 1921 "Diagnostic request to PIM_TM1.";
+CM_ BO_ 1920 "Diagnostic request to PIM_GEN.";
+CM_ BO_ 1923 "Diagnostic request to PIM_BOOT.";
+CM_ BO_ 257 "This message is only used by modules that follow the GMW3110 specification (GM-carryover).";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "ON_PT" ENUM  "NO","YES";
+BA_DEF_ BO_  "ON_C" ENUM  "NO","YES";
+BA_DEF_ BO_  "ON_B" ENUM  "NO","YES";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BO_  "ON_INV" ENUM  "NO","YES";
+BA_DEF_  "Status" ENUM  "DRAFT","RELEASE";
+BA_DEF_  "Baseline" STRING ;
+BA_DEF_  "Model" STRING ;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "InvalidHex" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BU_  "BusConnection4" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN";
+BA_DEF_ BU_  "BusConnection3" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN";
+BA_DEF_ BU_  "BusConnection2" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN","SW-CAN";
+BA_DEF_ BU_  "BusConnection1" ENUM  "NoBusConnection","B-CAN","C-CAN","PT-CAN","INV-CAN","SW-CAN";
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "ON_PT" "NO";
+BA_DEF_DEF_  "ON_C" "NO";
+BA_DEF_DEF_  "ON_B" "NO";
+BA_DEF_DEF_  "ILUsed" "No";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "ON_INV" "NO";
+BA_DEF_DEF_  "Status" "DRAFT";
+BA_DEF_DEF_  "Baseline" "";
+BA_DEF_DEF_  "Model" "";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "InvalidHex" "";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "Manufacturer" "KARMA AUTOMOTIVE LLC";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "BusConnection4" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection3" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection2" "NoBusConnection";
+BA_DEF_DEF_  "BusConnection1" "NoBusConnection";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "BusType" "CAN";
+BA_ "Baseline" "K1-2.0_MY20_BL900B1PLUS_DRAFT";
+BA_ "Manufacturer" "KARMAAUTOMOTIVE";
+BA_ "Baudrate" 500000;
+BA_ "Model" "K1 2.0";
+BA_ "BusConnection1" BU_ PIM_TM2 4;
+BA_ "BusConnection2" BU_ PIM_TM2 0;
+BA_ "BusConnection1" BU_ PIM_TM1 4;
+BA_ "BusConnection1" BU_ PIM_GEN 4;
+BA_ "BusConnection1" BU_ PIM_ALL 4;
+BA_ "BusConnection1" BU_ HCU 2;
+BA_ "BusConnection2" BU_ HCU 3;
+BA_ "BusConnection3" BU_ HCU 4;
+BA_ "BusConnection1" BU_ KARMA_TESTER 1;
+BA_ "BusConnection2" BU_ KARMA_TESTER 2;
+BA_ "BusConnection3" BU_ KARMA_TESTER 3;
+BA_ "BusConnection4" BU_ KARMA_TESTER 4;
+BA_ "BusConnection4" BU_ CIU 4;
+BA_ "BusConnection3" BU_ CIU 3;
+BA_ "BusConnection2" BU_ CIU 2;
+BA_ "BusConnection1" BU_ CIU 1;
+BA_ "GenMsgSendType" BO_ 1672 8;
+BA_ "ON_INV" BO_ 1672 1;
+BA_ "GenMsgSendType" BO_ 1671 8;
+BA_ "ON_INV" BO_ 1671 1;
+BA_ "GenMsgSendType" BO_ 673 0;
+BA_ "GenMsgCycleTime" BO_ 673 100;
+BA_ "GenMsgDelayTime" BO_ 673 0;
+BA_ "ON_INV" BO_ 2016 1;
+BA_ "GenMsgCycleTime" BO_ 819 250;
+BA_ "GenMsgSendType" BO_ 819 0;
+BA_ "ON_INV" BO_ 819 1;
+BA_ "GenMsgSendType" BO_ 206 0;
+BA_ "GenMsgCycleTime" BO_ 206 10;
+BA_ "ON_INV" BO_ 206 1;
+BA_ "GenMsgSendType" BO_ 205 0;
+BA_ "GenMsgCycleTime" BO_ 205 10;
+BA_ "ON_INV" BO_ 205 1;
+BA_ "GenMsgDelayTime" BO_ 714 100;
+BA_ "GenMsgCycleTime" BO_ 714 100;
+BA_ "GenMsgSendType" BO_ 714 0;
+BA_ "ON_INV" BO_ 714 1;
+BA_ "GenMsgDelayTime" BO_ 133 0;
+BA_ "GenMsgCycleTime" BO_ 133 20;
+BA_ "GenMsgSendType" BO_ 133 0;
+BA_ "ON_INV" BO_ 133 1;
+BA_ "GenMsgDelayTime" BO_ 552 0;
+BA_ "ON_INV" BO_ 552 1;
+BA_ "GenMsgDelayTime" BO_ 921 0;
+BA_ "GenMsgCycleTime" BO_ 921 1000;
+BA_ "GenMsgSendType" BO_ 921 0;
+BA_ "ON_INV" BO_ 921 1;
+BA_ "ON_INV" BO_ 1777 1;
+BA_ "ON_INV" BO_ 1554 1;
+BA_ "GenMsgDelayTime" BO_ 919 50;
+BA_ "GenMsgCycleTime" BO_ 919 1000;
+BA_ "ON_PT" BO_ 919 1;
+BA_ "ON_INV" BO_ 919 1;
+BA_ "GenMsgSendType" BO_ 919 0;
+BA_ "GenMsgDelayTime" BO_ 918 50;
+BA_ "GenMsgCycleTime" BO_ 918 1000;
+BA_ "GenMsgSendType" BO_ 918 0;
+BA_ "ON_INV" BO_ 918 1;
+BA_ "GenMsgDelayTime" BO_ 1019 50;
+BA_ "GenMsgCycleTime" BO_ 1019 1000;
+BA_ "GenMsgSendType" BO_ 1019 0;
+BA_ "ON_INV" BO_ 1019 1;
+BA_ "GenMsgDelayTime" BO_ 1017 10;
+BA_ "GenMsgCycleTime" BO_ 1017 1000;
+BA_ "GenMsgSendType" BO_ 1017 0;
+BA_ "ON_INV" BO_ 1017 1;
+BA_ "GenMsgDelayTime" BO_ 816 200;
+BA_ "GenMsgCycleTime" BO_ 816 1000;
+BA_ "GenMsgSendType" BO_ 816 0;
+BA_ "ON_INV" BO_ 816 1;
+BA_ "GenMsgDelayTime" BO_ 303 20;
+BA_ "GenMsgCycleTime" BO_ 303 100;
+BA_ "GenMsgSendType" BO_ 303 0;
+BA_ "ON_INV" BO_ 303 1;
+BA_ "GenMsgDelayTime" BO_ 1077 100;
+BA_ "GenMsgCycleTime" BO_ 1077 0;
+BA_ "ON_INV" BO_ 1077 1;
+BA_ "ON_INV" BO_ 2024 1;
+BA_ "GenMsgDelayTime" BO_ 808 200;
+BA_ "GenMsgCycleTime" BO_ 808 1000;
+BA_ "GenMsgSendType" BO_ 808 0;
+BA_ "ON_INV" BO_ 808 1;
+BA_ "GenMsgDelayTime" BO_ 273 0;
+BA_ "GenMsgCycleTime" BO_ 273 20;
+BA_ "GenMsgSendType" BO_ 273 0;
+BA_ "ON_INV" BO_ 273 1;
+BA_ "GenMsgDelayTime" BO_ 142 20;
+BA_ "GenMsgCycleTime" BO_ 142 100;
+BA_ "GenMsgSendType" BO_ 142 0;
+BA_ "ON_INV" BO_ 142 1;
+BA_ "GenMsgDelayTime" BO_ 1022 0;
+BA_ "GenMsgCycleTime" BO_ 1022 100;
+BA_ "GenMsgSendType" BO_ 1022 0;
+BA_ "ON_INV" BO_ 1022 1;
+BA_ "GenMsgDelayTime" BO_ 833 0;
+BA_ "GenMsgCycleTime" BO_ 833 100;
+BA_ "GenMsgSendType" BO_ 833 0;
+BA_ "ON_INV" BO_ 833 1;
+BA_ "GenMsgDelayTime" BO_ 514 20;
+BA_ "GenMsgCycleTime" BO_ 514 100;
+BA_ "GenMsgSendType" BO_ 514 0;
+BA_ "ON_INV" BO_ 514 1;
+BA_ "GenMsgDelayTime" BO_ 708 0;
+BA_ "GenMsgCycleTime" BO_ 708 100;
+BA_ "GenMsgSendType" BO_ 708 0;
+BA_ "ON_INV" BO_ 708 1;
+BA_ "GenMsgDelayTime" BO_ 261 0;
+BA_ "GenMsgCycleTime" BO_ 261 100;
+BA_ "GenMsgSendType" BO_ 261 0;
+BA_ "ON_INV" BO_ 261 1;
+BA_ "ON_INV" BO_ 1154 1;
+BA_ "ON_INV" BO_ 1170 1;
+BA_ "GenMsgDelayTime" BO_ 165 0;
+BA_ "GenMsgCycleTime" BO_ 165 10;
+BA_ "GenMsgSendType" BO_ 165 0;
+BA_ "ON_INV" BO_ 165 1;
+BA_ "GenMsgDelayTime" BO_ 1298 0;
+BA_ "GenMsgCycleTime" BO_ 1298 640;
+BA_ "GenMsgSendType" BO_ 1298 0;
+BA_ "ON_INV" BO_ 1298 1;
+BA_ "ON_INV" BO_ 1281 1;
+BA_ "ON_PT" BO_ 1281 1;
+BA_ "GenMsgDelayTime" BO_ 1281 0;
+BA_ "GenMsgCycleTime" BO_ 1281 640;
+BA_ "GenMsgSendType" BO_ 1281 0;
+BA_ "GenMsgSendType" BO_ 1669 8;
+BA_ "ON_INV" BO_ 1669 1;
+BA_ "GenMsgSendType" BO_ 1668 8;
+BA_ "ON_INV" BO_ 1668 1;
+BA_ "GenMsgSendType" BO_ 1667 8;
+BA_ "ON_INV" BO_ 1667 1;
+BA_ "ON_INV" BO_ 72 1;
+BA_ "GenMsgSendType" BO_ 72 0;
+BA_ "GenMsgCycleTime" BO_ 72 10;
+BA_ "ON_INV" BO_ 340 1;
+BA_ "GenMsgSendType" BO_ 340 0;
+BA_ "GenMsgCycleTime" BO_ 340 10;
+BA_ "ON_PT" BO_ 340 1;
+BA_ "ON_INV" BO_ 203 1;
+BA_ "GenMsgSendType" BO_ 203 0;
+BA_ "GenMsgCycleTime" BO_ 203 10;
+BA_ "ON_INV" BO_ 903 1;
+BA_ "GenMsgSendType" BO_ 903 0;
+BA_ "GenMsgCycleTime" BO_ 903 100;
+BA_ "ON_INV" BO_ 71 1;
+BA_ "GenMsgSendType" BO_ 71 0;
+BA_ "GenMsgCycleTime" BO_ 71 10;
+BA_ "ON_INV" BO_ 339 1;
+BA_ "GenMsgSendType" BO_ 339 0;
+BA_ "GenMsgCycleTime" BO_ 339 10;
+BA_ "ON_PT" BO_ 339 1;
+BA_ "ON_INV" BO_ 202 1;
+BA_ "GenMsgSendType" BO_ 202 0;
+BA_ "GenMsgCycleTime" BO_ 202 10;
+BA_ "ON_C" BO_ 202 1;
+BA_ "ON_INV" BO_ 902 1;
+BA_ "GenMsgSendType" BO_ 902 0;
+BA_ "GenMsgCycleTime" BO_ 902 100;
+BA_ "ON_INV" BO_ 192 1;
+BA_ "GenMsgSendType" BO_ 192 0;
+BA_ "GenMsgCycleTime" BO_ 192 50;
+BA_ "ON_PT" BO_ 192 1;
+BA_ "ON_C" BO_ 1413 1;
+BA_ "ON_INV" BO_ 1413 1;
+BA_ "GenMsgSendType" BO_ 1413 0;
+BA_ "GenMsgCycleTime" BO_ 1413 100;
+BA_ "ON_INV" BO_ 355 1;
+BA_ "GenMsgSendType" BO_ 355 0;
+BA_ "GenMsgCycleTime" BO_ 355 10;
+BA_ "ON_INV" BO_ 211 1;
+BA_ "GenMsgSendType" BO_ 211 0;
+BA_ "GenMsgCycleTime" BO_ 211 10;
+BA_ "ON_INV" BO_ 904 1;
+BA_ "GenMsgSendType" BO_ 904 0;
+BA_ "GenMsgCycleTime" BO_ 904 100;
+BA_ "ON_INV" BO_ 210 1;
+BA_ "GenMsgSendType" BO_ 210 0;
+BA_ "GenMsgCycleTime" BO_ 210 10;
+BA_ "ON_INV" BO_ 2015 1;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "GenMsgSendType" BO_ 2015 8;
+BA_ "ON_C" BO_ 2015 1;
+BA_ "ON_PT" BO_ 2015 1;
+BA_ "ON_B" BO_ 2015 1;
+BA_ "ON_INV" BO_ 1930 1;
+BA_ "DiagResponse" BO_ 1930 1;
+BA_ "DiagState" BO_ 1930 1;
+BA_ "GenMsgILSupport" BO_ 1930 0;
+BA_ "GenMsgSendType" BO_ 1930 8;
+BA_ "ON_INV" BO_ 1929 1;
+BA_ "DiagResponse" BO_ 1929 1;
+BA_ "DiagState" BO_ 1929 1;
+BA_ "GenMsgILSupport" BO_ 1929 0;
+BA_ "GenMsgSendType" BO_ 1929 8;
+BA_ "ON_INV" BO_ 1928 1;
+BA_ "DiagResponse" BO_ 1928 1;
+BA_ "DiagState" BO_ 1928 1;
+BA_ "GenMsgILSupport" BO_ 1928 0;
+BA_ "GenMsgSendType" BO_ 1928 8;
+BA_ "ON_INV" BO_ 1931 1;
+BA_ "DiagResponse" BO_ 1931 1;
+BA_ "DiagState" BO_ 1931 1;
+BA_ "GenMsgILSupport" BO_ 1931 0;
+BA_ "GenMsgSendType" BO_ 1931 8;
+BA_ "ON_INV" BO_ 1922 1;
+BA_ "DiagRequest" BO_ 1922 1;
+BA_ "DiagState" BO_ 1922 1;
+BA_ "GenMsgILSupport" BO_ 1922 0;
+BA_ "GenMsgSendType" BO_ 1922 8;
+BA_ "ON_INV" BO_ 1921 1;
+BA_ "DiagRequest" BO_ 1921 1;
+BA_ "DiagState" BO_ 1921 1;
+BA_ "GenMsgILSupport" BO_ 1921 0;
+BA_ "GenMsgSendType" BO_ 1921 8;
+BA_ "ON_INV" BO_ 1920 1;
+BA_ "DiagRequest" BO_ 1920 1;
+BA_ "DiagState" BO_ 1920 1;
+BA_ "GenMsgILSupport" BO_ 1920 0;
+BA_ "GenMsgSendType" BO_ 1920 8;
+BA_ "ON_INV" BO_ 1923 1;
+BA_ "DiagRequest" BO_ 1923 1;
+BA_ "DiagState" BO_ 1923 1;
+BA_ "GenMsgILSupport" BO_ 1923 0;
+BA_ "GenMsgSendType" BO_ 1923 8;
+BA_ "GenMsgSendType" BO_ 257 8;
+BA_ "ON_PT" BO_ 257 1;
+BA_ "ON_B" BO_ 257 1;
+BA_ "ON_C" BO_ 257 1;
+BA_ "ON_INV" BO_ 257 1;
+BA_ "DiagState" BO_ 257 1;
+BA_ "GenSigSendType" SG_ 206 TM2_SPEED_GRADIENT 7;
+BA_ "GenSigStartValue" SG_ 206 TM2_SPEED_GRADIENT 32500;
+BA_ "GenSigStartValue" SG_ 205 TM1_SPEED_GRADIENT 32500;
+BA_ "GenSigSendType" SG_ 205 TM1_SPEED_GRADIENT 7;
+BA_ "GenSigStartValue" SG_ 714 TEMP_EX 80;
+BA_ "GenSigStartValue" SG_ 714 TEMP_EX_UNFILT 80;
+BA_ "GenSigStartValue" SG_ 1017 TEMP_ENG_DRV 48;
+BA_ "GenSigStartValue" SG_ 1017 TEMP_EOI_DRV 48;
+BA_ "GenSigStartValue" SG_ 273 TAR_2_WMOM_PT_SUM_DRS 32000;
+BA_ "GenSigStartValue" SG_ 1022 ST_MIL_MESS_BUCU 3;
+BA_ "GenSigSendType" SG_ 1022 ST_MIL_MESS_BUCU 3;
+BA_ "GenSigStartValue" SG_ 1022 ST_CCLK_FLS_MIL_BUCU 3;
+BA_ "GenSigStartValue" SG_ 833 RQ_PRIO_TORQ_CRSH_LOWLIM_BUCU 32767;
+BA_ "GenSigStartValue" SG_ 833 RQ_PRIO_TORQ_CRSH_UPLIM_BUCU 32767;
+BA_ "GenSigStartValue" SG_ 165 AVL_TORQ_CRSH 2047;
+BA_ "GenSigSendType" SG_ 72 TM2_SHUTDOWN_CMD 7;
+BA_ "GenSigSendType" SG_ 72 TM2_ENABLE_CMD 7;
+BA_ "GenSigSendType" SG_ 72 TM2_ARC_TORQUE_CMD 7;
+BA_ "GenSigSendType" SG_ 72 TM2_CRC 7;
+BA_ "GenSigSendType" SG_ 72 AccPedPosTM2 7;
+BA_ "GenSigSendType" SG_ 72 TM2_TORQUE_CMD 7;
+BA_ "GenSigStartValue" SG_ 72 TM2_TORQUE_CMD 1024;
+BA_ "GenSigSendType" SG_ 72 TM2_DIRECTION 7;
+BA_ "GenSigStartValue" SG_ 72 TM2_DIRECTION 5;
+BA_ "GenSigSendType" SG_ 72 TM2_TORQUE_PROTECT_VAL 7;
+BA_ "GenSigSendType" SG_ 340 TM2_PCM_TEST_FAIL 7;
+BA_ "GenSigSendType" SG_ 340 TM2_GEN_CAPABILITY 7;
+BA_ "GenSigStartValue" SG_ 340 TM2_GEN_CAPABILITY 255;
+BA_ "GenSigSendType" SG_ 340 TM2_INV_TEMP_SENS 7;
+BA_ "GenSigStartValue" SG_ 340 TM2_INV_TEMP_SENS 40;
+BA_ "GenSigSendType" SG_ 340 TM2_STATUS_SIG 7;
+BA_ "GenSigSendType" SG_ 340 TM2_MOTOR_TEMP_SENS 7;
+BA_ "GenSigStartValue" SG_ 340 TM2_MOTOR_TEMP_SENS 40;
+BA_ "GenSigSendType" SG_ 340 TM2_MOTOR_CAPABILITY 7;
+BA_ "GenSigStartValue" SG_ 340 TM2_MOTOR_CAPABILITY 255;
+BA_ "GenSigSendType" SG_ 203 TM2_SM_STATUS 7;
+BA_ "GenSigStartValue" SG_ 203 TM2_SM_STATUS 0;
+BA_ "GenSigStartValue" SG_ 203 TM2_TORQUE_DIR_MODE 0;
+BA_ "GenSigSendType" SG_ 203 TM2_TORQUE_DIR_MODE 7;
+BA_ "GenSigSendType" SG_ 203 TM2_ARC_FEEDBACK 7;
+BA_ "GenSigSendType" SG_ 203 TM2_TORQUE_SENS 7;
+BA_ "GenSigStartValue" SG_ 203 TM2_TORQUE_SENS 1024;
+BA_ "GenSigSendType" SG_ 203 TM2_VOLTAGE_SENS 7;
+BA_ "GenSigSendType" SG_ 203 TM2_SPEED_SENS 7;
+BA_ "GenSigStartValue" SG_ 203 TM2_SPEED_SENS 32768;
+BA_ "GenSigSendType" SG_ 203 TM2_CURRENT_SENS 7;
+BA_ "GenSigStartValue" SG_ 203 TM2_CURRENT_SENS 4096;
+BA_ "GenSigSendType" SG_ 903 DMCB_DiagStat1_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_CALID_CVN_Stat 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_DiagStat1_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_DiagStat3_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_DiagStat2_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_CALID_CVN_Character 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_CALID_CVN_CALIndx 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_DiagStat2_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 903 DMCB_DiagStat3_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 71 TM1_SHUTDOWN_CMD 7;
+BA_ "GenSigSendType" SG_ 71 TM1_ENABLE_CMD 7;
+BA_ "GenSigSendType" SG_ 71 TM1_DIRECTION 7;
+BA_ "GenSigStartValue" SG_ 71 TM1_DIRECTION 10;
+BA_ "GenSigSendType" SG_ 71 TM1_TORQUE_CMD 7;
+BA_ "GenSigStartValue" SG_ 71 TM1_TORQUE_CMD 1024;
+BA_ "GenSigSendType" SG_ 71 TM1_CRC 7;
+BA_ "GenSigSendType" SG_ 71 AccPedPosTM1 7;
+BA_ "GenSigSendType" SG_ 71 TM1_TORQUE_PROTECT_VAL 7;
+BA_ "GenSigSendType" SG_ 71 TM1_ARC_TORQUE_CMD 7;
+BA_ "GenSigSendType" SG_ 339 TM1_STATUS_SIG 7;
+BA_ "GenSigSendType" SG_ 339 TM1_INV_TEMP_SENS 7;
+BA_ "GenSigStartValue" SG_ 339 TM1_INV_TEMP_SENS 40;
+BA_ "GenSigSendType" SG_ 339 TM1_PCM_TEST_FAIL 7;
+BA_ "GenSigSendType" SG_ 339 TM1_MOTOR_CAPABILITY 7;
+BA_ "GenSigStartValue" SG_ 339 TM1_MOTOR_CAPABILITY 255;
+BA_ "GenSigSendType" SG_ 339 TM1_MOTOR_TEMP_SENS 7;
+BA_ "GenSigStartValue" SG_ 339 TM1_MOTOR_TEMP_SENS 40;
+BA_ "GenSigSendType" SG_ 339 TM1_GEN_CAPABILITY 7;
+BA_ "GenSigStartValue" SG_ 339 TM1_GEN_CAPABILITY 255;
+BA_ "GenSigStartValue" SG_ 202 TM1_TORQUE_DIR_MODE 0;
+BA_ "GenSigSendType" SG_ 202 TM1_TORQUE_DIR_MODE 7;
+BA_ "GenSigSendType" SG_ 202 TM1_SM_STATUS 7;
+BA_ "GenSigStartValue" SG_ 202 TM1_SM_STATUS 0;
+BA_ "GenSigSendType" SG_ 202 TM1_CURRENT_SENS 7;
+BA_ "GenSigStartValue" SG_ 202 TM1_CURRENT_SENS 4096;
+BA_ "GenSigSendType" SG_ 202 TM1_SPEED_SENS 7;
+BA_ "GenSigStartValue" SG_ 202 TM1_SPEED_SENS 32768;
+BA_ "GenSigSendType" SG_ 202 TM1_ARC_FEEDBACK 7;
+BA_ "GenSigSendType" SG_ 202 TM1_VOLTAGE_SENS 7;
+BA_ "GenSigSendType" SG_ 202 TM1_TORQUE_SENS 7;
+BA_ "GenSigStartValue" SG_ 202 TM1_TORQUE_SENS 1024;
+BA_ "GenSigSendType" SG_ 902 DMCA_CALID_CVN_CALIndx 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_DiagStat3_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_DiagStat3_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_DiagStat1_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_DiagStat2_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_DiagStat1_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_DiagStat2_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_CALID_CVN_Stat 7;
+BA_ "GenSigSendType" SG_ 902 DMCA_CALID_CVN_Character 7;
+BA_ "GenSigStartValue" SG_ 192 PROP_SYS_ACTIVE_FLAG 3;
+BA_ "GenSigSendType" SG_ 192 PROP_SYS_ACTIVE_FLAG 7;
+BA_ "GenSigSendType" SG_ 192 HCU_SOLARBOOST_FLAG 7;
+BA_ "GenSigSendType" SG_ 192 HCU_LV_MNTNC_FLAG 7;
+BA_ "GenSigSendType" SG_ 192 HCU_RPC_STATUS 7;
+BA_ "GenSigSendType" SG_ 192 CNT_PROP_MODE_STATUS 7;
+BA_ "GenSigSendType" SG_ 192 PROP_MODE_STAT 7;
+BA_ "GenSigSendType" SG_ 1413 CLEAR_DTC 7;
+BA_ "GenSigSendType" SG_ 355 GEN_MOTOR_TEMP_SENS 7;
+BA_ "GenSigStartValue" SG_ 355 GEN_MOTOR_TEMP_SENS 40;
+BA_ "GenSigSendType" SG_ 355 GEN_MOTOR_CAPABILITY 7;
+BA_ "GenSigStartValue" SG_ 355 GEN_MOTOR_CAPABILITY 255;
+BA_ "GenSigSendType" SG_ 355 GEN_STATUS_SIG 7;
+BA_ "GenSigSendType" SG_ 355 GEN_INV_TEMP_SENS 7;
+BA_ "GenSigStartValue" SG_ 355 GEN_INV_TEMP_SENS 40;
+BA_ "GenSigSendType" SG_ 355 GEN_GEN_CAPABILITY 7;
+BA_ "GenSigStartValue" SG_ 355 GEN_GEN_CAPABILITY 255;
+BA_ "GenSigSendType" SG_ 211 GEN_VOLTAGE_SENS 7;
+BA_ "GenSigSendType" SG_ 211 GEN_CURRENT_SENS 7;
+BA_ "GenSigStartValue" SG_ 211 GEN_CURRENT_SENS 4096;
+BA_ "GenSigSendType" SG_ 211 GEN_TORQUE_SENS 7;
+BA_ "GenSigStartValue" SG_ 211 GEN_TORQUE_SENS 1024;
+BA_ "GenSigSendType" SG_ 211 GEN_SPEED_SENS 7;
+BA_ "GenSigStartValue" SG_ 211 GEN_SPEED_SENS 32768;
+BA_ "GenSigSendType" SG_ 211 GEN_ARC_FEEDBACK 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_CALID_CVN_Stat 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_DiagStat2_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_DiagStat3_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_DiagStat2_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_DiagStat1_DiagTrblCdStat 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_CALID_CVN_Character 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_DiagStat1_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_CALID_CVN_CALIndx 7;
+BA_ "GenSigSendType" SG_ 904 SGCM_DiagStat3_DiagTrblCdIndx 7;
+BA_ "GenSigSendType" SG_ 210 GEN_SHUTDOWN_CMD 7;
+BA_ "GenSigSendType" SG_ 210 GEN_ENABLE_CMD 7;
+BA_ "GenSigSendType" SG_ 210 GEN_GEN_TRQ_LIMIT 7;
+BA_ "GenSigStartValue" SG_ 210 GEN_GEN_TRQ_LIMIT 1024;
+BA_ "GenSigSendType" SG_ 210 GEN_SPEED_PROTECT_VAL 7;
+BA_ "GenSigSendType" SG_ 210 GEN_MOTOR_TRQ_LIMIT 7;
+BA_ "GenSigStartValue" SG_ 210 GEN_MOTOR_TRQ_LIMIT 1024;
+BA_ "GenSigSendType" SG_ 210 GEN_ARC_COMMAND 7;
+BA_ "GenSigSendType" SG_ 210 GEN_DIRECTION 7;
+BA_ "GenSigStartValue" SG_ 210 GEN_DIRECTION 1;
+BA_ "GenSigSendType" SG_ 210 GEN_SPEED_CMD 7;
+BA_ "GenSigStartValue" SG_ 210 GEN_SPEED_CMD 32768;
+BA_ "GenSigSendType" SG_ 2015 FUNC_REQ_SIG 1;
+BA_ "GenSigSendType" SG_ 1930 DIAG_RESP_SIG_PIM_TM2 7;
+BA_ "GenSigSendType" SG_ 1929 DIAG_RESP_SIG_PIM_TM1 7;
+BA_ "GenSigSendType" SG_ 1928 DIAG_RESP_SIG_PIM_GEN 7;
+BA_ "GenSigSendType" SG_ 1931 DIAG_RESP_SIG_PIM_BOOT 7;
+BA_ "GenSigSendType" SG_ 1922 DIAG_REQ_SIG_PIM_TM2 7;
+BA_ "GenSigSendType" SG_ 1921 DIAG_REQ_SIG_PIM_TM1 7;
+BA_ "GenSigSendType" SG_ 1920 DIAG_REQ_SIG_PIM_GEN 7;
+BA_ "GenSigSendType" SG_ 1923 DIAG_REQ_SIG_PIM_BOOT 7;
+BA_ "GenSigSendType" SG_ 257 ALL_NODE_REQ_SIG 7;
+VAL_ 673 EX_TEMP_PLB 0 "ambient temperature plausible" 1 "ambient temperature not plausible" 2 "plausibility check not available" 3 "signal_invalid" ;
+VAL_ 819 MILE_KM_TOT -1 "signal_invalid" -2 "function_gives_error" -3 "value_not_available" ;
+VAL_ 206 TM2_SPEED_GRADIENT 65535 "SNA" ;
+VAL_ 205 TM1_SPEED_GRADIENT 65535 "SNA" ;
+VAL_ 714 TEMP_EX 255 "SNA" ;
+VAL_ 714 TEMP_EX_UNFILT 255 "SNA" ;
+VAL_ 133 ST_CR_CONF_BUCU 0 "no_crash_at_the_present" 1 "vehicle_crashed" 3 "Signal_invalid" ;
+VAL_ 552 ID_SPFN 65535 "signal_invalid" 20 "request_oil_measurement" 0 "no_action" ;
+VAL_ 921 RQ_MIL_DIAG_OBD_BUCU 1 "request_MIL_OFF" 2 "request_MIL_ON" 3 "signal_invalid" ;
+VAL_ 919 ST_OBD_CYC 0 "bit mask used in coding - see excel for details" 63 "signal_invalid" ;
+VAL_ 918 RQ_MIL_DIAG_OBD_GRB 1 "request MIL OFF" 2 "request MIL ON" 3 "signal_invalid" ;
+VAL_ 1019 AIP_ENG_DRV 255 "signal_invalid" 0 "Initialization/ no built in pressure sensor" ;
+VAL_ 1019 ST_INFS_DRV 0 "deceleration fuel cut-off inactive" 1 "deceleration fuel cut-off active" 3 "signal_invalid" ;
+VAL_ 1017 ALIV_DT_PT_2 15 "signal_invalid" ;
+VAL_ 1017 ST_ENG_RUN_DRV 0 "engine off" 1 "engine is starting" 2 "engine is running" 3 "signal_invalid" ;
+VAL_ 1017 RLS_ENGSTA 0 "engine start not allowed" 1 "engine start/stop retarded" 2 "engine start is allowed" 3 "signal_invalid" ;
+VAL_ 816 MILE_KM 16777215 "Singal Invalid" 16777214 "Function Gives Error" 16777213 "Value Not Available" ;
+VAL_ 816 FLLV_FUTA 255 "SNA" ;
+VAL_ 303 ALIV_COU_KL 15 "signal_invalid" ;
+VAL_ 303 ST_KL 0 "initialization, set during startup" 2 "terminal 30 (KL30) - all terminals OFF" 3 "terminal 30F (KL30F) change" 4 "terminal 30F (KL30F) ON" 5 "terminal 30B (KL30B) change" 6 "terminal 30B (KL30B) ON" 7 "terminal R (KLR) change" 8 "terminal R (KLR) ON" 9 "terminal 15 (KL15) change" 10 "terminal 15 (KL15) ON" 12 "terminal 50 (KL50) change" 13 "terminal 50 (KL50) ON" 15 "signal invalid" ;
+VAL_ 303 ST_KL_KEY_VLD 0 "initialization, set during startup" 1 "key invalid" 4 "key valid" 15 "signal_invalid" ;
+VAL_ 303 CON_CLT_SW 0 "clutch not engaged 90%" 1 "clutch engaged 90%" 2 "error in evaluation of clutch position" 3 "signal invalid" ;
+VAL_ 303 ST_SSP 0 "no push button hall sensor found" 1 "one push button hall sensor found " 2 "two push button hall sensors found " 3 "signal_invalid" ;
+VAL_ 303 RWDT_BLS 0 "brake light signal and brake light test signal not activated" 1 "only brake light signal activated" 2 "only brake light test signal activated" 3 "brake light signal and brake light test signal activated" 4 "single error present" 5 "error in brake light test signal" 6 "error in brake light signal" 7 "multiple errors present" 8 "Initialization" 15 "signal invalid" ;
+VAL_ 303 RQ_DRVG_RDI 0 "no driving readiness requested " 1 "driving readiness requested" 3 "signal_invalid" ;
+VAL_ 1077 ST_OILV_MEASMT_1 0 "Boundary conditions okay" 1 "Boundary condition gear faulty" 2 "Boundary condition accelerator pedal faulty" 4 "Boundary condition speed faulty" 8 "Boundary condition operating point faulty" 15 "Boundary condition level faulty" 16 "Boundary condition oil pressure faulty" 32 "Boundary condition inclination faulty" 64 "Boundary condition engine speed faulty" 128 "Boundary condition engine oil temperature faulty" 255 "Boundary condition normal operation faulty" 4095 "signal_invalid" ;
+VAL_ 1077 FLLV_EOI_REL 0 "oil level below minimum" 1 "oil level at  minimum" 2 "oil level at 25%" 3 "oil level at 50%" 4 "oil level at 75%" 5 "oil level at 100%" 6 "oil level at 125%" 7 "oil level above maximum" 13 "oil level output OK" 14 "service function is active" 15 "signal_invalid" ;
+VAL_ 1077 ST_OILV_MEASMT_2 0 "calculation inactive" 1 "engine-off time not sufficient" 2 "no function value available from minimum detection" 4 "detail measurement is running" 8 "oil level calculation is running" 16 "value for fill level calculated" 18 "value for fill level not calculated" 32 "no valid reaction exists for control request " 64 "sensor error present" 128 "no valid application data existing" 255 "ECM in wake-up or post-run mode" 4095 "signal_invalid" ;
+VAL_ 1077 ST_OILV_MEASMT_POSS 0 "detailed measurement not allowed, conditions not met" 1 "detailed measurement allowed, conditions met" 3 "signal_invalid" ;
+VAL_ 808 T_DAY_COU_ABSL 65535 "SNA" ;
+VAL_ 273 ALIV_RQ_2_WMOM_PT_SUM_DRS 15 "signal_invalid" ;
+VAL_ 273 QU_TAR_2_WMOM_PT_SUM_DRS 512 "CC ON" 3584 "CC Stand-By (e.g. during start-up)" 4095 "signal_invalid" ;
+VAL_ 273 TAR_2_OPMO_PT_DRS 0 "No request" 1 "Direction of travel forward" 2 "Direction of travel backwards" 3 "Apply parking lock" 4 "Neutral / no power transmission" 15 "signal_invalid" ;
+VAL_ 142 ST_ACPD_BUCU 0 "Accelerator_pedal_not_pressed" 1 "Accelerator_pedal_pressed" 3 "Signal_invalid" ;
+VAL_ 142 RQ_OPMO_THRO_BUCU 0 "GD_Mode_Switch_request_inactive_Throtteled Mode request inactive" 1 "GD_Mode_Switch_request_active_Throtteled Mode request active" 3 "Signal_invalid" ;
+VAL_ 142 ST_EXHF_REL_BUCU 255 "Signal_invalid" ;
+VAL_ 142 ALIV_RQ_BUCU_2 15 "signal_invalid" ;
+VAL_ 142 RQ_MSA_BUCU 0 "bit mask used in coding - see excel for details" 15 "signal_invalid" ;
+VAL_ 142 ST_EXHF_BUCU 0 "exhaust_flap_closed" 1 "exhaust_flap_open" 3 "signal_invalid" ;
+VAL_ 142 RLS_INJ_IGN_BUCU 0 "Initialization" 1 "Fuel injection inhibited" 2 "Ignition inhibited" 3 "Fuel injection and ignition inhibited" 4 "Start announcement" 5 "Start announcement / fuel injection inhibited" 6 "Start announcement / ignition inhibited" 7 "Start announcement / fuel injection and ignition inhibited" 13 "Function interface not available" 14 "Functional value invalid" 15 "Signal invalid" ;
+VAL_ 1022 ST_MIL_MESS_BUCU 0 "MIL OFF" 1 "MIL ON" 3 "Signal_invalid" ;
+VAL_ 1022 ST_CCLK_FLS_MIL_BUCU 2 "Fast Flashing" 0 "No Flashing" 1 "Slow Flashing" 3 "Signal_invalid" ;
+VAL_ 833 SLCTN_FN_PRIO_ACV_BUCU 0 "no_diagnosis_active" 1 "priority_CAT_heating_active" 2 "priority_warmup_active" 3 "priority_diagnosis_1_active" 4 "priority_diagnosis_2_active" 5 "priority_diagnosis_3_active" 15 "signal_invalid" ;
+VAL_ 514 MANO_EXT_DME_BUCU 0 "init" 255 "signal_invalid" ;
+VAL_ 514 ALIV_ST_BUCU_2 15 "signal_invalid" ;
+VAL_ 514 ST_MSA_BUCU 0 "bit mask used in coding - see excel for details" 255 "signal_invalid" ;
+VAL_ 514 MANO_DME_BUCU 0 "init" 255 "signal_invalid" ;
+VAL_ 261 ST_BON_HOPN_BUCU 0 "bonnet_closed" 1 "bonnet_open" 3 "signal_invalid" ;
+VAL_ 1154 ALIV_OBD_SER_6_FN_1 15 "signal_invalid" ;
+VAL_ 1154 ALIV_OBD_SER_6_FN_2 15 "signal_invalid" ;
+VAL_ 1154 ID_OBD_SEN 0 "ambient temperature sensor" 1 "fuellevel sensor 1 and 2" 2 "Pressure- and temperaturesensor pressuretank" 3 "Fuel Tank Isolation Valve/ Atmosphere Isolation Valve (AIV) and tank shut off valve (TAV)" 4 "fuel-filler-flap-sensor and -lock" 5 "refuel request sensor and ambient pressure sensor pressuretank" 6 "EVAP valve and pressuresensor Umgebungsdruck Motorelektronik" 255 "signal_invalid" ;
+VAL_ 1154 ERR_OBD_SEN_1 0 "sensor in order" 1 "Short circuit to ground or discontinuity" 2 "Short circuit to battery voltage or discontinuity" 3 "discontinuity" 4 "plausibility error, Wert zu small" 5 "plausibility error,  value to large" 6 "value below value range" 7 "value above value range" 15 "signal_invalid" ;
+VAL_ 1154 OBD_SER_6_PART_1_FN_ID 1 "leakage diagnosis pressure tank" 255 "signal_invalid" ;
+VAL_ 1154 OBD_SER_6_PART_2_FN_ID 1 "leakage diagnosis pressure tank" 255 "signal_invalid" ;
+VAL_ 1154 ERR_OBD_SEN_2 0 "sensor in order" 1 "Short circuit to ground or discontinuity" 2 "Short circuit to battery voltage or discontinuity" 3 "discontinuity" 4 "plausibility error, Wert zu small" 5 "plausibility error,  value to large" 6 "value below value range" 7 "value above value range" 15 "signal_invalid" ;
+VAL_ 1154 OBD_SER_6_PART_1_VLDY 0 "valid" 1 "invalid" 3 "signal_invalid" ;
+VAL_ 1154 OBD_SER_6_PART_2_VLDY 0 "valid" 1 "invalid" 3 "signal_invalid" ;
+VAL_ 1170 ID_FN_RQ_BUS 1 "entertainment function" 2 "remote services" 3 "residual heat function / burn out of stationary heating" 4 "stationary heating / stationary ventilation" 5 "extending N-halting phase, transmission not in pos. P" 6 "activating parking brake" 7 "after-run / activation rear seat entertainment " 8 "remote honking" 25 "enabling / extending terminal 30B CarSharing" 43 "anti-theft alarm system" 44 "electromechanical parking brake-sensor" 45 "rolling detection" 46 "request exterior lights" 47 "reload function" 51 "KL15Wup-signal (wake up signal)" 53 "coolant temperature request from Kombi" 54 "KOMBI-display" 257 "shut down inhibitor" 258 "alarm clock problem" 259 "shutdown KL30F life" 260 "shutdown KL30F CarSharing" 271 "fuel tank leakage diagnosis" 272 "OBD-diagnosis" 273 "after-run electrical water pump engine" 275 "after-run electric fan" 276 "after-run electrical auxiliary coolant pump bearing block cooling  turbo" 277 "after-run electrical water pump hybrid (HEWP)" 278 "stationary ventilation function" 281 "battery monitor (TSR)" 288 "self-levelling suspension" 289 "after-run ventilation/cooling" 304 "trailer connection" 305 "requirement  buisness customer" 306 "requirement buisness customer upper startability limit" 65535 "signal_invalid" ;
+VAL_ 1170 ID_RQ_BUS 50 "'terminal 30g' (up too PL6) /'terminal 30b' (starting at PL6)" 51 "subnetwork 'terminal 30F'" 52 "standing functions" 255 "signal_invalid" ;
+VAL_ 1170 ST_CC_MESS_EXT 0 "reset" 1 "set" 3 "signal_invalid" ;
+VAL_ 1170 ST_CC_MESS_STD 0 "reset" 1 "set" 3 "signal_invalid" ;
+VAL_ 1170 TRANF_CC_MESS_EXT 15 "signal_invalid" ;
+VAL_ 1170 TRANF_CC_MESS_STD 15 "signal_invalid" ;
+VAL_ 1170 ST_IDC_CCLK_CC_MESS_EXT 0 "no flashing" 1 "slow flashing" 2 "fast flashing" 3 "signal_invalid" ;
+VAL_ 1170 ST_IDC_CCLK_CC_MESS_STD 0 "no_flashing" 1 "slow_flashing" 2 "fast_flashing" 3 "signal_invalid" ;
+VAL_ 1170 ST_RQ_BUS 0 "activate" 1 "reset" 2 "off" 4 "restart after-run" 15 "signal_invalid" ;
+VAL_ 1170 ST_LAW_RQ 0 "not mandatory by law" 1 "mandatory by law" 15 "singal_invalid" ;
+VAL_ 165 ALIV_TORQ_CRSH_1 15 "signal_invalid" ;
+VAL_ 165 QU_AVL_RPM_ENG_CRSH 1 "value of the data signal is valid and plausible." 6 "value of the data signal is invalid." 8 "initialization, set during startup of ECM." 15 "signal invalid" ;
+VAL_ 1298 NM2_AUTOSAR_RES_FACAN -2147483648 "signal_invalid" ;
+VAL_ 1281 NM2_AUTOSAR_RES_FACAN -2147483648 "signal_invalid" ;
+VAL_ 72 ACTUATED_GEAR 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_ 72 TM2_SHUTDOWN_CMD 2 "SHUTDOWN w/ ACTV DISCHRG" 1 "SHUTDOWN w/o ACTV DISCHRG" 0 "No CMD" ;
+VAL_ 72 TM2_ENABLE_CMD 3 "LV+HV, PROP-READY" 2 "LV+HV, PROP-INHIBIT" 1 "LV only" 0 "OFF" ;
+VAL_ 72 TM2_DIRECTION 10 "CW" 5 "CCW" ;
+VAL_ 340 TM2_PCM_TEST_FAIL 1 "FAIL" 0 "PASS" ;
+VAL_ 340 TM2_STATUS_SIG 9 "PCM_ENABLE_TEST" 8 "FAULT" 7 "PWR_DWN" 6 "SHUTDWN_ACTIVE_CAP_DISCHARGE" 5 "SHUTDWN" 4 "NORMAL_DISABLE" 3 "NORMAL_ENABLE" 2 "INIT_SYS" 1 "INIT_ECU" ;
+VAL_ 203 TM2_SM_STATUS 7 "N/A" 6 "N/A" 5 "N/A" 4 "N/A" 3 "Functional Safety Mechanisms triggered." 2 "N/A" 1 "N/A" 0 "Functional Safety Mechanisms not triggered." ;
+VAL_ 203 TM2_TORQUE_DIR_MODE 2 "Backwards" 1 "Forward" 0 "None" ;
+VAL_ 203 TM2_TORQUE_SENS 2047 "SNA" ;
+VAL_ 203 TM2_SPEED_SENS 65535 "SNA" ;
+VAL_ 903 DMCB_DiagStat1_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 903 DMCB_CALID_CVN_Stat 2 "Calibration Verification Number Calculated" 1 "Calibration Verification Number Uncalculated" 0 "Calibration Identification Number Index Not Used" ;
+VAL_ 903 DMCB_DiagStat3_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 903 DMCB_DiagStat2_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 71 ACTUATED_GEAR 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_ 71 TM1_SHUTDOWN_CMD 2 "SHUTDOWN w/ ACTV DISCHRG" 1 "SHUTDOWN w/o ACTV DISCHRG" 0 "No CMD" ;
+VAL_ 71 TM1_ENABLE_CMD 3 "LV+HV, PROP-READY" 2 "LV+HV, PROP-INHIBIT" 1 "LV only" 0 "OFF" ;
+VAL_ 71 TM1_DIRECTION 10 "CW" 5 "CCW" ;
+VAL_ 339 TM1_STATUS_SIG 9 "PCM_ENABLE_TEST" 8 "FAULT" 7 "PWR_DWN" 6 "SHUTDWN_ACTIVE_CAP_DISCHARGE" 5 "SHUTDWN" 4 "NORMAL_DISABLE" 3 "NORMAL_ENABLE" 2 "INIT_SYS" 1 "INIT_ECU" ;
+VAL_ 339 TM1_PCM_TEST_FAIL 1 "FAIL" 0 "PASS" ;
+VAL_ 202 TM1_TORQUE_DIR_MODE 2 "Backwards" 1 "Forward" 0 "None" ;
+VAL_ 202 TM1_SM_STATUS 7 "N/A" 6 "N/A" 5 "N/A" 4 "N/A" 3 "Functional Safety Mechanisms triggered." 2 "N/A" 1 "N/A" 0 "Functional Safety Mechanisms not triggered." ;
+VAL_ 202 TM1_SPEED_SENS 65535 "SNA" ;
+VAL_ 202 TM1_TORQUE_SENS 2047 "SNA" ;
+VAL_ 902 DMCA_DiagStat3_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 902 DMCA_DiagStat2_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 902 DMCA_DiagStat1_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 902 DMCA_CALID_CVN_Stat 2 "Calibration Verification Number Calculated" 1 "Calibration Verification Number Uncalculated" 0 "Calibration Identification Number Index Not Used" ;
+VAL_ 192 PROP_SYS_ACTIVE_FLAG 3 "Signal Invalid" 1 "Active" 0 "Not Active" ;
+VAL_ 192 HCU_SOLARBOOST_FLAG 3 "FAULT" 2 "COMPLETE" 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 192 HCU_LV_MNTNC_FLAG 3 "FAULT" 2 "COMPLETE" 1 "ACTIVE" 0 "INACTIVE" ;
+VAL_ 192 HCU_RPC_STATUS 2 "RPC_IN_PROGRESS" 1 "RPC_INITIATED" 0 "RPC_INACTIVE" ;
+VAL_ 192 PROP_MODE_STAT 15 "PT_SHUTDOWN_ESTOP" 14 "HV_DISABLE_ESTOP" 13 "PT_ESTOP" 12 "PT_SHUTDOWN_CHRG" 11 "HV_DISABLE_CHRG" 10 "HV_ACTIVE_CHRG" 9 "HV_POWERUP_CHRG" 8 "PT_SHUTDOWN" 7 "HV_DISABLE" 6 "PROPULSION_DISABLE" 5 "PROPULSION_RAMPOUT" 4 "PROPULSION" 3 "HV_ACTIVE" 2 "HV_POWERUP" 1 "LV_POWERUP" 0 "PT_OFF" ;
+VAL_ 1413 HVOffTime 255 "N/A" 254 "254h or greater." ;
+VAL_ 1413 CLEAR_DTC 1 "TRUE" 0 "FALSE" ;
+VAL_ 355 GEN_STATUS_SIG 8 "FAULT" 7 "PWR_DWN" 6 "SHUTDWN_ACTIVE_CAP_DISCHARGE" 5 "SHUTDWN" 4 "NORMAL_DISABLE" 3 "NORMAL_ENABLE" 2 "INIT_SYS" 1 "INIT_ECU" ;
+VAL_ 211 GEN_TORQUE_SENS 2047 "SNA" ;
+VAL_ 211 GEN_SPEED_SENS 65535 "SNA" ;
+VAL_ 904 SGCM_CALID_CVN_Stat 2 "Calibration Verification Number Calculated" 1 "Calibration Verification Number Uncalculated" 0 "Calibration Identification Number Index Not Used" ;
+VAL_ 904 SGCM_DiagStat3_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 904 SGCM_DiagStat2_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 904 SGCM_DiagStat1_DiagTrblCdStat 7 "signal not available" 4 "Diagnostic failed" 3 "Diagnostic Passed" 2 "no status to report" 1 "Critically disabled" 0 "not supported" ;
+VAL_ 210 GEN_SHUTDOWN_CMD 2 "SHUTDOWN w/ ACTV DISCHRG" 1 "SHUTDOWN w/o ACTV DISCHRG" 0 "No CMD" ;
+VAL_ 210 GEN_ENABLE_CMD 3 "LV+HV, PROP-READY" 2 "LV+HV, PROP-INHIBIT" 1 "LV only" 0 "OFF" ;
+
